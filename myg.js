@@ -7,11 +7,11 @@ import MygDropdown from './../packages/dropdown/index';
 import MygForm from './../packages/form/index';
 import MygFormButton from './../packages/form/button/index';
 import MygFormCheckbox from './../packages/form/checkbox/index';
+import MygFormField from './../packages/form/field/index';
 import MygFormInput from './../packages/form/input/index';
 import MygFormRadio from './../packages/form/radio/index';
 import MygFormSelect from './../packages/form/select/index';
 import MygFormSlider from './../packages/form/slider/index';
-import MygFormSwitch from './../packages/form/switch/index';
 
 import MygIcon from './../packages/icon/index';
 
@@ -25,6 +25,7 @@ import MygLayoutToolbar from './../packages/layout/toolbar/index';
 
 import MygModal from './../packages/modal/index';
 import MygProgress from './../packages/progress/index';
+import MygSelector from './../packages/selector/index';
 import MygSlide from './../packages/slide/index';
 import MygTabs from './../packages/tabs/index';
 
