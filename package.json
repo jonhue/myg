@@ -1,0 +1,17 @@
+{
+  "name": "myg",
+  "version": "1.0.0",
+  "description": "An opinionated & adaptive state-of-the-web framework",
+  "main": "myg.js",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
