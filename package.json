@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@material/checkbox": "^0.29.0",
+    "@material/dialog": "^0.29.0",
     "@material/drawer": "^0.29.0",
     "@material/form-field": "^0.29.0",
     "@material/menu": "^0.29.0",
