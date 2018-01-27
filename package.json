@@ -22,7 +22,13 @@
     "@material/select": "^0.29.0",
     "@material/slider": "^0.29.0",
     "@material/switch": "^0.29.0",
-    "@material/tabs": "^0.29.0"
+    "@material/tabs": "^0.29.0",
+    "animate.css": "^3.5.2",
+    "modalist": "^1.1.0",
+    "normalize.css": "^7.0.0",
+    "popper.js": "^1.12.9",
+    "slick-carousel": "^1.8.1",
+    "welcomer": "^1.2.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0"
