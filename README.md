@@ -5,6 +5,8 @@
 
 An opinionated & adaptive state-of-the-web framework.
 
+**Disclaimer:** Myg really is a state-of-the-web framework. It utilizes CSS variables, CSS grid and ES6. Better be aware before throwing it around.
+
 ---
 
 ## Table of Contents

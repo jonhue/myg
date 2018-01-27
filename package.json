@@ -10,6 +10,9 @@
   "repository": "https://github.com/jonhue/myg",
   "author": "Jonas Hübotter <me@jonhue.me>",
   "license": "MIT",
+  "scripts": {
+    "build": "babel src -d ./"
+  },
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0"
