@@ -1,5 +1,5 @@
 import Myg from './../base/index';
-import * as modalist from "modalist/modalist.js";
+import Modalist from "modalist/modalist.js";
 
 class Modal extends Myg {
 }
