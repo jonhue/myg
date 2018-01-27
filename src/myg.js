@@ -20,6 +20,7 @@ import MygLayoutAction from './../packages/layout/action/index';
 import MygLayoutDrawer from './../packages/layout/drawer/index';
 import MygLayoutFooter from './../packages/layout/footer/index';
 import MygLayoutMenu from './../packages/layout/menu/index';
+import MygLayoutSidebar from './../packages/layout/sidebar/index';
 import MygLayoutTitlebar from './../packages/layout/titlebar/index';
 import MygLayoutToolbar from './../packages/layout/toolbar/index';
 

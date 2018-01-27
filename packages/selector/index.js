@@ -1,6 +1,6 @@
 import Form from './../index';
 
-class Select extends Form {
+class Selector extends Form {
 }
 
-export default Select;
+export default Selector;
