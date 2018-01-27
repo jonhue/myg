@@ -1,5 +1,5 @@
 import Form from './../index';
-import {MDCSelectFoundation} from '@material/select';
+import Selector from './../../selector/index';
 
 class Select extends Form {
 }
