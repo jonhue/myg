@@ -13,7 +13,17 @@
   "scripts": {
     "build": "babel src -d ./"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@material/checkbox": "^0.29.0",
+    "@material/drawer": "^0.29.0",
+    "@material/form-field": "^0.29.0",
+    "@material/menu": "^0.29.0",
+    "@material/radio": "^0.29.0",
+    "@material/select": "^0.29.0",
+    "@material/slider": "^0.29.0",
+    "@material/switch": "^0.29.0",
+    "@material/tabs": "^0.29.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0"
   }
