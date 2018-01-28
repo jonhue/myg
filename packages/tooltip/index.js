@@ -1,5 +1,5 @@
 import Myg from './../base/index';
-// import popper.js
+import * as popper from 'popper.js/dist/popper';
 
 class Tooltip extends Myg {
 }

@@ -1,5 +1,5 @@
 import Myg from './../base/index';
-// import slick-carousel
+import * as slick from 'slick-carousel/slick/slick';
 
 class Slide extends Myg {
 }
