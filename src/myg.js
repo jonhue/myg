@@ -1,38 +1,38 @@
 import Myg from '@myg/base';
 
+import MygActionButton from '@myg/action-button';
+import MygAnimate from '@myg/animate';
+import MygBase from '@myg/base';
+import MygButton from '@myg/button';
+import MygCard from '@myg/card';
+import MygCheckbox from '@myg/checkbox';
+import MygDialog from '@myg/dialog';
+import MygDrawer from '@myg/drawer';
 import MygDropdown from '@myg/dropdown';
-
-import MygForm from '@myg/form';
-import MygFormButton from '@myg/form/button';
-import MygFormCheckbox from '@myg/form/checkbox';
-import MygFormField from '@myg/form/field';
-import MygFormInput from '@myg/form/input';
-import MygFormRadio from '@myg/form/radio';
-import MygFormSelect from '@myg/form/select';
-import MygFormSlider from '@myg/form/slider';
-
+import MygElevation from '@myg/elevation';
+import MygFont from '@myg/font';
+import MygFooter from '@myg/footer';
+import MygFormField from '@myg/form-field';
+import MygGrid from '@myg/grid';
+import MygHero from '@myg/hero';
 import MygIcon from '@myg/icon';
-
-import MygLayout from '@myg/layout';
-import MygLayoutAction from '@myg/layout/action';
-import MygLayoutCard from '@myg/layout/card';
-import MygLayoutDialog from '@myg/layout/dialog';
-import MygLayoutDrawer from '@myg/layout/drawer';
-import MygLayoutFooter from '@myg/layout/footer';
-import MygLayoutMenu from '@myg/layout/menu';
-import MygLayoutModal from '@myg/layout/modal';
-import MygLayoutSidebar from '@myg/layout/sidebar';
-import MygLayoutTabs from '@myg/layout/tabs';
-import MygLayoutTitlebar from '@myg/layout/titlebar';
-import MygLayoutToast from '@myg/layout/toast';
-import MygLayoutToolbar from '@myg/layout/toolbar';
-
+import MygInput from '@myg/input';
+import MygLabel from '@myg/label';
+import MygList from '@myg/list';
+import MygMenu from '@myg/menu';
+import MygModal from '@myg/modal';
 import MygProgress from '@myg/progress';
-import MygSelector from '@myg/selector';
+import MygRadio from '@myg/radio';
+import MygSelect from '@myg/select';
+import MygSidebar from '@myg/sidebar';
 import MygSlide from '@myg/slide';
-
+import MygSlider from '@myg/slider';
+import MygSpacing from '@myg/spacing';
+import MygSwitch from '@myg/switch';
+import MygTabs from '@myg/tabs';
 import MygText from '@myg/text';
-import MygTextAction from '@myg/text/link';
-
 import MygTheme from '@myg/theme';
+import MygTitlebar from '@myg/titlebar';
+import MygToast from '@myg/toast';
+import MygToolbar from '@myg/toolbar';
 import MygTooltip from '@myg/tooltip';
