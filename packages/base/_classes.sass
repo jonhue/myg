@@ -1,69 +1,65 @@
-// Cursor
-@each $name, $value in $cursors
-    .cursor--#{$name}
-        cursor: #{value}
+=base-classes
+    // Cursor
+    @each $name, $value in $cursors
+        .cursor--#{$name}
+            +cursor($value)
 
 
-// Scrolling
-.scrollable
-    overflow-y: auto
-.not-scrollable
-    overflow-y: hidden
+    // Scrolling
+    .scrollable
+        +scrollable
+    .scrollable--m
+        +scrollable--m
+    .scrollable--c
+        +scrollable--c
+    .not-scrollable
+        +not-scrollable
+    .not-scrollable--m
+        +not-scrollable--m
+    .not-scrollable--c
+        +not-scrollable--c
 
 
-// Selecting
-.selectable
-    user-select: auto
-.selectable--auto:focus
-    user-select: all
-.not-selectable
-    user-select: none
+    // Selecting
+    .selectable
+        +selectable
+    .selectable--auto
+        +selectable--auto
+    .not-selectable
+        +not-selectable
 
 
-// Transform
-.flip--m
-    -moz-transform: scaleX(-1)
-    -o-transform: scaleX(-1)
-    -webkit-transform: scaleX(-1)
-    transform: scaleX(-1)
-    filter: FlipH
-    -ms-filter: "FlipH"
-.flip--c
-    -moz-transform: scale(1, -1)
-    -webkit-transform: scale(1, -1)
-    -o-transform: scale(1, -1)
-    -ms-transform: scale(1, -1)
-    transform: scale(1, -1)
-    filter: FlipV
-    -ms-filter: "FlipV"
+    // Transform
+    .flip--m
+        +flip--m
+    .flip--c
+        +flip--c
 
 
-// Visibility
-.display
-    display: block !important
-.not--display, .hidden
-    display: none !important
-.show
-    display: block
-.not-show, .hide
-    display: none
-.visible
-    visibility: visible
-    opacity: 1
-.not-visible, .invisible
-    visibility: hidden
-    opacity: 0
-.transparent
-    opacity: 0
-.not-transparent, .intransparent
-    opacity: 1
+    // Visibility
+    .display
+        +display
+    .hidden
+        +hidden
+    .show
+        +show
+    .hide
+        +hide
+    .visible
+        +visible
+    .invisible
+        +invisible
+    .intransparent
+        +intransparent
+    .transparent
+        +transparent
 
 
-// Progressive Web Apps
-.pwa
-    display: none
-    +pwa
-        display: block
-.not-pwa
-    +pwa
+    // Progressive Web Apps
+    .pwa
         display: none
+        +pwa
+            display: block
+    .not-pwa
+        +pwa
+            display: none

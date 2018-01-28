@@ -1,9 +1,14 @@
-// Colors
-@each $name, $color in $theme
-    @if type-of($color) == map
-        @each $subname, $subcolor in $color
-            .color--#{$name}-#{$subname}
-                color: color($name, $subname)
-    @else if type-of($color) == color
-        .color--#{$name}
-            color: color($name)
+=theme-classes
+    // Colors
+    @each $name, $color in $theme
+        @if type-of($color) == map
+            @each $subname, $subcolor in $color
+                .color--#{$name}-#{$subname}
+                    color: color($name, $subname)
+                .background--#{$name}-#{$subname}
+                    background: color($name, $subname)
+        @else if type-of($color) == color
+            .color--#{$name}
+                color: color($name)
+            .background--#{$name}
+                background: color($name)

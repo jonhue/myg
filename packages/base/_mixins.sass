@@ -12,6 +12,75 @@
         @content
 
 
+// Cursor
+=cursor($value)
+    cursor: $value
+
+
+// Scrolling
+=scrollable
+    overflow: auto
+=scrollable--m
+    overflow-x: auto
+=scrollable--c
+    overflow-y: auto
+=not-scrollable
+    overflow: hidden
+=not-scrollable--m
+    overflow-x: hidden
+=not-scrollable--c
+    overflow-y: hidden
+
+
+// Selecting
+=selectable
+    user-select: auto
+=selectable--auto
+    &:focus
+        user-select: all
+=not-selectable
+    user-select: none
+
+
+// Transform
+=flip--m
+    -moz-transform: scaleX(-1)
+    -o-transform: scaleX(-1)
+    -webkit-transform: scaleX(-1)
+    transform: scaleX(-1)
+    filter: FlipH
+    -ms-filter: "FlipH"
+=flip--c
+    -moz-transform: scale(1, -1)
+    -webkit-transform: scale(1, -1)
+    -o-transform: scale(1, -1)
+    -ms-transform: scale(1, -1)
+    transform: scale(1, -1)
+    filter: FlipV
+    -ms-filter: "FlipV"
+
+
+// Visibility
+=display
+    display: block !important
+=hidden
+    display: none !important
+=show
+    display: block
+=hide
+    display: none
+=visible
+    visibility: visible
+    opacity: 1
+=invisible
+    visibility: hidden
+    opacity: 0
+=intransparent
+    opacity: 1
+=transparent
+    opacity: 0
+
+
 // Progressive Web Apps
 =pwa
     @media all and (display-mode: standalone)
