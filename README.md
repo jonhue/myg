@@ -16,12 +16,6 @@ An opinionated & modular state-of-the-web framework.
     * [Stylesheets](#stylesheets)
     * [Javascript](#javascript)
 * [Components](#components)
-    * [Base](#base)
-    * [Layout](#layout)
-    * [Form](#form)
-    * [Text](#text)
-    * [Theme](#theme)
-    * [...](#...)
 * [Themes](#themes)
 * [To Do](#to-do)
 * [Contributing](#contributing)
@@ -73,64 +67,41 @@ import * as myg from 'myg/src/myg.js'
 
 ## Components
 
-### Base
-
-* **[Base](packages/base)**
-* **[Grid](packages/grid)**
-
-### Layout
-
-* **[Layout](packages/layout)**
-* **[(Call To) Action](packages/layout/action)**
-* **[Card](packages/layout/card)**
-* **[Dialog](packages/layout/dialog)**
-* **[Drawer](packages/layout/drawer)**
-* **[Footer](packages/layout/footer)**
-* **[Header](packages/layout/header)**
-* **[Menu](packages/layout/menu)**
-* **[Modal](packages/layout/modal)**
-* **[Sidebar](packages/layout/sidebar)**
-* **[Tabs](packages/layout/tabs)**
-* **[Titlebar](packages/layout/titlebar)**
-* **[Toast](packages/layout/toast)**
-* **[Toolbar](packages/layout/toolbar)**
-
-### Form
-
-* **[Form](packages/form)**
-* **[Button](packages/form/button)**
-* **[Checkbox](packages/form/checkbox)**
-* **[(Form) Field](packages/form/field)**
-* **[Input](packages/form/input)**
-* **[Label](packages/form/label)**
-* **[Radio](packages/form/radio)**
-* **[Select](packages/form/select)**
-* **[Slider](packages/form/slider)**
-* **[Switch](packages/form/switch)**
-
-### Text
-
-* **[Text](packages/text)**
-* **[Heading](packages/text/heading)**
-* **[Link](packages/text/link)**
-* **[Paragraph](packages/text/paragraph)**
-
-### Theme
-
-* **[Theme](packages/theme)**
-* **[Typography](packages/theme/typography)**
-
-### ...
-
+* **[ActionButton](packages/action-button)**
 * **[Animate](packages/animate)**
+* **[Base](packages/base)**
+* **[Button](packages/button)**
+* **[Card](packages/card)**
+* **[Checkbox](packages/checkbox)**
+* **[Dialog](packages/dialog)**
+* **[Drawer](packages/drawer)**
 * **[Dropdown](packages/dropdown)**
 * **[Elevation](packages/elevation)**
+* **[Font](packages/font)**
+* **[Footer](packages/footer)**
+* **[FormField](packages/form-field)**
+* **[Grid](packages/grid)**
+* **[Hero](packages/hero)**
 * **[Icon](packages/icon)**
+* **[Input](packages/input)**
+* **[Label](packages/label)**
 * **[List](packages/list)**
+* **[Menu](packages/menu)**
+* **[Modal](packages/modal)**
 * **[Progress](packages/progress)**
-* **[Selector](packages/selector)**
+* **[Radio](packages/radio)**
+* **[Select](packages/select)**
+* **[Sidebar](packages/sidebar)**
 * **[Slide](packages/slide)**
+* **[Slider](packages/slider)**
 * **[Spacing](packages/spacing)**
+* **[Switch](packages/switch)**
+* **[Tabs](packages/tabs)**
+* **[Text](packages/text)**
+* **[Theme](packages/theme)**
+* **[Titlebar](packages/titlebar)**
+* **[Toast](packages/toast)**
+* **[Toolbar](packages/toolbar)**
 * **[Tooltip](packages/tooltip)**
 
 ---
