@@ -1,4 +1,4 @@
-import Myg from '@myg/base';
+import base.Myg from '@myg/base';
 
 import actionButton.MygActionButton from '@myg/action-button';
 import base.MygBase from '@myg/base';
