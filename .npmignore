@@ -1,5 +1,9 @@
 .github
+node_modules
+packages
+.gitignore
 .travis.yml
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
+webpack.config.js
 yarn.lock
