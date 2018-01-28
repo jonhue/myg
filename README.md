@@ -74,12 +74,17 @@ import * as myg from 'myg/src/myg.js'
 
 * **[Layout](packages/layout)**
 * **[(Call To) Action](packages/layout/action)**
+* **[Card](packages/layout/card)**
+* **[Dialog](packages/layout/dialog)**
 * **[Drawer](packages/layout/drawer)**
 * **[Footer](packages/layout/footer)**
 * **[Header](packages/layout/header)**
 * **[Menu](packages/layout/menu)**
+* **[Modal](packages/layout/modal)**
 * **[Sidebar](packages/layout/sidebar)**
+* **[Tabs](packages/layout/tabs)**
 * **[Titlebar](packages/layout/titlebar)**
+* **[Toast](packages/layout/toast)**
 * **[Toolbar](packages/layout/toolbar)**
 
 ### Form
@@ -110,19 +115,14 @@ import * as myg from 'myg/src/myg.js'
 ### ...
 
 * **[Animate](packages/animate)**
-* **[Card](packages/card)**
-* **[Dialog](packages/dialog)**
 * **[Dropdown](packages/dropdown)**
 * **[Elevation](packages/elevation)**
 * **[Icon](packages/icon)**
 * **[List](packages/list)**
-* **[Modal](packages/modal)**
 * **[Progress](packages/progress)**
 * **[Selector](packages/selector)**
 * **[Slide](packages/slide)**
 * **[Spacing](packages/spacing)**
-* **[Tabs](packages/tabs)**
-* **[Toast](packages/toast)**
 * **[Tooltip](packages/tooltip)**
 
 ---

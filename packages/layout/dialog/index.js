@@ -1,7 +1,7 @@
-import Myg from './../base/index';
+import Layout from './../index';
 import {MDCDialog, MDCDialogFoundation, util} from '@material/dialog';
 
-class Dialog extends Myg {
+class Dialog extends Layout {
 }
 
 export default Dialog;
