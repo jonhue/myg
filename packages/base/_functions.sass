@@ -1,0 +1,9 @@
+// Use CSS variable
+@function v($name)
+    @return var(--#{$name})
+
+// Sizes
+@function px($px, $element-font-size:16)
+    @return $px/$element-font-size+em
+@function rpx($px, $element-font-size:16)
+    @return $px/$element-font-size+rem

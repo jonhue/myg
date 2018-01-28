@@ -1,0 +1,25 @@
+$breakpoints: (
+    phone: 512px,
+    tablet: 768px,
+    laptop: 1024px,
+    large: 1280px,
+    desktop: 1920px
+);
+
+@mixin bigger-than($breakpoint) {
+    @media ( min-width: #{map-get($breakpoints, $breakpoint)} ) {
+        @content
+    }
+}
+
+@mixin smaller-than($breakpoint) {
+    @media ( max-width: #{map-get($breakpoints, $breakpoint)} ) {
+        @content
+    }
+}
+
+@mixin pwa() {
+    @media all and (display-mode: standalone) {
+        @content
+    }
+}

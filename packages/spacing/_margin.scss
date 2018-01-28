@@ -1,0 +1,16 @@
+$margin: (
+    tn: px(15),
+    sm: px(20),
+    md: px(30),
+    lg: px(50)
+);
+
+:root {
+    @each $name, $margin-size in $margin {
+        +v(margin-#{$name}, $margin-size)
+    }
+}
+
+@function margin($margin-name) {
+    @return v(margin-#{$margin-name})
+}
