@@ -1,4 +1,4 @@
-# Icons
+# Titlebars
 
 ## Usage
 
@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "@myg/icons/icons"
+@import "@myg/titlebar/titlebar"
 ```
 
 ### Javascript
@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygIcon from '@myg/icons'
+import MygTitlebar from '@myg/titlebar'
 ```
 
 or
 
 ```js
 import * as myg from 'myg/src/myg'
-const MygIcon = myg.MygIcon;
+const MygTitlebar = myg.MygTitlebar;
 ```
