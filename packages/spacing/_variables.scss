@@ -4,7 +4,7 @@ $margin: (
     sm: px(20),
     md: px(30),
     lg: px(50)
-);
+) !default;
 
 
 // Padding
@@ -13,4 +13,4 @@ $padding: (
     sm: px(20),
     md: px(30),
     lg: px(50)
-);
+) !default;

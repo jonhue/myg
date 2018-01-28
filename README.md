@@ -16,7 +16,6 @@ An opinionated & modular state-of-the-web framework.
     * [Stylesheets](#stylesheets)
     * [Javascript](#javascript)
 * [Components](#components)
-* [Themes](#themes)
 * [To Do](#to-do)
 * [Contributing](#contributing)
     * [Contributors](#contributors)
@@ -103,12 +102,6 @@ import * as myg from 'myg/src/myg'
 * **[Toasts](packages/toast)**
 * **[Toolbars](packages/toolbar)**
 * **[Tooltips](packages/tooltip)**
-
----
-
-## Themes
-
-...
 
 ---
 

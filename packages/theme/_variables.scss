@@ -25,7 +25,7 @@ $theme: (
     error: #f6809a,
     success: #6adb83,
     overlay: transparentize(#e7eCf0, 0.13)
-);
+) !default;
 
 
 // Border Radius
@@ -34,7 +34,7 @@ $border-radius: (
     sm: px(3),
     md: px(5),
     lg: px(10)
-);
+) !default;
 
 
 // Scrollbar
@@ -44,4 +44,4 @@ $scrollbar: (
     thumb-border-radius: rpx(2.5),
     thumb-background: color(border),
     thumb-hover-background: color(text, dark)
-);
+) !default;
