@@ -24,7 +24,7 @@
         "@myg/drawer": "file:./packages/drawer",
         "@myg/dropdown": "file:./packages/dropdown",
         "@myg/elevation": "file:./packages/elevation",
-        "@myg/font": "file:./packages/icon",
+        "@myg/font": "file:./packages/font",
         "@myg/footer": "file:./packages/footer",
         "@myg/form-field": "file:./packages/form-field",
         "@myg/grid": "file:./packages/grid",
