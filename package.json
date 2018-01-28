@@ -2,7 +2,7 @@
   "name": "myg",
   "version": "1.0.0",
   "description": "An opinionated & adaptive state-of-the-web framework",
-  "main": "myg.js",
+  "main": "src/myg.js",
   "bugs": {
     "url": "https://github.com/jonhue/myg/issues",
     "email": "me@jonhue.me"
@@ -11,7 +11,7 @@
   "author": "Jonas Hübotter <me@jonhue.me>",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d ./"
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "@material/checkbox": "^0.29.0",
@@ -34,6 +34,6 @@
     "welcomer": "^1.2.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "webpack": "^3.10.0"
   }
 }

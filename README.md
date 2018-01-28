@@ -41,8 +41,16 @@ An opinionated & adaptive state-of-the-web framework.
 
 ### Stylesheets
 
+**Sass**
+
 ```sass
 @import "myg/src/myg.sass"
+```
+
+**CSS3**
+
+```css
+@import "myg/dist/myg.min.css";
 ```
 
 ### Javascript
@@ -56,7 +64,7 @@ import * as myg from 'myg/src/myg.js'
 **ES5 (Sprockets)**
 
 ```js
-//= require myg/myg.js
+//= require myg/dist/myg.js
 ```
 
 ...
