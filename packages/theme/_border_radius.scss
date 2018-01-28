@@ -1,0 +1,15 @@
+$border-radius: (
+    sm: px(3),
+    md: px(5),
+    lg: px(10)
+);
+
+:root {
+    @each $name, $border-radius-size in $border-radius {
+        +v(border-radius-#{$name}, $border-radius-size)
+    }
+}
+
+@function border-radius($border-radius-size) {
+    @return v(border-radius-#{$border-radius-size})
+}
