@@ -53,6 +53,12 @@ An opinionated & adaptive state-of-the-web framework.
 import * as myg from 'myg/src/myg.js'
 ```
 
+**ES5 (Sprockets)**
+
+```js
+//= require myg/myg.js
+```
+
 ...
 
 ---
