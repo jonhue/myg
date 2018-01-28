@@ -1,55 +1,231 @@
 /* Flexbox */
 
-=center
+
+// Base
+=flex
     display: flex
+
+
+// Container
+=flex-container--center
+    +flex
+    align-content: center
+=flex-container--start
+    +flex
+    align-content: flex-start
+=flex-container--end
+    +flex
+    align-content: flex-end
+=flex-container--space-between
+    +flex
+    align-content: space-between
+=flex-container--space-around
+    +flex
+    align-content: space-around
+=flex-container--space-evenly
+    +flex
+    align-content: space-evenly
+
+
+// Items
+=flex--center
+    +flex
     align-items: center
     justify-content: center
-=center--v
-    display: flex
+=flex--center-m
+    +flex
     justify-content: center
-=center--h
-    display: flex
+=flex--center-c
+    +flex
     align-items: center
-=center-self
-    align-self: center
-    justify-self: center
-=center-self--v
-    justify-self: center
-=center-self--h
-    align-self: center
-
-=flex-start
-    display: flex
+=flex--start
+    +flex
     align-items: flex-start
     justify-content: flex-start
-=flex-start--v
-    display: flex
+=flex--start-m
+    +flex
     justify-content: flex-start
-=flex-start--h
-    display: flex
+=flex--start-c
+    +flex
     align-items: flex-start
-=flex-start-self
-    align-self: flex-start
-    justify-self: flex-start
-=flex-start-self--v
-    justify-self: flex-start
-=flex-start-self--h
-    align-self: flex-start
+=flex--end
+    +flex
+    align-items: flex-end
+    justify-content: flex-end
+=flex--end-m
+    +flex
+    justify-content: flex-end
+=flex--end-c
+    +flex
+    align-items: flex-end
 
-=flex-end
-    display: flex
-    align-items: flex-end
-    justify-content: flex-end
-=flex-end--v
-    display: flex
-    justify-content: flex-end
-=flex-end--h
-    display: flex
-    align-items: flex-end
-=flex-end-self
+
+// Self
+=flex-self--center
+    align-self: center
+=flex-self--start
+    align-self: flex-start
+=flex-self--end
     align-self: flex-end
-    justify-self: flex-end
-=flex-end-self--v
-    justify-self: flex-end
-=flex-end-self--h
-    align-self: flex-end
+
+
+
+
+
+/* Grid */
+
+
+// Base
+=grid
+    display: grid
+=grid-columns($value)
+    +grid
+    grid-template-columns: $value
+=grid-rows($value)
+    +grid
+    grid-template-rows: $value
+=grid-areas($value)
+    +grid
+    grid-template-areas: $value
+=grid-template($rows, $columns, $areas: null)
+    +grid
+    +rows($rows)
+    +columns($columns)
+    @if ( $areas != null )
+        +areas($areas)
+=grid-gap($value, $type: null)
+    @if ( $type == null )
+        grid-gap: $value
+    @else if ( $type == "column" )
+        grid-column-gap: $value
+    @else if ( $type == "row" )
+        grid-row-gap: $value
+
+
+// Container
+=grid-container--center
+    +grid
+    align-content: center
+    justify-content: center
+=grid-container--center-m
+    +grid
+    justify-content: center
+=grid-container--center-c
+    +grid
+    align-content: center
+
+=grid-container--start
+    +grid
+    align-content: start
+    justify-content: start
+=grid-container--start-m
+    +grid
+    justify-content: start
+=grid-container--start-c
+    +grid
+    align-content: start
+
+=grid-container--end
+    +grid
+    align-content: end
+    justify-content: end
+=grid-container--end-m
+    +grid
+    justify-content: end
+=grid-container--end-c
+    +grid
+    align-content: end
+
+=grid-container--space-between
+    +grid
+    align-content: space-between
+    justify-content: space-between
+=grid-container--space-between-m
+    +grid
+    justify-content: space-between
+=grid-container--space-between-c
+    +grid
+    align-content: space-between
+
+=grid-container--space-around
+    +grid
+    align-content: space-around
+    justify-content: space-around
+=grid-container--space-around-m
+    +grid
+    justify-content: space-around
+=grid-container--space-around-c
+    +grid
+    align-content: space-around
+
+=grid-container--space-evenly
+    +grid
+    align-content: space-evenly
+    justify-content: space-evenly
+=grid-container--space-evenly-m
+    +grid
+    justify-content: space-evenly
+=grid-container--space-evenly-c
+    +grid
+    align-content: space-evenly
+
+
+// Items
+=grid--center
+    +grid
+    align-items: center
+    justify-items: center
+=grid--center-m
+    +grid
+    justify-items: center
+=grid--center-c
+    +grid
+    align-items: center
+=grid--start
+    +grid
+    align-items: start
+    justify-items: start
+=grid--start-m
+    +grid
+    justify-items: start
+=grid--start-c
+    +grid
+    align-items: start
+=grid--end
+    +grid
+    align-items: end
+    justify-items: end
+=grid--end-m
+    +grid
+    justify-items: end
+=grid--end-c
+    +grid
+    align-items: end
+
+
+// Self
+=grid-column($start, $end)
+    grid-column: $start / $end
+=grid-row($start, $end)
+    grid-row: $start / $end
+=grid-self--center
+    justify-self: center
+    align-self: center
+=grid-self--center-m
+    justify-self: center
+=grid-self--center-c
+    align-self: center
+=grid-self--start
+    justify-self: start
+    align-self: start
+=grid-self--start-m
+    justify-self: start
+=grid-self--start-c
+    align-self: start
+=grid-self--end
+    justify-self: end
+    align-self: end
+=grid-self--end-m
+    justify-self: end
+=grid-self--end-c
+    align-self: end
