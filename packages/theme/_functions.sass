@@ -1,0 +1,17 @@
+// Colors
+@function color($color-name, $color-variant:null, $true-val:false)
+    @if $true-val == true
+        @if ( $color-variant != null )
+            @return map-get(map-get($theme,$color-name),$color-variant)
+        @else
+            @return map-get($theme,$color-name)
+    @else
+        @if ( $color-variant != null )
+            @return v(color-#{$color-name}-#{$color-variant})
+        @else
+            @return v(color-#{$color-name})
+
+
+// Scrollbar
+@function scrollbar($scrollbar-attribute)
+    @return v(scrollbar-#{$scrollbar-attribute})

@@ -1,0 +1,77 @@
+/* Flexbox */
+
+.flex
+    display: flex
+    &.reverse
+        flex-direction: row-reverse
+    &.center
+        +center
+    &.center--v
+        +center--v
+    &.center--h
+        +center--h
+    &.flex-start
+        +flex-start
+    &.flex-start--v
+        +flex-start--v
+    &.flex-start--h
+        +flex-start--h
+    &.flex-end
+        +flex-end
+    &.flex-end--v
+        +flex-end--v
+    &.flex-end--h
+        +flex-end--h
+    &.column
+        flex-direction: column
+        &.reverse
+            flex-direction: column-reverse
+        &.center--v
+            +center--h
+        &.center--h
+            +center--v
+        & > .center-self--v
+            +center-self--h
+        & > .center-self--h
+            +center-self--v
+        &.flex-start--v
+            +flex-start--h
+        &.flex-start--h
+            +flex-start--v
+        & > .flex-start-self--v
+            +flex-start-self--h
+        & > .flex-start-self--h
+            +flex-start-self--v
+        &.flex-end--v
+            +flex-end--h
+        &.flex-end--h
+            +flex-end--v
+        & > .flex-end-self--v
+            +flex-end-self--h
+        & > .flex-end-self--h
+            +flex-end-self--v
+    &.space-around
+        justify-content: space-around
+    &.space-between
+        justify-content: space-between
+    &.wrap
+        flex-wrap: wrap
+
+    & > .center-self
+        +center-self
+    & > .center-self--v
+        +center-self--v
+    & > .center-self--h
+        +center-self--h
+    & > .flex-start-self
+        +flex-start-self
+    & > .flex-start-self--v
+        +flex-start-self--v
+    & > .flex-start-self--h
+        +flex-start-self--h
+    & > .flex-end-self
+        +flex-end-self
+    & > .flex-end-self--v
+        +flex-end-self--v
+    & > .flex-end-self--h
+        +flex-end-self--h

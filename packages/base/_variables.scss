@@ -1,0 +1,22 @@
+// Breakpoints
+$breakpoints: (
+    phone: 512px,
+    tablet: 768px,
+    laptop: 1024px,
+    large: 1280px,
+    desktop: 1920px
+);
+
+
+// Cursor
+$cursors: (
+    default: default,
+    text: text,
+    pointer: pointer,
+    help: help,
+    move: move,
+    grab: grab,
+    progress:
+    progress,
+    wait: wait
+);
