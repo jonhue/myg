@@ -1,7 +1,7 @@
 # Myg
 
 ![NPM Version](https://img.shields.io/npm/v/myg.svg)
-<img src="https://travis-ci.org/jonhue/myg.js.svg?branch=master" />
+<img src="https://travis-ci.org/jonhue/myg.svg?branch=master" />
 
 An opinionated & adaptive state-of-the-web framework.
 
