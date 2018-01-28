@@ -38,13 +38,13 @@ An opinionated & modular state-of-the-web framework.
 **Sass**
 
 ```sass
-@import "myg/src/myg.sass"
+@import "myg/src/myg"
 ```
 
 **CSS3**
 
 ```css
-@import "myg/dist/myg.min.css";
+@import "myg/dist/myg.min";
 ```
 
 ### Javascript
@@ -52,13 +52,13 @@ An opinionated & modular state-of-the-web framework.
 **ES6**
 
 ```js
-import * as myg from 'myg/src/myg.js'
+import * as myg from 'myg/src/myg'
 ```
 
 **ES5 (Sprockets)**
 
 ```js
-//= require myg/dist/myg.js
+//= require myg/dist/myg
 ```
 
 ...
@@ -67,42 +67,42 @@ import * as myg from 'myg/src/myg.js'
 
 ## Components
 
-* **[ActionButton](packages/action-button)**
+* **[Action Buttons](packages/action-button)**
 * **[Animate](packages/animate)**
 * **[Base](packages/base)**
-* **[Button](packages/button)**
-* **[Card](packages/card)**
-* **[Checkbox](packages/checkbox)**
-* **[Dialog](packages/dialog)**
-* **[Drawer](packages/drawer)**
-* **[Dropdown](packages/dropdown)**
+* **[Buttons](packages/button)**
+* **[Cards](packages/card)**
+* **[Checkboxes](packages/checkbox)**
+* **[Dialogs](packages/dialog)**
+* **[Drawers](packages/drawer)**
+* **[Dropdowns](packages/dropdown)**
 * **[Elevation](packages/elevation)**
-* **[Font](packages/font)**
-* **[Footer](packages/footer)**
-* **[FormField](packages/form-field)**
-* **[Grid](packages/grid)**
-* **[Hero](packages/hero)**
-* **[Icon](packages/icon)**
-* **[Input](packages/input)**
-* **[Label](packages/label)**
-* **[List](packages/list)**
-* **[Menu](packages/menu)**
-* **[Modal](packages/modal)**
-* **[Progress](packages/progress)**
-* **[Radio](packages/radio)**
-* **[Select](packages/select)**
-* **[Sidebar](packages/sidebar)**
-* **[Slide](packages/slide)**
-* **[Slider](packages/slider)**
+* **[Fonts](packages/font)**
+* **[Footers](packages/footer)**
+* **[Form Fields](packages/form-field)**
+* **[Grids](packages/grid)**
+* **[Heros](packages/hero)**
+* **[Icons](packages/icon)**
+* **[Inputs](packages/input)**
+* **[Labels](packages/label)**
+* **[Lists](packages/list)**
+* **[Menus](packages/menu)**
+* **[Modals](packages/modal)**
+* **[Progress Bars](packages/progress)**
+* **[Radio Buttons](packages/radio)**
+* **[Select Menus](packages/select)**
+* **[Sidebars](packages/sidebar)**
+* **[Slides](packages/slide)**
+* **[Sliders](packages/slider)**
 * **[Spacing](packages/spacing)**
-* **[Switch](packages/switch)**
+* **[Switches](packages/switch)**
 * **[Tabs](packages/tabs)**
-* **[Text](packages/text)**
-* **[Theme](packages/theme)**
-* **[Titlebar](packages/titlebar)**
-* **[Toast](packages/toast)**
-* **[Toolbar](packages/toolbar)**
-* **[Tooltip](packages/tooltip)**
+* **[Texts](packages/text)**
+* **[Themes](packages/theme)**
+* **[Titlebars](packages/titlebar)**
+* **[Toasts](packages/toast)**
+* **[Toolbars](packages/toolbar)**
+* **[Tooltips](packages/tooltip)**
 
 ---
 
