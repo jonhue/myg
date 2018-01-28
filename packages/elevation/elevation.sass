@@ -1,1 +1,7 @@
-@import "_box_shadow"
+@import "_variables"
+@import "_mixins"
+
+
+html
+    @each $name, $box-shadow in $box-shadows
+        +v(box-shadow-#{$name}, $box-shadow)

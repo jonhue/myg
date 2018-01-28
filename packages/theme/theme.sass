@@ -9,9 +9,9 @@ html
         @each $name, $color in $theme
             @if type-of($color) == map
                 @each $subname, $subcolor in $color
-                    =v(color-#{$name}-#{$subname}, $subcolor)
+                    +v(color-#{$name}-#{$subname}, $subcolor)
             @else if type-of($color) == color
-                =v(color-#{$name}, $color)
+                +v(color-#{$name}, $color)
         @each $name, $border-radius-size in $border-radius
             +v(border-radius-#{$name}, $border-radius-size)
         @each $name, $scrollbar-attribute in $scrollbar
