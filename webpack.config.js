@@ -11,9 +11,13 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.(s*)(a|c)ss$/,
+            test: /\.sass$/,
             use: [{
-                loader: "sass-loader",
+                loader: 'style-loader'
+            }, {
+                loader: 'css-loader'
+            }, {
+                loader: 'sass-loader',
                 options: {
                     includePaths: [path.resolve(__dirname, 'node_modules')]
                 }
