@@ -12,6 +12,12 @@
         @content
 
 
+// Progressive Web Apps
+=pwa
+    @media all and (display-mode: standalone)
+        @content
+
+
 // Cursor
 =cursor($value)
     cursor: $value
@@ -79,9 +85,3 @@
     opacity: 1
 =transparent
     opacity: 0
-
-
-// Progressive Web Apps
-=pwa
-    @media all and (display-mode: standalone)
-        @content

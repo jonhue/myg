@@ -1,0 +1,13 @@
+{
+    "name": "@myg/list",
+    "version": "1.0.0",
+    "description": "...",
+    "main": "list.sass",
+    "bugs": {
+        "url": "https://github.com/jonhue/myg/issues",
+        "email": "me@jonhue.me"
+    },
+    "repository": "https://github.com/jonhue/myg/tree/master/packages/list",
+    "author": "Jonas Hübotter <me@jonhue.me>",
+    "license": "MIT"
+}

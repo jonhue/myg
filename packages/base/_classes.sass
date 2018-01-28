@@ -1,4 +1,14 @@
 =base-classes
+    // Progressive Web Apps
+    .pwa
+    display: none
+    +pwa
+        display: block
+    .not-pwa
+    +pwa
+        display: none
+
+
     // Cursor
     @each $name, $value in $cursors
         .cursor--#{$name}
@@ -53,13 +63,3 @@
         +intransparent
     .transparent
         +transparent
-
-
-    // Progressive Web Apps
-    .pwa
-        display: none
-        +pwa
-            display: block
-    .not-pwa
-        +pwa
-            display: none

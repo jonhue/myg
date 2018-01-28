@@ -1,0 +1,16 @@
+{
+    "name": "@myg/switch",
+    "version": "1.0.0",
+    "description": "...",
+    "main": "switch.sass",
+    "bugs": {
+        "url": "https://github.com/jonhue/myg/issues",
+        "email": "me@jonhue.me"
+    },
+    "repository": "https://github.com/jonhue/myg/tree/master/packages/switch",
+    "author": "Jonas Hübotter <me@jonhue.me>",
+    "license": "MIT",
+    "dependencies": {
+        "@material/switch": "^0.29.0"
+    }
+}

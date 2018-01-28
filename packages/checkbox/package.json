@@ -1,0 +1,16 @@
+{
+    "name": "@myg/checkbox",
+    "version": "1.0.0",
+    "description": "...",
+    "main": "index.js",
+    "bugs": {
+        "url": "https://github.com/jonhue/myg/issues",
+        "email": "me@jonhue.me"
+    },
+    "repository": "https://github.com/jonhue/myg/tree/master/packages/checkbox",
+    "author": "Jonas Hübotter <me@jonhue.me>",
+    "license": "MIT",
+    "dependencies": {
+        "@material/checkbox": "^0.29.0"
+    }
+}

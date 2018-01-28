@@ -1,4 +1,4 @@
-import Myg from './../base/index';
+import Myg from '@myg/base';
 import {MDCLinearProgressFoundation} from '@material/linear-progress';
 
 class Progress extends Myg {

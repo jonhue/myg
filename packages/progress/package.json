@@ -1,0 +1,16 @@
+{
+    "name": "@myg/progress",
+    "version": "1.0.0",
+    "description": "...",
+    "main": "index.js",
+    "bugs": {
+        "url": "https://github.com/jonhue/myg/issues",
+        "email": "me@jonhue.me"
+    },
+    "repository": "https://github.com/jonhue/myg/tree/master/packages/progress",
+    "author": "Jonas Hübotter <me@jonhue.me>",
+    "license": "MIT",
+    "dependencies": {
+        "@material/linear-progress": "^0.29.0"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "@myg/animate",
+    "version": "1.0.0",
+    "description": "...",
+    "main": "animate.sass",
+    "bugs": {
+        "url": "https://github.com/jonhue/myg/issues",
+        "email": "me@jonhue.me"
+    },
+    "repository": "https://github.com/jonhue/myg/tree/master/packages/animate",
+    "author": "Jonas Hübotter <me@jonhue.me>",
+    "license": "MIT",
+    "dependencies": {
+        "animate.css": "^3.5.2"
+    }
+}

@@ -1,4 +1,4 @@
-import Myg from './../base/index';
+import Myg from '@myg/base';
 
 class Icon extends Myg {
 }

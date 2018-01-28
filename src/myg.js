@@ -1,38 +1,38 @@
-import Myg from './../packages/base/index';
+import Myg from '@myg/base';
 
-import MygDropdown from './../packages/dropdown/index';
+import MygDropdown from '@myg/dropdown';
 
-import MygForm from './../packages/form/index';
-import MygFormButton from './../packages/form/button/index';
-import MygFormCheckbox from './../packages/form/checkbox/index';
-import MygFormField from './../packages/form/field/index';
-import MygFormInput from './../packages/form/input/index';
-import MygFormRadio from './../packages/form/radio/index';
-import MygFormSelect from './../packages/form/select/index';
-import MygFormSlider from './../packages/form/slider/index';
+import MygForm from '@myg/form';
+import MygFormButton from '@myg/form/button';
+import MygFormCheckbox from '@myg/form/checkbox';
+import MygFormField from '@myg/form/field';
+import MygFormInput from '@myg/form/input';
+import MygFormRadio from '@myg/form/radio';
+import MygFormSelect from '@myg/form/select';
+import MygFormSlider from '@myg/form/slider';
 
-import MygIcon from './../packages/icon/index';
+import MygIcon from '@myg/icon';
 
-import MygLayout from './../packages/layout/index';
-import MygLayoutAction from './../packages/layout/action/index';
-import MygLayoutCard from './../packages/layout/card/index';
-import MygLayoutDialog from './../packages/layout/dialog/index';
-import MygLayoutDrawer from './../packages/layout/drawer/index';
-import MygLayoutFooter from './../packages/layout/footer/index';
-import MygLayoutMenu from './../packages/layout/menu/index';
-import MygLayoutModal from './../packages/layout/modal/index';
-import MygLayoutSidebar from './../packages/layout/sidebar/index';
-import MygLayoutTabs from './../packages/layout/tabs/index';
-import MygLayoutTitlebar from './../packages/layout/titlebar/index';
-import MygLayoutToast from './../packages/layout/toast/index';
-import MygLayoutToolbar from './../packages/layout/toolbar/index';
+import MygLayout from '@myg/layout';
+import MygLayoutAction from '@myg/layout/action';
+import MygLayoutCard from '@myg/layout/card';
+import MygLayoutDialog from '@myg/layout/dialog';
+import MygLayoutDrawer from '@myg/layout/drawer';
+import MygLayoutFooter from '@myg/layout/footer';
+import MygLayoutMenu from '@myg/layout/menu';
+import MygLayoutModal from '@myg/layout/modal';
+import MygLayoutSidebar from '@myg/layout/sidebar';
+import MygLayoutTabs from '@myg/layout/tabs';
+import MygLayoutTitlebar from '@myg/layout/titlebar';
+import MygLayoutToast from '@myg/layout/toast';
+import MygLayoutToolbar from '@myg/layout/toolbar';
 
-import MygProgress from './../packages/progress/index';
-import MygSelector from './../packages/selector/index';
-import MygSlide from './../packages/slide/index';
+import MygProgress from '@myg/progress';
+import MygSelector from '@myg/selector';
+import MygSlide from '@myg/slide';
 
-import MygText from './../packages/text/index';
-import MygTextAction from './../packages/text/link/index';
+import MygText from '@myg/text';
+import MygTextAction from '@myg/text/link';
 
-import MygTheme from './../packages/theme/index';
-import MygTooltip from './../packages/tooltip/index';
+import MygTheme from '@myg/theme';
+import MygTooltip from '@myg/tooltip';

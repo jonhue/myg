@@ -3,7 +3,7 @@
 ![NPM Version](https://img.shields.io/npm/v/myg.svg)
 <img src="https://travis-ci.org/jonhue/myg.svg?branch=master" />
 
-An opinionated & adaptive state-of-the-web framework.
+An opinionated & modular state-of-the-web framework.
 
 **Disclaimer:** Myg really is a state-of-the-web framework. It utilizes CSS variables, CSS grid and ES6. Better be aware before throwing it around.
 
