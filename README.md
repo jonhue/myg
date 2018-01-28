@@ -13,6 +13,8 @@ An opinionated & adaptive state-of-the-web framework.
 
 * [Philosophy](#philosophy)
 * [Usage](#usage)
+    * [Stylesheets](#stylesheets)
+    * [Javascript](#javascript)
 * [Components](#components)
     * [Base](#base)
     * [Layout](#layout)
@@ -36,6 +38,20 @@ An opinionated & adaptive state-of-the-web framework.
 ---
 
 ## Usage
+
+### Stylesheets
+
+```sass
+@import "myg/src/myg.sass"
+```
+
+### Javascript
+
+**ES6**
+
+```js
+import * as myg from 'myg/src/myg.js'
+```
 
 ...
 
