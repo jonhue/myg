@@ -11,6 +11,7 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "@material/switch": "^0.29.0"
+        "@material/switch": "^0.29.0",
+        "@myg/base": "file:./../base"
     }
 }

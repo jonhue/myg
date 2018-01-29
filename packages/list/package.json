@@ -9,5 +9,8 @@
     },
     "repository": "https://github.com/jonhue/myg/tree/master/packages/list",
     "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "@myg/base": "file:./../base"
+    }
 }

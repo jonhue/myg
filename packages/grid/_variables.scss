@@ -1,0 +1,8 @@
+// Breakpoints
+$breakpoints: (
+    phone: 512px,
+    tablet: 768px,
+    laptop: 1024px,
+    large: 1280px,
+    desktop: 1920px
+) !default;

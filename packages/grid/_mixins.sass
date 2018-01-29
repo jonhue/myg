@@ -1,3 +1,13 @@
+// Breakpoints
+=bigger-than($breakpoint)
+    @media ( min-width: #{map-get($breakpoints, $breakpoint)} )
+        @content
+=smaller-than($breakpoint)
+    @media ( max-width: #{map-get($breakpoints, $breakpoint)} )
+        @content
+
+
+
 /* Flexbox */
 
 

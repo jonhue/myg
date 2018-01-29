@@ -11,6 +11,7 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "welcomer": "^1.2.3"
+        "welcomer": "^1.2.3",
+        "@myg/base": "file:./../base"
     }
 }
