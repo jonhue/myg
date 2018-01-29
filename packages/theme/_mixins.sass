@@ -1,3 +1,13 @@
+// Colors
+=theme($colors)
+    @each $name, $color in $colors
+        @if type-of($color) == map
+            @each $subname, $subcolor in $color
+                +v(color-#{$name}-#{$subname}, $subcolor)
+        @else if type-of($color) == color
+            +v(color-#{$name}, $color)
+
+
 // Border Radius
 =border-radius($border-radius)
     border-radius: v(border-radius-#{$border-radius})
