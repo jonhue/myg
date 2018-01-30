@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygTitlebar from '@myg/titlebar'
+import MygTitlebar from '@myg/titlebar';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg'
+import * as myg from 'myg/src/myg';
 const MygTitlebar = myg.MygTitlebar;
 ```

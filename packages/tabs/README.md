@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygTab from '@myg/tabs'
+import MygTab from '@myg/tabs';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg'
+import * as myg from 'myg/src/myg';
 const MygTab = myg.MygTab;
 ```

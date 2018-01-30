@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygIcon from '@myg/icons'
+import MygIcon from '@myg/icons';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg'
+import * as myg from 'myg/src/myg';
 const MygIcon = myg.MygIcon;
 ```

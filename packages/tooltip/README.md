@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygTooltip from '@myg/tooltip'
+import MygTooltip from '@myg/tooltip';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg'
+import * as myg from 'myg/src/myg';
 const MygTooltip = myg.MygTooltip;
 ```

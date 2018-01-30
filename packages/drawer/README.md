@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygDrawer from '@myg/drawer'
+import MygDrawer from '@myg/drawer';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg'
+import * as myg from 'myg/src/myg';
 const MygDrawer = myg.MygDrawer;
 ```

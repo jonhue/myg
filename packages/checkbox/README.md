@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygCheckbox from '@myg/checkbox'
+import MygCheckbox from '@myg/checkbox';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg'
+import * as myg from 'myg/src/myg';
 const MygCheckbox = myg.MygCheckbox;
 ```

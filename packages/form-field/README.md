@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygFormField from '@myg/form-field'
+import MygFormField from '@myg/form-field';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg'
+import * as myg from 'myg/src/myg';
 const MygFormField = myg.MygFormField;
 ```

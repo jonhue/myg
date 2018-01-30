@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygDropdown from '@myg/dropdown'
+import MygDropdown from '@myg/dropdown';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg'
+import * as myg from 'myg/src/myg';
 const MygDropdown = myg.MygDropdown;
 ```

@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygSelect from '@myg/select'
+import MygSelect from '@myg/select';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg'
+import * as myg from 'myg/src/myg';
 const MygSelect = myg.MygSelect;
 ```
