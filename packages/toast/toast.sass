@@ -1,1 +1,29 @@
 @import "@material/snackbar/mdc-snackbar"
+
+.myg-toast.mdc-snackbar
+    z-index: 2
+    background: color(background, lighter)
+    border-top: rpx(1) solid color(border)
+    padding: px(10) padding(sm)
+    @include bigger-than(mobile)
+        padding: 0 padding(sm)
+        border: rpx(1) solid color(border)
+        +border-radius(sm)
+    .mdc-snackbar__text
+        color: color(text, base)
+        font-family: $font-family
+        letter-spacing: normal
+        font-size: rpx(14)
+        line-height: 1.75
+    &.error
+        background: color(error)
+        border-color: color(error)
+        color: color(text, lighter)
+        .mdc-snackbar__text
+            color: color(text, lighter)
+    &.success
+        background: color(success)
+        border-color: color(success)
+        color: color(text, lighter)
+        .mdc-snackbar__text
+            color: color(text, lighter)
