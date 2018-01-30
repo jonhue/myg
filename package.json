@@ -21,6 +21,7 @@
         "@myg/card": "file:./packages/card",
         "@myg/checkbox": "file:./packages/checkbox",
         "@myg/dialog": "file:./packages/dialog",
+        "@myg/document": "file:./packages/document",
         "@myg/drawer": "file:./packages/drawer",
         "@myg/dropdown": "file:./packages/dropdown",
         "@myg/elevation": "file:./packages/elevation",
