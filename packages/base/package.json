@@ -9,8 +9,5 @@
     },
     "repository": "https://github.com/jonhue/myg/tree/master/packages/base",
     "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT",
-    "dependencies": {
-        "normalize.css": "^7.0.0"
-    }
+    "license": "MIT"
 }

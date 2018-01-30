@@ -1,0 +1,18 @@
+{
+    "name": "@myg/document",
+    "version": "1.0.0",
+    "description": "...",
+    "main": "document.sass",
+    "bugs": {
+        "url": "https://github.com/jonhue/myg/issues",
+        "email": "me@jonhue.me"
+    },
+    "repository": "https://github.com/jonhue/myg/tree/master/packages/document",
+    "author": "Jonas Hübotter <me@jonhue.me>",
+    "license": "MIT",
+    "dependencies": {
+        "normalize.css": "^7.0.0",
+        "@myg/theme": "file:./../theme",
+        "@myg/font": "file:./../font"
+    }
+}
