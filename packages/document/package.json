@@ -12,6 +12,7 @@
     "license": "MIT",
     "dependencies": {
         "normalize.css": "^7.0.0",
+        "@myg/base": "file:./../base",
         "@myg/theme": "file:./../theme",
         "@myg/font": "file:./../font"
     }
