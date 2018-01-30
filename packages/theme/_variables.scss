@@ -39,9 +39,9 @@ $border-radius: (
 
 // Scrollbar
 $scrollbar: (
-    width: rpx(5),
+    width: px(5),
     track-background: transparent,
-    thumb-border-radius: rpx(2.5),
+    thumb-border-radius: px(2.5),
     thumb-background: color(border),
     thumb-hover-background: color(text, dark)
 ) !default;

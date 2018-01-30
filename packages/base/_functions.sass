@@ -4,7 +4,9 @@
 
 
 // Sizes
-@function px($px, $element-font-size:16)
-    @return $px/$element-font-size+em
-@function rpx($px, $element-font-size:16)
+@function px($px, $element-font-size: $root-size)
     @return $px/$element-font-size+rem
+@function rem($px, $element-font-size: $root-size)
+    @return px($px, $element-font-size)
+@function em($px, $element-font-size: $root-size)
+    @return $px/$element-font-size+em

@@ -3,17 +3,17 @@
 .myg-toast.mdc-snackbar
     z-index: 2
     background: color(background, lighter)
-    border-top: rpx(1) solid color(border)
+    border-top: px(1) solid color(border)
     padding: px(10) padding(sm)
     @include bigger-than(mobile)
         padding: 0 padding(sm)
-        border: rpx(1) solid color(border)
+        border: px(1) solid color(border)
         +border-radius(sm)
     .mdc-snackbar__text
         color: color(text, base)
         +font-primary
         letter-spacing: normal
-        font-size: rpx(14)
+        font-size: px(14)
         line-height: 1.75
     &.error
         background: color(error)
