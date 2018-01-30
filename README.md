@@ -73,6 +73,7 @@ import * as myg from 'myg/src/myg';
 * **[Cards](packages/card)**
 * **[Checkboxes](packages/checkbox)**
 * **[Dialogs](packages/dialog)**
+* **[Document](packages/document)**
 * **[Drawers](packages/drawer)**
 * **[Dropdowns](packages/dropdown)**
 * **[Elevation](packages/elevation)**
