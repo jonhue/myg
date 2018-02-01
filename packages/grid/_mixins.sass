@@ -99,10 +99,10 @@
     grid-template-areas: $value
 =grid-template($rows, $columns, $areas: null)
     +grid
-    +rows($rows)
-    +columns($columns)
+    +grid-rows($rows)
+    +grid-columns($columns)
     @if ( $areas != null )
-        +areas($areas)
+        +grid-areas($areas)
 =grid-gap($value, $type: null)
     @if ( $type == null )
         grid-gap: $value
