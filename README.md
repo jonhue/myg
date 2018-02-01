@@ -26,7 +26,13 @@ An opinionated & modular state-of-the-web framework.
 
 ## Philosophy
 
-...
+**Modular:** Myg includes a lot of UI elements. Because everyone of them is separately published on NPM, you can just include what you actually use.
+
+**Lightweight:** Mixins > Classes. Myg's CSS classes are entirely optional to minimize file size.
+
+**Opinionated:** Opinionated components prevent you from polluting your DOM.
+
+**Modern:** Myg uses the latest web technologies to support its rich feature set while remaining lightweight.
 
 ---
 
