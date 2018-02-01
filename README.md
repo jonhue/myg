@@ -79,7 +79,6 @@ import * as myg from 'myg/src/myg';
 * **[Cards](packages/card)**
 * **[Checkboxes](packages/checkbox)**
 * **[Dialogs](packages/dialog)**
-* **[Document](packages/document)**
 * **[Drawers](packages/drawer)**
 * **[Dropdowns](packages/dropdown)**
 * **[Elevation](packages/elevation)**
@@ -91,6 +90,7 @@ import * as myg from 'myg/src/myg';
 * **[Icons](packages/icon)**
 * **[Inputs](packages/input)**
 * **[Labels](packages/label)**
+* **[Layout](packages/layout)**
 * **[Lists](packages/list)**
 * **[Menus](packages/menu)**
 * **[Modals](packages/modal)**
