@@ -11,6 +11,9 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "@myg/base": "file:./../base"
+        "@myg/base": "file:./../base",
+        "@myg/grid": "file:./../grid",
+        "@myg/spacing": "file:./../spacing",
+        "@myg/animate": "file:./../animate"
     }
 }

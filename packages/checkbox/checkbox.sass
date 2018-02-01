@@ -1,9 +1,10 @@
+@import "@myg/base/base"
 @import "@myg/theme/theme"
 @import "@material/checkbox/mdc-checkbox"
 
 .myg-checkbox.mdc-checkbox
-    --color-border: color(border, null, true)
-    --mdc-theme-secondary: color(accent, base)
+    +v(color-border, color(border, null, true))
+    +v(mdc-theme-secondary, color(accent, base))
     &::before, &::after
         background: rgba(color(accent, base, true), .35)
     .mdc-checkbox__native-control:enabled:checked, .mdc-checkbox__native-control:enabled:indeterminate
