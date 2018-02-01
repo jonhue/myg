@@ -11,6 +11,12 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "@myg/base": "file:./../base"
+        "jquery": "^3.3.1",
+        "@myg/base": "file:./../base",
+        "@myg/theme": "file:./../theme",
+        "@myg/font": "file:./../font",
+        "@myg/grid": "file:./../grid",
+        "@myg/elevation": "file:./../elevation",
+        "@myg/animate": "file:./../animate"
     }
 }
