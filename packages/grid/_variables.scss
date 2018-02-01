@@ -6,3 +6,10 @@ $breakpoints: (
     large: 1280px,
     desktop: 1920px
 ) !default;
+$breakpoint-grid-columns: (
+    phone: 4,
+    tablet: 8,
+    laptop: 12,
+    large: 12,
+    desktop: 12
+) !default;

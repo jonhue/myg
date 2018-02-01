@@ -1,13 +1,13 @@
 {
-    "name": "@myg/document",
+    "name": "@myg/layout",
     "version": "1.0.0",
     "description": "...",
-    "main": "document.sass",
+    "main": "layout.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",
         "email": "me@jonhue.me"
     },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/document",
+    "repository": "https://github.com/jonhue/myg/tree/master/packages/layout",
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {

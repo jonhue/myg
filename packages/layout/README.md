@@ -1,4 +1,4 @@
-# Document
+# Layout
 
 ## Usage
 
@@ -7,5 +7,5 @@
 **Sass**
 
 ```sass
-@import "@myg/document/document"
+@import "@myg/layout/layout"
 ```
