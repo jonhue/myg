@@ -1,0 +1,22 @@
+// Myg Layout
+=myg-layout
+    width: 100vw
+    min-height: 100vh
+    +grid-template(1fr, 1fr)
+    &.myg-layout-toolbar
+        +grid-rows(map-get($myg-layout, toolbar-height) 1fr)
+        +grid-areas("toolbar" "content")
+    &.myg-layout-sidebar
+        +grid-columns(map-get($myg-layout, sidebar-width) 1fr)
+        +grid-areas("sidebar content")
+        &.myg-layout-sidebar--right
+            +grid-columns(1fr map-get($myg-layout, sidebar-width))
+            +grid-areas("content sidebar")
+        &.myg-layout-toolbar
+            +grid-areas("toolbar toolbar" "sidebar content")
+            &.myg-layout-sidebar--right
+                +grid-areas("toolbar toolbar" "content sidebar")
+        &.myg-layout-sidebar--primary
+            +grid-areas("sidebar toolbar" "sidebar content")
+            &.myg-layout-sidebar--right
+                +grid-areas("toolbar sidebar" "content sidebar")
