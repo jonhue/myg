@@ -1,6 +1,5 @@
 =myg-animate--classes
     // Animations
-    .animate--shake
-        +animate(shake, .82s, cubic-bezier(.36,.07,.19,.97) both)
-    .animate--bell
-        +animate(bell, 3s)
+    @each $animation, $options in $myg-animate
+        .animate--#{$animation}
+            +animate($animation, map-get($options, duration), map-get($options, easing))
