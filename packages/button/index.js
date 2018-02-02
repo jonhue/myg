@@ -3,19 +3,8 @@ import {$, jQuery} from 'jquery';
 
 class Button extends Myg {
 
-    constructor(el) {
-        this._button = el;
-    }
-
-    get button() {
-        return this._button;
-    }
-    set button(val) {
-        this._button = val;
-    }
-
     showLoader() {
-        let el = $(this.button);
+        let el = $(this.element);
         el.css({ 'width': el.outerWidth() }).addClass('loading');
     	el.find('span').addClass('invisible');
         setTimeout(function() {
@@ -23,7 +12,7 @@ class Button extends Myg {
         }, 250);
     }
     hideLoader() {
-        let el = $(this.button);
+        let el = $(this.element);
         el.find('svg').fadeOut(250);
         setTimeout(function() {
             el.removeAttr('style').removeClass('loading');
@@ -31,7 +20,7 @@ class Button extends Myg {
         }, 250);
     }
     toggleLoader() {
-        if ( $(this.button).hasClass('loading') )
+        if ( $(this.element).hasClass('loading') )
             this.hideLoader()
         else
             this.showLoader();

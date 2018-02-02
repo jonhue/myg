@@ -35,7 +35,7 @@ a.btn, button, input[type="submit"]
         opacity: .35
         cursor: not-allowed
         &:hover
-            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both
+            +animate(shake, .82s, cubic-bezier(.36,.07,.19,.97) both)
         &:focus, &:active
             pointer-events: none
 

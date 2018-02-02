@@ -3,20 +3,13 @@ import {MDCCheckbox, MDCCheckboxFoundation} from '@material/checkbox';
 
 class Checkbox extends Myg {
 
-    constructor(el) {
-        this._checkbox = new MDCCheckbox(el);
+    constructor(element) {
+        this._element = new MDCCheckbox(element);
     }
 
-    get checkbox() {
-        return this._checkbox;
-    }
-    set checkbox(val) {
-        this._checkbox = val;
-    }
-
-    static init(el) {
+    static init(elements) {
         let arr = [];
-        for ( let obj of el ) {
+        for ( let obj of elements ) {
             arr.push(new Checkbox(obj));
         }
         return arr;

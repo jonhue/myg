@@ -3,19 +3,12 @@ import {MDCSnackbar, MDCSnackbarFoundation} from '@material/snackbar';
 
 class Toast extends Myg {
 
-    constructor(el) {
-        this._snackbar = new MDCSnackbar(el);
-    }
-
-    get snackbar() {
-        return this._snackbar;
-    }
-    set snackbar(val) {
-        this._snackbar = val;
+    constructor(element) {
+        this._element = new MDCSnackbar(element);
     }
 
     show(message) {
-        self.snackbar.show({ message: message });
+        this.element.show({ message: message });
     }
 
 }

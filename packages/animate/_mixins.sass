@@ -1,3 +1,8 @@
+// Animations
+=animate($animation, $duration: 1s, $easing: ease-in-out)
+    animation: $animation $duration $easing
+
+
 // Transitions
-=transition($property: all, $duration: map-get($transitions, duration), $easing: map-get($transitions, easing))
+=transition($property: all, $duration: map-get($myg-animate--transitions, duration), $easing: map-get($myg-animate--transitions, easing))
     transition: $property $duration $easing

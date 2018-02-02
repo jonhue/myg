@@ -3,25 +3,18 @@ import {MDCTemporaryDrawer, MDCTemporaryDrawerFoundation, util} from '@material/
 
 class Drawer extends Myg {
 
-    constructor(el) {
-        this._drawer = new MDCTemporaryDrawer(el);
-    }
-
-    get drawer() {
-        return this._drawer;
-    }
-    set drawer(val) {
-        this._drawer = val;
+    constructor(element) {
+        this._element = new MDCTemporaryDrawer(element);
     }
 
     open() {
-        this.drawer.open = true;
+        this.element.open = true;
     }
     close() {
-        this.drawer.open = false;
+        this.element.open = false;
     }
     toggle() {
-        this.drawer.open = !this.drawer.open;
+        this.element.open = !this.element.open;
     }
 
 }
