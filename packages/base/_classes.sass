@@ -1,16 +1,16 @@
 =myg-base--classes
     // Progressive Web Apps
     .pwa
-    display: none
-    +pwa
-        display: block
-    .not-pwa
-    +pwa
         display: none
+        +pwa
+            display: block
+    .not-pwa
+        +pwa
+            display: none
 
 
     // Cursor
-    @each $name, $value in $cursors
+    @each $name, $value in $myg--cursors
         .cursor--#{$name}
             +cursor($value)
 

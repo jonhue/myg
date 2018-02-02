@@ -1,9 +1,11 @@
-// Sizes
-$root-size: 16 !default;
+// Root
+$myg--root: (
+    font-size: 16
+) !default;
 
 
 // Cursor
-$cursors: (
+$myg--cursors: (
     default: default,
     text: text,
     pointer: pointer,

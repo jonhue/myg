@@ -4,12 +4,12 @@
 
 
 // Sizes
-@function px($px, $element-font-size: $root-size)
-    @return $px/$element-font-size+rem
-@function rem($px, $element-font-size: $root-size)
-    @return px($px, $element-font-size)
-@function em($px, $element-font-size: $root-size)
-    @return $px/$element-font-size+em
+@function px($px, $font-size: map-get($myg--root, font-size))
+    @return $px/$font-size+rem
+@function rem($px, $font-size: map-get($myg--root, font-size))
+    @return px($px, $font-size)
+@function em($px, $font-size: map-get($myg--root, font-size))
+    @return $px/$font-size+em
 
 
 // Decimals

@@ -1,4 +1,76 @@
-=myg-buttons
+// Buttons
+=myg-button
+    +flex--center
+    +border-radius(sm)
+    +font(sans-serif)
+    +box-shadow(sm)
+    background: color(accent, base)
+    border: px(1) solid color(accent, base)
+    font-weight: 400
+    font-size: px(14)
+    line-height: 1
+    cursor: pointer
+    padding: px(16) px(20) px(18)
+    &, span
+        color: color(accent, contrast)
+        +transition
+    &:hover, &:focus, &:active
+        background: color(accent, dark)
+        border-color: color(accent, dark)
+        +box-shadow(md)
+=myg-button--dense
+    +myg-button
+    padding: rpx(12) rpx(18) rpx(14)
+=myg-button-disabled
+    opacity: .35
+    cursor: not-allowed
+    &:hover
+        +animate(shake, map-get(map-get($myg-animate, shake), duration),  map-get(map-get($myg-animate, shake), easing))
+    &:focus, &:active
+        pointer-events: none
+=myg-button--secondary
+    background: color(background, lighter)
+    border-color: color(border)
+    &, span
+        color: color(text, light)
+    &:hover
+        border-color: color(accent, base)
+        &, span
+            color: color(accent, base)
+=myg-button--icon
+    padding: rpx(17) rpx(16) rpx(13)
+    svg
+        position: relative
+        top: px(-2)
+        margin-right: px(30)
+        width: px(18)
+        height: px(18)
+        font-size: px(18)
+        color: inherit
+    .caption
+        width: 100%
+        text-align: center
+=myg-button--loader
+    position: relative
+    svg
+        display: none
+        position: absolute
+        transition: initial
+        top: px(12)
+        width: px(24)
+        height: px(24)
+        line
+            stroke: white
+            stroke-width: 1.5
+    &.loading
+        height: rpx(50)
+        padding-top: 0
+        padding-bottom: 0
+
+
+
+// Container
+=myg-button--container
     +flex--center-c
     flex-wrap: wrap
     margin: px(-10)
