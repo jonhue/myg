@@ -1,4 +1,10 @@
 =myg-font--classes
+    // Family
+    @each $name, $value in $myg-font
+        .font--#{$name}
+            +font($name)
+
+
     // Style
     .italic
         +italic
