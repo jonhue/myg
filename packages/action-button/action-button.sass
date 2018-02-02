@@ -1,0 +1,14 @@
+@import "@myg/base/base"
+@import "@myg/theme/theme"
+@import "@myg/spacing/spacing"
+
+@import "_variables"
+
+.myg-action-button
+    position: fixed
+    bottom: padding(sm)
+    right: padding(sm)
+    border-radius: 50%
+    width: map-get($myg-action-button, diameter)
+    height: map-get($myg-action-button, diameter)
+    background: color(accent, base)
