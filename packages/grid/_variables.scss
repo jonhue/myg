@@ -1,12 +1,12 @@
 // Breakpoints
-$breakpoints: (
+$myg-grid--breakpoints: (
     phone: 512px,
     tablet: 768px,
     laptop: 1024px,
     large: 1280px,
     desktop: 1920px
 ) !default;
-$breakpoint-grid-columns: (
+$myg-grid--columns: (
     phone: 4,
     tablet: 8,
     laptop: 12,

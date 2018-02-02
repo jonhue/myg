@@ -4,7 +4,7 @@ import {MDCCheckbox, MDCCheckboxFoundation} from '@material/checkbox';
 class Checkbox extends Myg {
 
     constructor(element) {
-        super
+        super;
         this._element = new MDCCheckbox(element);
     }
 

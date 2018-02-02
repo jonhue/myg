@@ -1,9 +1,9 @@
 // Breakpoints
-=bigger-than($breakpoint)
-    @media ( min-width: #{map-get($breakpoints, $breakpoint)} )
+=bigger-than($name)
+    @media ( min-width: #{map-get($myg-grid--breakpoints, $name)} )
         @content
-=smaller-than($breakpoint)
-    @media ( max-width: #{map-get($breakpoints, $breakpoint)} )
+=smaller-than($name)
+    @media ( max-width: #{map-get($myg-grid--breakpoints, $name)} )
         @content
 
 
@@ -35,6 +35,8 @@
 =flex-container--space-evenly
     +flex
     align-content: space-evenly
+=flex--wrap
+    flex-wrap: wrap
 
 
 // Items
@@ -68,6 +70,18 @@
 =flex--end-c
     +flex
     align-items: flex-end
+=flex--space-between
+    +flex
+    justify-content: space-between
+=flex--space-around
+    +flex
+    justify-content: space-around
+=flex--space-evenly
+    +flex
+    justify-content: space-evenly
+=flex--baseline
+    +flex
+    align-items: baseline
 
 
 // Self

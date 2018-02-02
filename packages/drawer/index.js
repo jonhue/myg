@@ -4,7 +4,7 @@ import {MDCTemporaryDrawer, MDCTemporaryDrawerFoundation, util} from '@material/
 class Drawer extends Myg {
 
     constructor(element) {
-        super
+        super;
         this._element = new MDCTemporaryDrawer(element);
     }
 

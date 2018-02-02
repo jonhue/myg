@@ -9,16 +9,6 @@
             flex-direction: column
             &.reverse
                 flex-direction: column-reverse
-        &.space-between
-            justify-content: space-between
-        &.space-around
-            justify-content: space-around
-        &.space-evenly
-            justify-content: space-evenly
-        &.baseline
-            align-items: baseline
-        &.wrap
-            flex-wrap: wrap
 
         // Container
         &.container--center
@@ -33,6 +23,8 @@
             +flex-container--space-around
         &.container--space-evenly
             +flex-container--space-evenly
+        &.wrap
+            +flex--wrap
 
         // Items
         &.center
@@ -53,6 +45,14 @@
             +flex--end-m
         &.end--c
             +flex--end-c
+        &.space-between
+            +flex--space-between
+        &.space-around
+            +flex--space-around
+        &.space-evenly
+            +flex--space-evenly
+        &.baseline
+            +flex--baseline
         &.column
             &.center--m
                 +flex--center-c
