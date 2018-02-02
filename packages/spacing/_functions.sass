@@ -1,8 +1,8 @@
 // Margin
 @function margin($name)
-    @return v(margin-#{$name})
+    @return map-get($margin, $name)
 
 
 // Padding
 @function padding($name)
-    @return v(padding-#{$name})
+    @return map-get($padding, $name)

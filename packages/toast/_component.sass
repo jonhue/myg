@@ -1,0 +1,27 @@
+.myg-toast.mdc-snackbar
+    z-index: 2
+    background: color(background, lighter)
+    border-top: px(1) solid color(border)
+    padding: px(10) padding(sm)
+    @include bigger-than(mobile)
+        padding: 0 padding(sm)
+        border: px(1) solid color(border)
+        +border-radius(sm)
+    .mdc-snackbar__text
+        color: color(text, base)
+        +font(sans-serif)
+        letter-spacing: normal
+        font-size: px(14)
+        line-height: 1.75
+    &.error
+        background: color(error)
+        border-color: color(error)
+        color: color(text, lighter)
+        .mdc-snackbar__text
+            color: color(text, lighter)
+    &.success
+        background: color(success)
+        border-color: color(success)
+        color: color(text, lighter)
+        .mdc-snackbar__text
+            color: color(text, lighter)

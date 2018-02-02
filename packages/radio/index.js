@@ -3,20 +3,13 @@ import {MDCRadio, MDCRadioFoundation} from '@material/radio';
 
 class Radio extends Myg {
 
-    constructor(el) {
-        this._radio = new MDCRadio(el);
+    constructor(element) {
+        this._element = new MDCRadio(element);
     }
 
-    get radio() {
-        return this._radio;
-    }
-    set radio(val) {
-        this._radio = val;
-    }
-
-    static init(el) {
+    static init(elements) {
         let arr = [];
-        for ( let obj of el ) {
+        for ( let obj of elements ) {
             arr.push(new Radio(obj));
         }
         return arr;

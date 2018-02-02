@@ -7,36 +7,4 @@
 @import "_variables"
 @import "_mixins"
 @import "_classes"
-
-*
-    box-sizing: border-box
-    margin: 0
-    padding: 0
-    opacity: 1
-    visibility: visible
-    text-decoration: none
-    outline: none
-
-\:root
-    font-size: px(1)
-    +font(sans-serif)
-    font-weight: 400
-    font-style: normal
-    color: color(text, light)
-    line-height: 1.5
-    -webkit-font-smoothing: antialiased
-    text-rendering: optimizeLegibility
-    -moz-osx-font-smoothing: grayscale
-    -ms-text-size-adjust: 100%
-    -webkit-text-size-adjust: 100%
-    word-wrap: break-word
-    font-smooth: always
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
-
-html
-    background: color(background, base)
-    overflow-x: hidden
-    overflow-y: auto
-    & > body
-        min-height: 100vh
-        width: 100%
+@import "_component"

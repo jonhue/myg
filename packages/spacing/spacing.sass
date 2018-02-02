@@ -2,10 +2,3 @@
 
 @import "_variables"
 @import "_functions"
-
-
-html
-    @each $name, $margin-size in $margin
-        +v(margin-#{$name}, $margin-size)
-    @each $name, $padding-size in $padding
-        +v(padding-#{$name}, $padding-size)

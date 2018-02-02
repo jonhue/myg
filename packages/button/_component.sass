@@ -1,0 +1,71 @@
+a.btn, button, input[type="submit"]
+    +flex--center
+    background: color(accent, base)
+    border: px(1) solid color(accent, base)
+    +border-radius(sm)
+    +font(sans-serif)
+    font-weight: 400
+    font-size: px(14)
+    line-height: 1
+    +box-shadow(sm)
+    cursor: pointer
+    padding: px(16) px(20) px(18)
+    &, span
+        color: color(accent, contrast)
+        +transition
+    &:hover, &:focus, &:active
+        background: color(accent, dark)
+        border-color: color(accent, dark)
+        +box-shadow(md)
+
+    &.dense
+        padding: rpx(12) rpx(18) rpx(14)
+
+    &.disabled
+        opacity: .35
+        cursor: not-allowed
+        &:hover
+            +animate(shake, .82s, cubic-bezier(.36,.07,.19,.97) both)
+        &:focus, &:active
+            pointer-events: none
+
+    &.secondary
+        background: color(background, lighter)
+        border-color: color(border)
+        &, span
+            color: color(text, light)
+        &:hover
+            border-color: color(accent, base)
+            &, span
+                color: color(accent, base)
+
+    &.icon
+        padding: rpx(17) rpx(16) rpx(13)
+        svg
+            position: relative
+            top: px(-2)
+            margin-right: px(30)
+            width: px(18)
+            height: px(18)
+            font-size: px(18)
+            color: inherit
+        .caption
+            width: 100%
+            text-align: center
+
+    &.loader
+        position: relative
+        svg
+            display: none
+            position: absolute
+            transition: initial
+            top: px(12)
+            width: px(24)
+            height: px(24)
+            line
+                stroke: white
+                stroke-width: 1.5
+        &.loading
+            height: rpx(50)
+            padding-top: 0
+            padding-bottom: 0
