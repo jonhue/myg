@@ -1,0 +1,51 @@
+=myg-drawer
+    &aside.mdc-drawer--temporary
+        +scrollbar
+        color: color(text, base)
+        &::before
+            background: color(overlay)
+        nav.mdc-drawer__drawer
+            max-width: px(350)
+            width: 85%
+            box-shadow: style(box-shadow, sm)
+            background: color(background, base)
+            header.mdc-drawer__header
+                &::before
+                    content: none
+                border-bottom: px(1) solid color(border)
+                .mdc-drawer__header-content
+                    position: relative
+                    padding: padding(md)
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    top: auto
+                    bottom: auto
+                    left: auto
+                    right: auto
+                    a:last-child
+                        margin-top: px(20)
+                    h4
+                        margin: 0
+                        margin-bottom: px(3)
+            nav.mdc-drawer__content
+                padding: padding(md)
+                display: flex
+                flex-direction: column
+                a
+                    font-weight: normal
+                    margin: px(10) 0
+                    font-size: px(14)
+            nav.mdc-drawer__footer
+                padding: padding(sm) padding(md)
+                border-top: px(1) solid color(border, base)
+                display: flex
+                align-items: center
+                justify-content: space-between
+                box-shadow: none
+                border-top: px(1) solid color(border)
+                a
+                    font-weight: normal
+                .link-wrapper
+                    position: relative
+                    top: px(-2)
