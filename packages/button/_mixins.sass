@@ -50,6 +50,12 @@
         height: px(18)
         font-size: px(18)
         color: inherit
+        opacity: 0
+        visibility: hidden
+        +transition(opacity)
+        &.show
+            opacity: 1
+            visibility: visible
     .caption
         width: 100%
         text-align: center
@@ -63,6 +69,8 @@
         top: px(12)
         width: px(24)
         height: px(24)
+        &.visible
+            +visible
         line
             stroke: white
             stroke-width: 1.5

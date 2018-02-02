@@ -1,28 +1,27 @@
 import Myg from '@myg/base';
-import {$, jQuery} from 'jquery';
 
 class Footer extends Myg {
 
     constructor(element) {
         super;
-        if ( $(element).hasClass('myg-footer--stick') )
+        if ( element.classList.contains('myg-footer--stick') )
             this.stick();
     }
 
     stick() {
-        let el = $(this.element);
-        el.parent().css( 'marginBottom', -el.outerHeight() );
+        this.element.parentElement.style.marginBottom = -this.element.offsetHeight;
     }
 
     show() {
-        $(this.element).removeAttr('style');
+        this.element.classList.remove('covert');
+        this.element.style.bottom = '';
     }
     hide() {
-        let el = $(this.element);
-        el.css( 'bottom', el.height() );
+        this.element.classList.add('covert');
+        this.element.style.bottom = this.element.offsetHeight;
     }
     toggle() {
-        if ( $(this.element).is('[style]') )
+        if ( $(this.element).style.bottom.length > 0 )
             this.show()
         else
             this.hide();
