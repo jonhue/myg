@@ -1,5 +1,5 @@
 import Myg from '@myg/base';
-import * as slick from 'slick-carousel/slick/slick';
+import * as flickity from 'flickity';
 
 class Slide extends Myg {
 }
