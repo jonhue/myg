@@ -57,7 +57,7 @@ An opinionated & modular state-of-the-web framework.
 **ES6**
 
 ```js
-import * as myg from 'myg/src/myg';
+import * as myg from 'myg';
 ```
 
 **ES5 (Sprockets)**
