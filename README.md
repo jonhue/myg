@@ -15,6 +15,7 @@ An opinionated & modular state-of-the-web framework.
 * [Usage](#usage)
     * [Stylesheets](#stylesheets)
     * [Javascript](#javascript)
+    * [Getting started](#getting-started)
 * [Components](#components)
 * [To Do](#to-do)
 * [Contributing](#contributing)
@@ -65,6 +66,8 @@ import * as myg from 'myg';
 ```js
 //= require myg/dist/myg
 ```
+
+### Getting started
 
 ...
 
