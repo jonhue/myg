@@ -1,0 +1,115 @@
+// Text Size
+=text-size($element)
+    @each $name, $value in map-get($myg-text--size, $element)
+        @if $value == null
+            font-size: $value
+        @else
+            @each $n, $v in $value
+                @if $n == base
+                    font-size: $v
+                @else
+                    .#{$n}
+                        font-size: $v
+    +bigger-than(tablet)
+        @each $name, $value in map-get($myg-text--size-mobile, $element)
+            @if $value == null
+                font-size: $value
+            @else
+                @each $n, $v in $value
+                    @if $n == base
+                        font-size: $v
+                    @else
+                        .#{$n}
+                            font-size: $v
+
+
+// Text Family
+=text-family($element)
+    @each $name, $value in map-get($myg-text--family, $element)
+        @if $value == null
+            +font($value)
+        @else
+            @each $n, $v in $value
+                @if $n == base
+                    +font($v)
+                @else
+                    .#{$n}
+                        +font($v)
+
+
+// Text Color
+=text-color($element)
+    @each $name, $value in map-get($myg-text--color, $element)
+        @if $value == null
+            color: $value
+        @else
+            @each $n, $v in $value
+                @if $n == base
+                    color: $v
+                @else
+                    .#{$n}
+                        color: $v
+
+
+// Text Weight
+=text-weight($element)
+    @each $name, $value in map-get($myg-text--weight, $element)
+        @if $value == null
+            font-weight: $value
+        @else
+            @each $n, $v in $value
+                @if $n == base
+                    font-weight: $v
+                @else
+                    .#{$n}
+                        font-weight: $v
+
+
+// Text
+=text
+    +text-family(p)
+    +text-size(p)
+    +text-color(p)
+    +text-weight(p)
+
+
+// Header
+=header
+    margin: .67em 0
+    line-height: 1.58
+=h1
+    +header
+    +text-family(h1)
+    +text-size(h1)
+    +text-color(h1)
+    +text-weight(h1)
+=h2
+    +header
+    +text-family(h2)
+    +text-size(h2)
+    +text-color(h2)
+    +text-weight(h2)
+=h3
+    +header
+    +text-family(h3)
+    +text-size(h3)
+    +text-color(h3)
+    +text-weight(h3)
+=h4
+    +header
+    +text-family(h4)
+    +text-size(h4)
+    +text-color(h4)
+    +text-weight(h4)
+=h5
+    +header
+    +text-family(h5)
+    +text-size(h5)
+    +text-color(h5)
+    +text-weight(h5)
+=h6
+    +header
+    +text-family(h6)
+    +text-size(h6)
+    +text-color(h6)
+    +text-weight(h6)
