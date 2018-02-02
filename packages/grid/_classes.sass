@@ -162,9 +162,9 @@
 
 
 
-    /* Grid */
+    /* Myg Grid */
 
     .myg-grid
         +myg-grid
-        @each $breakpoint, $value in $breakpoints
-            +myg-grid-wrap($breakpoint)
+        @each $name, $value in $myg-grid--breakpoints
+            +myg-grid-wrap($name)
