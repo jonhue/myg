@@ -1,0 +1,50 @@
+// Inputs
+=myg-input
+    +font(sans-serif)
+    +border-radius(sm)
+    font-size: px(15)
+    line-height: 1.58
+    color: color(text, dark)
+    background: color(background, lighter)
+    border: px(1) solid color(border)
+    padding: px(12) px(16) px(13)
+    width: 100%
+    +transition
+    &:active, &:focus
+        border-color: color(accent, base)
+        box-shadow: 0 0 0 rpx(3.5) rgba(color(accent, base, true), .35)
+        &.success
+            box-shadow: 0 0 0 rpx(3.5) rgba(color(success, null, true), .35)
+        &.error
+            box-shadow: 0 0 0 rpx(3.5) rgba(color(error, null, true), .35)
+    &.success
+        border-color: color(success)
+    &.error
+        border-color: color(error)
+
+
+// Textareas
+=myg-textarea
+    +font(sans-serif)
+    +border-radius(sm)
+    font-size: px(15)
+    line-height: 1.75
+    color: color(text, dark)
+    background: color(background, lighter)
+    border: 1px solid color(border)
+    width: 100%
+    resize: none
+    padding: px(13) px(15)
+    min-height: px(125)
+    +transition
+    &:active, &:focus
+        border-color: color(accent, base)
+        box-shadow: 0 0 0 rpx(3.5) rgba(color(accent, base, true), .35)
+        &.success
+            box-shadow: 0 0 0 rpx(3.5) rgba(color(success, null, true), .35)
+        &.error
+            box-shadow: 0 0 0 rpx(3.5) rgba(color(error, null, true), .35)
+    &.success
+        border-color: color(success)
+    &.error
+        border-color: color(error)
