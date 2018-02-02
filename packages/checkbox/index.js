@@ -3,9 +3,16 @@ import {MDCCheckbox, MDCCheckboxFoundation} from '@material/checkbox';
 
 class Checkbox extends Myg {
 
-    constructor(element) {
+    constructor( element, options = {} ) {
         super;
-        this._element = new MDCCheckbox(element);
+        this._mdcCheckbox = new MDCCheckbox(element);
+    }
+
+    get mdcCheckbox() {
+        return this._mdcCheckbox;
+    }
+    set mdcCheckbox(val) {
+        this._mdcCheckbox = val;
     }
 
     static init(elements) {

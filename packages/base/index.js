@@ -1,6 +1,6 @@
 class Myg {
 
-    constructor(element) {
+    constructor( element, options = {} ) {
         this._element = element;
     }
 
