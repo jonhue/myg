@@ -263,35 +263,35 @@
 // Container
 =myg-grid
     width: 100%
-    +grid-columns(repeat(map-get($breakpoint-grid-columns, phone), 1fr))
+    +grid-columns(repeat(map-get($myg-grid--columns, phone), 1fr))
     +grid-gap(px(20))
     +bigger-than(phone)
         &:not(.myg-grid-wrap--phone)
-            +grid-columns(repeat(map-get($breakpoint-grid-columns, tablet), 1fr))
+            +grid-columns(repeat(map-get($myg-grid--columns, tablet), 1fr))
     +bigger-than(tablet)
         &:not(.myg-grid-wrap--phone, .myg-grid-wrap--tablet)
-            +grid-columns(repeat(map-get($breakpoint-grid-columns, laptop), 1fr))
+            +grid-columns(repeat(map-get($myg-grid--columns, laptop), 1fr))
     +bigger-than(laptop)
         &:not(.myg-grid-wrap--phone, .myg-grid-wrap--tablet, .myg-grid-wrap--laptop)
-            +grid-columns(repeat(map-get($breakpoint-grid-columns, large), 1fr))
+            +grid-columns(repeat(map-get($myg-grid--columns, large), 1fr))
     +bigger-than(large)
         &:not(.myg-grid-wrap--phone, .myg-grid-wrap--tablet, .myg-grid-wrap--laptop, .myg-grid-wrap--large)
-            +grid-columns(repeat(map-get($breakpoint-grid-columns, desktop), 1fr))
-=myg-grid-wrap($breakpoint)
-    &.myg-grid-wrap--#{$breakpoint}
-        max-width: map-get($breakpoints, $breakpoint)
+            +grid-columns(repeat(map-get($myg-grid--columns, desktop), 1fr))
+=myg-grid-wrap($name)
+    &.myg-grid-wrap--#{$name}
+        max-width: map-get($myg-grid--breakpoints, $name)
 
 
 // Items
 =myg-grid-span($value, $type: "column")
     grid-#{$type}-end: span $value
 =myg-grid-span--screen($value)
-    grid-column-end: span decimal-round(map-get($breakpoint-grid-columns, phone) / $value)
+    grid-column-end: span decimal-round(map-get($myg-grid--columns, phone) / $value)
     +bigger-than(phone)
-        grid-column-end: span decimal-round(map-get($breakpoint-grid-columns, tablet) / $value)
+        grid-column-end: span decimal-round(map-get($myg-grid--columns, tablet) / $value)
     +bigger-than(tablet)
-        grid-column-end: span decimal-round(map-get($breakpoint-grid-columns, laptop) / $value)
+        grid-column-end: span decimal-round(map-get($myg-grid--columns, laptop) / $value)
     +bigger-than(laptop)
-        grid-column-end: span decimal-round(map-get($breakpoint-grid-columns, large) / $value)
+        grid-column-end: span decimal-round(map-get($myg-grid--columns, large) / $value)
     +bigger-than(large)
-        grid-column-end: span decimal-round(map-get($breakpoint-grid-columns, desktop) / $value)
+        grid-column-end: span decimal-round(map-get($myg-grid--columns, desktop) / $value)
