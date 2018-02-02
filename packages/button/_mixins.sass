@@ -3,7 +3,7 @@
     +flex--center
     +border-radius(sm)
     +font(sans-serif)
-    +box-shadow(sm)
+    +myg-elevation(sm)
     background: color(accent, base)
     border: px(1) solid color(accent, base)
     font-weight: 400
@@ -17,11 +17,11 @@
     &:hover, &:focus, &:active
         background: color(accent, dark)
         border-color: color(accent, dark)
-        +box-shadow(md)
+        +myg-elevation(md)
 =myg-button--dense
     +myg-button
     padding: rpx(12) rpx(18) rpx(14)
-=myg-button-disabled
+=myg-button--disabled
     opacity: .35
     cursor: not-allowed
     &:hover
