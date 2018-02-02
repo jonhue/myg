@@ -22,6 +22,7 @@
     +myg-button
     padding: rpx(12) rpx(18) rpx(14)
 =myg-button--disabled
+    +myg-button
     opacity: .35
     cursor: not-allowed
     &:hover
@@ -29,6 +30,7 @@
     &:focus, &:active
         pointer-events: none
 =myg-button--secondary
+    +myg-button
     background: color(background, lighter)
     border-color: color(border)
     &, span
@@ -38,6 +40,7 @@
         &, span
             color: color(accent, base)
 =myg-button--icon
+    +myg-button
     padding: rpx(17) rpx(16) rpx(13)
     svg
         position: relative
@@ -51,6 +54,7 @@
         width: 100%
         text-align: center
 =myg-button--loader
+    +myg-button
     position: relative
     svg
         display: none

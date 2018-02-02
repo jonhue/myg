@@ -1,4 +1,4 @@
-.myg-footer
+=myg-footer
     position: fixed
     z-index: 1
     bottom: 0
@@ -11,8 +11,9 @@
     +transition(bottom, .2s)
     +bigger-than(tablet)
         padding: padding(lg)
-    &.myg-footer--stick
-        position: inherit
-        left: auto
-        right: auto
-        bottom: auto
+=myg-footer--stick
+    +myg-footer
+    position: inherit
+    left: auto
+    right: auto
+    bottom: auto
