@@ -1,6 +1,6 @@
 =myg-theme--classes
     // Colors
-    @each $name, $color in $theme
+    @each $name, $color in $myg-theme
         @if type-of($color) == map
             @each $subname, $subcolor in $color
                 .color--#{$name}-#{$subname}
