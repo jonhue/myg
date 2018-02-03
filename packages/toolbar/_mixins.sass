@@ -1,0 +1,26 @@
+=myg-toolbar
+    background: color(background, light)
+    border-bottom: px(1) solid color(border)
+    z-index: 4
+    .mdc-toolbar__section
+        align-items: center
+        .mdc-toolbar__title
+            color: color(text, lighter)
+            +font(sans-serif)
+            font-weight: bold
+            font-size: px(18)
+            margin-left: 0 !important
+        .mdc-toolbar__menu-icon
+            padding: px(18) px(24)
+            & ~ .mdc-toolbar__menu-icon
+                padding-left: 0
+
+.mdc-toolbar.flexible ~ main
+    padding-top: px(57)
+=myg-toolbar--flexible
+    +myg-toolbar
+    position: fixed
+    transform: none
+    +transition
+    & ~ .myg-content
+        padding-top: px(57)
