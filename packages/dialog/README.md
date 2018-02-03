@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "@myg/dialog/dialog"
+@import "myg-dialog/dialog"
 ```
 
 ### Javascript
@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygDialog from '@myg/dialog';
+import MygDialog from 'myg-dialog';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg';
+import * as myg from 'myg-src/myg';
 const MygDialog = myg.MygDialog;
 ```

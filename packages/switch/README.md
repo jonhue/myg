@@ -7,5 +7,5 @@
 **Sass**
 
 ```sass
-@import "@myg/switch/switch"
+@import "myg-switch/switch"
 ```

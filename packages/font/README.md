@@ -7,5 +7,5 @@
 **Sass**
 
 ```sass
-@import "@myg/font/font"
+@import "myg-font/font"
 ```

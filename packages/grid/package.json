@@ -1,6 +1,6 @@
 {
-    "name": "@myg/grid",
-    "version": "1.0.0",
+    "name": "myg-grid",
+    "version": "0.1.0",
     "description": "...",
     "main": "grid.sass",
     "bugs": {
@@ -11,6 +11,6 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "@myg/base": "file:./../base"
+        "myg-base": "file:./../base"
     }
 }

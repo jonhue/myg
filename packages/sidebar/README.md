@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "@myg/sidebar/sidebar"
+@import "myg-sidebar/sidebar"
 ```
 
 ### Javascript
@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygSidebar from '@myg/sidebar';
+import MygSidebar from 'myg-sidebar';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg';
+import * as myg from 'myg-src/myg';
 const MygSidebar = myg.MygSidebar;
 ```

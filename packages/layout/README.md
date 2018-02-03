@@ -7,5 +7,5 @@
 **Sass**
 
 ```sass
-@import "@myg/layout/layout"
+@import "myg-layout/layout"
 ```

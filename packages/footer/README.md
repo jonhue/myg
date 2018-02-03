@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "@myg/footer/footer"
+@import "myg-footer/footer"
 ```
 
 ### Javascript
@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygFooter from '@myg/footer';
+import MygFooter from 'myg-footer';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg';
+import * as myg from 'myg-src/myg';
 const MygFooter = myg.MygFooter;
 ```

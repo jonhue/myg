@@ -1,6 +1,6 @@
 {
-    "name": "@myg/font",
-    "version": "1.0.0",
+    "name": "myg-font",
+    "version": "0.1.0",
     "description": "...",
     "main": "font.sass",
     "bugs": {

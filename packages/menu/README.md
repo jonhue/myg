@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "@myg/menu/menu"
+@import "myg-menu/menu"
 ```
 
 ### Javascript
@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygMenu from '@myg/menu';
+import MygMenu from 'myg-menu';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg';
+import * as myg from 'myg-src/myg';
 const MygMenu = myg.MygMenu;
 ```

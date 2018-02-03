@@ -1,6 +1,6 @@
 {
-    "name": "@myg/tooltip",
-    "version": "1.0.0",
+    "name": "myg-tooltip",
+    "version": "0.1.0",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,6 +12,6 @@
     "license": "MIT",
     "dependencies": {
         "popper.js": "^1.12.9",
-        "@myg/base": "file:./../base"
+        "myg-base": "file:./../base"
     }
 }

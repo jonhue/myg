@@ -1,6 +1,6 @@
 {
-    "name": "@myg/layout",
-    "version": "1.0.0",
+    "name": "myg-layout",
+    "version": "0.1.0",
     "description": "...",
     "main": "layout.sass",
     "bugs": {
@@ -12,9 +12,9 @@
     "license": "MIT",
     "dependencies": {
         "normalize.css": "^7.0.0",
-        "@myg/base": "file:./../base",
-        "@myg/theme": "file:./../theme",
-        "@myg/font": "file:./../font",
-        "@myg/grid": "file:./../grid"
+        "myg-base": "file:./../base",
+        "myg-theme": "file:./../theme",
+        "myg-font": "file:./../font",
+        "myg-grid": "file:./../grid"
     }
 }

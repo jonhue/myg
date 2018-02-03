@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "@myg/radio/radio"
+@import "myg-radio/radio"
 ```
 
 ### Javascript
@@ -15,12 +15,12 @@
 **ES6**
 
 ```js
-import MygRadio from '@myg/radio';
+import MygRadio from 'myg-radio';
 ```
 
 or
 
 ```js
-import * as myg from 'myg/src/myg';
+import * as myg from 'myg-src/myg';
 const MygRadio = myg.MygRadio;
 ```

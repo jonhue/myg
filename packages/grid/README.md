@@ -7,5 +7,5 @@
 **Sass**
 
 ```sass
-@import "@myg/grid/grid"
+@import "myg-grid/grid"
 ```
