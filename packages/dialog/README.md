@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-dialog/dialog"
+@import "~myg-dialog/dialog"
 ```
 
 ### Javascript

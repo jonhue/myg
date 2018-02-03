@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-drawer/drawer"
+@import "~myg-drawer/drawer"
 ```
 
 ### Javascript

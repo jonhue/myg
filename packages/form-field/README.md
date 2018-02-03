@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-form-field/form-field"
+@import "~myg-form-field/form-field"
 ```
 
 ### Javascript

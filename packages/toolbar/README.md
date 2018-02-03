@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-toolbar/toolbar"
+@import "~myg-toolbar/toolbar"
 ```
 
 ### Javascript

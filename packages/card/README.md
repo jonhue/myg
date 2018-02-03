@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-cards/cards"
+@import "~myg-cards/cards"
 ```
 
 ### Javascript

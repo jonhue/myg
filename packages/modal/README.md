@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-modal/modal"
+@import "~myg-modal/modal"
 ```
 
 ### Javascript

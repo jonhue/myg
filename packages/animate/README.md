@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-animate/animate"
+@import "~myg-animate/animate"
 ```
 
 ### Javascript

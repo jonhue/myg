@@ -1,6 +1,6 @@
 {
     "name": "myg-menu",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,6 +12,6 @@
     "license": "MIT",
     "dependencies": {
         "@material/menu": "^0.29.0",
-        "myg-base": "file:./../base"
+        "myg-base": "^0.1.0"
     }
 }

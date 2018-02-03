@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-tooltip/tooltip"
+@import "~myg-tooltip/tooltip"
 ```
 
 ### Javascript

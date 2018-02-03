@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-menu/menu"
+@import "~myg-menu/menu"
 ```
 
 ### Javascript

@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-base/base"
+@import "~myg-base/base"
 ```
 
 ### Javascript

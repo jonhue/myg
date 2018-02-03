@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "myg-toast/toast"
+@import "~myg-toast/toast"
 ```
 
 ### Javascript

@@ -4,6 +4,16 @@
 
 * nothing yet
 
-### 1.0.0 - 2018/01/27
+### 0.1.2 - 2018/02/03
+
+* bugfixes
+    * fixed sass imports
+
+### 0.1.1 - 2018/02/03
+
+* bugfixes
+    * fixed package dependencies
+
+### 0.1.0 - 2018/02/03
 
 * initial release

@@ -7,5 +7,5 @@
 **Sass**
 
 ```sass
-@import "myg-spacing/spacing"
+@import "~myg-spacing/spacing"
 ```

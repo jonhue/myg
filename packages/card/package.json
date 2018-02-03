@@ -1,6 +1,6 @@
 {
     "name": "myg-card",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,6 +11,6 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "file:./../base"
+        "myg-base": "^0.1.0"
     }
 }
