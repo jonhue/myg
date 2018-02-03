@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 0.1.3 - 2018/02/03
+
+* bugfixes
+    * fixed js imports
+
 ### 0.1.2 - 2018/02/03
 
 * bugfixes

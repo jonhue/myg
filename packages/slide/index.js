@@ -1,5 +1,5 @@
-import Myg from 'myg-base';
-import * as flickity from 'flickity';
+import Myg from '~myg-base';
+import * as flickity from '~flickity';
 
 class Slide extends Myg {
 

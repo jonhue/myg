@@ -1,5 +1,5 @@
-import Myg from 'myg-base';
-import {MDCTemporaryDrawer, MDCTemporaryDrawerFoundation, util} from '@material/drawer';
+import Myg from '~myg-base';
+import {MDCTemporaryDrawer, MDCTemporaryDrawerFoundation, util} from '~@material/drawer';
 
 class Drawer extends Myg {
 

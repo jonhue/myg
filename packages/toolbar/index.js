@@ -1,5 +1,5 @@
-import Myg from 'myg-base';
-import {MDCToolbar, MDCToolbarFoundation} from '@material/toolbar';
+import Myg from '~myg-base';
+import {MDCToolbar, MDCToolbarFoundation} from '~@material/toolbar';
 
 class Toolbar extends Myg {
 

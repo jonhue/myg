@@ -1,4 +1,4 @@
-import Myg from 'myg-base';
+import Myg from '~myg-base';
 
 class Icon extends Myg {
 }
