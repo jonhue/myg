@@ -28,7 +28,6 @@
         "@myg/footer": "file:./packages/footer",
         "@myg/form-field": "file:./packages/form-field",
         "@myg/grid": "file:./packages/grid",
-        "@myg/hero": "file:./packages/hero",
         "@myg/icon": "file:./packages/icon",
         "@myg/input": "file:./packages/input",
         "@myg/label": "file:./packages/label",

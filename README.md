@@ -89,7 +89,6 @@ import * as myg from 'myg';
 * **[Footers](packages/footer)**
 * **[Form Fields](packages/form-field)**
 * **[Grids](packages/grid)**
-* **[Heros](packages/hero)**
 * **[Icons](packages/icon)**
 * **[Inputs](packages/input)**
 * **[Labels](packages/label)**
