@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-slide/slide"
+@import "myg-slide/slide"
 ```
 
 ### Javascript

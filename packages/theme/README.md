@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-theme/theme"
+@import "myg-theme/theme"
 ```
 
 ### Javascript

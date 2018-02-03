@@ -7,5 +7,5 @@
 **Sass**
 
 ```sass
-@import "~myg-elevation/elevation"
+@import "myg-elevation/elevation"
 ```

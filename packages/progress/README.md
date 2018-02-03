@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-progress/progress"
+@import "myg-progress/progress"
 ```
 
 ### Javascript

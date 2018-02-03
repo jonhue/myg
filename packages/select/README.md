@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-select/select"
+@import "myg-select/select"
 ```
 
 ### Javascript

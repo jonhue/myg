@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-icons/icons"
+@import "myg-icons/icons"
 ```
 
 ### Javascript

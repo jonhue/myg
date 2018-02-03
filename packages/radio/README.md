@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-radio/radio"
+@import "myg-radio/radio"
 ```
 
 ### Javascript

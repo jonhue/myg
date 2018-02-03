@@ -1,6 +1,6 @@
 {
     "name": "myg-titlebar",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,6 +12,6 @@
     "license": "MIT",
     "dependencies": {
         "welcomer": "^1.2.3",
-        "myg-base": "^0.1.4"
+        "myg-base": "^0.1.5"
     }
 }

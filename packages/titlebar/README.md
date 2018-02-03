@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-titlebar/titlebar"
+@import "myg-titlebar/titlebar"
 ```
 
 ### Javascript

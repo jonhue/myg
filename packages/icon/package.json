@@ -1,6 +1,6 @@
 {
     "name": "myg-icon",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,6 +11,6 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.1.4"
+        "myg-base": "^0.1.5"
     }
 }

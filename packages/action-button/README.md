@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-action-button/action-button"
+@import "myg-action-button/action-button"
 ```
 
 ### Javascript

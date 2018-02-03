@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-dropdown/dropdown"
+@import "myg-dropdown/dropdown"
 ```
 
 ### Javascript

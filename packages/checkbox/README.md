@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-checkbox/checkbox"
+@import "myg-checkbox/checkbox"
 ```
 
 ### Javascript

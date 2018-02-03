@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-text/text"
+@import "myg-text/text"
 ```
 
 ### Javascript

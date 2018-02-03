@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-footer/footer"
+@import "myg-footer/footer"
 ```
 
 ### Javascript

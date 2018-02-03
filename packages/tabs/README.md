@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-tabs/tabs"
+@import "myg-tabs/tabs"
 ```
 
 ### Javascript

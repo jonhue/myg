@@ -7,5 +7,5 @@
 **Sass**
 
 ```sass
-@import "~myg-label/label"
+@import "myg-label/label"
 ```

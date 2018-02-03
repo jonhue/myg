@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 0.1.5 - 2018/02/03
+
+* bugfixes
+    * fixed package dependencies
+
 ### 0.1.4 - 2018/02/03
 
 * bugfixes

@@ -7,5 +7,5 @@
 **Sass**
 
 ```sass
-@import "~myg-list/list"
+@import "myg-list/list"
 ```

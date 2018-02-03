@@ -7,7 +7,7 @@
 **Sass**
 
 ```sass
-@import "~myg-input/input"
+@import "myg-input/input"
 ```
 
 ### Javascript
