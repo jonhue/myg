@@ -1,12 +1,19 @@
 const path = require('path');
 
-module.exports = {
+module.exports = [{
     entry: {
-        'myg.js': './src/myg.js',
+        'myg.js': './src/myg.js'
+    },
+    output: {
+        filename: 'myg.js',
+        path: path.resolve(__dirname, 'dist')
+    }
+}, {
+    entry: {
         'myg.sass': './src/myg.sass'
     },
     output: {
-        filename: '[name]',
+        filename: 'myg.css',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -23,5 +30,5 @@ module.exports = {
                 }
             }]
         }]
-    },
-};
+    }
+}];
