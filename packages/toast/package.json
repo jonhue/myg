@@ -1,6 +1,6 @@
 {
     "name": "myg-toast",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,9 +12,9 @@
     "license": "MIT",
     "dependencies": {
         "@material/snackbar": "^0.29.0",
-        "myg-base": "^0.1.7",
-        "myg-theme": "^0.1.7",
-        "myg-font": "^0.1.7",
-        "myg-spacing": "^0.1.7"
+        "myg-base": "^0.1.8",
+        "myg-theme": "^0.1.8",
+        "myg-font": "^0.1.8",
+        "myg-spacing": "^0.1.8"
     }
 }

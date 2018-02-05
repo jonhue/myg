@@ -1,19 +1,20 @@
 {
-    "name": "myg-drawer",
-    "version": "0.1.8",
+    "name": "myg-layout",
+    "version": "0.1.7",
     "description": "...",
-    "main": "index.js",
+    "main": "layout.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",
         "email": "me@jonhue.me"
     },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/drawer",
+    "repository": "https://github.com/jonhue/myg/tree/master/packages/layout",
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "@material/drawer": "^0.29.0",
+        "normalize.css": "^7.0.0",
         "myg-base": "^0.1.8",
         "myg-theme": "^0.1.8",
-        "myg-spacing": "^0.1.8"
+        "myg-font": "^0.1.8",
+        "myg-grid": "^0.1.8"
     }
 }

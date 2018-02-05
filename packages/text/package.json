@@ -1,6 +1,6 @@
 {
     "name": "myg-text",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,9 +11,9 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.1.7",
-        "myg-theme": "^0.1.7",
-        "myg-font": "^0.1.7",
-        "myg-grid": "^0.1.7"
+        "myg-base": "^0.1.8",
+        "myg-theme": "^0.1.8",
+        "myg-font": "^0.1.8",
+        "myg-grid": "^0.1.8"
     }
 }

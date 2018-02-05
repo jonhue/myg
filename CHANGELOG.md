@@ -4,6 +4,13 @@
 
 * nothing yet
 
+### 0.1.8 - 2018/02/05
+
+* features
+    * added `layout` component
+* bugfixes
+    * fixed package dependencies
+
 ### 0.1.7 - 2018/02/05
 
 * bugfixes

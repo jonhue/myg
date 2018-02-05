@@ -1,6 +1,6 @@
 {
     "name": "myg-base",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -9,11 +9,5 @@
     },
     "repository": "https://github.com/jonhue/myg/tree/master/packages/base",
     "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT",
-    "dependencies": {
-        "normalize.css": "^7.0.0",
-        "myg-theme": "^0.1.7",
-        "myg-font": "^0.1.7",
-        "myg-grid": "^0.1.7"
-    }
+    "license": "MIT"
 }

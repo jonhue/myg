@@ -4,11 +4,11 @@
 
 
 // Sizes
-@function px($px, $font-size: map-get($myg--root, font-size))
+@function px($px, $font-size: map-get($myg-base, font-size))
     @return $px/$font-size+rem
-@function rem($px, $font-size: map-get($myg--root, font-size))
+@function rem($px, $font-size: map-get($myg-base, font-size))
     @return px($px, $font-size)
-@function em($px, $font-size: map-get($myg--root, font-size))
+@function em($px, $font-size: map-get($myg-base, font-size))
     @return $px/$font-size+em
 
 
