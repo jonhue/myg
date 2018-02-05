@@ -1,5 +1,5 @@
-import Myg from '~myg-base';
-import {MDCFormField, MDCFormFieldFoundation} from '~@material/form-field';
+import Myg from 'myg-base';
+import {MDCFormField, MDCFormFieldFoundation} from '@material/form-field';
 
 class Field extends Myg {
 

@@ -7,9 +7,4 @@
 
 
 html
-    @each $name, $border-radius-size in $border-radius
-        +v(border-radius-#{$name}, $border-radius-size)
-    @each $name, $scrollbar-attribute in $scrollbar
-        +v(scrollbar-#{$name}, $scrollbar-attribute)
-    &, &.theme--default
-        +theme($myg-theme)
+    +theme($myg-theme)

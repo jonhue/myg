@@ -4,6 +4,15 @@
 
 * nothing yet
 
+### 0.1.6 - 2018/02/05
+
+* features
+    * merged `layout` component into `base` component
+* enhancements
+    * improved `theme` mixin
+* bugfixes
+    * fixed package dependencies
+
 ### 0.1.5 - 2018/02/03
 
 * bugfixes
