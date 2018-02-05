@@ -66,6 +66,10 @@ cd ../label
 sed -i "3s/.*/    \"version\": \"$1\",/" package.json
 npm publish
 
+cd ../layout
+sed -i "3s/.*/    \"version\": \"$1\",/" package.json
+npm publish
+
 cd ../list
 sed -i "3s/.*/    \"version\": \"$1\",/" package.json
 npm publish
