@@ -11,10 +11,10 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "normalize.css": "^7.0.0",
         "myg-base": "^0.1.8",
-        "myg-theme": "^0.1.8",
         "myg-font": "^0.1.8",
-        "myg-grid": "^0.1.8"
+        "myg-grid": "^0.1.8",
+        "myg-theme": "^0.1.8",
+        "normalize.css": "^7.0.0"
     }
 }
