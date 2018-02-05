@@ -8,6 +8,13 @@ class Toolbar extends Myg {
         this._mdcToolbar = new MDCToolbar(element);
     }
 
+    get mdcToolbar() {
+        return this._mdcToolbar;
+    }
+    set mdcToolbar(val) {
+        this._mdcToolbar = val;
+    }
+
     show() {
         this.element.style.transform = '';
     }

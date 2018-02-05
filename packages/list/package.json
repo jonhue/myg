@@ -1,6 +1,6 @@
 {
     "name": "myg-list",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "...",
     "main": "list.sass",
     "bugs": {
@@ -11,6 +11,6 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.1.6"
+        "myg-base": "^0.1.7"
     }
 }
