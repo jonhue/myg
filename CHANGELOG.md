@@ -4,6 +4,16 @@
 
 * nothing yet
 
+### 0.2.0 - 2018/02/09
+
+* features
+    * added Inter UI as default font family
+* enhancements
+    * make pwa display mode configurable
+    * updated `myg-layout` classes
+* bugfixes
+    * fixed webpack config
+
 ### 0.1.8 - 2018/02/05
 
 * features

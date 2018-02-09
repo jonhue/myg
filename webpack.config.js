@@ -13,7 +13,7 @@ module.exports = [{
         'myg.sass': './src/myg.sass'
     },
     output: {
-        filename: 'myg.css',
+        filename: 'myg.min.css',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
