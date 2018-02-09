@@ -11,7 +11,8 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "modalist": "^1.1.0",
+        "modalist": "^2.0.0",
+        "animate.css": "^3.5.2",
         "myg-base": "^0.2.0"
     }
 }
