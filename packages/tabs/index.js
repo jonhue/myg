@@ -11,9 +11,11 @@ class Tabs extends Myg {
         this._mdcTabBar.tabs.forEach((tab) => {
             tab.preventDefaultOnClick = true;
         });
-        this._mdcTabBar.listen( 'MDCTabBar:change', ({ detail: tabs }) => {
-            update(tabs.activeTabIndex);
-        });
+        document.addEventListener( 'ready' () => {
+            if ( this.element.querySelector('a[role="tab"]:first-child').getAttribute('href')[0] != '#' )
+                update(0);
+        })
+        this._mdcTabBar.listen( 'MDCTabBar:change', ({ detail: tabs }) => update(tabs.activeTabIndex) );
     }
 
     get panels() {
@@ -63,22 +65,18 @@ class Tabs extends Myg {
             this.load( tab.getAttribute('href'), (data, status) => {
                 if ( status >= 200 && status < 400 ) {
                     this.render(data);
+                    this.hideLoader();
+                    setTimeout( () => this.showContent('#myg-tabs--panel-success'), 250 );
                 } else {
-                    this.error( status, data );
+                    this.hideLoader();
+                    setTimeout( () => this.showContent('#myg-tabs--panel-error'), 250 );
                 };
-                this.hideLoader();
-                setTimeout( () => this.showContent('#myg-tabs--panel-async'), 250 );
             });
         };
     }
 
     render(data) {
-        this.panels.querySelector('.myg-tabs--panel#myg-tabs--panel-async').innerHTML = data;
-    }
-    error( status, response ) {
-        console.log(status);
-        console.log(response);
-        // render error message
+        this.panels.querySelector('.myg-tabs--panel#myg-tabs--panel-success').innerHTML = data;
     }
 
 }
