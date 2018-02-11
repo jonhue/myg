@@ -1,0 +1,13 @@
+=myg-radio
+    &.mdc-radio
+        +v(color-border, color(border, null, true))
+        +v(mdc-theme-secondary, color(accent, base))
+        &::before, &::after
+            background: transparent
+        &.mdc-ripple-upgraded--foreground-activation
+            &::before, &::after
+                background: rgba(color(accent, base, true), .35)
+        .mdc-radio__native-control:enabled:not(:checked) + .mdc-radio__background .mdc-radio__outer-circle
+            border-color: color(border)
+        & + label
+            margin: 0
