@@ -22,7 +22,7 @@ or
 
 ```js
 import * as myg from 'myg-src/myg';
-const MygTab = myg.MygTab;
+document.addEventListener( 'ready' () => const MygTab = new myg.MygTab );
 ```
 
 ### Synchronous

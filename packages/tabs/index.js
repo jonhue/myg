@@ -11,10 +11,12 @@ class Tabs extends Myg {
         this._mdcTabBar.tabs.forEach((tab) => {
             tab.preventDefaultOnClick = true;
         });
-        document.addEventListener( 'ready' () => {
-            if ( this.element.querySelector('a[role="tab"]:first-child').getAttribute('href')[0] != '#' )
-                update(0);
-        })
+        if ( this.element.querySelector('a.mdc-tab.mdc-tab--active').getAttribute('href')[0] != '#' ) {
+            for ( let i = 0, length = this.element.children.length; i < length; i++ ) {
+                if ( this.element.children[i].classList.contains('mdc-tab--active') )
+                    update(i);
+            };
+        };
         this._mdcTabBar.listen( 'MDCTabBar:change', ({ detail: tabs }) => update(tabs.activeTabIndex) );
     }
 
