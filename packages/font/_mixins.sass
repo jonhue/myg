@@ -1,6 +1,9 @@
 // Family
 =font($name)
     font-family: map-get($myg-font, $name)
+    @if $name == sans-serif
+        +pwa
+            font-family: map-get($myg-font, default)
 
 
 // Style
