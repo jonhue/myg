@@ -1,0 +1,54 @@
+.modalist--loader
+
+
+#modalist--overlay
+    background: color(overlay)
+    transition-duration: .35s
+    transition-timing-function: ease-out
+
+
+.modalist
+    box-shadow: 0 px(1) px(3) 0 rgba(color(text, base, true), .05)
+    border: px(1) solid color(border)
+    border-radius: px(3) !important
+    transition-duration: .35s
+    transition-timing-function: ease-out
+    &.modalist--full-screen
+        box-shadow: none
+        border: none
+        border-radius: 0
+    & > .modalist--content
+        transition-duration: .35s
+        transition-timing-function: ease-out
+        & > .modalist--content-header
+            background: color(background, lighter)
+            border-radius: px(3) px(3) 0 0
+            padding: padding(sm)
+            border-bottom: px(1) solid color(border)
+            h4, p
+                margin: 0
+            h4
+                line-height: 1.58
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+                font-weight: 600
+                font-size: px(18)
+                color: color(text, darker)
+                @media (min-width: 800px)
+                    font-size: px(20)
+            p
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+                color: color(text, dark)
+                font-weight: normal
+                letter-spacing: -.003em
+                font-size: px(14)
+                line-height: 1.75
+                @media (min-width: 800px)
+                    font-size: px(16)
+            .modalist--closer
+                opacity: .85
+                &:hover, &:focus
+                    opacity: 1
+        & > .modalist--content-body
+            background: white
+            border-radius: 0 0 px(3) px(3)
+            padding: padding(sm)

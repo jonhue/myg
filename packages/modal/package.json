@@ -13,6 +13,8 @@
     "dependencies": {
         "modalist": "^2.0.0",
         "animate.css": "^3.5.2",
-        "myg-base": "^0.2.0"
+        "myg-base": "^0.2.0",
+        "myg-theme": "^0.2.0",
+        "myg-spacing": "^0.2.0"
     }
 }

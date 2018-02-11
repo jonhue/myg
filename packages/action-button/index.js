@@ -2,9 +2,15 @@ import Myg from 'myg-base';
 
 class ActionButton extends Myg {
 
-    showActions() {  }
-    hideActions() {  }
-    toggleActions() {  }
+    showActions() {
+
+    }
+    hideActions() {
+
+    }
+    toggleActions() {
+        
+    }
 
 }
 
