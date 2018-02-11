@@ -11,6 +11,18 @@ class Myg {
         this._element = val;
     }
 
+    load( url, callback ) {
+        let request = new XMLHttpRequest();
+        request.open( 'GET', url, true );
+        request.onload = () => {
+            callback( this.status, this.response );
+        };
+        request.onerror = () => {
+            callback( this.status, this.response );
+        };
+        request.send();
+    }
+
 }
 
 export default Myg;
