@@ -1,0 +1,29 @@
+=myg-tabs
+    &.mdc-tab-bar
+        // ...
+
+=myg-tabs--panels
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    .myg-tabs--loader
+        display: none
+        visibility: hidden
+        opacity: 0
+        padding: px(50)
+        +transition(opacity, .25s)
+        .myg-tabs--shown
+            display: block
+            visibility: visible
+            opacity: 1
+    .myg-tabs--panel
+        width: 100%
+        display: none
+        visibility: hidden
+        opacity: 0
+        +transition(opacity, .25s)
+        .myg-tabs--shown
+            display: block
+            visibility: visible
+            opacity: 1
