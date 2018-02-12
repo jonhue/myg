@@ -1,0 +1,12 @@
+=myg-card
+    padding: myg-spacing(sm)
+    margin: myg-spacing(sm)
+    +myg-elevation(sm)
+    +border-radius(sm)
+    border: px(1) solid color(border)
+    width: 100%
+    &:hover
+        +myg-elevation(md)
+    &.myg-card--seamless
+        border: none
+        background: color(background, lighter)
