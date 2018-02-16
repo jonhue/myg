@@ -16,7 +16,7 @@
 ```js
 import MygActionButton from 'myg-action-button';
 
-document.addEventListener( 'turbolinks:load', () => {
+document.addEventListener( 'ready', () => {
     const mygActionButton = new MygActionButton( document.querySelector('.myg-action-button'), {} );
 })
 ```
@@ -27,7 +27,7 @@ or
 import * as myg from 'myg/src/myg';
 const MygActionButton = myg.MygActionButton;
 
-document.addEventListener( 'turbolinks:load', () => {
+document.addEventListener( 'ready', () => {
     const mygActionButton = new MygActionButton( document.querySelector('.myg-action-button'), {} );
 })
 ```
