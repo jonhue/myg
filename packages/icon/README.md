@@ -4,10 +4,8 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
-@import "myg-icons/icons"
+@import "myg-icon/icon"
 ```
 
 ### Javascript
@@ -15,12 +13,16 @@
 **ES6**
 
 ```js
-import MygIcon from 'myg-icons';
+import MygIcon from 'myg-icon';
+
+document.addEventListener( 'ready', () => {
+    const mygIcons = MygIcon.initAll( document.querySelectorAll('.myg-icon'), {} );
+})
 ```
 
 or
 
 ```js
-import * as myg from 'myg-src/myg';
+import * as myg from 'myg/src/myg';
 const MygIcon = myg.MygIcon;
 ```
