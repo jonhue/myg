@@ -4,23 +4,9 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
-@import "myg-base/base"
-```
+@import "myg-layout/layout"
 
-### Javascript
-
-**ES6**
-
-```js
-import Myg from 'myg-base';
-```
-
-or
-
-```js
-import * as myg from 'myg-src/myg';
-const Myg = myg.Myg;
+// Include classes (optional)
++myg-layout--classes
 ```
