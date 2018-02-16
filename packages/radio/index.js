@@ -15,14 +15,6 @@ class Radio extends Myg {
         this._mdcRadio = val;
     }
 
-    static init(elements) {
-        let arr = [];
-        for ( let obj of elements ) {
-            arr.push(new Radio(obj));
-        }
-        return arr;
-    }
-
 }
 
 export default Radio;

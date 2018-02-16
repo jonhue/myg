@@ -15,14 +15,6 @@ class Checkbox extends Myg {
         this._mdcCheckbox = val;
     }
 
-    static init(elements) {
-        let arr = [];
-        for ( let obj of elements ) {
-            arr.push(new Checkbox(obj));
-        }
-        return arr;
-    }
-
 }
 
 export default Checkbox;

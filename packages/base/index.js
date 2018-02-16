@@ -23,6 +23,18 @@ class Myg {
         request.send();
     }
 
+    static init( element, options = {} ) {
+        new this( element, options );
+    }
+
+    static initAll( elements, options = {} ) {
+        let arr = [];
+        for ( let obj of elements ) {
+            arr.push(new this( obj, options ));
+        }
+        return arr;
+    }
+
 }
 
 export default Myg;
