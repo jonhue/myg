@@ -4,18 +4,18 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-action-button/action-button"
 ```
 
 ### Javascript
 
-**ES6**
-
 ```js
 import MygActionButton from 'myg-action-button';
+
+document.addEventListener( 'turbolinks:load', () => {
+    const mygActionButton = new MygActionButton( document.querySelector('.myg-action-button'), {} );
+})
 ```
 
 or
@@ -23,4 +23,8 @@ or
 ```js
 import * as myg from 'myg-src/myg';
 const MygActionButton = myg.MygActionButton;
+
+document.addEventListener( 'turbolinks:load', () => {
+    const mygActionButton = new MygActionButton( document.querySelector('.myg-action-button'), {} );
+})
 ```
