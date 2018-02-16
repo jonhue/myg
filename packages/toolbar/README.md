@@ -4,23 +4,30 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-toolbar/toolbar"
+
+// Include classes (optional)
++myg-toolbar--classes
 ```
 
 ### Javascript
 
-**ES6**
-
 ```js
 import MygToolbar from 'myg-toolbar';
+
+document.addEventListener( 'ready', () => {
+    const mygToolbar = new MygToolbar( document.querySelector('.myg-toolbar'), {} );
+})
 ```
 
 or
 
 ```js
-import * as myg from 'myg-src/myg';
+import * as myg from 'myg/src/myg';
 const MygToolbar = myg.MygToolbar;
+
+document.addEventListener( 'ready', () => {
+    const mygToolbar = new MygToolbar( document.querySelector('.myg-toolbar'), {} );
+})
 ```
