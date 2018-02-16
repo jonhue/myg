@@ -4,23 +4,27 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-sidebar/sidebar"
 ```
 
 ### Javascript
 
-**ES6**
-
 ```js
 import MygSidebar from 'myg-sidebar';
+
+document.addEventListener( 'ready', () => {
+    const mygSidebar = new MygSidebar( document.querySelector('.myg-sidebar'), {} );
+})
 ```
 
 or
 
 ```js
-import * as myg from 'myg-src/myg';
+import * as myg from 'myg/src/myg';
 const MygSidebar = myg.MygSidebar;
+
+document.addEventListener( 'ready', () => {
+    const mygSidebar = new MygSidebar( document.querySelector('.myg-sidebar'), {} );
+})
 ```
