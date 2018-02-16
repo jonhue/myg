@@ -4,18 +4,18 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-dialog/dialog"
 ```
 
 ### Javascript
 
-**ES6**
-
 ```js
 import MygDialog from 'myg-dialog';
+
+document.addEventListener( 'ready', () => {
+    const mygDialogs = MygDialog.initAll( document.querySelectorAll('.myg-dialog'), {} );
+})
 ```
 
 or
@@ -23,4 +23,8 @@ or
 ```js
 import * as myg from 'myg-src/myg';
 const MygDialog = myg.MygDialog;
+
+document.addEventListener( 'ready', () => {
+    const mygDialogs = MygDialog.initAll( document.querySelectorAll('.myg-dialog'), {} );
+})
 ```
