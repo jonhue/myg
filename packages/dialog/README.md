@@ -21,7 +21,7 @@ document.addEventListener( 'ready', () => {
 or
 
 ```js
-import * as myg from 'myg-src/myg';
+import * as myg from 'myg/src/myg';
 const MygDialog = myg.MygDialog;
 
 document.addEventListener( 'ready', () => {
