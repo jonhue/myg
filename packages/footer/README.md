@@ -4,23 +4,30 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-footer/footer"
+
+// Include classes (optional)
++myg-footer--classes
 ```
 
 ### Javascript
 
-**ES6**
-
 ```js
 import MygFooter from 'myg-footer';
+
+document.addEventListener( 'ready', () => {
+    const mygFooters = MygFooter.initAll( document.querySelectorAll('.myg-footer'), {} );
+})
 ```
 
 or
 
 ```js
-import * as myg from 'myg-src/myg';
+import * as myg from 'myg/src/myg';
 const MygFooter = myg.MygFooter;
+
+document.addEventListener( 'ready', () => {
+    const mygFooters = MygFooter.initAll( document.querySelectorAll('.myg-footer'), {} );
+})
 ```
