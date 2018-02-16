@@ -24,7 +24,7 @@ document.addEventListener( 'ready', () => {
 or
 
 ```js
-import * as myg from 'myg-src/myg';
+import * as myg from 'myg/src/myg';
 const MygCheckbox = myg.MygCheckbox;
 
 document.addEventListener( 'ready', () => {
