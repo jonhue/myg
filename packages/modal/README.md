@@ -4,23 +4,27 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-modal/modal"
 ```
 
 ### Javascript
 
-**ES6**
-
 ```js
 import MygModal from 'myg-modal';
+
+document.addEventListener( 'ready', () => {
+    const mygModals = MygModal.initAll( document.querySelectorAll('.myg-modal'), {} );
+})
 ```
 
 or
 
 ```js
-import * as myg from 'myg-src/myg';
+import * as myg from 'myg/src/myg';
 const MygModal = myg.MygModal;
+
+document.addEventListener( 'ready', () => {
+    const mygModals = MygModal.initAll( document.querySelectorAll('.myg-modal'), {} );
+})
 ```
