@@ -4,18 +4,21 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-cards/cards"
+
+// Include classes (optional)
++myg-card--classes
 ```
 
 ### Javascript
 
-**ES6**
-
 ```js
 import MygCard from 'myg-cards';
+
+document.addEventListener( 'ready', () => {
+    const mygCards = MygCard.initAll( document.querySelectorAll('.myg-card'), {} );
+})
 ```
 
 or
@@ -23,4 +26,8 @@ or
 ```js
 import * as myg from 'myg-src/myg';
 const MygCard = myg.MygCard;
+
+document.addEventListener( 'ready', () => {
+    const mygCards = MygCard.initAll( document.querySelectorAll('.myg-card'), {} );
+})
 ```
