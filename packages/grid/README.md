@@ -4,8 +4,9 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-grid/grid"
+
+// Include classes (optional)
++myg-grid--classes
 ```
