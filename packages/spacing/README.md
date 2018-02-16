@@ -4,8 +4,6 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-spacing/spacing"
 ```
