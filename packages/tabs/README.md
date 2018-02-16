@@ -4,25 +4,31 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-tabs/tabs"
+
+// Include classes (optional)
++myg-tabs--classes
 ```
 
 ### Javascript
 
-**ES6**
-
 ```js
-import MygTab from 'myg-tabs';
+import MygTabs from 'myg-tabs';
+
+document.addEventListener( 'ready', () => {
+    const mygTabs = MygTabs.initAll( document.querySelectorAll('.myg-tabs'), {} );
+})
 ```
 
 or
 
 ```js
-import * as myg from 'myg-src/myg';
-document.addEventListener( 'ready' () => const MygTab = new myg.MygTab );
+import * as myg from 'myg/src/myg';
+
+document.addEventListener( 'ready', () => {
+    const mygTabs = MygTabs.initAll( document.querySelectorAll('.myg-tabs'), {} );
+})
 ```
 
 ### Synchronous
