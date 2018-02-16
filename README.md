@@ -44,13 +44,13 @@ An opinionated & modular state-of-the-web framework.
 **Sass**
 
 ```sass
-@import "myg-src/myg"
+@import "myg/src/myg"
 ```
 
 **CSS3**
 
 ```css
-@import "myg-dist/myg.min";
+@import "myg/dist/myg.min";
 ```
 
 ### Javascript
