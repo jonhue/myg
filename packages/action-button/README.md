@@ -24,7 +24,7 @@ document.addEventListener( 'turbolinks:load', () => {
 or
 
 ```js
-import * as myg from 'myg-src/myg';
+import * as myg from 'myg/src/myg';
 const MygActionButton = myg.MygActionButton;
 
 document.addEventListener( 'turbolinks:load', () => {
