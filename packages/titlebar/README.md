@@ -4,23 +4,27 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-titlebar/titlebar"
 ```
 
 ### Javascript
 
-**ES6**
-
 ```js
 import MygTitlebar from 'myg-titlebar';
+
+document.addEventListener( 'ready', () => {
+    const mygTitlebar = new MygTitlebar( document.querySelector('.myg-titlebar'), {} );
+})
 ```
 
 or
 
 ```js
-import * as myg from 'myg-src/myg';
+import * as myg from 'myg/src/myg';
 const MygTitlebar = myg.MygTitlebar;
+
+document.addEventListener( 'ready', () => {
+    const mygTitlebar = new MygTitlebar( document.querySelector('.myg-titlebar'), {} );
+})
 ```
