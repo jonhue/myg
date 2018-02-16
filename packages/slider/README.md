@@ -4,23 +4,27 @@
 
 ### Stylesheets
 
-**Sass**
-
 ```sass
 @import "myg-slider/slider"
 ```
 
 ### Javascript
 
-**ES6**
-
 ```js
 import MygSlider from 'myg-slider';
+
+document.addEventListener( 'ready', () => {
+    const mygSLiders = MygSLider.initAll( document.querySelectorAll('.myg-slider'), {} );
+})
 ```
 
 or
 
 ```js
-import * as myg from 'myg-src/myg';
+import * as myg from 'myg/src/myg';
 const MygSlider = myg.MygSlider;
+
+document.addEventListener( 'ready', () => {
+    const mygSLiders = MygSLider.initAll( document.querySelectorAll('.myg-slider'), {} );
+})
 ```
