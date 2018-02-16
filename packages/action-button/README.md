@@ -6,6 +6,9 @@
 
 ```sass
 @import "myg-action-button/action-button"
+
+// Include classes (optional)
++myg-action-button--classes
 ```
 
 ### Javascript
