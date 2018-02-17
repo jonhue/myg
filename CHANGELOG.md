@@ -4,6 +4,13 @@
 
 * nothing yet
 
+### 0.4.0 - 2018/02/17
+
+* enhancements
+    * minor tweaks
+* bugfixes
+    * fixed theme CSS variables
+
 ### 0.3.0 - 2018/02/17
 
 * features
