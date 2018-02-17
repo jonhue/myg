@@ -1,68 +1,33 @@
 // Text Size
 =text-size($element)
-    @each $name, $value in map-get($myg-text--size, $element)
-        @if $value == null
+    @each $name, $value in map-get($myg-text--size-mobile, $element)
+        @if $name == base
             font-size: $value
         @else
-            @each $n, $v in $value
-                @if $n == base
-                    font-size: $v
-                @else
-                    .#{$n}
-                        font-size: $v
+            .#{$name}
+                font-size: $value
     +bigger-than(tablet)
-        @each $name, $value in map-get($myg-text--size-mobile, $element)
-            @if $value == null
+        @each $name, $value in map-get($myg-text--size, $element)
+            @if $name == base
                 font-size: $value
             @else
-                @each $n, $v in $value
-                    @if $n == base
-                        font-size: $v
-                    @else
-                        .#{$n}
-                            font-size: $v
+                .#{$name}
+                    font-size: $value
 
 
 // Text Family
 =text-family($element)
-    @each $name, $value in map-get($myg-text--family, $element)
-        @if $value == null
-            +font($value)
-        @else
-            @each $n, $v in $value
-                @if $n == base
-                    +font($v)
-                @else
-                    .#{$n}
-                        +font($v)
+    +font(map-get($myg-text--family, $element))
 
 
 // Text Color
 =text-color($element)
-    @each $name, $value in map-get($myg-text--color, $element)
-        @if $value == null
-            color: $value
-        @else
-            @each $n, $v in $value
-                @if $n == base
-                    color: $v
-                @else
-                    .#{$n}
-                        color: $v
+    color: map-get($myg-text--color, $element)
 
 
 // Text Weight
 =text-weight($element)
-    @each $name, $value in map-get($myg-text--weight, $element)
-        @if $value == null
-            font-weight: $value
-        @else
-            @each $n, $v in $value
-                @if $n == base
-                    font-weight: $v
-                @else
-                    .#{$n}
-                        font-weight: $v
+    font-weight: map-get($myg-text--weight, $element)
 
 
 // Text
