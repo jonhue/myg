@@ -4,6 +4,14 @@
 
 * nothing yet
 
+### 0.3.0 - 2018/02/17
+
+* features
+    * added card component
+    * added tabs component
+* enhancements
+    * minor improvements
+
 ### 0.2.0 - 2018/02/09
 
 * features
