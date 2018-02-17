@@ -7,3 +7,9 @@
     // Myg Layout
     .myg-layout
         +myg-layout
+
+
+    // Myg Wrap
+    @each $name, $value in $myg-grid--breakpoints
+        .myg-wrap--#{$name}
+            +myg-wrap($name)

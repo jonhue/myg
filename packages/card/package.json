@@ -14,6 +14,7 @@
         "myg-base": "^0.3.0",
         "myg-theme": "^0.3.0",
         "myg-elevation": "^0.3.0",
-        "myg-spacing": "^0.3.0"
+        "myg-spacing": "^0.3.0",
+        "myg-animate": "^0.3.0"
     }
 }

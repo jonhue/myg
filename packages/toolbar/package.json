@@ -14,6 +14,7 @@
         "@material/toolbar": "^0.29.0",
         "myg-base": "^0.3.0",
         "myg-theme": "^0.3.0",
-        "myg-font": "^0.3.0"
+        "myg-font": "^0.3.0",
+        "myg-layout": "^0.3.0"
     }
 }

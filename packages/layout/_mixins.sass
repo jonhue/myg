@@ -22,10 +22,6 @@
         width: 100%
     *
         box-sizing: border-box
-        margin: 0
-        padding: 0
-        opacity: 1
-        visibility: visible
         text-decoration: none
         outline: none
 
@@ -59,3 +55,9 @@
         grid-area: sidebar
     .myg-content
         grid-area: content
+
+
+// Myg Wrap
+=myg-wrap($name)
+    max-width: map-get($myg-grid--breakpoints, $name)
+    margin: 0 auto

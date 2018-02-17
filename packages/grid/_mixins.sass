@@ -277,9 +277,6 @@
     +bigger-than(large)
         &:not(.myg-grid-wrap--phone, .myg-grid-wrap--tablet, .myg-grid-wrap--laptop, .myg-grid-wrap--large)
             +grid-columns(repeat(map-get($myg-grid--columns, desktop), 1fr))
-=myg-grid-wrap($name)
-    &.myg-grid-wrap--#{$name}
-        max-width: map-get($myg-grid--breakpoints, $name)
 
 
 // Items

@@ -10,6 +10,7 @@
     font-size: px(14)
     line-height: 1
     cursor: pointer
+    text-decoration: none
     padding: px(16) px(20) px(18)
     &, span
         color: color(accent, contrast)
@@ -19,10 +20,8 @@
         border-color: color(accent, dark)
         +myg-elevation(md)
 =myg-button--dense
-    +myg-button
-    padding: rpx(12) rpx(18) rpx(14)
+    padding: px(12) px(18) px(14)
 =myg-button--disabled
-    +myg-button
     opacity: .35
     cursor: not-allowed
     &:hover
@@ -30,18 +29,17 @@
     &:focus, &:active
         pointer-events: none
 =myg-button--secondary
-    +myg-button
     background: color(background, lighter)
     border-color: color(border)
     &, span
         color: color(text, light)
     &:hover
+        background: color(background, lighter)
         border-color: color(accent, base)
         &, span
             color: color(accent, base)
 =myg-button--icon
-    +myg-button
-    padding: rpx(17) rpx(16) rpx(13)
+    padding: px(17) px(16) px(13)
     svg
         position: relative
         top: px(-2)
@@ -60,7 +58,6 @@
         width: 100%
         text-align: center
 =myg-button--loader
-    +myg-button
     position: relative
     svg
         display: none
@@ -75,7 +72,7 @@
             stroke: white
             stroke-width: 1.5
     &.loading
-        height: rpx(50)
+        height: px(50)
         padding-top: 0
         padding-bottom: 0
 
