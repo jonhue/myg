@@ -71,6 +71,13 @@
     +text-size(p)
     +text-color(p)
     +text-weight(p)
+=hyperlink
+    color: color(accent, base)
+    &:hover
+        text-decoration: underline
+    &.hyperlink--inherit
+        text-decoration: underline
+        color: inherit
 
 
 // Header
