@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 0.4.1 - 2018/02/18
+
+* bugfixes
+    * minor fixes
+
 ### 0.4.0 - 2018/02/17
 
 * enhancements

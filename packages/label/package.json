@@ -1,6 +1,6 @@
 {
     "name": "myg-label",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "...",
     "main": "label.sass",
     "bugs": {
@@ -11,8 +11,8 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.4.0",
-        "myg-theme": "^0.4.0",
-        "myg-animate": "^0.4.0"
+        "myg-base": "^0.4.1",
+        "myg-theme": "^0.4.1",
+        "myg-animate": "^0.4.1"
     }
 }
