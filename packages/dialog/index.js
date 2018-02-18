@@ -4,7 +4,7 @@ import {MDCDialog, MDCDialogFoundation, util} from '@material/dialog';
 class Dialog extends Myg {
 
     constructor( element, options = {} ) {
-        super();
+        super( element, options );
         this._mdcDialog = new MDCDialog(element);
     }
 

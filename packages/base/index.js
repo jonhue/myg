@@ -24,7 +24,9 @@ class Myg {
     }
 
     static init( element, options = {} ) {
-        new this( element, options );
+        if ( element.length > 0 ) {
+            return new this( element, options );
+        }
     }
 
     static initAll( elements, options = {} ) {

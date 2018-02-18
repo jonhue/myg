@@ -5,7 +5,7 @@ import {MDCTabBar, MDCTabBarFoundation} from '@material/tabs';
 class Tabs extends Myg {
 
     constructor( element, options = {} ) {
-        super();
+        super( element, options );
         this._panels = document.querySelector('.myg-tabs--panels');
         this._mdcTabBar = new MDCTabBar(element);
         this._mdcTabBar.tabs.forEach((tab) => {

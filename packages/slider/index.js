@@ -4,7 +4,7 @@ import {MDCSliderFoundation, MDCSlider} from '@material/slider';
 class Slider extends Myg {
 
     constructor( element, options = {} ) {
-        super();
+        super( element, options );
         this._mdcSlider = new MDCSlider(element);
     }
 

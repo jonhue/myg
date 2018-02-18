@@ -4,7 +4,7 @@ import Welcomer from 'welcomer';
 class Titlebar extends Myg {
 
     constructor( element, options = {} ) {
-        super();
+        super( element, options );
         this._welcomer = new Welcomer(options);
     }
 

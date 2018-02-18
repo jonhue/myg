@@ -4,7 +4,7 @@ import * as flickity from 'flickity';
 class Slide extends Myg {
 
     constructor( element, options = {} ) {
-        super();
+        super( element, options );
         this._flickity = new Flickity( element, options );
     }
 

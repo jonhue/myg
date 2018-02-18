@@ -4,7 +4,7 @@ import {MDCMenuFoundation, MDCMenu, AnchorMargin, Corner, CornerBit} from '@mate
 class Menu extends Myg {
 
     constructor( element, options = {} ) {
-        super();
+        super( element, options );
         this._mdcMenu = new MDCMenu(element);
     }
 
