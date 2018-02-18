@@ -1,6 +1,6 @@
 {
     "name": "myg-footer",
-    "version": "0.4.3",
+    "version": "0.4.4",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,9 +11,9 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.4.3",
-        "myg-grid": "^0.4.3",
-        "myg-spacing": "^0.4.3",
-        "myg-animate": "^0.4.3"
+        "myg-base": "^0.4.4",
+        "myg-grid": "^0.4.4",
+        "myg-spacing": "^0.4.4",
+        "myg-animate": "^0.4.4"
     }
 }

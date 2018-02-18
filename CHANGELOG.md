@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 0.4.4 - 2018/02/18
+
+* bugfixes
+    * fixed constructing with JavaScript classes
+
 ### 0.4.3 - 2018/02/18
 
 * bugfixes
