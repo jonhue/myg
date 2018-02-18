@@ -4,7 +4,7 @@ import {MDCToolbar, MDCToolbarFoundation} from '@material/toolbar';
 class Toolbar extends Myg {
 
     constructor( element, options = {} ) {
-        super;
+        super();
         this._mdcToolbar = new MDCToolbar(element);
     }
 

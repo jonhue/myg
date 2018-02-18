@@ -4,7 +4,7 @@ import {MDCSelectFoundation} from '@material/select';
 class Selector extends Myg {
 
     constructor( element, options = {} ) {
-        super;
+        super();
         this._mdcSelect = new MDCSelect(element);
     }
 

@@ -4,7 +4,7 @@ import {MDCFormField, MDCFormFieldFoundation} from '@material/form-field';
 class Field extends Myg {
 
     constructor( element, options = {} ) {
-        super;
+        super();
         this._mdcFormField = new MDCFormField(element);
     }
 

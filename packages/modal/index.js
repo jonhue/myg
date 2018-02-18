@@ -4,7 +4,7 @@ import Modalist from 'modalist';
 class Modal extends Myg {
 
     constructor( element, options = {} ) {
-        super;
+        super();
         options.element = element;
         this._modalist = new Modalist(options);
         document.addEventListener( 'ready modalist:render', () => Modalist.init() );

@@ -3,7 +3,7 @@ import Myg from 'myg-base';
 class Footer extends Myg {
 
     constructor( element, options = {} ) {
-        super;
+        super();
         if ( element.classList.contains('myg-footer--stick') )
             this.stick();
     }

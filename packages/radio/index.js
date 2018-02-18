@@ -4,7 +4,7 @@ import {MDCRadio, MDCRadioFoundation} from '@material/radio';
 class Radio extends Myg {
 
     constructor( element, options = {} ) {
-        super;
+        super();
         this._mdcRadio = new MDCRadio(element);
     }
 
