@@ -23,14 +23,14 @@ class Toolbar extends Myg {
     }
 
     onScroll( lastScrollTop, delta ) {
-        let scrollTop = document.querySelector('body').scrollTop;
+        let scrollTop = window.scrollY || window.scrollTop || document.querySelector('html').scrollTop;
 
         if ( Math.abs( lastScrollTop - scrollTop ) <= delta )
-            return;
+            return scrollTop;
 
         if ( scrollTop > lastScrollTop && scrollTop > this.element.offsetHeight )
             this.hide()
-        else if ( scrollTop + window.height < document.height )
+        else
             this.show();
 
         return scrollTop;
