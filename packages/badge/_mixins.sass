@@ -1,0 +1,22 @@
+=myg-badge
+    margin: px(3)
+    background: color(background, dark)
+    border-radius: px(5)
+    font-size: px(13)
+    padding: px(1) px(8)
+    word-wrap: normal
+    &.success
+        background: color(success)
+        color: color(background, lighter)
+    &.error
+        background: color(error)
+        color: color(background, lighter)
+
+
+=myg-badge--container
+    +flex--center-c
+    margin: px(-3)
+    margin-bottom: px(15)
+    flex-wrap: wrap
+    & > *
+        margin: px(10)

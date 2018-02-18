@@ -10,7 +10,7 @@
     font-size: px(14)
     line-height: 1
     cursor: pointer
-    text-decoration: none
+    text-decoration: none !important
     padding: px(16) px(20) px(18)
     &, span
         color: color(accent, contrast)
@@ -82,5 +82,5 @@
     +flex--center-c
     +flex--wrap
     margin: px(-10)
-    a.btn, button, input[type="submit"]
+    & > *
         margin: px(10)

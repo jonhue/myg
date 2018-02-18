@@ -10,6 +10,10 @@ cd ../base
 sed -i "3s/.*/    \"version\": \"$1\",/" package.json
 npm publish
 
+cd ../badge
+sed -i "3s/.*/    \"version\": \"$1\",/" package.json
+npm publish
+
 cd ../button
 sed -i "3s/.*/    \"version\": \"$1\",/" package.json
 npm publish
