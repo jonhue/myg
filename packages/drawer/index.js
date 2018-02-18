@@ -16,13 +16,13 @@ class Drawer extends Myg {
     }
 
     open() {
-        this.element.open = true;
+        this.mdcDrawer.open = true;
     }
     close() {
-        this.element.open = false;
+        this.mdcDrawer.open = false;
     }
     toggle() {
-        this.element.open = !this.element.open;
+        this.mdcDrawer.open = !this.element.open;
     }
 
 }
