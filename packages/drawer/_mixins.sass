@@ -1,5 +1,5 @@
 =myg-drawer
-    &aside.mdc-drawer--temporary
+    &.mdc-drawer--temporary
         +scrollbar
         color: color(text, base)
         &::before
@@ -7,7 +7,7 @@
         nav.mdc-drawer__drawer
             max-width: px(350)
             width: 85%
-            box-shadow: style(box-shadow, sm)
+            +myg-elevation(sm)
             background: color(background, base)
             header.mdc-drawer__header
                 &::before
@@ -29,16 +29,23 @@
                         margin: 0
                         margin-bottom: px(3)
             nav.mdc-drawer__content
-                padding: myg-spacing(md)
+                padding: px(15) 0
                 display: flex
                 flex-direction: column
                 a
                     font-weight: normal
-                    margin: px(10) 0
-                    font-size: px(14)
+                    padding: px(20) px(35)
+                    font-size: px(16)
+                    color: inherit
+                    text-decoration: none !important
+                    background: color(background, base)
+                    +transition
+                    &:hover
+                        color: color(accent, base)
+                        background: color(background, lighter)
             nav.mdc-drawer__footer
-                padding: myg-spacing(sm) myg-spacing(md)
-                border-top: px(1) solid color(border, base)
+                padding: myg-spacing(sm)
+                border-top: px(1) solid color(border)
                 display: flex
                 align-items: center
                 justify-content: space-between
