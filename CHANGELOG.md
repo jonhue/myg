@@ -4,6 +4,12 @@
 
 * nothing yet
 
+### 0.4.3 - 2018/02/18
+
+* bugfixes
+    * fixed `'super' keyword unexpected here`
+    * minor fixes
+
 ### 0.4.2 - 2018/02/18
 
 * bugfixes
