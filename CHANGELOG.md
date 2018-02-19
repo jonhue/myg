@@ -4,7 +4,13 @@
 
 * nothing yet
 
-### 0.4.4 - 2018/02/18
+### 0.4.6 - 2018/02/19
+
+* bugfixes
+    * fixed `myg-slide` javascript class
+    * fixed `code` elements in links and headers
+
+### 0.4.5 - 2018/02/18
 
 * bugfixes
     * fixed `myg-drawer` styles

@@ -1,6 +1,6 @@
 {
     "name": "myg-animate",
-    "version": "0.4.5",
+    "version": "0.4.6",
     "description": "...",
     "main": "animate.sass",
     "bugs": {
@@ -12,6 +12,6 @@
     "license": "MIT",
     "dependencies": {
         "animate.css": "^3.5.2",
-        "myg-base": "^0.4.5"
+        "myg-base": "^0.4.6"
     }
 }
