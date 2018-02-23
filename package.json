@@ -3,7 +3,7 @@
     "version": "0.4.6",
     "description": "An opinionated & adaptive state-of-the-web framework",
     "main": "src/myg.js",
-    "homepage": "https://jonhue.me/myg",
+    "homepage": "https://jonhue.me/repos/myg",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",
         "email": "me@jonhue.me"
