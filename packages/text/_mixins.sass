@@ -1,17 +1,19 @@
 // Text Size
+=font-size($element, $size)
+    font-size: map-get(map-get($myg-text--size, $element), $size)
 =text-size($element)
     @each $name, $value in map-get($myg-text--size-mobile, $element)
         @if $name == base
             font-size: $value
         @else
-            .#{$name}
+            &.#{$name}
                 font-size: $value
     +bigger-than(tablet)
         @each $name, $value in map-get($myg-text--size, $element)
             @if $name == base
                 font-size: $value
             @else
-                .#{$name}
+                &.#{$name}
                     font-size: $value
 
 
