@@ -4,6 +4,13 @@
 
 * nothing yet
 
+### 0.4.7 - 2018/02/23
+
+* enhancements
+    * manually include font families
+* bugfixes
+    * fixed text sizes
+
 ### 0.4.6 - 2018/02/19
 
 * bugfixes

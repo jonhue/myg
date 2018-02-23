@@ -1,6 +1,6 @@
 {
     "name": "myg-drawer",
-    "version": "0.4.6",
+    "version": "0.4.7",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,8 +12,8 @@
     "license": "MIT",
     "dependencies": {
         "@material/drawer": "^0.29.0",
-        "myg-base": "^0.4.6",
-        "myg-theme": "^0.4.6",
-        "myg-spacing": "^0.4.6"
+        "myg-base": "^0.4.7",
+        "myg-theme": "^0.4.7",
+        "myg-spacing": "^0.4.7"
     }
 }
