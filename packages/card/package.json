@@ -1,6 +1,6 @@
 {
     "name": "myg-card",
-    "version": "0.4.7",
+    "version": "0.4.8",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,10 +11,10 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.4.7",
-        "myg-theme": "^0.4.7",
-        "myg-elevation": "^0.4.7",
-        "myg-spacing": "^0.4.7",
-        "myg-animate": "^0.4.7"
+        "myg-base": "^0.4.8",
+        "myg-theme": "^0.4.8",
+        "myg-elevation": "^0.4.8",
+        "myg-spacing": "^0.4.8",
+        "myg-animate": "^0.4.8"
     }
 }

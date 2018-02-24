@@ -4,6 +4,13 @@
 
 * nothing yet
 
+### 0.4.8 - 2018/02/24
+
+* features
+    * added `myg-button--light` mixin
+* bugfixes
+    * fixed `myg-titlebar`
+
 ### 0.4.7 - 2018/02/23
 
 * enhancements
