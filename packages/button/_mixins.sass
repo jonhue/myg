@@ -28,6 +28,15 @@
         +animate(shake, map-get(map-get($myg-animate, shake), duration),  map-get(map-get($myg-animate, shake), easing))
     &:focus, &:active
         pointer-events: none
+=myg-button--light
+    background: color(background, lighter)
+    border-color: color(accent, base)
+    &, span
+        color: color(accent, base)
+    &:hover
+        background: color(accent, base)
+        &, span
+            color: color(accent, contrast)
 =myg-button--secondary
     background: color(background, lighter)
     border-color: color(border)
