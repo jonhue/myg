@@ -1,15 +1,15 @@
 =myg-form-field
     & + .myg-form-field
         margin-top: px(20)
-    label + input, .myg-label--wrapper + input
+    label + input, .myg-label--container + input
         margin-top: px(10)
-    .myg-label--wrapper
+    .myg-label--container
         label:not(.myg-label--secondary)
             margin-bottom: px(5)
 =myg-form-field--inline-label
     +flex--center-c
-    input + label, input + .myg-label--wrapper
-        margin-left: px(25)
+    label, .myg-label--container
+        margin-left: px(15)
 =myg-form-field--floating-label
     position: relative
     input
@@ -32,3 +32,13 @@
             padding: px(6) px(22) px(6) px(10)
             font-size: px(12)
             color: color(text, base)
+
+
+=myg-form-field--inline-container
+    +flex--center-c
+        & + .myg-form-field
+            margin-top: px(20)
+    .myg-form-field
+        margin-top: 0
+        &:not(:first-child)
+            margin-left: px(20)
