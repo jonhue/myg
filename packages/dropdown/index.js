@@ -11,8 +11,8 @@ class Dropdown extends Myg {
 
         if (!options.popper)
             options.popper = {};
-        if (obj.dataset.mygDropdownPlacement)
-            options.popper.placement = obj.dataset.mygDropdownPlacement;
+        if (element.dataset.mygDropdownPlacement)
+            options.popper.placement = element.dataset.mygDropdownPlacement;
         this._popper = new Popper( this._reference, element, options.popper );
 
         document.addEventListener( 'click', (event) => {
