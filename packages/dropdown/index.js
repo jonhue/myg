@@ -7,9 +7,15 @@ class Dropdown extends Myg {
         super( element, options );
 
         this._reference = reference;
-        this._reference.parentElement.insertBefore( this._reference, element );
+        this._reference.parentElement.insertBefore( element, this._reference );
 
         this._popper = new Popper( this._reference, element, options.popper );
+
+        document.addEventListener( 'click', (event) => {
+            if ( !element.contains(event.target) && !this._reference.contains(event.target) )
+                this.close();
+        });
+        element.querySelectorAll('a').forEach( (element) => element.addEventListener( 'click', () => this.close() ) );
 
         if ( options.eventType == 'hover' ) {
             this._reference.addEventListener( 'mouseover mouseout', () => this.toggle() );

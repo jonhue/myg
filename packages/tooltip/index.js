@@ -9,7 +9,7 @@ class Tooltip extends Myg {
         this._tooltip = document.createElement('div');
         this._tooltip.classList.add('myg-tooltip');
         this._tooltip.innerHTML = element.dataset.mygTooltip;
-        element.parentElement.insertBefore( this._tooltip, element );
+        element.parentElement.insertBefore( element, this._tooltip );
 
         this._popper = new Popper( element, this._tooltip, options );
 
