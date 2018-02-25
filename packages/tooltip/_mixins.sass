@@ -1,0 +1,11 @@
+=myg-tooltip
+    background: color(overlay, dark)
+    color: color(text, lighter)
+    font-size: px(14)
+    +border-radius(sm)
+    padding: px(4) px(8) px(5)
+    +hide
+    +invisible
+    +transition(opacity)
+    &.show
+        +visible

@@ -2,6 +2,7 @@ class Myg {
 
     constructor( element, options = {} ) {
         this._element = element;
+        this._options = options;
     }
 
     get element() {
@@ -9,6 +10,13 @@ class Myg {
     }
     set element(val) {
         this._element = val;
+    }
+
+    get options() {
+        return this._options;
+    }
+    set options(val) {
+        this._options = val;
     }
 
     load( url, callback ) {
