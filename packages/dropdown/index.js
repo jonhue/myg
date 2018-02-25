@@ -9,6 +9,10 @@ class Dropdown extends Myg {
         this._reference = reference;
         this._reference.parentElement.insertBefore( element, this._reference );
 
+        if (!options.popper)
+            options.popper = {};
+        if (obj.dataset.mygDropdownPlacement)
+            options.popper.placement = obj.dataset.mygDropdownPlacement;
         this._popper = new Popper( this._reference, element, options.popper );
 
         document.addEventListener( 'click', (event) => {
@@ -39,6 +43,7 @@ class Dropdown extends Myg {
 
     open() {
         this.element.classList.add('show');
+        this.popper.scheduleUpdate();
     }
     close() {
         this.element.classList.remove('show');

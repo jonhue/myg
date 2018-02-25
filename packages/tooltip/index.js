@@ -11,6 +11,10 @@ class Tooltip extends Myg {
         this._tooltip.innerHTML = element.dataset.mygTooltip;
         element.parentElement.insertBefore( element, this._tooltip );
 
+        if (!options.popper)
+            options.popper = {};
+        if (obj.dataset.mygTooltipPlacement)
+            options.popper.placement = obj.dataset.mygTooltipPlacement;
         this._popper = new Popper( element, this._tooltip, options );
 
         element.addEventListener( 'mouseover mouseout', () => this.toggle() );
@@ -32,6 +36,7 @@ class Tooltip extends Myg {
 
     open() {
         this.element.classList.add('show');
+        this.popper.scheduleUpdate();
     }
     close() {
         this.element.classList.remove('show');
