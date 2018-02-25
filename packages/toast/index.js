@@ -4,6 +4,7 @@ import {MDCSnackbar, MDCSnackbarFoundation} from '@material/snackbar';
 class Toast extends Myg {
 
     constructor( element, options = {} ) {
+        super( element, options = {} );
         this._mdcSnackbar = new MDCSnackbar(element);
     }
 
@@ -14,8 +15,20 @@ class Toast extends Myg {
         this._mdcSnackbar = val;
     }
 
-    show(message) {
-        this.element.show({ message: message });
+    show(options = {}) {
+        this.element.classList.remove('error');
+        this.element.classList.remove('success');
+        this.mdcSnackbar.show(options);
+    }
+    error(options = {}) {
+        this.element.classList.add('error');
+        this.element.classList.remove('success');
+        this.mdcSnackbar.show(options);
+    }
+    success(options = {}) {
+        this.element.classList.remove('error');
+        this.element.classList.add('success');
+        this.mdcSnackbar.show(options);
     }
 
 }
