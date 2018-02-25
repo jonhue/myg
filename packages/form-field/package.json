@@ -13,6 +13,7 @@
     "dependencies": {
         "myg-base": "^0.6.0",
         "myg-theme": "^0.6.0",
-        "myg-animate": "^0.6.0"
+        "myg-animate": "^0.6.0",
+        "myg-grid": "^0.6.0"
     }
 }
