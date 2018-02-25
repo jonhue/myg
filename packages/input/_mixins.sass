@@ -2,12 +2,16 @@
 =placeholder
     &::-webkit-input-placeholder
         color: color(text, dark) !important
+        +transition(color)
     &:-moz-placeholder
         color: color(text, dark) !important
+        +transition(color)
     &::-moz-placeholder
         color: color(text, dark) !important
+        +transition(color)
     &:-ms-input-placeholder
         color: color(text, dark) !important
+        +transition(color)
     &:active, &:focus
         &::-webkit-input-placeholder
             color: color(text, base) !important

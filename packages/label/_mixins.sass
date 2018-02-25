@@ -1,23 +1,10 @@
 =myg-label
+    +font(sans-serif)
     display: block
     color: color(text, darker)
     font-weight: normal
     font-size: px(14)
     line-height: 1.58
-=myg-label--sub
+=myg-label--secondary
     +myg-label
     color: color(text, base)
-=myg-label--floating
-    position: relative
-    padding: px(20) px(16) px(5)
-    & + label
-        position: absolute
-        left: px(16)
-        top: px(12)
-        font-size: px(15)
-        +cursor(text)
-        +transition
-    &:placeholder-shown + label
-        color: color(text, base)
-        font-size: px(12)
-        top: px(4)

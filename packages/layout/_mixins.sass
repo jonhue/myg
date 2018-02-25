@@ -31,6 +31,7 @@
     width: 100%
     min-height: 100vh
     +grid-template(1fr, 100%)
+    +grid-areas("content")
     &.myg-layout--toolbar
         +grid-rows(map-get($myg-layout, toolbar-height) 1fr)
         +grid-areas("toolbar" "content")

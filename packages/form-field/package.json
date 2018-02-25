@@ -11,7 +11,8 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "@material/form-field": "^0.29.0",
-        "myg-base": "^0.4.8"
+        "myg-base": "^0.4.8",
+        "myg-theme": "^0.4.8",
+        "myg-animate": "^0.4.8"
     }
 }

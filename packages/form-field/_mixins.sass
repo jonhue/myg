@@ -1,0 +1,34 @@
+=myg-form-field
+    & + .myg-form-field
+        margin-top: px(20)
+    label + input, .myg-label--wrapper + input
+        margin-top: px(10)
+    .myg-label--wrapper
+        label:not(.myg-label--secondary)
+            margin-bottom: px(5)
+=myg-form-field--inline-label
+    +flex--center-c
+    input + label, input + .myg-label--wrapper
+        margin-left: px(25)
+=myg-form-field--floating-label
+    position: relative
+    input
+        &::placeholder
+            opacity: 0 !important
+        & + label
+            position: absolute
+            top: 0
+            left: 0
+            padding: px(14) px(16) px(13)
+            font-size: px(15)
+            color: color(text, dark)
+            +cursor(text)
+            +transition
+        &:focus ~ label
+            color: color(text, base)
+    input:not(:placeholder-shown)
+        padding: px(20) px(22) px(5) px(10)
+        & + label
+            padding: px(6) px(22) px(6) px(10)
+            font-size: px(12)
+            color: color(text, base)
