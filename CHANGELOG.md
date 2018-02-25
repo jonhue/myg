@@ -4,6 +4,15 @@
 
 * nothing yet
 
+### 0.5.0 - 2018/02/25
+
+* features
+    * added `myg-form-field` component
+* enhancements
+    * improved `myg-label` component
+* bugfixes
+    * fixed icon fonts in `myg-icon` component
+
 ### 0.4.8 - 2018/02/24
 
 * features
