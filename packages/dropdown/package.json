@@ -1,6 +1,6 @@
 {
     "name": "myg-dropdown",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,7 +12,7 @@
     "license": "MIT",
     "dependencies": {
         "popper.js": "^1.12.9",
-        "myg-base": "^0.5.0",
-        "myg-theme": "^0.5.0"
+        "myg-base": "^0.6.0",
+        "myg-theme": "^0.6.0"
     }
 }

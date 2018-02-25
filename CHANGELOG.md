@@ -4,6 +4,12 @@
 
 * nothing yet
 
+### 0.6.0 - 2018/02/25
+
+* features
+    * added `myg-dropdown` component
+    * added `myg-tooltip` component
+
 ### 0.5.0 - 2018/02/25
 
 * features
