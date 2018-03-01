@@ -65,6 +65,7 @@ class Tabs extends Myg {
         } else if (this.element.dataset.updateHistory) {
             this.load( tab.getAttribute('href'), (data, status) => {
                 if ( status >= 200 && status < 400 ) {
+                    document.pageTitle = data.pageTitle;
                     window.history.pushState({ 'html': data.html, 'pageTitle': data.pageTitle }, data.pageTitle, tab.getAttribute('href'));
                 };
             });
