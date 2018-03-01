@@ -62,6 +62,12 @@ class Tabs extends Myg {
         if ( tab.getAttribute('href')[0] == '#' ) {
             this.hideContent();
             setTimeout( () => this.showContent(tab.getAttribute('href')), 250 );
+        } else if (this.element.dataset.updateHistory) {
+            this.load( tab.getAttribute('href'), (data, status) => {
+                if ( status >= 200 && status < 400 ) {
+                    window.history.pushState({ 'html': data.html, 'pageTitle': data.pageTitle }, data.pageTitle, tab.getAttribute('href'));
+                };
+            });
         } else {
             this.showLoader();
             this.load( tab.getAttribute('href'), (data, status) => {
