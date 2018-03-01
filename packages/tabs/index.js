@@ -11,7 +11,7 @@ class Tabs extends Myg {
         this._mdcTabBar.tabs.forEach((tab) => {
             tab.preventDefaultOnClick = true;
         });
-        if ( this.element.querySelector('a.mdc-tab.mdc-tab--active').getAttribute('href')[0] != '#' ) {
+        if ( !this.element.dataset.updateHistory && this.element.querySelector('a.mdc-tab.mdc-tab--active').getAttribute('href')[0] != '#' ) {
             for ( let i = 0, length = this.element.children.length; i < length; i++ ) {
                 if ( this.element.children[i].classList.contains('mdc-tab--active') )
                     update(i);
