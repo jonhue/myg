@@ -22,10 +22,10 @@ class Myg {
     load( url, callback ) {
         let request = new XMLHttpRequest();
         request.open( 'GET', url, true );
-        request.onload = () => {
+        request.onload = function() {
             callback( this.status, this.response );
         };
-        request.onerror = () => {
+        request.onerror = function() {
             callback( this.status, this.response );
         };
         request.send();

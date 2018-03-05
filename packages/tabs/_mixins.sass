@@ -1,6 +1,24 @@
 =myg-tabs
     &.mdc-tab-bar
-        // ...
+        margin: 0
+        &.myg-tabs--center
+            margin: 0 auto
+        & > a.mdc-tab
+            text-decoration: none !important
+            text-transform: none
+            letter-spacing: normal
+            padding: px(12) px(22)
+            min-width: auto
+            font-size: px(15)
+            color: color(text, base)
+            +transition(color)
+            &:hover, &.mdc-tab--active
+                color: color(text, darker)
+            &::before, &::after
+                border-radius: 0
+                background: color(text, base)
+        & > .mdc-tab-bar__indicator
+            background: color(text, darker)
 
 =myg-tabs--panels
     display: flex
@@ -11,10 +29,10 @@
         display: none
         visibility: hidden
         opacity: 0
-        padding: px(50)
+        padding: px(200) 0
         +transition(opacity, .25s)
         .myg-tabs--shown
-            display: block
+            +flex--center
             visibility: visible
             opacity: 1
     .myg-tabs--panel
@@ -22,6 +40,7 @@
         display: none
         visibility: hidden
         opacity: 0
+        padding: px(35) 0
         +transition(opacity, .25s)
         .myg-tabs--shown
             display: block

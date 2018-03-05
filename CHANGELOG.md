@@ -4,6 +4,17 @@
 
 * nothing yet
 
+### 0.7.0 - 2018/03/05
+
+* features
+    * added `myg-switch` styling
+* enhancements
+    * improved `myg-tabs` component
+    * improved `myg-form-field` inline label margin
+* bugfixes
+    * fixed `myg-base` `load()` function
+    * fixed `myg-checkbox` styling
+
 ### 0.6.0 - 2018/02/25
 
 * features

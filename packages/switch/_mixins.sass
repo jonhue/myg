@@ -1,0 +1,14 @@
+=myg-switch
+    &.mdc-switch
+        margin-right: px(5)
+        .mdc-switch__native-control:enabled:not(:checked) ~ .mdc-switch__background
+            &::before
+                background: color(text, lighter)
+            .mdc-switch__knob
+                +myg-elevation(sm)
+                &, &::before
+                    background: color(text, light)
+        .mdc-switch__native-control:enabled:checked ~ .mdc-switch__background
+            .mdc-switch__knob
+                &, &::before
+                    background: color(text, base)
