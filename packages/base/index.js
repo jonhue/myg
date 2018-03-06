@@ -23,10 +23,10 @@ class Myg {
         let request = new XMLHttpRequest();
         request.open( 'GET', url, true );
         request.onload = function() {
-            callback( this.status, this.response );
+            callback( this.status, this.responseText );
         };
         request.onerror = function() {
-            callback( this.status, this.response );
+            callback( this.status, this.responseText );
         };
         request.send();
     }

@@ -12,7 +12,7 @@ class Tabs extends Myg {
             tab.preventDefaultOnClick = true;
         });
         this._mdcTabBar.listen( 'MDCTabBar:change', ({ detail: tabs }) => this.update(tabs.activeTabIndex) );
-        this.showContent('#myg-tabs--panel--success');
+        this.showContent('#myg-tabs--panel-success');
     }
 
     get panels() {
@@ -63,8 +63,8 @@ class Tabs extends Myg {
             this.showLoader();
             this.load( tab.getAttribute('href'), (status, data) => {
                 if ( status >= 200 && status < 400 ) {
-                    document.pageTitle = data.pageTitle;
-                    window.history.pushState({ 'html': data.html, 'pageTitle': data.pageTitle }, data.pageTitle, tab.getAttribute('href'));
+                    document.title = data.title;
+                    window.history.pushState({ 'html': data, 'title': data.title }, data.title, tab.getAttribute('href'));
                     this.render(data);
                     this.hideLoader();
                     setTimeout( () => this.showContent('#myg-tabs--panel-success'), 250 );
@@ -78,7 +78,7 @@ class Tabs extends Myg {
 
     render(data) {
         let panel = this.panels.querySelector('.myg-tabs--panel#myg-tabs--panel-success');
-        panel.innerHTML = data.html;
+        panel.innerHTML = data;
         let html = panel.querySelector('.myg-tabs--panel#myg-tabs--panel-success').innerHTML;
         panel.innerHTML = html;
     }

@@ -6,6 +6,7 @@ class Modal extends Myg {
     constructor( element, options = {} ) {
         super( element, options );
         options.element = element;
+        Modalist.init();
         this._modalist = new Modalist(options);
         document.addEventListener( 'ready modalist:render', () => Modalist.init() );
     }
