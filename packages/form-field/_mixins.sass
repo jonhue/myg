@@ -1,37 +1,57 @@
 =myg-form-field
     & + .myg-form-field
         margin-top: px(20)
-    label + input, .myg-label--container + input
-        margin-top: px(10)
+    label, .myg-label--container
+        & + input, & + .myg-input--container
+            margin-top: px(10)
     .myg-label--container
-        label:not(.myg-label--secondary)
-            margin-bottom: px(5)
+        label.myg-label--secondary
+            margin-top: px(5)
 =myg-form-field--inline-label
     +flex--center-c
-    label, .myg-label--container
+    & > label, & > .myg-label--container
+        font-weight: normal
         margin-left: px(15)
 =myg-form-field--floating-label
-    position: relative
-    input
-        &::placeholder
-            opacity: 0 !important
+    .myg-input--container
+        position: relative
+        input
+            &::placeholder
+                opacity: 0 !important
+            & + label
+                position: absolute
+                top: 0
+                left: 0
+                padding: px(14) px(16) px(13)
+                font-size: px(15)
+                font-weight: normal
+                color: color(text, dark)
+                +cursor(text)
+                +transition
+            &:focus ~ label
+                color: color(text, base)
+        input:not(:placeholder-shown)
+            padding: px(20) px(22) px(5) px(10)
+            & + label
+                padding: px(6) px(22) px(6) px(10)
+                font-size: px(12)
+                color: color(text, base)
+=myg-form-field--file
+    +flex--center-c
+    justify-content: space-between
+    label, .myg-label--container
+        & ~ input[type="file"] + label:last-child
+            margin-left: px(15)
+    input[type="file"]
+        display: none
         & + label
-            position: absolute
-            top: 0
-            left: 0
-            padding: px(14) px(16) px(13)
-            font-size: px(15)
-            color: color(text, dark)
-            +cursor(text)
-            +transition
-        &:focus ~ label
+            min-width: px(175)
+            text-align: center
             color: color(text, base)
-    input:not(:placeholder-shown)
-        padding: px(20) px(22) px(5) px(10)
-        & + label
-            padding: px(6) px(22) px(6) px(10)
-            font-size: px(12)
-            color: color(text, base)
+            border: px(2) dashed color(border)
+            padding: px(12) px(16) px(13)
+            +border-radius(sm)
+            +cursor(pointer)
 
 
 =myg-form-field--inline-container
