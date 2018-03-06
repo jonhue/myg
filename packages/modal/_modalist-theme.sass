@@ -1,25 +1,33 @@
-.modalist--loader
+=modalist--transition
+    +transition(all, .25s)
+    animation-duration: .25s !important
+    animation-timing-function: ease-out
+
 
 
 #modalist--overlay
     background: color(overlay, light)
-    transition-duration: .35s
-    transition-timing-function: ease-out
+    +modalist--transition
+    .modalist--loader
+        +modalist--transition
+        svg
+            background: color(background, base)
+            +border-radius(sm)
+            +myg-elevation(sm)
 
 
 .modalist
-    box-shadow: 0 px(1) px(3) 0 rgba(color(text, base, true), .05)
     border: px(1) solid color(border)
+    background: color(background, base)
     border-radius: px(3) !important
-    transition-duration: .35s
-    transition-timing-function: ease-out
+    +myg-elevation(sm)
+    +modalist--transition
     &.modalist--full-screen
         box-shadow: none
         border: none
         border-radius: 0
     & > .modalist--content
-        transition-duration: .35s
-        transition-timing-function: ease-out
+        +modalist--transition
         & > .modalist--content-header
             background: color(background, lighter)
             border-radius: px(3) px(3) 0 0
