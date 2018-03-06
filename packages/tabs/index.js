@@ -12,7 +12,13 @@ class Tabs extends Myg {
             tab.preventDefaultOnClick = true;
         });
         this._mdcTabBar.listen( 'MDCTabBar:change', ({ detail: tabs }) => this.update(tabs.activeTabIndex) );
-        this.showContent('#myg-tabs--panel-success');
+        if (document.querySelector('#myg-tabs--panel-success'))
+            this.showContent('#myg-tabs--panel-success');
+        else
+            if ( this._mdcTabBar.activeTabIndex == -1 )
+                this.showContent(this.element.querySelector( 'a[role="tab"]:nth-child(' + 1 + ')' ).getAttribute('href'));
+            else
+                this.showContent(this.element.querySelector( 'a[role="tab"]:nth-child(' + ( this._mdcTabBar.activeTabIndex + 1 ) + ')' ).getAttribute('href'));
     }
 
     get panels() {
@@ -63,8 +69,8 @@ class Tabs extends Myg {
             this.showLoader();
             this.load( tab.getAttribute('href'), (status, data) => {
                 if ( status >= 200 && status < 400 ) {
-                    document.title = data.title;
-                    window.history.pushState({ 'html': data, 'title': data.title }, data.title, tab.getAttribute('href'));
+                    document.pageTitle = data.title;
+                    window.history.pushState({ 'html': data, 'pageTitle': data.title }, data.title, tab.getAttribute('href'));
                     this.render(data);
                     this.hideLoader();
                     setTimeout( () => this.showContent('#myg-tabs--panel-success'), 250 );
