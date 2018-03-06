@@ -36,6 +36,16 @@
     width: 100%
     +placeholder
     +transition
+    &[disabled]
+        color: color(text, lighter)
+        &::-webkit-input-placeholder
+            color: color(text, lighter) !important
+        &:-moz-placeholder
+            color: color(text, lighter) !important
+        &::-moz-placeholder
+            color: color(text, lighter) !important
+        &:-ms-input-placeholder
+            color: color(text, lighter) !important
     &:active, &:focus
         border-color: color(accent, base)
         box-shadow: 0 0 0 px(3.5) rgba(color(accent, base, true), .35)
