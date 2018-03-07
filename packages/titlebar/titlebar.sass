@@ -1,1 +1,54 @@
 @import "welcomer/src/welcomer"
+
+.myg-titlebar.welcomer
+    & ~ header, & ~ .myg-sidebar, & ~ .myg-content
+        margin-top: 0
+        +transition(margin)
+    &.welcomer--shown
+        & ~ header, & ~ .myg-sidebar, & ~ .myg-content
+            margin-top: px(50)
+
+.myg-titlebar.welcomer
+    background: color(background, darker)
+    +transition(all)
+    &.error
+        background: color(error)
+    &.success
+        background: color(success)
+    p
+        text-transform: none
+        font-weight: 500
+        font-size: px(14)
+        letter-spacing: normal
+        color: color(text, dark)
+        opacity: 1
+    a
+        height: px(27)
+        padding: 0 px(15)
+        font-size: px(10)
+        color: color(accent, contrast)
+        margin-left: px(20)
+        background: color(accent, base)
+        border-radius: px(13.5)
+        +transition(all)
+        &:hover
+            background: color(accent, dark)
+    .welcomer--close
+        +transition(all)
+        +cursor(pointer)
+        top: px(15)
+        right: px(20)
+        bottom: px(15)
+
+@media (max-width: $welcomer--mobile)
+    .myg-titlebar.welcomer
+        a
+            height: auto
+            padding: 0
+            text-transform: none
+            letter-spacing: normal
+            color: color(accent, base)
+            font-size: px(12)
+        p
+            font-size: px(12)
+            letter-spacing: normal
