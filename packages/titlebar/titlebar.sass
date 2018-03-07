@@ -8,11 +8,3 @@ $welcomer--mobile: map-get($myg-grid--breakpoints, tablet)
 
 @import "_mixins"
 @import "_classes"
-
-.myg-titlebar.welcomer
-    & ~ header, & ~ .myg-sidebar, & ~ .myg-content
-        margin-top: 0
-        +transition(margin)
-    &.welcomer--shown
-        & ~ header, & ~ .myg-sidebar, & ~ .myg-content
-            margin-top: px(50)

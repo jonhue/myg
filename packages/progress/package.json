@@ -12,6 +12,7 @@
     "license": "MIT",
     "dependencies": {
         "@material/linear-progress": "^0.30.0",
-        "myg-base": "^0.8.0"
+        "myg-base": "^0.8.0",
+        "myg-theme": "^0.8.0"
     }
 }
