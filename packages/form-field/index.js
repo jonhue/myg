@@ -4,7 +4,8 @@ class Field extends Myg {
 
     constructor( element, options = {} ) {
         super( element, options = {} );
-        this._placeholder = this._element.querySelectorAll('label')[this._element.querySelectorAll('label').length - 1].innerHTML;
+        if (this._element.querySelector('label'))
+            this._placeholder = this._element.querySelectorAll('label')[this._element.querySelectorAll('label').length - 1].innerHTML;
         if (this._element.classList.contains('myg-form-field--file')) {
             let self = this;
             element.addEventListener( 'change', function() {
