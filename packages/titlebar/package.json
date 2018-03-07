@@ -12,6 +12,9 @@
     "license": "MIT",
     "dependencies": {
         "welcomer": "^2.1.0",
-        "myg-base": "^0.7.0"
+        "myg-base": "^0.7.0",
+        "myg-theme": "^0.7.0",
+        "myg-animate": "^0.7.0",
+        "myg-grid": "^0.7.0"
     }
 }
