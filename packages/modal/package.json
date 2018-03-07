@@ -1,6 +1,6 @@
 {
     "name": "myg-modal",
-    "version": "0.7.0",
+    "version": "0.8.0",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -13,8 +13,8 @@
     "dependencies": {
         "modalist": "^2.0.0",
         "animate.css": "^3.5.2",
-        "myg-base": "^0.7.0",
-        "myg-theme": "^0.7.0",
-        "myg-spacing": "^0.7.0"
+        "myg-base": "^0.8.0",
+        "myg-theme": "^0.8.0",
+        "myg-spacing": "^0.8.0"
     }
 }

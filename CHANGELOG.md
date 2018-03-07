@@ -4,6 +4,19 @@
 
 * nothing yet
 
+### 0.8.0 - 2018/03/07
+
+* features
+    * added `myg-titlebar` styling
+    * added file input support to `myg-form-field`
+* enhancements
+    * added disabled input styling
+* bugfixes
+    * fixed combined labels in `myg-form-field`
+    * fixed `myg-modal` component
+    * fixed `myg-tabs` component
+    * fixed `myg-toast` component
+
 ### 0.7.0 - 2018/03/05
 
 * features

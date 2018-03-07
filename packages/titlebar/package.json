@@ -1,6 +1,6 @@
 {
     "name": "myg-titlebar",
-    "version": "0.7.0",
+    "version": "0.8.0",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,9 +12,9 @@
     "license": "MIT",
     "dependencies": {
         "welcomer": "^2.1.0",
-        "myg-base": "^0.7.0",
-        "myg-theme": "^0.7.0",
-        "myg-animate": "^0.7.0",
-        "myg-grid": "^0.7.0"
+        "myg-base": "^0.8.0",
+        "myg-theme": "^0.8.0",
+        "myg-animate": "^0.8.0",
+        "myg-grid": "^0.8.0"
     }
 }
