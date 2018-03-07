@@ -6,7 +6,7 @@
     +myg-elevation(sm)
     background: color(accent, base)
     border: px(1) solid color(accent, base)
-    font-weight: 400
+    font-weight: 500
     font-size: px(14)
     line-height: 1.58
     cursor: pointer
@@ -19,6 +19,14 @@
         background: color(accent, dark)
         border-color: color(accent, dark)
         +myg-elevation(md)
+    &.error, &.success
+        color: color(background, base)
+    &.error
+        border-color: color(error)
+        background: color(error)
+    &.success
+        border-color: color(success)
+        background: color(success)
 =myg-button--dense
     padding: px(8) px(18) px(10)
 =myg-button--disabled
@@ -47,6 +55,20 @@
         border-color: color(accent, base)
         &, span
             color: color(accent, base)
+    &.error, &.success
+        &:hover, &:focus, &:active
+            &, span
+                color: color(background, base)
+    &.error
+        border-color: color(error)
+        color: color(error)
+        &:hover, &:focus, &:active
+            background: color(error)
+    &.success
+        border-color: color(success)
+        color: color(success)
+        &:hover, &:focus, &:active
+            background: color(success)
 =myg-button--icon
     padding: px(17) px(16) px(13)
     svg
