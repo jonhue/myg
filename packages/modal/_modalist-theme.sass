@@ -27,7 +27,8 @@
         border: none
         border-radius: 0
     & > .modalist--content
-        +modalist--transition
+        &, & > *
+            +modalist--transition
         & > .modalist--content-header
             background: color(background, lighter)
             border-radius: px(3) px(3) 0 0
