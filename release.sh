@@ -58,6 +58,10 @@ cd ../grid
 sed -i "3s/.*/    \"version\": \"$1\",/" package.json
 npm publish
 
+cd ../hint
+sed -i "3s/.*/    \"version\": \"$1\",/" package.json
+npm publish
+
 cd ../icon
 sed -i "3s/.*/    \"version\": \"$1\",/" package.json
 npm publish

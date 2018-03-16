@@ -4,6 +4,21 @@
 
 * nothing yet
 
+### 0.9.0 - 2018/03/16
+
+* features
+    * added `myg-hint` component
+    * added `myg-list` component
+    * added `myg-progress` component
+* enhancements
+    * added text color styling to `myg-badge`
+    * improved `myg-button` styling
+* bugfixes
+    * fixed combined labels in `myg-form-field`
+    * fixed `myg-modal` component
+    * fixed `myg-tabs` component
+    * fixed `myg-toast` component
+
 ### 0.8.0 - 2018/03/07
 
 * features

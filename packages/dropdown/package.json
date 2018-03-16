@@ -1,6 +1,6 @@
 {
     "name": "myg-dropdown",
-    "version": "0.8.0",
+    "version": "0.9.0",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,8 +11,8 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "popper.js": "^1.12.9",
-        "myg-base": "^0.8.0",
-        "myg-theme": "^0.8.0"
+        "popper.js": "^1.14.1",
+        "myg-base": "^0.9.0",
+        "myg-theme": "^0.9.0"
     }
 }
