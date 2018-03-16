@@ -13,11 +13,9 @@
 * enhancements
     * added text color styling to `myg-badge`
     * improved `myg-button` styling
+    * updated dependencies
 * bugfixes
-    * fixed combined labels in `myg-form-field`
-    * fixed `myg-modal` component
-    * fixed `myg-tabs` component
-    * fixed `myg-toast` component
+    * fixed `myg-form-field` component
 
 ### 0.8.0 - 2018/03/07
 
