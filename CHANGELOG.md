@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 0.10.1 - 2018/03/18
+
+* bugfixes
+    * fixed `triggerEvent is not defined` in `myg-base`
+
 ### 0.10.0 - 2018/03/18
 
 * features

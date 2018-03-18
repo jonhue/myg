@@ -50,4 +50,15 @@ class Myg {
 
 }
 
+
+function triggerEvent( element, name, data = {} ) {
+    if (window.CustomEvent) {
+        let event = new CustomEvent( name, { detail: data } );
+        element.dispatchEvent(event);
+    } else {
+        let event = document.createEvent('CustomEvent');
+        event.initCustomEvent( name, true, true, data );
+    };
+}
+
 export default Myg;
