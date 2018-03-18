@@ -20,12 +20,15 @@ class Myg {
     }
 
     load( url, callback ) {
+        triggerEvent( document, 'myg:request-start' );
         let request = new XMLHttpRequest();
         request.open( 'GET', url, true );
         request.onload = function() {
+            triggerEvent( document, 'myg:request-end' );
             callback( this.status, this.responseText );
         };
         request.onerror = function() {
+            triggerEvent( document, 'myg:request-end' );
             callback( this.status, this.responseText );
         };
         request.send();

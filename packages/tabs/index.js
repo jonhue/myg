@@ -60,6 +60,7 @@ class Tabs extends Myg {
     }
 
     update(i) {
+        triggerEvent( document, 'myg-tabs:switch' );
         let tab = this.element.querySelector( 'a[role="tab"]:nth-child(' + ( i + 1 ) + ')' );
         if ( tab.getAttribute('href')[0] == '#' ) {
             this.hideContent();
@@ -83,12 +84,25 @@ class Tabs extends Myg {
     }
 
     render(data) {
+        triggerEvent( document, 'myg-tabs:before-render' );
         let panel = this.panels.querySelector('.myg-tabs--panel#myg-tabs--panel-success');
         panel.innerHTML = data;
         let html = panel.querySelector('.myg-tabs--panel#myg-tabs--panel-success').innerHTML;
         panel.innerHTML = html;
+        triggerEvent( document, 'myg-tabs:render' );
     }
 
+}
+
+
+function triggerEvent( element, name, data = {} ) {
+    if (window.CustomEvent) {
+        let event = new CustomEvent( name, { detail: data } );
+        element.dispatchEvent(event);
+    } else {
+        let event = document.createEvent('CustomEvent');
+        event.initCustomEvent( name, true, true, data );
+    };
 }
 
 export default Tabs;

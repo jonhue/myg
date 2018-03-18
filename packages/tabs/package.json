@@ -1,6 +1,6 @@
 {
     "name": "myg-tabs",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,8 +12,8 @@
     "license": "MIT",
     "dependencies": {
         "@material/tabs": "^0.30.0",
-        "myg-base": "^0.9.0",
-        "myg-theme": "^0.9.0",
-        "myg-animate": "^0.9.0"
+        "myg-base": "^0.10.0",
+        "myg-theme": "^0.10.0",
+        "myg-animate": "^0.10.0"
     }
 }

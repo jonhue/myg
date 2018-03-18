@@ -4,6 +4,12 @@
 
 * nothing yet
 
+### 0.10.0 - 2018/03/18
+
+* features
+    * added `li` styling to `myg-text` component
+    * added events to `myg-base` and `myg-tabs` component
+
 ### 0.9.0 - 2018/03/16
 
 * features
