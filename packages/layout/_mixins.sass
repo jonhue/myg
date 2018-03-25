@@ -52,11 +52,16 @@
             +grid-areas("sidebar toolbar" "sidebar content")
             &.myg--layout--sidebar-right
                 +grid-areas("toolbar sidebar" "content sidebar")
+    &.myg-layout--footer
+        +grid-rows(1fr auto)
+        +grid-areas("content" "footer")
 
     .myg-toolbar
         grid-area: toolbar
     .myg-sidebar
         grid-area: sidebar
+    .myg-footer--sticky
+        grid-area: footer
     .myg-content
         grid-area: content
 
