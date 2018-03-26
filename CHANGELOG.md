@@ -4,6 +4,15 @@
 
 * nothing yet
 
+### 0.11.0 - 2018/03/26
+
+* features
+    * added bottom toolbar
+    * added sticky footer
+* bugfixes
+    * fixed Myg package
+    * fixed scrollbar mixin
+
 ### 0.10.1 - 2018/03/18
 
 * bugfixes

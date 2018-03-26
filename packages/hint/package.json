@@ -1,6 +1,6 @@
 {
     "name": "myg-hint",
-    "version": "0.10.1",
+    "version": "0.11.0",
     "description": "...",
     "main": "hint.sass",
     "bugs": {
@@ -11,8 +11,8 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.10.1",
-        "myg-theme": "^0.10.1",
-        "myg-spacing": "^0.10.1"
+        "myg-base": "^0.11.0",
+        "myg-theme": "^0.11.0",
+        "myg-spacing": "^0.11.0"
     }
 }

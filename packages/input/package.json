@@ -1,6 +1,6 @@
 {
     "name": "myg-input",
-    "version": "0.10.1",
+    "version": "0.11.0",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,9 +11,9 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.10.1",
-        "myg-theme": "^0.10.1",
-        "myg-font": "^0.10.1",
-        "myg-animate": "^0.10.1"
+        "myg-base": "^0.11.0",
+        "myg-theme": "^0.11.0",
+        "myg-font": "^0.11.0",
+        "myg-animate": "^0.11.0"
     }
 }
