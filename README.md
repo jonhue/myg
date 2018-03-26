@@ -90,7 +90,6 @@ import * as myg from 'myg';
 * **[Form Fields](packages/form-field)**
 * **[Grids](packages/grid)**
 * **[Hints](packages/hint)**
-* **[Icons](packages/icon)**
 * **[Inputs](packages/input)**
 * **[Labels](packages/label)**
 * **[Layout](packages/layout)**
