@@ -4,6 +4,14 @@
 
 * nothing yet
 
+### 0.12.0 - 2018/03/28
+
+* features
+    * removed `myg-icon` component
+    * added `contained` style to `myg-list` component
+* bugfixes
+    * fixed `myg-modal` Modalist theme
+
 ### 0.11.0 - 2018/03/26
 
 * features

@@ -1,6 +1,6 @@
 {
     "name": "myg-form-field",
-    "version": "0.11.0",
+    "version": "0.12.0",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,9 +11,9 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.11.0",
-        "myg-theme": "^0.11.0",
-        "myg-animate": "^0.11.0",
-        "myg-grid": "^0.11.0"
+        "myg-base": "^0.12.0",
+        "myg-theme": "^0.12.0",
+        "myg-animate": "^0.12.0",
+        "myg-grid": "^0.12.0"
     }
 }
