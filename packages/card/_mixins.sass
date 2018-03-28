@@ -1,5 +1,5 @@
 =myg-card
-    padding: myg-spacing(sm)
+    padding: myg-spacing(base)
     +myg-elevation(sm)
     +border-radius(sm)
     background: color(background, base)
@@ -9,6 +9,15 @@
     text-decoration: none !important
     &:hover
         +myg-elevation(md)
+    &.myg-card--highlighted
+        background: color(background, dark)
     &.myg-card--seamless
         border: none
         background: color(background, lighter)
+        &:hover, &:focus, &:active
+            background: color(background, light)
+    & > *
+        &:first-child
+            margin-top: 0
+        &:last-child
+            margin-bottom: 0
