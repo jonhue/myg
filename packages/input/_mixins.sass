@@ -29,7 +29,7 @@
     +border-radius(sm)
     font-size: px(15)
     line-height: 1.58
-    color: color(text, dark)
+    color: color(text, darker)
     background: color(background, lighter)
     border: px(1) solid color(border)
     padding: px(12) px(16) px(13)
@@ -53,6 +53,8 @@
             box-shadow: 0 0 0 px(3.5) rgba(color(success, null, true), .35)
         &.error
             box-shadow: 0 0 0 px(3.5) rgba(color(error, null, true), .35)
+    &.myg-input--no-outline
+        box-shadow: none !important
     &.success
         border-color: color(success)
     &.error
