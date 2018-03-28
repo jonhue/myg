@@ -4,11 +4,20 @@
 
 * nothing yet
 
+### 0.12.1 - 2018/03/28
+
+* features
+    * added `simple` style to hyperlinks (`myg-text` component)
+
 ### 0.12.0 - 2018/03/28
 
 * features
     * removed `myg-icon` component
     * added `contained` style to `myg-list` component
+    * added `no-outline` style to `myg-input` component
+* enhancements
+    * improved `myg-input` styling
+    * improved `myg-card` styling
 * bugfixes
     * fixed `myg-modal` Modalist theme
 

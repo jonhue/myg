@@ -1,6 +1,6 @@
 {
     "name": "myg-action-button",
-    "version": "0.12.0",
+    "version": "0.12.1",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,8 +11,8 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.12.0",
-        "myg-theme": "^0.12.0",
-        "myg-spacing": "^0.12.0"
+        "myg-base": "^0.12.1",
+        "myg-theme": "^0.12.1",
+        "myg-spacing": "^0.12.1"
     }
 }

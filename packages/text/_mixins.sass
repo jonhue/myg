@@ -47,6 +47,12 @@
     &.hyperlink--inherit
         text-decoration: underline
         color: inherit
+    &.hyperlink--simple
+        text-decoration: none !important
+        color: color(text, base)
+        +transition(color)
+        &:hover, &:focus, &:active
+            color: color(accent, base)
 =code
     +font(monospace)
     color: color(text, light)
