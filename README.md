@@ -7,6 +7,12 @@ An opinionated & modular state-of-the-web framework.
 
 **Disclaimer:** Myg really is a state-of-the-web framework. It utilizes CSS variables, CSS grid and ES6. Better be aware before throwing it around.
 
+Myg is being used on:
+
+* https://nativegap.com
+* https://phylator.com
+* https://jonhue.me
+
 ---
 
 ## Table of Contents
