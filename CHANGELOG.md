@@ -4,6 +4,12 @@
 
 * nothing yet
 
+### 0.12.2 - 2018/04/16
+
+* enhancements
+    * make `myg-form-field` component work with textareas
+    * improve textarea styling (`myg-input` component)
+
 ### 0.12.1 - 2018/03/28
 
 * features

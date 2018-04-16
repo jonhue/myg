@@ -1,6 +1,6 @@
 {
     "name": "myg-layout",
-    "version": "0.12.1",
+    "version": "0.12.2",
     "description": "...",
     "main": "layout.sass",
     "bugs": {
@@ -11,10 +11,10 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.12.1",
-        "myg-font": "^0.12.1",
-        "myg-grid": "^0.12.1",
-        "myg-theme": "^0.12.1",
+        "myg-base": "^0.12.2",
+        "myg-font": "^0.12.2",
+        "myg-grid": "^0.12.2",
+        "myg-theme": "^0.12.2",
         "normalize.css": "^8.0.0"
     }
 }
