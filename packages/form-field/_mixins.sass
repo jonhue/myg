@@ -2,7 +2,7 @@
     & + .myg-form-field
         margin-top: px(20)
     label, .myg-label--container
-        & + input, & + .myg-input--container
+        & + input, & + textarea, & + .myg-input--container
             margin-top: px(10)
     .myg-label--container
         label.myg-label--secondary
@@ -15,7 +15,7 @@
 =myg-form-field--floating-label
     .myg-input--container
         position: relative
-        input
+        input, textarea
             &::placeholder
                 opacity: 0 !important
             & + label
@@ -30,12 +30,12 @@
                 +transition
             &:focus ~ label
                 color: color(text, base)
-        input:not(:placeholder-shown)
-            padding: px(20) px(22) px(5) px(10)
-            & + label
-                padding: px(6) px(22) px(6) px(10)
-                font-size: px(12)
-                color: color(text, base)
+            &:not(:placeholder-shown)
+                padding: px(20) px(22) px(5) px(10)
+                & + label
+                    padding: px(6) px(22) px(6) px(10)
+                    font-size: px(12)
+                    color: color(text, base)
 =myg-form-field--file
     +flex--center-c
     justify-content: space-between
