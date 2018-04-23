@@ -1,6 +1,6 @@
 {
     "name": "myg-select",
-    "version": "0.12.2",
+    "version": "0.12.3",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,7 +11,7 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "@material/select": "^0.30.0",
-        "myg-base": "^0.12.2"
+        "@material/select": "^0.34.1",
+        "myg-base": "^0.12.3"
     }
 }
