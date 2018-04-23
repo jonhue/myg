@@ -1,6 +1,6 @@
 {
     "name": "myg-elevation",
-    "version": "0.12.3",
+    "version": "0.12.4",
     "description": "...",
     "main": "elevation.sass",
     "bugs": {
@@ -11,7 +11,7 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.12.3",
-        "myg-theme": "^0.12.3"
+        "myg-base": "^0.12.4",
+        "myg-theme": "^0.12.4"
     }
 }

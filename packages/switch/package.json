@@ -1,6 +1,6 @@
 {
     "name": "myg-switch",
-    "version": "0.12.3",
+    "version": "0.12.4",
     "description": "...",
     "main": "switch.sass",
     "bugs": {
@@ -12,8 +12,8 @@
     "license": "MIT",
     "dependencies": {
         "@material/switch": "^0.34.1",
-        "myg-base": "^0.12.3",
-        "myg-theme": "^0.12.3",
-        "myg-elevation": "^0.12.3"
+        "myg-base": "^0.12.4",
+        "myg-theme": "^0.12.4",
+        "myg-elevation": "^0.12.4"
     }
 }

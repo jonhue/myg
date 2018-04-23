@@ -1,6 +1,6 @@
 {
     "name": "myg-toast",
-    "version": "0.12.3",
+    "version": "0.12.4",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,10 +11,10 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "@material/snackbar": "^0.34.1",
-        "myg-base": "^0.12.3",
-        "myg-theme": "^0.12.3",
-        "myg-font": "^0.12.3",
-        "myg-spacing": "^0.12.3"
+        "@material/snackbar": "^0.34.0",
+        "myg-base": "^0.12.4",
+        "myg-theme": "^0.12.4",
+        "myg-font": "^0.12.4",
+        "myg-spacing": "^0.12.4"
     }
 }
