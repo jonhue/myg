@@ -1,6 +1,6 @@
 {
     "name": "myg-badge",
-    "version": "0.12.4",
+    "version": "0.12.5",
     "description": "...",
     "main": "badge.sass",
     "bugs": {
@@ -11,8 +11,8 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.12.4",
-        "myg-theme": "^0.12.4",
-        "myg-grid": "^0.12.4"
+        "myg-base": "^0.12.5",
+        "myg-theme": "^0.12.5",
+        "myg-grid": "^0.12.5"
     }
 }

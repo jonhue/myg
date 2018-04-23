@@ -1,6 +1,6 @@
 {
     "name": "myg-toolbar",
-    "version": "0.12.4",
+    "version": "0.12.5",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,9 +12,9 @@
     "license": "MIT",
     "dependencies": {
         "@material/toolbar": "^0.34.1",
-        "myg-base": "^0.12.4",
-        "myg-theme": "^0.12.4",
-        "myg-font": "^0.12.4",
-        "myg-layout": "^0.12.4"
+        "myg-base": "^0.12.5",
+        "myg-theme": "^0.12.5",
+        "myg-font": "^0.12.5",
+        "myg-layout": "^0.12.5"
     }
 }

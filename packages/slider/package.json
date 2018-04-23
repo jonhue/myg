@@ -1,6 +1,6 @@
 {
     "name": "myg-slider",
-    "version": "0.12.4",
+    "version": "0.12.5",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -11,7 +11,7 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "@material/slider": "^0.34.1",
-        "myg-base": "^0.12.4"
+        "@material/slider": "^0.34.0",
+        "myg-base": "^0.12.5"
     }
 }

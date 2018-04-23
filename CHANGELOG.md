@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 0.12.5 - 2018/04/23
+
+* bugfixes
+    * fixed mdc dependencies
+
 ### 0.12.4 - 2018/04/23
 
 * bugfixes

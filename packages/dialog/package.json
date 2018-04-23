@@ -1,6 +1,6 @@
 {
     "name": "myg-dialog",
-    "version": "0.12.4",
+    "version": "0.12.5",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,6 +12,6 @@
     "license": "MIT",
     "dependencies": {
         "@material/dialog": "^0.34.1",
-        "myg-base": "^0.12.4"
+        "myg-base": "^0.12.5"
     }
 }
