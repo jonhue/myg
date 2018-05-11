@@ -6,6 +6,9 @@
 
 ```sass
 @import "myg-titlebar/titlebar"
+
+// Include classes (optional)
++myg__classes--titlebar
 ```
 
 ### Javascript

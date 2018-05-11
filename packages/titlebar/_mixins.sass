@@ -1,51 +1,51 @@
 =myg-titlebar
     &.welcomer
         position: fixed
-        background: color(background, darker)
-        +transition(all)
+        background: myg-theme__color(background, darker)
+        +myg-animate__transition(all)
         & ~ header, & ~ .myg-sidebar, & ~ .myg-content
             margin-top: 0
-            +transition(margin)
+            +myg-animate__transition(margin)
         &.welcomer--shown
             & ~ header, & ~ .myg-sidebar, & ~ .myg-content
-                margin-top: px(50)
+                margin-top: myg__px(50)
         &.error
-            background: color(error)
+            background: myg-theme__color(error)
         &.success
-            background: color(success)
+            background: myg-theme__color(success)
         p
             text-transform: none
             font-weight: 500
-            font-size: px(14)
+            font-size: myg__px(14)
             letter-spacing: normal
-            color: color(text, dark)
+            color: myg-theme__color(text, dark)
             opacity: 1
         a
-            height: px(27)
-            padding: 0 px(15)
-            font-size: px(10)
-            color: color(accent, contrast)
-            margin-left: px(20)
-            background: color(accent, base)
-            border-radius: px(13.5)
+            height: myg__px(27)
+            padding: 0 myg__px(15)
+            font-size: myg__px(10)
+            color: myg-theme__color(accent, contrast)
+            margin-left: myg__px(20)
+            background: myg-theme__color(accent, base)
+            border-radius: myg__px(13.5)
             +transition(all)
             &:hover
-                background: color(accent, dark)
+                background: myg-theme__color(accent, dark)
         .welcomer--close
             +transition(all)
             +cursor(pointer)
-            top: px(15)
-            right: px(20)
-            bottom: px(15)
-    +smaller-than(tablet)
+            top: myg__px(15)
+            right: myg__px(20)
+            bottom: myg__px(15)
+    +myg-grid__smaller-than(tablet)
         &.welcomer
             a
                 height: auto
                 padding: 0
                 text-transform: none
                 letter-spacing: normal
-                color: color(accent, base)
-                font-size: px(12)
+                color: myg-theme__color(accent, base)
+                font-size: myg__px(12)
             p
-                font-size: px(12)
+                font-size: myg__px(12)
                 letter-spacing: normal

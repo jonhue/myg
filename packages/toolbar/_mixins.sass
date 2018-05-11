@@ -1,28 +1,27 @@
 =myg-toolbar
-    background: color(background, light)
-    border-bottom: px(1) solid color(border)
-    z-index: 4
-    .mdc-toolbar__row
-        min-height: map-get($myg-layout, toolbar-height)
-        .mdc-toolbar__section
-            align-items: center
-            .mdc-toolbar__title
-                color: color(text, lighter)
-                +font(sans-serif)
-                font-weight: bold
-                font-size: px(18)
-                margin-left: 0 !important
-            .mdc-toolbar__menu-icon
-                padding: px(18) px(24)
-                & ~ .mdc-toolbar__menu-icon
-                    padding-left: 0
+    &.mdc-toolbar
+        background: myg-theme__color(background, light)
+        border-bottom: myg__px(1) solid myg-theme__color(border)
+        z-index: 4
+        .mdc-toolbar__row
+            min-height: map-get($myg-layout, toolbar-height)
+            .mdc-toolbar__section
+                align-items: center
+                .mdc-toolbar__title
+                    color: myg-theme__color(text, lighter)
+                    +myg-font(sans-serif)
+                    font-weight: bold
+                    font-size: myg__px(18)
+                    margin-left: 0 !important
+                .mdc-toolbar__menu-icon
+                    padding: myg__px(18) myg__px(24)
+                    & ~ .mdc-toolbar__menu-icon
+                        padding-left: 0
 
 =myg-toolbar--flexible
-    +myg-toolbar
     position: fixed
     transform: none
-    +transition 
+    +myg-animate__transition
 
-=myg-toolbar--bottom
-    +myg-toolbar--flexible
+=myg-toolbar--flexible---bottom
     bottom: 0

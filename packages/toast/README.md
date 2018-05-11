@@ -8,7 +8,7 @@
 @import "myg-toast/toast"
 
 // Include classes (optional)
-+myg-toast--classes
++myg__classes--toast
 ```
 
 ### Javascript

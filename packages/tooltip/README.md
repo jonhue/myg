@@ -6,6 +6,9 @@
 
 ```sass
 @import "myg-tooltip/tooltip"
+
+// Include classes (optional)
++myg__classes--tooltip
 ```
 
 ### Javascript

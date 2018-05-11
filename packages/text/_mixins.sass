@@ -35,15 +35,15 @@
     text-decoration: none
     &:hover
         text-decoration: underline
-    &.hyperlink--inherit
-        text-decoration: underline
-        color: inherit
-    &.hyperlink--simple
-        text-decoration: none !important
-        color: myg-theme__color(text, base)
-        +myg-animate__transition(color)
-        &:hover, &:focus, &:active
-            color: myg-theme__color(accent, base)
+=myg-text__hyperlink---inherit
+    text-decoration: underline
+    color: inherit
+=myg-text__hyperlink---light
+    text-decoration: none !important
+    color: myg-theme__color(text, base)
+    +myg-animate__transition(color)
+    &:hover, &:focus, &:active
+        color: myg-theme__color(accent, base)
 =myg-text__code
     +myg-font(monospace)
     color: myg-theme__color(text, light)

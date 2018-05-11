@@ -8,7 +8,7 @@
 @import "myg-toolbar/toolbar"
 
 // Include classes (optional)
-+myg-toolbar--classes
++myg__classes--toolbar
 ```
 
 ### Javascript

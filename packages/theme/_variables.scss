@@ -1,4 +1,3 @@
-// Colors
 $myg-theme: (
     accent: (
         light: #4063e8,
@@ -30,21 +29,17 @@ $myg-theme: (
     )
 ) !default;
 
-
-// Border Radius
-$border-radius: (
+$myg-theme__border-radius: (
     none: 0,
-    sm: px(3),
-    md: px(5),
-    lg: px(10)
+    sm: myg__px(3),
+    md: myg__px(5),
+    lg: myg__px(10)
 ) !default;
 
-
-// Scrollbar
-$scrollbar: (
-    width: px(5),
+$myg-theme__scrollbar: (
+    width: myg__px(5),
     track-background: transparent,
-    thumb-border-radius: px(2.5),
-    thumb-background: color(border),
-    thumb-hover-background: color(text, dark)
+    thumb-border-radius: myg__px(2.5),
+    thumb-background: myg-theme__color(border),
+    thumb-hover-background: myg-theme__color(text, dark)
 ) !default;

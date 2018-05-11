@@ -1,28 +1,28 @@
 =myg-toast
     &.mdc-snackbar
         z-index: 2
-        background: color(background, lighter)
-        border-top: px(1) solid color(border)
-        padding: px(10) myg-spacing(sm)
-        +bigger-than(phone)
+        background: myg-theme__color(background, lighter)
+        border-top: myg__px(1) solid myg-theme__color(border)
+        padding: myg__px(10) myg-spacing(sm)
+        +myg-grid__bigger-than(phone)
             padding: 0 myg-spacing(sm)
-            border: px(1) solid color(border)
-            +border-radius(sm)
+            border: myg__px(1) solid myg-theme__color(border)
+            +myg-theme__border-radius(sm)
         .mdc-snackbar__text
-            color: color(text, base)
-            +font(sans-serif)
+            color: myg-theme__color(text, base)
+            +myg-font(sans-serif)
             letter-spacing: normal
-            font-size: px(14)
+            font-size: myg__px(14)
             line-height: 1.75
         &.error
-            background: color(error)
-            border-color: color(error)
-            color: color(text, dark)
+            background: myg-theme__color(error)
+            border-color: myg-theme__color(error)
+            color: myg-theme__color(text, dark)
             .mdc-snackbar__text
-                color: color(background, base)
+                color: myg-theme__color(background, base)
         &.success
-            background: color(success)
-            border-color: color(success)
-            color: color(text, dark)
+            background: myg-theme__color(success)
+            border-color: myg-theme__color(success)
+            color: myg-theme__color(text, dark)
             .mdc-snackbar__text
-                color: color(background, base)
+                color: myg-theme__color(background, base)

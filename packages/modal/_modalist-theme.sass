@@ -1,25 +1,25 @@
 =modalist--transition
-    +transition(all, .25s)
+    +myg-animate__transition(all, .25s)
     animation-duration: .25s !important
     animation-timing-function: ease-out
 
 
 
 #modalist--overlay
-    background: color(overlay, light)
+    background: myg-theme__color(overlay, light)
     +modalist--transition
     .modalist--loader
         +modalist--transition
         svg
-            background: color(background, base)
-            +border-radius(sm)
+            background: myg-theme__color(background, base)
+            +myg-theme__border-radius(sm)
             +myg-elevation(sm)
 
 
 .modalist
-    border: px(1) solid color(border)
-    background: color(background, base)
-    border-radius: px(3) !important
+    border: myg__px(1) solid myg-theme__color(border)
+    background: myg-theme__color(background, base)
+    border-radius: myg__px(3) !important
     +myg-elevation(sm)
     +modalist--transition
     &.modalist--full-screen
@@ -30,23 +30,23 @@
         &, & > *
             +modalist--transition
         & > .modalist--content-header
-            background: color(background, lighter)
+            background: myg-theme__color(background, lighter)
             padding: myg-spacing(sm)
-            border-bottom: px(1) solid color(border)
+            border-bottom: myg__px(1) solid myg-theme__color(border)
             h4, p
                 margin: 0
             h4
                 line-height: 1.58
-                +font(sans-serif)
+                +myg-font(sans-serif)
                 font-weight: 600
-                font-size: px(17)
-                color: color(text, darker)
+                font-size: myg__px(17)
+                color: myg-theme__color(text, darker)
             p
-                +font(sans-serif)
-                color: color(text, dark)
+                +myg-font(sans-serif)
+                color: myg-theme__color(text, dark)
                 font-weight: normal
                 letter-spacing: normal
-                font-size: px(14)
+                font-size: myg__px(14)
                 line-height: 1.75
             .modalist--closer
                 opacity: .85
@@ -54,5 +54,5 @@
                 &:hover, &:focus
                     opacity: 1
         & > .modalist--content-body
-            background: color(background, base)
+            background: myg-theme__color(background, base)
             padding: myg-spacing(sm)

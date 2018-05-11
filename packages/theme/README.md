@@ -8,7 +8,7 @@
 @import "myg-theme/theme"
 
 // Include classes (optional)
-+myg-theme--classes
++myg__classes--theme
 ```
 
 ### Javascript
