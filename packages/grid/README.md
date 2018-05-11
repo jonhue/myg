@@ -8,5 +8,5 @@
 @import "myg-grid/grid"
 
 // Include classes (optional)
-+myg-grid--classes
++myg__classes--grid
 ```

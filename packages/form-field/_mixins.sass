@@ -9,7 +9,8 @@
             margin-top: myg__px(5)
 
 =myg-form-field---inline-label
-    +myg-grid__flex--center-y
+    +myg-grid__flex
+    +myg-grid__flex---center-y
     & > label, & > .myg-label__container > label, & > .myg-hint
         font-weight: normal
         margin-left: myg__px(15)
@@ -40,7 +41,8 @@
                     color: myg-theme__color(text, base)
 
 =myg-form-field--file
-    +myg-grid__flex--center-y
+    +myg-grid__flex
+    +myg-grid__flex---center-y
     justify-content: space-between
     label, .myg-label__container
         & ~ input[type="file"] + label:last-child
@@ -58,7 +60,8 @@
 
 
 =myg-form-field__inline-container
-    +myg-grid__flex--center-y
+    +myg-grid__flex
+    +myg-grid__flex---center-y
     & + [class*="myg-form-field"]
         margin-top: myg__px(20)
     [class*="myg-form-field"]
