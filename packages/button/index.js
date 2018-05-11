@@ -4,22 +4,22 @@ class Button extends Myg {
 
     showLoader() {
         this.element.style.width = this.element.offsetWidth;
-        this.element.classList.add('loading');
-        this.element.querySelector('span').classList.add('invisible');
+        this.element.classList.add('-loading');
+        this.element.querySelector('span').classList.add('myg--invisible');
         setTimeout(function() {
-            this.element.querySelector('svg').classList.add('visible');
+            this.element.querySelector('.myg-button__loader').classList.add('myg--visible');
         }, 250);
     }
     hideLoader() {
-        this.element.querySelector('svg').classList.remove('visible');
+        this.element.querySelector('.myg-button__loader').classList.remove('myg--visible');
         setTimeout(function() {
             this.element.style.width = '';
-            this.element.classList.remove('loading');
-        	this.element.querySelector('span').classList.remove('invisible');
+            this.element.classList.remove('-loading');
+        	this.element.querySelector('span').classList.remove('myg--invisible');
         }, 250);
     }
     toggleLoader() {
-        if ( this.element.classList.contains('loading') )
+        if ( this.element.classList.contains('-loading') )
             this.hideLoader()
         else
             this.showLoader();

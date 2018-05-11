@@ -42,14 +42,14 @@ class Dropdown extends Myg {
     }
 
     open() {
-        this.element.classList.add('show');
+        this.element.classList.add('-shown');
         this.popper.scheduleUpdate();
     }
     close() {
-        this.element.classList.remove('show');
+        this.element.classList.remove('-shown');
     }
     toggle() {
-        if (this.element.classList.contains('show'))
+        if (this.element.classList.contains('-shown'))
             this.close()
         else
             this.open();

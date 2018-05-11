@@ -4,7 +4,7 @@ class Footer extends Myg {
 
     constructor( element, options = {} ) {
         super( element, options );
-        if ( element.classList.contains('myg-footer--stick') )
+        if ( element.classList.contains('-sticky') )
             this.stick();
     }
 
@@ -13,11 +13,11 @@ class Footer extends Myg {
     }
 
     show() {
-        this.element.classList.remove('covert');
+        this.element.classList.remove('-covert');
         this.element.style.bottom = '';
     }
     hide() {
-        this.element.classList.add('covert');
+        this.element.classList.add('-covert');
         this.element.style.bottom = this.element.offsetHeight;
     }
     toggle() {
