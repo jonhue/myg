@@ -1,18 +1,15 @@
 =myg-dropdown
-    background: color(background, base)
-    border: px(1) solid color(border)
+    background: myg-theme__color(background, base)
+    border: myg__px(1) solid myg-theme__color(border)
     +border-radius(sm)
     +myg-elevation(sm)
     padding: myg-spacing(sm)
     margin-top: myg-spacing(tn)
-    min-width: px(150)
-    max-width: px(500)
-    +hide
-    +invisible
-    +transition(opacity)
-    &.show
-        +show
-        +visible
+    min-width: myg__px(150)
+    max-width: myg__px(500)
+    +myg--hide
+    +myg--invisible
+    +myg-animate__transition(opacity)
     & > p
         &:first-child
             margin-top: 0
@@ -20,3 +17,7 @@
             margin-bottom: 0
     & > hr
         margin: 0
+
+=myg-dropdown---shown
+    +myg--show
+    +myg--visible

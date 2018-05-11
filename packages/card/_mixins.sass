@@ -1,23 +1,25 @@
 =myg-card
     padding: myg-spacing(base)
     +myg-elevation(sm)
-    +border-radius(sm)
-    background: color(background, base)
-    border: px(1) solid color(border)
+    +myg-theme__border-radius(sm)
+    background: myg-theme__color(background, base)
+    border: myg__px(1) solid myg-theme__color(border)
     width: 100%
-    +transition(box-shadow, .35s)
+    +myg-animate__transition(box-shadow, .35s)
     text-decoration: none !important
     &:hover
         +myg-elevation(md)
-    &.myg-card--highlighted
-        background: color(background, dark)
-    &.myg-card--seamless
-        border: none
-        background: color(background, lighter)
-        &:hover, &:focus, &:active
-            background: color(background, light)
     & > *
         &:first-child
             margin-top: 0
         &:last-child
             margin-bottom: 0
+            
+=myg-card---highlighted
+    background: myg-theme__color(background, dark)
+
+=myg-card--seamless
+    border: none
+    background: myg-theme__color(background, lighter)
+    &:hover, &:focus, &:active
+        background: myg-theme__color(background, light)

@@ -6,6 +6,9 @@
 
 ```sass
 @import "myg-form-field/form-field"
+
+// Include classes (optional)
++myg__classes--form-field
 ```
 
 ### Javascript

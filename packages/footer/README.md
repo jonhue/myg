@@ -8,7 +8,7 @@
 @import "myg-footer/footer"
 
 // Include classes (optional)
-+myg-footer--classes
++myg__classes--footer
 ```
 
 ### Javascript

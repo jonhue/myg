@@ -8,7 +8,7 @@
 @import "myg-checkbox/checkbox"
 
 // Include classes (optional)
-+myg-checkbox--classes
++myg__classes--checkbox
 ```
 
 ### Javascript

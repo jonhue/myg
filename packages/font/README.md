@@ -13,5 +13,5 @@
 @import "myg-font/font"
 
 // Include classes (optional)
-+myg-font--classes
++myg__classes--font
 ```

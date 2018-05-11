@@ -1,19 +1,21 @@
 =myg-form-field
-    & + .myg-form-field
-        margin-top: px(20)
-    label, .myg-label--container
-        & + input, & + textarea, & + .myg-input--container
-            margin-top: px(10)
-    .myg-label--container
-        label.myg-label--secondary
-            margin-top: px(5)
-=myg-form-field--inline-label
-    +flex--center-c
-    & > label, & > .myg-label--container > label, & > .myg-hint
+    & + [class*="myg-form-field"]
+        margin-top: myg__px(20)
+    label, .myg-label__container
+        & + input, & + textarea, & + .myg-input__container
+            margin-top: myg__px(10)
+    .myg-label__container
+        label.myg-label.-secondary
+            margin-top: myg__px(5)
+
+=myg-form-field---inline-label
+    +myg-grid__flex--center-y
+    & > label, & > .myg-label__container > label, & > .myg-hint
         font-weight: normal
-        margin-left: px(15)
-=myg-form-field--floating-label
-    .myg-input--container
+        margin-left: myg__px(15)
+
+=myg-form-field---floating-label
+    .myg-input__container
         position: relative
         input, textarea
             &::placeholder
@@ -22,43 +24,44 @@
                 position: absolute
                 top: 0
                 left: 0
-                padding: px(14) px(16) px(13)
-                font-size: px(15)
+                padding: myg__px(14) myg__px(16) myg__px(13)
+                font-size: myg__px(15)
                 font-weight: normal
-                color: color(text, dark)
-                +cursor(text)
-                +transition
+                color: myg-theme__color(text, dark)
+                +myg__cursor(text)
+                +myg-animate__transition
             &:focus ~ label
-                color: color(text, base)
+                color: myg-theme__color(text, base)
             &:not(:placeholder-shown)
-                padding: px(20) px(22) px(5) px(10)
+                padding: myg__px(20) myg__px(22) myg__px(5) myg__px(10)
                 & + label
-                    padding: px(6) px(22) px(6) px(10)
-                    font-size: px(12)
-                    color: color(text, base)
+                    padding: myg__px(6) myg__px(22) myg__px(6) myg__px(10)
+                    font-size: myg__px(12)
+                    color: myg-theme__color(text, base)
+
 =myg-form-field--file
-    +flex--center-c
+    +myg-grid__flex--center-y
     justify-content: space-between
-    label, .myg-label--container
+    label, .myg-label__container
         & ~ input[type="file"] + label:last-child
-            margin-left: px(15)
+            margin-left: myg__px(15)
     input[type="file"]
         display: none
         & + label
-            min-width: px(175)
+            min-width: myg__px(175)
             text-align: center
-            color: color(text, base)
-            border: px(2) dashed color(border)
-            padding: px(12) px(16) px(13)
-            +border-radius(sm)
-            +cursor(pointer)
+            color: myg-theme__color(text, base)
+            border: myg__px(2) dashed myg-theme__color(border)
+            padding: myg__px(12) myg__px(16) myg__px(13)
+            +myg-theme__border-radius(sm)
+            +myg__cursor(pointer)
 
 
-=myg-form-field--inline-container
-    +flex--center-c
-    & + .myg-form-field
-        margin-top: px(20)
-    .myg-form-field
+=myg-form-field__inline-container
+    +myg-grid__flex--center-y
+    & + [class*="myg-form-field"]
+        margin-top: myg__px(20)
+    [class*="myg-form-field"]
         margin-top: 0
         &:not(:first-child)
-            margin-left: px(20)
+            margin-left: myg__px(20)

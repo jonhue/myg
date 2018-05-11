@@ -1,32 +1,24 @@
-=myg-font--classes
-    // Family
+=myg__classes--font
     @each $name, $value in $myg-font
-        .font--#{$name}
-            +font($name)
+        .myg-font--#{$name}
+            +myg-font($name)
 
-
-    // Style
-    .italic
-        +italic
-
-
-    // Transform
-    .uppercase
-        +uppercase
-    .downcase
-        +downcase
-
-
-    // Weight
-    .black
-        +black
-    .bold
-        +bold
-    .semibold
-        +semibold
-    .medium
-        +medium
-    .light
-        +light
-    .thin
-        +thin
+    .myg-font
+        &.-italic
+            +myg-font---italic
+        &.-uppercase
+            +myg-font---uppercase
+        &.-downcase
+            +myg-font---downcase
+        &.-black
+            +myg-font---black
+        &.-bold
+            +myg-font---bold
+        &.-semibold
+            +myg-font---semibold
+        &.-medium
+            +myg-font---medium
+        &.-light
+            +myg-font---light
+        &.-thin
+            +myg-font---thin

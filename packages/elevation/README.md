@@ -8,5 +8,5 @@
 @import "myg-elevation/elevation"
 
 // Include classes (optional)
-+myg-elevation--classes
++myg__classes--elevation
 ```

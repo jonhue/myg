@@ -8,7 +8,7 @@
 @import "myg-drawer/drawer"
 
 // Include classes (optional)
-+myg-drawer--classes
++myg__classes--drawer
 ```
 
 ### Javascript

@@ -8,7 +8,7 @@
 @import "myg-cards/cards"
 
 // Include classes (optional)
-+myg-card--classes
++myg__classes--card
 ```
 
 ### Javascript

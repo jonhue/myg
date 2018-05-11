@@ -6,6 +6,9 @@
 
 ```sass
 @import "myg-dropdown/dropdown"
+
+// Include classes (optional)
++myg__classes--dropdown
 ```
 
 ### Javascript
