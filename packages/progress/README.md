@@ -6,6 +6,9 @@
 
 ```sass
 @import "myg-progress/progress"
+
+// Include classes (optional)
++myg__classes--progress
 ```
 
 ### Javascript

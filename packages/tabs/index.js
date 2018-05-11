@@ -6,14 +6,14 @@ class Tabs extends Myg {
 
     constructor( element, options = {} ) {
         super( element, options );
-        this._panels = document.querySelector('.myg-tabs--panels');
+        this._panels = document.querySelector('.myg-tabs__panels');
         this._mdcTabBar = new MDCTabBar(element);
         this._mdcTabBar.tabs.forEach((tab) => {
             tab.preventDefaultOnClick = true;
         });
         this._mdcTabBar.listen( 'MDCTabBar:change', ({ detail: tabs }) => this.update(tabs.activeTabIndex) );
-        if (document.querySelector('#myg-tabs--panel-success'))
-            this.showContent('#myg-tabs--panel-success');
+        if (document.querySelector('#myg-tabs__panel--success'))
+            this.showContent('#myg-tabs__panel--success');
         else
             if ( this._mdcTabBar.activeTabIndex == -1 )
                 this.showContent(this.element.querySelector( 'a[role="tab"]:nth-child(' + 1 + ')' ).getAttribute('href'));
@@ -36,27 +36,27 @@ class Tabs extends Myg {
     }
 
     showLoader() {
-        let loader = this.panels.querySelector('.myg-tabs--loader');
-        loader.classList.add('myg-tabs--shown');
+        let loader = this.panels.querySelector('.myg-tabs__loader');
+        loader.classList.add('-shown');
     }
     hideLoader() {
-        let loader = this.panels.querySelector('.myg-tabs--loader');
-        loader.classList.remove('myg-tabs--shown');
+        let loader = this.panels.querySelector('.myg-tabs__loader');
+        loader.classList.remove('-shown');
     }
     toggleLoader() {
-        let loader = this.panels.querySelector('.myg-tabs--loader');
-        if (loader.classList.contains('myg-tabs--shown'))
+        let loader = this.panels.querySelector('.myg-tabs__loader');
+        if (loader.classList.contains('-shown'))
             this.hideLoader()
         else
             this.showLoader();
     }
 
     showContent(id) {
-        this.panels.querySelector( '.myg-tabs--panel' + id ).classList.add('myg-tabs--shown');
+        this.panels.querySelector( '.myg-tabs__panel' + id ).classList.add('-shown');
     }
     hideContent() {
-        if (this.panels.querySelector('.myg-tabs--panel.myg-tabs--shown'))
-            this.panels.querySelector('.myg-tabs--panel.myg-tabs--shown').classList.remove('myg-tabs--shown');
+        if (this.panels.querySelector('.myg-tabs__panel.-shown'))
+            this.panels.querySelector('.myg-tabs__panel.-shown').classList.remove('-shown');
     }
 
     update(i) {
@@ -74,10 +74,10 @@ class Tabs extends Myg {
                     window.history.pushState({ 'html': data, 'pageTitle': data.title }, data.title, tab.getAttribute('href'));
                     this.render(data);
                     this.hideLoader();
-                    setTimeout( () => this.showContent('#myg-tabs--panel-success'), 250 );
+                    setTimeout( () => this.showContent('#myg-tabs__panel--success'), 250 );
                 } else {
                     this.hideLoader();
-                    setTimeout( () => this.showContent('#myg-tabs--panel-error'), 250 );
+                    setTimeout( () => this.showContent('#myg-tabs__panel--error'), 250 );
                 };
             });
         };
@@ -85,9 +85,9 @@ class Tabs extends Myg {
 
     render(data) {
         triggerEvent( document, 'myg-tabs:before-render' );
-        let panel = this.panels.querySelector('.myg-tabs--panel#myg-tabs--panel-success');
+        let panel = this.panels.querySelector('.myg-tabs__panel#myg-tabs__panel--success');
         panel.innerHTML = data;
-        let html = panel.querySelector('.myg-tabs--panel#myg-tabs--panel-success').innerHTML;
+        let html = panel.querySelector('.myg-tabs__panel#myg-tabs__panel--success').innerHTML;
         panel.innerHTML = html;
         triggerEvent( document, 'myg-tabs:render' );
     }

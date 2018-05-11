@@ -8,7 +8,7 @@
 @import "myg-radio/radio"
 
 // Include classes (optional)
-+myg-radio--classes
++myg__classes--radio
 ```
 
 ### Javascript

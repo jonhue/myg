@@ -8,7 +8,7 @@
 @import "myg-tabs/tabs"
 
 // Include classes (optional)
-+myg-tabs--classes
++myg__classes--tabs
 ```
 
 ### Javascript
