@@ -1,90 +1,84 @@
-// Placeholders
-=placeholder
+=myg-input__placeholder
     &::-webkit-input-placeholder
-        color: color(text, dark) !important
-        +transition(color)
+        color: myg-theme__color(text, dark) !important
+        +myg-animate__transition(color)
     &:-moz-placeholder
-        color: color(text, dark) !important
-        +transition(color)
+        color: myg-theme__color(text, dark) !important
+        +myg-animate__transition(color)
     &::-moz-placeholder
-        color: color(text, dark) !important
-        +transition(color)
+        color: myg-theme__color(text, dark) !important
+        +myg-animate__transition(color)
     &:-ms-input-placeholder
-        color: color(text, dark) !important
-        +transition(color)
+        color: myg-theme__color(text, dark) !important
+        +myg-animate__transition(color)
     &:active, &:focus
         &::-webkit-input-placeholder
-            color: color(text, base) !important
+            color: myg-theme__color(text, base) !important
         &:-moz-placeholder
-            color: color(text, base) !important
+            color: myg-theme__color(text, base) !important
         &::-moz-placeholder
-            color: color(text, base) !important
+            color: myg-theme__color(text, base) !important
         &:-ms-input-placeholder
-            color: color(text, base) !important
+            color: myg-theme__color(text, base) !important
 
 
-// Inputs
-=myg-input
-    +font(sans-serif)
-    +border-radius(sm)
-    font-size: px(15)
+=myg-input---error
+    border-color: myg-theme__color(error)
+    &:active, &:focus
+        box-shadow: 0 0 0 myg__px(3.5) rgba(myg-theme__color(error, null, true), .35)
+
+=myg-input---success
+    border-color: myg-theme__color(success)
+    &:active, &:focus
+        box-shadow: 0 0 0 myg__px(3.5) rgba(myg-theme__color(success, null, true), .35)
+
+=myg-input---disabled
+    color: myg-theme__color(text, lighter)
+    &::-webkit-input-placeholder
+        color: myg-theme__color(text, lighter) !important
+    &:-moz-placeholder
+        color: myg-theme__color(text, lighter) !important
+    &::-moz-placeholder
+        color: myg-theme__color(text, lighter) !important
+    &:-ms-input-placeholder
+        color: myg-theme__color(text, lighter) !important
+
+=myg-input---no-outline
+    box-shadow: none !important
+
+
+=myg-input__input
+    +myg-font(sans-serif)
+    +myg-theme__border-radius(sm)
+    font-size: myg__px(15)
     line-height: 1.58
-    color: color(text, darker)
-    background: color(background, light)
-    border: px(1) solid color(border)
-    padding: px(12) px(16) px(13)
+    color: myg-theme__color(text, darker)
+    background: myg-theme__color(background, light)
+    border: myg__px(1) solid myg-theme__color(border)
+    padding: myg__px(12) myg__px(16) myg__px(13)
     width: 100%
-    +placeholder
-    +transition
-    &[disabled]
-        color: color(text, lighter)
-        &::-webkit-input-placeholder
-            color: color(text, lighter) !important
-        &:-moz-placeholder
-            color: color(text, lighter) !important
-        &::-moz-placeholder
-            color: color(text, lighter) !important
-        &:-ms-input-placeholder
-            color: color(text, lighter) !important
+    +myg-input__placeholder
+    +myg-animate__transition
     &:active, &:focus
-        border-color: color(accent, base)
-        box-shadow: 0 0 0 px(3.5) rgba(color(accent, base, true), .35)
-        &.success
-            box-shadow: 0 0 0 px(3.5) rgba(color(success, null, true), .35)
-        &.error
-            box-shadow: 0 0 0 px(3.5) rgba(color(error, null, true), .35)
-    &.myg-input--no-outline
-        box-shadow: none !important
-    &.success
-        border-color: color(success)
-    &.error
-        border-color: color(error)
+        border-color: myg-theme__color(accent, base)
+        box-shadow: 0 0 0 myg__px(3.5) rgba(myg-theme__color(accent, base, true), .35)
 
 
-// Textareas
-=myg-textarea
-    +font(sans-serif)
-    +border-radius(sm)
-    font-size: px(15)
+=myg-input__textarea
+    +myg-font(sans-serif)
+    +myg-theme__border-radius(sm)
+    font-size: myg__px(15)
     line-height: 1.75
-    color: color(text, dark)
-    background: color(background, lighter)
-    border: 1px solid color(border)
+    color: myg-theme__color(text, dark)
+    background: myg-theme__color(background, lighter)
+    border: myg_px(1) solid myg-theme__color(border)
     width: 100%
     max-width: 100%
     min-width: 100%
-    padding: px(12) px(16) px(13)
-    min-height: px(125)
-    +placeholder
-    +transition
+    padding: myg__px(12) myg__px(16) myg__px(13)
+    min-height: myg__px(125)
+    +myg-input__placeholder
+    +myg-animate__transition
     &:active, &:focus
-        border-color: color(accent, base)
-        box-shadow: 0 0 0 px(3.5) rgba(color(accent, base, true), .35)
-        &.success
-            box-shadow: 0 0 0 px(3.5) rgba(color(success, null, true), .35)
-        &.error
-            box-shadow: 0 0 0 px(3.5) rgba(color(error, null, true), .35)
-    &.success
-        border-color: color(success)
-    &.error
-        border-color: color(error)
+        border-color: myg-theme__color(accent, base)
+        box-shadow: 0 0 0 myg__px(3.5) rgba(myg-theme__color(accent, base, true), .35)

@@ -5,8 +5,8 @@
 ### Stylesheets
 
 ```sass
-@import "myg-label/label"
+@import "myg-label/hint"
 
 // Include classes (optional)
-+myg-label--classes
++myg__classes--hint
 ```

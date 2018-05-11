@@ -8,7 +8,7 @@
 @import "myg-input/input"
 
 // Include classes (optional)
-+myg-input--classes
++myg__classes--input
 ```
 
 ### Javascript

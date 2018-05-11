@@ -1,9 +1,22 @@
-=myg-input--classes
-    // Inputs
-    .myg-input
-        +myg-input
+=myg__classes--input
+    .myg-input__input
+        +myg-input__input
+        &.-error
+            +myg-input---error
+        &.-success
+            +myg-input---success
+        &.-disabled, &[disabled]
+            +myg-input---disabled
+        &.-no-outline
+            +myg-input---no-outline
 
-
-    // Textareas
-    .myg-textarea
-        +myg-textarea
+    .myg-input__textarea
+        +myg-input__textarea
+        &.-error
+            +myg-input---error
+        &.-success
+            +myg-input---success
+        &.-disabled, &[disabled]
+            +myg-input---disabled
+        &.-no-outline
+            +myg-input---no-outline
