@@ -1,20 +1,20 @@
 =myg-badge
-    margin: px(3)
-    background: color(background, dark)
-    border-radius: px(5)
-    font-size: px(13)
-    padding: px(1) px(8)
+    margin: myg__px(3)
+    background: myg-theme__color(background, dark)
+    border-radius: myg__px(5)
+    font-size: myg__px(13)
+    padding: myg__px(1) myg__px(8)
     word-wrap: normal
-    color: color(text, base)
+    color: myg-theme__color(text, base)
     &.success
-        background: color(success)
-        color: color(background, lighter)
+        background: myg-theme__color(success)
+        color: myg-theme__color(background, lighter)
     &.error
-        background: color(error)
-        color: color(background, lighter)
+        background: myg-theme__color(error)
+        color: myg-theme__color(background, lighter)
 
 
-=myg-badge--container
-    +flex--center-c
-    margin: px(-3)
-    flex-wrap: wrap
+=myg-badge__container
+    +myg-grid__flex--center-y
+    +myg-grid__flex--wrap
+    margin: myg__px(-3)

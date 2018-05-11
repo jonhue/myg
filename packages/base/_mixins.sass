@@ -1,53 +1,53 @@
 // CSS Variables
-=v($name, $value)
+=myg__var($name, $value)
     #{--$name}: $value
 
 
 // Progressive Web Apps
-=pwa
+=myg__pwa
     @media all and (display-mode: map-get($myg-base, pwa-display-mode))
         @content
 
 
 // Cursor
-=cursor($value)
+=myg__cursor($value)
     cursor: $value
 
 
 // Scrolling
-=scrollable
+=myg__scroll
     overflow: auto
-=scrollable--m
+=myg__scroll--x
     overflow-x: auto
-=scrollable--c
+=myg__scroll--y
     overflow-y: auto
-=not-scrollable
+=myg__scroll--hidden
     overflow: hidden
-=not-scrollable--m
+=myg__scroll--hidden-x
     overflow-x: hidden
-=not-scrollable--c
+=myg__scroll--hidden-y
     overflow-y: hidden
 
 
 // Selecting
-=selectable
+=myg__select
     user-select: auto
-=selectable--auto
+=myg__select--auto
     &:focus
         user-select: all
-=not-selectable
+=myg__select--off
     user-select: none
 
 
 // Transform
-=flip--m
+=myg__flip--x
     -moz-transform: scaleX(-1)
     -o-transform: scaleX(-1)
     -webkit-transform: scaleX(-1)
     transform: scaleX(-1)
     filter: FlipH
     -ms-filter: "FlipH"
-=flip--c
+=myg__flip--y
     -moz-transform: scale(1, -1)
     -webkit-transform: scale(1, -1)
     -o-transform: scale(1, -1)
@@ -58,21 +58,21 @@
 
 
 // Visibility
-=display
+=myg--display
     display: block !important
-=hidden
+=myg--hidden
     display: none !important
-=show
+=myg--show
     display: block
-=hide
+=myg--hide
     display: none
-=visible
+=myg--visible
     visibility: visible
     opacity: 1
-=invisible
+=myg--invisible
     visibility: hidden
     opacity: 0
-=intransparent
+=myg--intransparent
     opacity: 1
-=transparent
+=myg--transparent
     opacity: 0

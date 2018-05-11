@@ -1,5 +1,5 @@
-=myg-animate--classes
+=classes__myg-animate
     // Animations
-    @each $animation, $options in $myg-animate
-        .animate--#{$animation}
-            +animate($animation, map-get($options, duration), map-get($options, easing))
+    @each $animation, $options in $myg-animate__animation
+        .myg-animate__animation--#{$animation}
+            +myg-animate__animation($animation, map-get($options, duration), map-get($options, easing))

@@ -8,6 +8,9 @@
 
 ```sass
 @import "myg-animate/animate"
+
+// Include classes (optional)
++classes__myg-animation
 ```
 
 ### Javascript

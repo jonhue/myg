@@ -1,65 +1,65 @@
-=myg-base--classes
+=classes__myg
     // Progressive Web Apps
-    .pwa
+    .myg__pwa
         display: none
-        +pwa
+        +myg__pwa
             display: block
-    .not-pwa
-        +pwa
+    .myg__pwa--hidden
+        +myg__pwa
             display: none
 
 
     // Cursor
-    @each $name, $value in $myg--cursors
-        .cursor--#{$name}
-            +cursor($value)
+    @each $name, $value in $myg__cursor
+        .myg__cursor--#{$name}
+            +myg__cursor($value)
 
 
     // Scrolling
-    .scrollable
-        +scrollable
-    .scrollable--m
-        +scrollable--m
-    .scrollable--c
-        +scrollable--c
-    .not-scrollable
-        +not-scrollable
-    .not-scrollable--m
-        +not-scrollable--m
-    .not-scrollable--c
-        +not-scrollable--c
+    .myg__scroll
+        +myg__scroll
+    .myg__scroll--x
+        +myg__scroll--x
+    .myg__scroll--y
+        +myg__scroll--y
+    .myg__scroll--hidden
+        +myg__scroll--hidden
+    .myg__scroll--hidden-x
+        +myg__scroll--hidden-x
+    .myg__scroll--hidden-y
+        +myg__scroll--hidden-y
 
 
     // Selecting
-    .selectable
-        +selectable
-    .selectable--auto
-        +selectable--auto
-    .not-selectable
-        +not-selectable
+    .myg__select
+        +myg__select
+    .myg__select--auto
+        +myg__select--auto
+    .myg__select--off
+        +myg__select--off
 
 
     // Transform
-    .flip--m
-        +flip--m
-    .flip--c
-        +flip--c
+    .myg__flip--x
+        +myg__flip--x
+    .myg__flip--y
+        +myg__flip--y
 
 
     // Visibility
-    .display
-        +display
-    .hidden
-        +hidden
-    .show
-        +show
-    .hide
-        +hide
-    .visible
-        +visible
-    .invisible
-        +invisible
-    .intransparent
-        +intransparent
-    .transparent
-        +transparent
+    .myg--display
+        +myg--display
+    .myg--hidden
+        +myg--hidden
+    .myg--show
+        +myg--show
+    .myg--hide
+        +myg--hide
+    .myg--visible
+        +myg--visible
+    .myg--invisible
+        +myg--invisible
+    .myg--intransparent
+        +myg--intransparent
+    .myg--transparent
+        +myg--transparent
