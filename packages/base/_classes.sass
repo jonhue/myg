@@ -1,5 +1,4 @@
-=classes__myg
-    // Progressive Web Apps
+=myg__classes--base
     .myg__pwa
         display: none
         +myg__pwa
@@ -8,14 +7,10 @@
         +myg__pwa
             display: none
 
-
-    // Cursor
     @each $name, $value in $myg__cursor
         .myg__cursor--#{$name}
             +myg__cursor($value)
 
-
-    // Scrolling
     .myg__scroll
         +myg__scroll
     .myg__scroll--x
@@ -29,8 +24,6 @@
     .myg__scroll--hidden-y
         +myg__scroll--hidden-y
 
-
-    // Selecting
     .myg__select
         +myg__select
     .myg__select--auto
@@ -38,15 +31,11 @@
     .myg__select--off
         +myg__select--off
 
-
-    // Transform
     .myg__flip--x
         +myg__flip--x
     .myg__flip--y
         +myg__flip--y
-
-
-    // Visibility
+          
     .myg--display
         +myg--display
     .myg--hidden

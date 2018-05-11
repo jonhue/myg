@@ -8,7 +8,7 @@
 @import "myg-button/button"
 
 // Include classes (optional)
-+myg-button--classes
++myg__classes--button
 ```
 
 ### Javascript

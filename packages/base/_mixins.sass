@@ -1,20 +1,16 @@
-// CSS Variables
 =myg__var($name, $value)
     #{--$name}: $value
 
 
-// Progressive Web Apps
 =myg__pwa
     @media all and (display-mode: map-get($myg-base, pwa-display-mode))
         @content
 
 
-// Cursor
 =myg__cursor($value)
     cursor: $value
 
 
-// Scrolling
 =myg__scroll
     overflow: auto
 =myg__scroll--x
@@ -29,7 +25,6 @@
     overflow-y: hidden
 
 
-// Selecting
 =myg__select
     user-select: auto
 =myg__select--auto
@@ -39,7 +34,6 @@
     user-select: none
 
 
-// Transform
 =myg__flip--x
     -moz-transform: scaleX(-1)
     -o-transform: scaleX(-1)
@@ -57,7 +51,6 @@
     -ms-filter: "FlipV"
 
 
-// Visibility
 =myg--display
     display: block !important
 =myg--hidden

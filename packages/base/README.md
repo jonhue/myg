@@ -8,7 +8,7 @@
 @import "myg-base/base"
 
 // Include classes (optional)
-+classes__myg-base
++myg__classes--base
 ```
 
 ### Javascript

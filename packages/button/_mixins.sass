@@ -1,117 +1,122 @@
-// Buttons
 =myg-button
-    +flex--center
-    +border-radius(sm)
-    +font(sans-serif)
+    +myg-grid__flex--center
+    +myg-theme__border-radius(sm)
+    +myg-font(sans-serif)
     +myg-elevation(sm)
-    background: color(accent, base)
-    border: px(1) solid color(accent, base)
+    background: myg-theme__color(accent, base)
+    border: myg__px(1) solid myg-theme__color(accent, base)
     font-weight: 500
-    font-size: px(14)
+    font-size: myg__px(14)
     line-height: 1.58
     cursor: pointer
     text-decoration: none !important
-    padding: px(12) px(20) px(14)
+    padding: myg__px(12) myg__px(20) myg__px(14)
     &, span
-        color: color(accent, contrast)
+        color: myg-theme__color(accent, contrast)
         +transition
     &:hover, &:focus, &:active
-        background: color(accent, dark)
-        border-color: color(accent, dark)
+        background: myg-theme__color(accent, dark)
+        border-color: myg-theme__color(accent, dark)
         +myg-elevation(md)
-    &.error, &.success
-        color: color(background, base)
-    &.error
-        border-color: color(error)
-        background: color(error)
-    &.success
-        border-color: color(success)
-        background: color(success)
-=myg-button--dense
-    padding: px(8) px(18) px(10)
-=myg-button--disabled
+
+=myg-button---error
+    color: myg-theme__color(background, base)
+    border-color: myg-theme__color(error)
+    background: myg-theme__color(error)
+
+=myg-button---success
+    color: myg-theme__color(background, base)
+    border-color: myg-theme__color(success)
+    background: myg-theme__color(success)
+
+=myg-button---dense
+    padding: myg__px(8) myg__px(18) myg__px(10)
+
+=myg-button---disabled
     opacity: .35
     cursor: not-allowed
     &:hover
-        +animate(shake, map-get(map-get($myg-animate, shake), duration),  map-get(map-get($myg-animate, shake), easing))
+        +myg-animate__animation(shake, map-get(map-get($myg-animate__animation, shake), duration),  map-get(map-get($myg-animate__animation, shake), easing))
     &:focus, &:active
         pointer-events: none
-=myg-button--light
-    background: color(background, lighter)
-    border-color: color(accent, base)
-    &, span
-        color: color(accent, base)
-    &:hover, &:focus, &:active
-        background: color(accent, base)
-        &, span
-            color: color(accent, contrast)
+
 =myg-button--secondary
-    background: color(background, light)
-    border-color: color(border)
+    background: myg-theme__color(background, light)
+    border-color: myg-theme__color(border)
     &, span
-        color: color(text, light)
+        color: myg-theme__color(text, light)
     &:hover, &:focus, &:active
-        background: color(background, light)
-        border-color: color(accent, base)
+        background: myg-theme__color(background, light)
+        border-color: myg-theme__color(accent, base)
         &, span
-            color: color(accent, base)
-    &.error, &.success
-        &:hover, &:focus, &:active
-            &, span
-                color: color(background, base)
-    &.error
-        border-color: color(error)
-        color: color(error)
-        &:hover, &:focus, &:active
-            background: color(error)
-    &.success
-        border-color: color(success)
-        color: color(success)
-        &:hover, &:focus, &:active
-            background: color(success)
+            color: myg-theme__color(accent, base)
+=myg-button--secondary---error
+    border-color: myg-theme__color(error)
+    color: myg-theme__color(error)
+    &:hover, &:focus, &:active
+        background: myg-theme__color(error)
+        &, span
+            color: myg-theme__color(background, base)
+=myg-button--secondary---success
+    border-color: myg-theme__color(success)
+    color: myg-theme__color(success)
+    &:hover, &:focus, &:active
+        background: myg-theme__color(success)
+        &, span
+            color: myg-theme__color(background, base)
+
+=myg-button--light
+    background: myg-theme__color(background, lighter)
+    border-color: myg-theme__color(accent, base)
+    &, span
+        color: myg-theme__color(accent, base)
+    &:hover, &:focus, &:active
+        background: myg-theme__color(accent, base)
+        &, span
+            color: myg-theme__color(accent, contrast)
+
 =myg-button--icon
-    padding: px(17) px(16) px(13)
-    svg
-        position: relative
-        top: px(-2)
-        margin-right: px(30)
-        width: px(18)
-        height: px(18)
-        font-size: px(18)
-        color: inherit
-        opacity: 0
-        visibility: hidden
-        +transition(opacity)
-        &.show
-            opacity: 1
-            visibility: visible
-    .caption
-        width: 100%
-        text-align: center
+    padding: myg__px(17) myg__px(16) myg__px(13)
+=myg-button--icon__svg
+    position: relative
+    top: myg__px(-2)
+    margin-right: myg__px(30)
+    width: myg__px(18)
+    height: myg__px(18)
+    font-size: myg__px(18)
+    color: inherit
+    opacity: 0
+    visibility: hidden
+    +myg-animate__transition(opacity)
+=myg-button--icon__svg---shown
+    +myg--visible
+=myg-button--icon__caption
+    width: 100%
+    text-align: center
+
 =myg-button--loader
     position: relative
-    svg
-        display: none
-        position: absolute
-        transition: initial
-        top: px(12)
-        width: px(24)
-        height: px(24)
-        &.visible
-            +visible
-        line
-            stroke: white
-            stroke-width: 1.5
-    &.loading
-        height: px(50)
-        padding-top: 0
-        padding-bottom: 0
+=myg-button--loader---loading
+    height: myg__px(50)
+    padding-top: 0
+    padding-bottom: 0
+=myg-button--loader__svg
+    display: none
+    position: absolute
+    transition: initial
+    top: myg__px(12)
+    width: myg__px(24)
+    height: myg__px(24)
+    line
+        stroke: white
+        stroke-width: 1.5
+=myg-button--loader__svg---shown
+    +myg--visible
 
 
-// Container
-=myg-button--container
-    +flex--center-c
-    +flex--wrap
-    margin: px(-10)
+=myg-button__container
+    +myg-grid__flex--center-y
+    +myg-grid__flex--wrap
+    margin: myg__px(-10)
     & > *
-        margin: px(10)
+        margin: myg__px(10)

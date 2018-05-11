@@ -1,4 +1,3 @@
-// Animations
 $myg-animate__animation: (
     shake: (
         duration: .82s,
@@ -11,7 +10,6 @@ $myg-animate__animation: (
 ) !default;
 
 
-// Transitions
 $myg-animate__transition: (
     duration: .15s,
     easing: ease-out

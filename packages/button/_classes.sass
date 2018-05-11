@@ -1,21 +1,50 @@
-=myg-button--classes
-    // Buttons
+=myg__classes--button
     .myg-button
         +myg-button
-        &.myg-button--dense
-            +myg-button--dense
-        &.myg-button--disabled
-            +myg-button--disabled
-        &.myg-button--light
-            +myg-button--light
-        &.myg-button--secondary
-            +myg-button--secondary
-        &.myg-button--icon
-            +myg-button--icon
-        &.myg-button--loader
-            +myg-button--loader
+        &.-error
+            +myg-button---error
+        &.-success
+            +myg-button---success
+        &.-dense
+            +myg-button---dense
+        &.-disabled
+            +myg-button---disabled
+    .myg-button--secondary
+        +myg-button
+        +myg-button--secondary
+        &.-error
+            +myg-button--secondary---error
+        &.-success
+            +myg-button--secondary---success
+        &.-dense
+            +myg-button---dense
+        &.-disabled
+            +myg-button---disabled
+    .myg-button--light
+        +myg-button
+        +myg-button--light
+        &.-dense
+            +myg-button---dense
+        &.-disabled
+            +myg-button---disabled
+    .myg-button--icon
+        +myg-button
+        +myg-button--icon
+        .myg-button--icon__svg
+            +myg-button--icon__svg
+            &.-shown
+                +myg-button--icon__svg---shown
+        .myg-button--icon__caption
+            +myg-button--icon__caption
+    .myg-button--loader
+        +myg-button
+        +myg-button--loader
+        &.-loading
+            +myg-button--loader---loading
+        .myg-button--loader__svg
+            +myg-button--loader__svg
+            &.-shown
+                +myg-button--loader__svg---shown
 
-
-    // Container
-    .myg-button--container
-        +myg-button--container
+    .myg-button__container
+        +myg-button__container

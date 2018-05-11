@@ -1,9 +1,7 @@
-// CSS Variables
 @function myg__var($name)
     @return var(--#{$name})
 
 
-// Sizes
 @function myg__px($px, $font-size: map-get($myg-base, font-size))
     @return $px/$font-size+rem
 @function myg__rem($px, $font-size: map-get($myg-base, font-size))
@@ -11,8 +9,7 @@
 @function myg__em($px, $font-size: map-get($myg-base, font-size))
     @return $px/$font-size+em
 
-
-// Decimals
+    
 @function myg__decimal-round($number, $digits: 0)
     $n: 1
     // $number must be a number
