@@ -11,7 +11,7 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "@material/select": "^0.34.1",
+        "@material/select": "^0.35.1",
         "myg-base": "^0.12.5"
     }
 }

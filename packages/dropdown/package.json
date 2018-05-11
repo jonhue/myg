@@ -11,7 +11,7 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "popper.js": "^1.14.1",
+        "popper.js": "^1.14.3",
         "myg-base": "^0.12.5",
         "myg-theme": "^0.12.5"
     }
