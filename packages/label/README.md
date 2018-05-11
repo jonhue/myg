@@ -8,5 +8,5 @@
 @import "myg-label/label"
 
 // Include classes (optional)
-+myg-label--classes
++myg__classes--label
 ```

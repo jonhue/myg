@@ -1,23 +1,26 @@
 =myg-list
-    &.myg-list--contained
-        background: color(background, light)
-        width: 100%
-        border: px(1) solid color(border)
-        +border-radius(sm)
-        .myg-list--item
-            padding: px(15) px(20)
-            &:not(:last-child)
-                border-bottom: px(1) solid color(border)
-            a
-                text-decoration: none !important
-                color: color(text, base)
-                +transition(color)
-                &:hover, &:focus, &:active
-                    color: color(text, darker)
-    .myg-list--element, .myg-list--title
-        padding: px(15)
-        border-top: px(1) solid color(border)
-        &:last-child
-            border-bottom: px(1) solid color(border)
-    .myg-list--title
-        background: color(background, darker)
+    // ...
+
+=myg-list__item
+    padding: myg__px(15)
+    border-top: myg__px(1) solid myg-theme__color(border)
+    &:last-child
+        border-bottom: myg__px(1) solid myg-theme__color(border)
+=myg-list__item---title
+    background: myg-theme__color(background, darker)
+
+=myg-list--contained
+    background: myg-theme__color(background, light)
+    width: 100%
+    border: myg__px(1) solid myg-theme__color(border)
+    +myg-theme__border-radius(sm)
+=myg-list--contained__item
+    padding: myg__px(15) myg__px(20)
+    &:not(:last-child)
+        border-bottom: myg__px(1) solid myg-theme__color(border)
+    a
+        text-decoration: none !important
+        color: myg-theme__color(text, base)
+        +myg-animate__transition(color)
+        &:hover, &:focus, &:active
+            color: myg-theme__color(text, darker)

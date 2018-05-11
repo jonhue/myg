@@ -8,5 +8,5 @@
 @import "myg-layout/layout"
 
 // Include classes (optional)
-+myg-layout--classes
++myg__classes--layout
 ```
