@@ -8,7 +8,7 @@
 @import "myg-text/text"
 
 // Include classes (optional)
-+myg-text--classes
++myg__classes--text
 ```
 
 ### Javascript
