@@ -135,7 +135,9 @@ To propose your ideas, initiate the discussion by adding a [new issue](https://g
 
 Here is how you can build Myg locally:
 
-    $ npm run build
+```
+$ npm run build
+```
 
 ---
 
