@@ -1,7 +1,7 @@
 {
     "name": "myg-card",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Cards can list objects.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

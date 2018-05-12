@@ -1,7 +1,7 @@
 {
     "name": "myg-action-button",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Floating action buttons presenting a clear call-to-action.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

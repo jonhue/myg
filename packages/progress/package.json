@@ -1,7 +1,7 @@
 {
     "name": "myg-progress",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Myg progress bar component.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

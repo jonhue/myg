@@ -1,7 +1,7 @@
 {
     "name": "myg-dialog",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Dialogs can inform a user and receive inputs.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

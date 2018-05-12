@@ -1,7 +1,7 @@
 {
     "name": "myg-grid",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Grids arrange elements in the page.",
     "main": "grid.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

@@ -1,7 +1,7 @@
 {
     "name": "myg-switch",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Myg switch input component.",
     "main": "switch.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

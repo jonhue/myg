@@ -1,7 +1,7 @@
 {
     "name": "myg-list",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Present smaller elements in a structured form.",
     "main": "list.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

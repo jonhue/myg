@@ -1,7 +1,7 @@
 {
     "name": "myg-font",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Myg font component.",
     "main": "font.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

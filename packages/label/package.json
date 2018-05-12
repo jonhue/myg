@@ -1,7 +1,7 @@
 {
     "name": "myg-label",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Labels add names to inputs in form fields.",
     "main": "label.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

@@ -1,7 +1,7 @@
 {
     "name": "myg-titlebar",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Titlebars can remind users of necessary actions.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

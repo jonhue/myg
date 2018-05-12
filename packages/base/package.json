@@ -1,7 +1,7 @@
 {
     "name": "myg-base",
     "version": "0.13.0",
-    "description": "...",
+    "description": "The foundation of Myg.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

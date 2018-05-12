@@ -1,7 +1,7 @@
 {
     "name": "myg-hint",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Hints can add contextual information to a form field.",
     "main": "hint.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

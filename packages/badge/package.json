@@ -1,7 +1,7 @@
 {
     "name": "myg-badge",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Badges can list attributes of objects.",
     "main": "badge.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

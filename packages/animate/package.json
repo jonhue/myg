@@ -1,7 +1,7 @@
 {
     "name": "myg-animate",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Myg's animations kit - adding animations & transitions.",
     "main": "animate.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

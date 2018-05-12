@@ -1,7 +1,7 @@
 {
     "name": "myg-toast",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Toasts can notify users.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

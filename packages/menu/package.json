@@ -1,7 +1,7 @@
 {
     "name": "myg-menu",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Menus can include actions for an element.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

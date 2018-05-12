@@ -1,7 +1,7 @@
 {
     "name": "myg-input",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Myg input (and textarea) component.",
     "main": "input.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

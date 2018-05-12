@@ -1,7 +1,7 @@
 {
     "name": "myg-tooltip",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Tooltips can add explanation to elements.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

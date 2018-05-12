@@ -1,7 +1,7 @@
 {
     "name": "myg-spacing",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Myg spacing system.",
     "main": "spacing.sass",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

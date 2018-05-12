@@ -1,7 +1,7 @@
 {
     "name": "myg-text",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Myg text component.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

@@ -1,7 +1,7 @@
 {
     "name": "myg-form-field",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Form fields wrap elements in a form.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

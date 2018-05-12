@@ -1,7 +1,7 @@
 {
     "name": "myg-drawer",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Drawers are a navigation element.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

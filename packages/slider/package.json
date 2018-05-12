@@ -1,7 +1,7 @@
 {
     "name": "myg-slider",
     "version": "0.13.0",
-    "description": "...",
+    "description": "Myg slider input component.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",

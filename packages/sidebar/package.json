@@ -1,7 +1,7 @@
 {
     "name": "myg-sidebar",
     "version": "0.13.0",
-    "description": "...",
+    "description": "A sidebar is a navigational element.",
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/jonhue/myg/issues",
