@@ -26,7 +26,7 @@ Myg is being used on:
 * [Components](#components)
 * [To Do](#to-do)
 * [Development](#development)
-    * [CSS methodology](#css-methodology)
+    * [CSS methodology](#css-methodology)
 * [Contributing](#contributing)
     * [Contributors](#contributors)
     * [Semantic Versioning](#semantic-versioning)
