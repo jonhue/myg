@@ -1,6 +1,6 @@
 {
     "name": "myg-slide",
-    "version": "0.12.5",
+    "version": "0.13.0",
     "description": "...",
     "main": "index.js",
     "bugs": {
@@ -12,6 +12,6 @@
     "license": "MIT",
     "dependencies": {
         "flickity": "^2.1.1",
-        "myg-base": "^0.12.5"
+        "myg-base": "^0.13.0"
     }
 }

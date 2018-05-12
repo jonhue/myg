@@ -4,6 +4,16 @@
 
 * nothing yet
 
+### 0.13.0 - 2018/05/12
+
+* features
+    * add optional mappings
+    * create a new elevation system
+    * create a new spacing system
+* enhancements
+    * rewrite components with BEVM in mind
+    * remove JS from `myg-input` component
+
 ### 0.12.5 - 2018/04/23
 
 * bugfixes
