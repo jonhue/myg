@@ -1,4 +1,4 @@
 =myg__classes--elevation
-    @each $name, $value in $myg-elevation
-        .myg-elevation--#{name}
-            +myg-elevation($name)
+    @for $z from 0 through 15
+        .myg-elevation--#{$z}
+            +myg-elevation($z)

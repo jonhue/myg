@@ -1,2 +1,5 @@
-=myg-elevation($name)
-    box-shadow: map-get($myg-elevation, $name)
+=myg-elevation($z)
+    @if $z == 0
+        box-shadow: none
+    @else
+        box-shadow: 0 myg__px($z + 1) myg__px(($z + 1) * 2) myg-theme__color(box-shadow)
