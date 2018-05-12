@@ -14,8 +14,13 @@
             +myg-theme__colors($colors)
 
 
-=myg-theme__border-radius($name)
-    border-radius: map-get($myg-theme__border-radius, $name)
+=myg-theme__border-radius($r)
+    @if $r == round
+        border-radius: 50%
+    @else if $r == 1
+        border-radius: 2
+    @else
+        border-radius: myg__px($r * $r)
 
 
 =myg-theme__scrollbar

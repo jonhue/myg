@@ -29,13 +29,6 @@ $myg-theme: (
     )
 ) !default;
 
-$myg-theme__border-radius: (
-    none: 0,
-    sm: myg__px(3),
-    md: myg__px(5),
-    lg: myg__px(10)
-) !default;
-
 $myg-theme__scrollbar: (
     width: myg__px(5),
     track-background: transparent,

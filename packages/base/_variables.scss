@@ -12,5 +12,6 @@ $myg__cursor: (
     move: move,
     grab: grab,
     progress: progress,
-    wait: wait
+    wait: wait,
+    not-allowed: not-allowed
 ) !default;

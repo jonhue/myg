@@ -16,6 +16,7 @@
         "myg-font": "^0.12.5",
         "myg-grid": "^0.12.5",
         "myg-elevation": "^0.12.5",
-        "myg-animate": "^0.12.5"
+        "myg-animate": "^0.12.5",
+        "myg-spacing": "^0.12.5"
     }
 }
