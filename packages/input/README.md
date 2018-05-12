@@ -9,6 +9,9 @@
 
 // Include classes (optional)
 +myg__classes--input
+
+// Include mappings (optional)
++myg__mappings--input
 ```
 
 ### Javascript

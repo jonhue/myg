@@ -9,4 +9,7 @@
 
 // Include classes (optional)
 +myg__classes--label
+
+// Include mappings (optional)
++myg__mappings--label
 ```

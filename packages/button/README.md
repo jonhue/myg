@@ -9,6 +9,9 @@
 
 // Include classes (optional)
 +myg__classes--button
+
+// Include mappings (optional)
++myg__mappings--button
 ```
 
 ### Javascript
