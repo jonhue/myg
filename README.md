@@ -11,6 +11,7 @@ Myg is being used on:
 
 * https://nativegap.com
 * https://phylator.com
+* https://plaain.com
 * https://jonhue.me
 
 ---
@@ -35,11 +36,13 @@ Myg is being used on:
 
 **Modular:** Myg includes a lot of UI elements. Because everyone of them is separately published on NPM, you can just include what you actually use.
 
-**Lightweight:** Mixins > Classes. Myg's CSS classes are entirely optional to minimize file size.
+**Lightweight:** MixHTmlins > Classes. Myg's CSS classes are entirely optional to minimize file size.
 
 **Opinionated:** Opinionated components prevent you from polluting your DOM.
 
 **Modern:** Myg uses the latest web technologies to support its rich feature set while remaining lightweight.
+
+**Combinable:** Myg does not force you into using it on every HTML5 element. Instead it only maps to them if you want to.
 
 ---
 
@@ -59,7 +62,7 @@ Myg is being used on:
 @import "myg/dist/myg.min";
 ```
 
-### Javascript
+### JavaScript
 
 **ES6**
 
@@ -125,6 +128,14 @@ import * as myg from 'myg';
 [Here](https://github.com/jonhue/myg/projects/1) is the full list of current projects.
 
 To propose your ideas, initiate the discussion by adding a [new issue](https://github.com/jonhue/myg/issues/new).
+
+---
+
+## Development
+
+Here is how you can build Myg locally:
+
+    $ npm run build
 
 ---
 
