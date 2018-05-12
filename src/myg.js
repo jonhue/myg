@@ -9,7 +9,6 @@ import MygDrawer from 'myg-drawer';
 import MygDropdown from 'myg-dropdown';
 import MygFooter from 'myg-footer';
 import MygFormField from 'myg-form-field';
-import MygInput from 'myg-input';
 import MygMenu from 'myg-menu';
 import MygModal from 'myg-modal';
 import MygProgress from 'myg-progress';
