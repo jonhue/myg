@@ -139,6 +139,14 @@ Here is how you can build Myg locally:
 $ npm run build
 ```
 
+### CSS methodology
+
+Myg has been built with BEVM in mind:
+
+```
+block__element--variation -modifier
+```
+
 ---
 
 ## Contributing
