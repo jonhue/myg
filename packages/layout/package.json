@@ -1,6 +1,6 @@
 {
     "name": "myg-layout",
-    "version": "0.13.0",
+    "version": "0.13.1",
     "description": "Adding a default layout to arrange Myg's navigation components.",
     "main": "layout.sass",
     "bugs": {
@@ -11,10 +11,10 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.13.0",
-        "myg-font": "^0.13.0",
-        "myg-grid": "^0.13.0",
-        "myg-theme": "^0.13.0",
+        "myg-base": "^0.13.1",
+        "myg-font": "^0.13.1",
+        "myg-grid": "^0.13.1",
+        "myg-theme": "^0.13.1",
         "normalize.css": "^8.0.0"
     }
 }

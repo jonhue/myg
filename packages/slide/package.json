@@ -1,6 +1,6 @@
 {
     "name": "myg-slide",
-    "version": "0.13.0",
+    "version": "0.13.1",
     "description": "Myg slide component.",
     "main": "index.js",
     "bugs": {
@@ -12,6 +12,6 @@
     "license": "MIT",
     "dependencies": {
         "flickity": "^2.1.1",
-        "myg-base": "^0.13.0"
+        "myg-base": "^0.13.1"
     }
 }

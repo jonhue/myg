@@ -1,6 +1,6 @@
 {
     "name": "myg-titlebar",
-    "version": "0.13.0",
+    "version": "0.13.1",
     "description": "Titlebars can remind users of necessary actions.",
     "main": "index.js",
     "bugs": {
@@ -12,9 +12,9 @@
     "license": "MIT",
     "dependencies": {
         "welcomer": "^2.1.3",
-        "myg-base": "^0.13.0",
-        "myg-theme": "^0.13.0",
-        "myg-animate": "^0.13.0",
-        "myg-grid": "^0.13.0"
+        "myg-base": "^0.13.1",
+        "myg-theme": "^0.13.1",
+        "myg-animate": "^0.13.1",
+        "myg-grid": "^0.13.1"
     }
 }

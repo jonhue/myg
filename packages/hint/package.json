@@ -1,6 +1,6 @@
 {
     "name": "myg-hint",
-    "version": "0.13.0",
+    "version": "0.13.1",
     "description": "Hints can add contextual information to a form field.",
     "main": "hint.sass",
     "bugs": {
@@ -11,8 +11,8 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.13.0",
-        "myg-theme": "^0.13.0",
-        "myg-spacing": "^0.13.0"
+        "myg-base": "^0.13.1",
+        "myg-theme": "^0.13.1",
+        "myg-spacing": "^0.13.1"
     }
 }

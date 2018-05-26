@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 0.13.0 - 2018/05/26
+
+* bugfixes
+    * fixed checkbox, button, text, grid & modal components
+
 ### 0.13.0 - 2018/05/12
 
 * features

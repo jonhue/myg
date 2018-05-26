@@ -1,6 +1,6 @@
 {
     "name": "myg-spacing",
-    "version": "0.13.0",
+    "version": "0.13.1",
     "description": "Myg spacing system.",
     "main": "spacing.sass",
     "bugs": {
@@ -11,6 +11,6 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.13.0"
+        "myg-base": "^0.13.1"
     }
 }
