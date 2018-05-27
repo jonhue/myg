@@ -2,9 +2,9 @@
     @each $name, $color in $colors
         @if type-of($color) == map
             @each $subname, $subcolor in $color
-                --color-#{$name}-#{$subname}: $subcolor
+                --color-#{$name}-#{$subname}: #{$subcolor}
         @else if type-of($color) == color
-            --color-#{$name}: $color
+            --color-#{$name}: #{$color}
 =myg-theme($colors, $name: "default")
     @if $name == "default"
         &, &.myg-theme--#{$name}
@@ -18,7 +18,7 @@
     @if $r == round
         border-radius: 50%
     @else if $r == 1
-        border-radius: 2
+        border-radius: myg__px(2)
     @else
         border-radius: myg__px($r * $r)
 

@@ -4,7 +4,12 @@
 
 * nothing yet
 
-### 0.13.0 - 2018/05/26
+### 0.13.2 - 2018/05/27
+
+* bugfixes
+    * fixed checkbox, form-field, spacing & theme components
+
+### 0.13.1 - 2018/05/26
 
 * bugfixes
     * fixed checkbox, button, text, grid & modal components

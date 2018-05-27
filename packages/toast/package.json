@@ -1,6 +1,6 @@
 {
     "name": "myg-toast",
-    "version": "0.13.1",
+    "version": "0.13.2",
     "description": "Toasts can notify users.",
     "main": "index.js",
     "bugs": {
@@ -12,9 +12,9 @@
     "license": "MIT",
     "dependencies": {
         "@material/snackbar": "^0.35.0",
-        "myg-base": "^0.13.1",
-        "myg-theme": "^0.13.1",
-        "myg-font": "^0.13.1",
-        "myg-spacing": "^0.13.1"
+        "myg-base": "^0.13.2",
+        "myg-theme": "^0.13.2",
+        "myg-font": "^0.13.2",
+        "myg-spacing": "^0.13.2"
     }
 }

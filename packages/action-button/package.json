@@ -1,6 +1,6 @@
 {
     "name": "myg-action-button",
-    "version": "0.13.1",
+    "version": "0.13.2",
     "description": "Floating action buttons presenting a clear call-to-action.",
     "main": "index.js",
     "bugs": {
@@ -11,8 +11,8 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.13.1",
-        "myg-theme": "^0.13.1",
-        "myg-spacing": "^0.13.1"
+        "myg-base": "^0.13.2",
+        "myg-theme": "^0.13.2",
+        "myg-spacing": "^0.13.2"
     }
 }

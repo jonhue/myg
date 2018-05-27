@@ -1,6 +1,6 @@
 {
     "name": "myg-animate",
-    "version": "0.13.1",
+    "version": "0.13.2",
     "description": "Myg's animations kit - adding animations & transitions.",
     "main": "animate.sass",
     "bugs": {
@@ -12,6 +12,6 @@
     "license": "MIT",
     "dependencies": {
         "animate.css": "^3.6.1",
-        "myg-base": "^0.13.1"
+        "myg-base": "^0.13.2"
     }
 }

@@ -1,12 +1,12 @@
 =myg-checkbox
-    +myg__var(mdc-theme-primary, color(accent, base, true))
-    +myg__var(mdc-theme-secondary, color(border, null, true))
-    +myg__var(mdc-theme-background, color(background, base, true))
     &.mdc-checkbox
         margin: myg-spacing(-2)
-        flex: 0 0 myg__px(40)
-        width: myg__px(40)
-        height: myg__px(40)
-        +mdc-checkbox-container-colors(secondary, background, primary)
+        &::before
+            background-color: myg-theme__color(accent, base) !important
+        .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate) ~ .mdc-checkbox__background
+            border-color: myg-theme__color(border) !important
+        .mdc-checkbox__native-control:enabled:checked:not(:indeterminate) ~ .mdc-checkbox__background
+            border-color: myg-theme__color(accent, base) !important
+            background-color: myg-theme__color(accent, base) !important
         .mdc-checkbox__background svg path
             stroke-width: 3
