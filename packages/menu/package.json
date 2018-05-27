@@ -1,6 +1,6 @@
 {
     "name": "myg-menu",
-    "version": "0.13.2",
+    "version": "0.13.3",
     "description": "Menus can include actions for an element.",
     "main": "index.js",
     "bugs": {
@@ -12,6 +12,6 @@
     "license": "MIT",
     "dependencies": {
         "@material/menu": "^0.35.0",
-        "myg-base": "^0.13.2"
+        "myg-base": "^0.13.3"
     }
 }
