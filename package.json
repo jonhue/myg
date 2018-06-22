@@ -58,6 +58,6 @@
         "node-sass": "^4.7.2",
         "sass-loader": "^6.0.7",
         "style-loader": "^0.20.3",
-        "webpack": "^3.10.0"
+        "webpack": "^3.12.0"
     }
 }
