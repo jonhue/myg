@@ -54,7 +54,7 @@
         "myg-tooltip": "^0.13.3"
     },
     "devDependencies": {
-        "css-loader": "^0.28.9",
+        "css-loader": "^0.28.11",
         "node-sass": "^4.7.2",
         "sass-loader": "^6.0.6",
         "style-loader": "^0.20.1",
