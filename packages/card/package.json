@@ -1,6 +1,6 @@
 {
     "name": "myg-card",
-    "version": "0.13.3",
+    "version": "0.13.4",
     "description": "Cards can list objects.",
     "main": "index.js",
     "bugs": {
@@ -11,10 +11,10 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.13.3",
-        "myg-theme": "^0.13.3",
-        "myg-elevation": "^0.13.3",
-        "myg-spacing": "^0.13.3",
-        "myg-animate": "^0.13.3"
+        "myg-base": "^0.13.4",
+        "myg-theme": "^0.13.4",
+        "myg-elevation": "^0.13.4",
+        "myg-spacing": "^0.13.4",
+        "myg-animate": "^0.13.4"
     }
 }

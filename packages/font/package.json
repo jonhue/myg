@@ -1,6 +1,6 @@
 {
     "name": "myg-font",
-    "version": "0.13.3",
+    "version": "0.13.4",
     "description": "Myg font component.",
     "main": "font.sass",
     "bugs": {

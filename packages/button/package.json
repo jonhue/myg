@@ -1,6 +1,6 @@
 {
     "name": "myg-button",
-    "version": "0.13.3",
+    "version": "0.13.4",
     "description": "Myg buttons component.",
     "main": "index.js",
     "bugs": {
@@ -11,12 +11,12 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.13.3",
-        "myg-theme": "^0.13.3",
-        "myg-font": "^0.13.3",
-        "myg-grid": "^0.13.3",
-        "myg-elevation": "^0.13.3",
-        "myg-animate": "^0.13.3",
-        "myg-spacing": "^0.13.3"
+        "myg-base": "^0.13.4",
+        "myg-theme": "^0.13.4",
+        "myg-font": "^0.13.4",
+        "myg-grid": "^0.13.4",
+        "myg-elevation": "^0.13.4",
+        "myg-animate": "^0.13.4",
+        "myg-spacing": "^0.13.4"
     }
 }

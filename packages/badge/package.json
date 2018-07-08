@@ -1,6 +1,6 @@
 {
     "name": "myg-badge",
-    "version": "0.13.3",
+    "version": "0.13.4",
     "description": "Badges can list attributes of objects.",
     "main": "badge.sass",
     "bugs": {
@@ -11,8 +11,8 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.13.3",
-        "myg-theme": "^0.13.3",
-        "myg-grid": "^0.13.3"
+        "myg-base": "^0.13.4",
+        "myg-theme": "^0.13.4",
+        "myg-grid": "^0.13.4"
     }
 }
