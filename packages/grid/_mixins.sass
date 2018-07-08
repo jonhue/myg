@@ -203,7 +203,7 @@
 =myg-grid__grid--default
     width: 100%
     +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, phone), 1fr))
-    +myg-grid__grid-gap(px(20))
+    +myg-grid__grid-gap(myg__px(20))
     +myg-grid__bigger-than(phone)
         &:not(.myg-layout__wrap--phone)
             +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, tablet), 1fr))
