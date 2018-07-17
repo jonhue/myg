@@ -54,7 +54,7 @@
         "myg-tooltip": "$npm_package_version"
     },
     "devDependencies": {
-        "css-loader": "^0.28.11",
+        "css-loader": "^1.0.0",
         "node-sass": "^4.7.2",
         "sass-loader": "^7.0.3",
         "style-loader": "^0.21.0",
