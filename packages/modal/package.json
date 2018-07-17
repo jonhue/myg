@@ -12,9 +12,9 @@
     "license": "MIT",
     "dependencies": {
         "modalist": "^2.1.2",
-        "myg-base": "$npm_package_version",
-        "myg-theme": "$npm_package_version",
-        "myg-spacing": "$npm_package_version",
-        "myg-elevation": "$npm_package_version"
+        "myg-base": "^0.13.4",
+        "myg-theme": "^0.13.4",
+        "myg-spacing": "^0.13.4",
+        "myg-elevation": "^0.13.4"
     }
 }

@@ -12,8 +12,8 @@
     "license": "MIT",
     "dependencies": {
         "@material/tabs": "^0.35.0",
-        "myg-base": "$npm_package_version",
-        "myg-theme": "$npm_package_version",
-        "myg-animate": "$npm_package_version"
+        "myg-base": "^0.13.4",
+        "myg-theme": "^0.13.4",
+        "myg-animate": "^0.13.4"
     }
 }

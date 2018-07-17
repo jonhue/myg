@@ -12,9 +12,9 @@
     "license": "MIT",
     "dependencies": {
         "welcomer": "^2.1.3",
-        "myg-base": "$npm_package_version",
-        "myg-theme": "$npm_package_version",
-        "myg-animate": "$npm_package_version",
-        "myg-grid": "$npm_package_version"
+        "myg-base": "^0.13.4",
+        "myg-theme": "^0.13.4",
+        "myg-animate": "^0.13.4",
+        "myg-grid": "^0.13.4"
     }
 }

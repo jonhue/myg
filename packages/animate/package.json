@@ -12,6 +12,6 @@
     "license": "MIT",
     "dependencies": {
         "animate.css": "^3.6.1",
-        "myg-base": "$npm_package_version"
+        "myg-base": "^0.13.4"
     }
 }
