@@ -1,23 +1,23 @@
 =myg-dropdown
-    background: myg-theme__color(background, base)
-    border: myg__px(1) solid myg-theme__color(border)
-    +myg-theme__border-radius(1)
-    +myg-elevation(3)
-    padding: myg-spacing(3)
-    margin-top: myg-spacing(2)
-    min-width: myg__px(150)
-    max-width: myg__px(500)
-    +myg--hide
-    +myg--invisible
-    +myg-animate__transition(opacity)
-    & > p
-        &:first-child
-            margin-top: 0
-        &:last-child
-            margin-bottom: 0
-    & > hr
-        margin: 0
+  background: myg-theme__color(background, base)
+  border: myg__px(1) solid myg-theme__color(border)
+  +myg-theme__border-radius(1)
+  +myg-elevation(3)
+  padding: myg-spacing(3)
+  margin-top: myg-spacing(2)
+  min-width: myg__px(150)
+  max-width: myg__px(500)
+  +myg--hide
+  +myg--invisible
+  +myg-animate__transition(opacity)
+  & > p
+    &:first-child
+      margin-top: 0
+    &:last-child
+      margin-bottom: 0
+  & > hr
+    margin: 0
 
 =myg-dropdown---shown
-    +myg--show
-    +myg--visible
+  +myg--show
+  +myg--visible

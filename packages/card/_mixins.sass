@@ -1,25 +1,25 @@
 =myg-card
-    padding: myg-spacing(4)
-    +myg-elevation(2)
-    +myg-theme__border-radius(1)
-    background: myg-theme__color(background, base)
-    border: myg__px(1) solid myg-theme__color(border)
-    width: 100%
-    +myg-animate__transition(box-shadow, .35s)
-    text-decoration: none !important
-    &:hover
-        +myg-elevation(4)
-    & > *
-        &:first-child
-            margin-top: 0
-        &:last-child
-            margin-bottom: 0
+  padding: myg-spacing(4)
+  +myg-elevation(2)
+  +myg-theme__border-radius(1)
+  background: myg-theme__color(background, base)
+  border: myg__px(1) solid myg-theme__color(border)
+  width: 100%
+  +myg-animate__transition(box-shadow, .35s)
+  text-decoration: none !important
+  &:hover
+    +myg-elevation(4)
+  & > *
+    &:first-child
+      margin-top: 0
+    &:last-child
+      margin-bottom: 0
 
 =myg-card---highlighted
-    background: myg-theme__color(background, dark)
+  background: myg-theme__color(background, dark)
 
 =myg-card--seamless
-    border: none
-    background: myg-theme__color(background, lighter)
-    &:hover, &:focus, &:active
-        background: myg-theme__color(background, light)
+  border: none
+  background: myg-theme__color(background, lighter)
+  &:hover, &:focus, &:active
+    background: myg-theme__color(background, light)

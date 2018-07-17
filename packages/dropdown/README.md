@@ -17,7 +17,7 @@
 import MygDropdown from 'myg-dropdown';
 
 document.addEventListener( 'ready', () => {
-    const mygDropdowns = MygDropdown.initAll( document.querySelectorAll('.myg-dropdown'), {} );
+  const mygDropdowns = MygDropdown.initAll( document.querySelectorAll('.myg-dropdown'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygDropdown = myg.MygDropdown;
 
 document.addEventListener( 'ready', () => {
-    const mygDropdowns = MygDropdown.initAll( document.querySelectorAll('.myg-dropdown'), {} );
+  const mygDropdowns = MygDropdown.initAll( document.querySelectorAll('.myg-dropdown'), {} );
 })
 ```

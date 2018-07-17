@@ -20,7 +20,7 @@
 import MygInput from 'myg-input';
 
 document.addEventListener( 'ready', () => {
-    const mygInputs = MygInput.initAll( document.querySelectorAll('.myg-input'), {} );
+  const mygInputs = MygInput.initAll( document.querySelectorAll('.myg-input'), {} );
 })
 ```
 
@@ -31,6 +31,6 @@ import * as myg from 'myg/src/myg';
 const MygInput = myg.MygInput;
 
 document.addEventListener( 'ready', () => {
-    const mygInputs = MygInput.initAll( document.querySelectorAll('.myg-input'), {} );
+  const mygInputs = MygInput.initAll( document.querySelectorAll('.myg-input'), {} );
 })
 ```

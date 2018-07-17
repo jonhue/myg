@@ -1,17 +1,17 @@
 {
-    "name": "myg-elevation",
-    "version": "0.13.4",
-    "description": "Myg elevation system.",
-    "main": "elevation.sass",
-    "bugs": {
-        "url": "https://github.com/jonhue/myg/issues",
-        "email": "me@jonhue.me"
-    },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/elevation",
-    "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT",
-    "dependencies": {
-        "myg-base": "^0.13.4",
-        "myg-theme": "^0.13.4"
-    }
+  "name": "myg-elevation",
+  "version": "0.13.4",
+  "description": "Myg elevation system.",
+  "main": "elevation.sass",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg/tree/master/packages/elevation",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT",
+  "dependencies": {
+    "myg-base": "^0.13.4",
+    "myg-theme": "^0.13.4"
+  }
 }

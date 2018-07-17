@@ -17,7 +17,7 @@
 import MygFooter from 'myg-footer';
 
 document.addEventListener( 'ready', () => {
-    const mygFooters = MygFooter.initAll( document.querySelectorAll('.myg-footer'), {} );
+  const mygFooters = MygFooter.initAll( document.querySelectorAll('.myg-footer'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygFooter = myg.MygFooter;
 
 document.addEventListener( 'ready', () => {
-    const mygFooters = MygFooter.initAll( document.querySelectorAll('.myg-footer'), {} );
+  const mygFooters = MygFooter.initAll( document.querySelectorAll('.myg-footer'), {} );
 })
 ```

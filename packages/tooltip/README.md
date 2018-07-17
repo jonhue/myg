@@ -17,7 +17,7 @@
 import MygTooltip from 'myg-tooltip';
 
 document.addEventListener( 'ready', () => {
-    const mygTooltips = MygTooltip.initAll( document.querySelectorAll('[data-myg-tooltip]'), {} );
+  const mygTooltips = MygTooltip.initAll( document.querySelectorAll('[data-myg-tooltip]'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygTooltip = myg.MygTooltip;
 
 document.addEventListener( 'ready', () => {
-    const mygTooltips = MygTooltip.initAll( document.querySelectorAll('[data-myg-tooltip]'), {} );
+  const mygTooltips = MygTooltip.initAll( document.querySelectorAll('[data-myg-tooltip]'), {} );
 })
 ```

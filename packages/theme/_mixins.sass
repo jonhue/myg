@@ -1,35 +1,35 @@
 =myg-theme__colors($colors)
-    @each $name, $color in $colors
-        @if type-of($color) == map
-            @each $subname, $subcolor in $color
-                --color-#{$name}-#{$subname}: #{$subcolor}
-        @else if type-of($color) == color
-            --color-#{$name}: #{$color}
+  @each $name, $color in $colors
+    @if type-of($color) == map
+      @each $subname, $subcolor in $color
+        --color-#{$name}-#{$subname}: #{$subcolor}
+    @else if type-of($color) == color
+      --color-#{$name}: #{$color}
 =myg-theme($colors, $name: "default")
-    @if $name == "default"
-        &, &.myg-theme--#{$name}
-            +myg-theme__colors($colors)
-    @else
-        &.myg-theme--#{$name}
-            +myg-theme__colors($colors)
+  @if $name == "default"
+    &, &.myg-theme--#{$name}
+      +myg-theme__colors($colors)
+  @else
+    &.myg-theme--#{$name}
+      +myg-theme__colors($colors)
 
 
 =myg-theme__border-radius($r)
-    @if $r == round
-        border-radius: 50%
-    @else if $r == 1
-        border-radius: myg__px(2)
-    @else
-        border-radius: myg__px($r * $r)
+  @if $r == round
+    border-radius: 50%
+  @else if $r == 1
+    border-radius: myg__px(2)
+  @else
+    border-radius: myg__px($r * $r)
 
 
 =myg-theme__scrollbar
-    &::-webkit-scrollbar
-        width: myg-theme__scrollbar(width)
-    &::-webkit-scrollbar-track
-        background: myg-theme__scrollbar(track-background)
-    &::-webkit-scrollbar-thumb
-        border-radius: myg-theme__scrollbar(thumb-border-radius)
-        background: myg-theme__scrollbar(thumb-background)
-    &::-webkit-scrollbar-thumb:hover
-        background: myg-theme__scrollbar(thumb-hover-background)
+  &::-webkit-scrollbar
+    width: myg-theme__scrollbar(width)
+  &::-webkit-scrollbar-track
+    background: myg-theme__scrollbar(track-background)
+  &::-webkit-scrollbar-thumb
+    border-radius: myg-theme__scrollbar(thumb-border-radius)
+    background: myg-theme__scrollbar(thumb-background)
+  &::-webkit-scrollbar-thumb:hover
+    background: myg-theme__scrollbar(thumb-hover-background)

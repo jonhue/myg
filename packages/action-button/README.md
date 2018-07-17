@@ -17,7 +17,7 @@
 import MygActionButton from 'myg-action-button';
 
 document.addEventListener( 'ready', () => {
-    const mygActionButton = new MygActionButton( document.querySelector('.myg-action-button'), {} );
+  const mygActionButton = new MygActionButton( document.querySelector('.myg-action-button'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygActionButton = myg.MygActionButton;
 
 document.addEventListener( 'ready', () => {
-    const mygActionButton = new MygActionButton( document.querySelector('.myg-action-button'), {} );
+  const mygActionButton = new MygActionButton( document.querySelector('.myg-action-button'), {} );
 })
 ```

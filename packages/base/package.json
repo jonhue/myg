@@ -1,13 +1,13 @@
 {
-    "name": "myg-base",
-    "version": "0.13.4",
-    "description": "The foundation of Myg.",
-    "main": "index.js",
-    "bugs": {
-        "url": "https://github.com/jonhue/myg/issues",
-        "email": "me@jonhue.me"
-    },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/base",
-    "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT"
+  "name": "myg-base",
+  "version": "0.13.4",
+  "description": "The foundation of Myg.",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg/tree/master/packages/base",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT"
 }

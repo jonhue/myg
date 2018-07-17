@@ -1,16 +1,16 @@
 {
-    "name": "myg-sidebar",
-    "version": "0.13.4",
-    "description": "A sidebar is a navigational element.",
-    "main": "index.js",
-    "bugs": {
-        "url": "https://github.com/jonhue/myg/issues",
-        "email": "me@jonhue.me"
-    },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/sidebar",
-    "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT",
-    "dependencies": {
-        "myg-base": "^0.13.4"
-    }
+  "name": "myg-sidebar",
+  "version": "0.13.4",
+  "description": "A sidebar is a navigational element.",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg/tree/master/packages/sidebar",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT",
+  "dependencies": {
+    "myg-base": "^0.13.4"
+  }
 }

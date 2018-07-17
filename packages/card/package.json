@@ -1,20 +1,20 @@
 {
-    "name": "myg-card",
-    "version": "0.13.4",
-    "description": "Cards can list objects.",
-    "main": "index.js",
-    "bugs": {
-        "url": "https://github.com/jonhue/myg/issues",
-        "email": "me@jonhue.me"
-    },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/card",
-    "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT",
-    "dependencies": {
-        "myg-base": "^0.13.4",
-        "myg-theme": "^0.13.4",
-        "myg-elevation": "^0.13.4",
-        "myg-spacing": "^0.13.4",
-        "myg-animate": "^0.13.4"
-    }
+  "name": "myg-card",
+  "version": "0.13.4",
+  "description": "Cards can list objects.",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg/tree/master/packages/card",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT",
+  "dependencies": {
+    "myg-base": "^0.13.4",
+    "myg-theme": "^0.13.4",
+    "myg-elevation": "^0.13.4",
+    "myg-spacing": "^0.13.4",
+    "myg-animate": "^0.13.4"
+  }
 }

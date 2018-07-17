@@ -1,104 +1,104 @@
 =myg-text__font-size($element, $size)
-    font-size: map-get(map-get($myg-text__size, $element), $size)
+  font-size: map-get(map-get($myg-text__size, $element), $size)
 =myg-text__size($element)
-    @each $name, $value in map-get($myg-text__size--mobile, $element)
-        @if $name == base
-            font-size: $value
-        @else
-            &.#{$name}
-                font-size: $value
-    +myg-grid__bigger-than(tablet)
-        @each $name, $value in map-get($myg-text__size, $element)
-            @if $name == base
-                font-size: $value
-            @else
-                &.#{$name}
-                    font-size: $value
+  @each $name, $value in map-get($myg-text__size--mobile, $element)
+    @if $name == base
+      font-size: $value
+    @else
+      &.#{$name}
+        font-size: $value
+  +myg-grid__bigger-than(tablet)
+    @each $name, $value in map-get($myg-text__size, $element)
+      @if $name == base
+        font-size: $value
+      @else
+        &.#{$name}
+          font-size: $value
 
 =myg-text__family($element)
-    +myg-font(map-get($myg-text__family, $element))
+  +myg-font(map-get($myg-text__family, $element))
 
 =myg-text__color($element)
-    color: map-get($myg-text__color, $element)
+  color: map-get($myg-text__color, $element)
 
 =myg-text__weight($element)
-    font-weight: map-get($myg-text__weight, $element)
+  font-weight: map-get($myg-text__weight, $element)
 
 =myg-text
-    +myg-text__family(p)
-    +myg-text__size(p)
-    +myg-text__color(p)
-    +myg-text__weight(p)
-    line-height: 1.75
+  +myg-text__family(p)
+  +myg-text__size(p)
+  +myg-text__color(p)
+  +myg-text__weight(p)
+  line-height: 1.75
 =myg-text__hyperlink
-    color: myg-theme__color(accent, base)
-    text-decoration: none
-    &:hover
-        text-decoration: underline
-=myg-text__hyperlink---inherit
+  color: myg-theme__color(accent, base)
+  text-decoration: none
+  &:hover
     text-decoration: underline
-    color: inherit
+=myg-text__hyperlink---inherit
+  text-decoration: underline
+  color: inherit
 =myg-text__hyperlink---light
-    text-decoration: none !important
-    color: myg-theme__color(text, base)
-    +myg-animate__transition(color)
-    &:hover, &:focus, &:active
-        color: myg-theme__color(accent, base)
+  text-decoration: none !important
+  color: myg-theme__color(text, base)
+  +myg-animate__transition(color)
+  &:hover, &:focus, &:active
+    color: myg-theme__color(accent, base)
 =myg-text__code
-    +myg-font(monospace)
-    color: myg-theme__color(text, light)
-    padding: myg__px(2) myg__px(4)
-    background: myg-theme__color(background, lighter)
-    border-radius: myg__px(3)
-    margin: 0 myg__px(5)
+  +myg-font(monospace)
+  color: myg-theme__color(text, light)
+  padding: myg__px(2) myg__px(4)
+  background: myg-theme__color(background, lighter)
+  border-radius: myg__px(3)
+  margin: 0 myg__px(5)
 =myg-text__code---nested
-    color: inherit
+  color: inherit
 =myg-text__pre
-    +myg-font(monospace)
-    color: myg-theme__color(text, light)
-    padding: myg__px(8) myg__px(13)
-    background: myg-theme__color(background, lighter)
-    border-radius: myg__px(3)
-    overflow-x: auto
+  +myg-font(monospace)
+  color: myg-theme__color(text, light)
+  padding: myg__px(8) myg__px(13)
+  background: myg-theme__color(background, lighter)
+  border-radius: myg__px(3)
+  overflow-x: auto
 =myg-text__hr
-    height: myg__px(1)
-    background: myg-theme__color(border)
-    color: myg-theme__color(border)
-    border: none
-    margin: myg-spacing(6) 0
+  height: myg__px(1)
+  background: myg-theme__color(border)
+  color: myg-theme__color(border)
+  border: none
+  margin: myg-spacing(6) 0
 =myg-text__li
-    line-height: 1.75
+  line-height: 1.75
 
 =myg-text__h
-    margin: .67em 0
-    line-height: 1.58
+  margin: .67em 0
+  line-height: 1.58
 =myg-text__h---h1
-    +myg-text__family(h1)
-    +myg-text__size(h1)
-    +myg-text__color(h1)
-    +myg-text__weight(h1)
+  +myg-text__family(h1)
+  +myg-text__size(h1)
+  +myg-text__color(h1)
+  +myg-text__weight(h1)
 =myg-text__h---h2
-    +myg-text__family(h2)
-    +myg-text__size(h2)
-    +myg-text__color(h2)
-    +myg-text__weight(h2)
+  +myg-text__family(h2)
+  +myg-text__size(h2)
+  +myg-text__color(h2)
+  +myg-text__weight(h2)
 =myg-text__h---h3
-    +myg-text__family(h3)
-    +myg-text__size(h3)
-    +myg-text__color(h3)
-    +myg-text__weight(h3)
+  +myg-text__family(h3)
+  +myg-text__size(h3)
+  +myg-text__color(h3)
+  +myg-text__weight(h3)
 =myg-text__h---h4
-    +myg-text__family(h4)
-    +myg-text__size(h4)
-    +myg-text__color(h4)
-    +myg-text__weight(h4)
+  +myg-text__family(h4)
+  +myg-text__size(h4)
+  +myg-text__color(h4)
+  +myg-text__weight(h4)
 =myg-text__h---h5
-    +myg-text__family(h5)
-    +myg-text__size(h5)
-    +myg-text__color(h5)
-    +myg-text__weight(h5)
+  +myg-text__family(h5)
+  +myg-text__size(h5)
+  +myg-text__color(h5)
+  +myg-text__weight(h5)
 =myg-text__h---h6
-    +myg-text__family(h6)
-    +myg-text__size(h6)
-    +myg-text__color(h6)
-    +myg-text__weight(h6)
+  +myg-text__family(h6)
+  +myg-text__size(h6)
+  +myg-text__color(h6)
+  +myg-text__weight(h6)

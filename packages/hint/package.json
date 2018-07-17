@@ -1,18 +1,18 @@
 {
-    "name": "myg-hint",
-    "version": "0.13.4",
-    "description": "Hints can add contextual information to a form field.",
-    "main": "hint.sass",
-    "bugs": {
-        "url": "https://github.com/jonhue/myg/issues",
-        "email": "me@jonhue.me"
-    },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/hint",
-    "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT",
-    "dependencies": {
-        "myg-base": "^0.13.4",
-        "myg-theme": "^0.13.4",
-        "myg-spacing": "^0.13.4"
-    }
+  "name": "myg-hint",
+  "version": "0.13.4",
+  "description": "Hints can add contextual information to a form field.",
+  "main": "hint.sass",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg/tree/master/packages/hint",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT",
+  "dependencies": {
+    "myg-base": "^0.13.4",
+    "myg-theme": "^0.13.4",
+    "myg-spacing": "^0.13.4"
+  }
 }

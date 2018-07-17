@@ -1,71 +1,71 @@
 =myg__var($name, $value)
-    #{--$name}: $value
+  #{--$name}: $value
 
 
 =myg__pwa
-    @media all and (display-mode: map-get($myg-base, pwa-display-mode))
-        @content
+  @media all and (display-mode: map-get($myg-base, pwa-display-mode))
+    @content
 
 
 =myg__cursor($value)
-    cursor: $value
+  cursor: $value
 
 
 =myg__scroll
-    overflow: auto
+  overflow: auto
 =myg__scroll--x
-    overflow-x: auto
+  overflow-x: auto
 =myg__scroll--y
-    overflow-y: auto
+  overflow-y: auto
 =myg__scroll--hidden
-    overflow: hidden
+  overflow: hidden
 =myg__scroll--hidden-x
-    overflow-x: hidden
+  overflow-x: hidden
 =myg__scroll--hidden-y
-    overflow-y: hidden
+  overflow-y: hidden
 
 
 =myg__select
-    user-select: auto
+  user-select: auto
 =myg__select--auto
-    &:focus
-        user-select: all
+  &:focus
+    user-select: all
 =myg__select--off
-    user-select: none
+  user-select: none
 
 
 =myg__flip--x
-    -moz-transform: scaleX(-1)
-    -o-transform: scaleX(-1)
-    -webkit-transform: scaleX(-1)
-    transform: scaleX(-1)
-    filter: FlipH
-    -ms-filter: "FlipH"
+  -moz-transform: scaleX(-1)
+  -o-transform: scaleX(-1)
+  -webkit-transform: scaleX(-1)
+  transform: scaleX(-1)
+  filter: FlipH
+  -ms-filter: "FlipH"
 =myg__flip--y
-    -moz-transform: scale(1, -1)
-    -webkit-transform: scale(1, -1)
-    -o-transform: scale(1, -1)
-    -ms-transform: scale(1, -1)
-    transform: scale(1, -1)
-    filter: FlipV
-    -ms-filter: "FlipV"
+  -moz-transform: scale(1, -1)
+  -webkit-transform: scale(1, -1)
+  -o-transform: scale(1, -1)
+  -ms-transform: scale(1, -1)
+  transform: scale(1, -1)
+  filter: FlipV
+  -ms-filter: "FlipV"
 
 
 =myg--display
-    display: block !important
+  display: block !important
 =myg--hidden
-    display: none !important
+  display: none !important
 =myg--show
-    display: block
+  display: block
 =myg--hide
-    display: none
+  display: none
 =myg--visible
-    visibility: visible
-    opacity: 1
+  visibility: visible
+  opacity: 1
 =myg--invisible
-    visibility: hidden
-    opacity: 0
+  visibility: hidden
+  opacity: 0
 =myg--intransparent
-    opacity: 1
+  opacity: 1
 =myg--transparent
-    opacity: 0
+  opacity: 0

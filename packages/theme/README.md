@@ -17,7 +17,7 @@
 import MygTheme from 'myg-theme';
 
 document.addEventListener( 'ready', () => {
-    const mygTheme = new MygTheme( document.querySelector('html'), {} );
+  const mygTheme = new MygTheme( document.querySelector('html'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygTheme = myg.MygTheme;
 
 document.addEventListener( 'ready', () => {
-    const mygTheme = new MygTheme( document.querySelector('html'), {} );
+  const mygTheme = new MygTheme( document.querySelector('html'), {} );
 })
 ```

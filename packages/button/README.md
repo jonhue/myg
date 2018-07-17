@@ -20,7 +20,7 @@
 import MygButton from 'myg-button';
 
 document.addEventListener( 'ready', () => {
-    const mygButtons = MygButton.initAll( document.querySelectorAll('.myg-button'), {} );
+  const mygButtons = MygButton.initAll( document.querySelectorAll('.myg-button'), {} );
 })
 ```
 
@@ -31,6 +31,6 @@ import * as myg from 'myg-src/myg';
 const MygButton = myg.MygButton;
 
 document.addEventListener( 'ready', () => {
-    const mygButtons = MygButton.initAll( document.querySelectorAll('.myg-button'), {} );
+  const mygButtons = MygButton.initAll( document.querySelectorAll('.myg-button'), {} );
 })
 ```

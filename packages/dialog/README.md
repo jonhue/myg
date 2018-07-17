@@ -14,7 +14,7 @@
 import MygDialog from 'myg-dialog';
 
 document.addEventListener( 'ready', () => {
-    const mygDialogs = MygDialog.initAll( document.querySelectorAll('.myg-dialog'), {} );
+  const mygDialogs = MygDialog.initAll( document.querySelectorAll('.myg-dialog'), {} );
 })
 ```
 
@@ -25,6 +25,6 @@ import * as myg from 'myg/src/myg';
 const MygDialog = myg.MygDialog;
 
 document.addEventListener( 'ready', () => {
-    const mygDialogs = MygDialog.initAll( document.querySelectorAll('.myg-dialog'), {} );
+  const mygDialogs = MygDialog.initAll( document.querySelectorAll('.myg-dialog'), {} );
 })
 ```

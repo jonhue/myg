@@ -14,7 +14,7 @@
 import MygSelect from 'myg-select';
 
 document.addEventListener( 'ready', () => {
-    const mygSelects = MygSelect.initAll( document.querySelectorAll('.myg-select'), {} );
+  const mygSelects = MygSelect.initAll( document.querySelectorAll('.myg-select'), {} );
 })
 ```
 
@@ -25,6 +25,6 @@ import * as myg from 'myg/src/myg';
 const MygSelect = myg.MygSelect;
 
 document.addEventListener( 'ready', () => {
-    const mygSelects = MygSelect.initAll( document.querySelectorAll('.myg-select'), {} );
+  const mygSelects = MygSelect.initAll( document.querySelectorAll('.myg-select'), {} );
 })
 ```

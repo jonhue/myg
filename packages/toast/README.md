@@ -17,7 +17,7 @@
 import MygToast from 'myg-toast';
 
 document.addEventListener( 'ready', () => {
-    const mygToast = new MygToast( document.querySelector('.myg-toast'), {} );
+  const mygToast = new MygToast( document.querySelector('.myg-toast'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygToast = myg.MygToast;
 
 document.addEventListener( 'ready', () => {
-    const mygToast = new MygToast( document.querySelector('.myg-toast'), {} );
+  const mygToast = new MygToast( document.querySelector('.myg-toast'), {} );
 })
 ```

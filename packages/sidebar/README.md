@@ -14,7 +14,7 @@
 import MygSidebar from 'myg-sidebar';
 
 document.addEventListener( 'ready', () => {
-    const mygSidebar = new MygSidebar( document.querySelector('.myg-sidebar'), {} );
+  const mygSidebar = new MygSidebar( document.querySelector('.myg-sidebar'), {} );
 })
 ```
 
@@ -25,6 +25,6 @@ import * as myg from 'myg/src/myg';
 const MygSidebar = myg.MygSidebar;
 
 document.addEventListener( 'ready', () => {
-    const mygSidebar = new MygSidebar( document.querySelector('.myg-sidebar'), {} );
+  const mygSidebar = new MygSidebar( document.querySelector('.myg-sidebar'), {} );
 })
 ```

@@ -1,166 +1,166 @@
 =myg__classes--grid
-    /* Flexbox */
+  /* Flexbox */
 
-    .myg-grid__flex
-        +myg-grid__flex
-        &.-reverse
-            flex-direction: row-reverse
-        &.-column
-            flex-direction: column
-            &.-reverse
-                flex-direction: column-reverse
+  .myg-grid__flex
+    +myg-grid__flex
+    &.-reverse
+      flex-direction: row-reverse
+    &.-column
+      flex-direction: column
+      &.-reverse
+        flex-direction: column-reverse
 
-        // Container
-        &.-container-center
-            +myg-grid__flex---container-center
-        &.-container-start
-            +myg-grid__flex---container-start
-        &.-container-end
-            +myg-grid__flex---container-end
-        &.-container-space-between
-            +myg-grid__flex---container-space-between
-        &.-container-space-around
-            +myg-grid__flex---container-space-around
-        &.-container-space-evenly
-            +myg-grid__flex---container-space-evenly
-        &.-wrap
-            +myg-grid__flex---wrap
+    // Container
+    &.-container-center
+      +myg-grid__flex---container-center
+    &.-container-start
+      +myg-grid__flex---container-start
+    &.-container-end
+      +myg-grid__flex---container-end
+    &.-container-space-between
+      +myg-grid__flex---container-space-between
+    &.-container-space-around
+      +myg-grid__flex---container-space-around
+    &.-container-space-evenly
+      +myg-grid__flex---container-space-evenly
+    &.-wrap
+      +myg-grid__flex---wrap
 
-        // Items
-        &.-center
-            +myg-grid__flex---center
-        &.-center-x
-            +myg-grid__flex---center-x
-        &.-center-y
-            +myg-grid__flex---center-y
-        &.-start
-            +myg-grid__flex---start
-        &.-start-x
-            +myg-grid__flex---start-x
-        &.-start-y
-            +myg-grid__flex---start-y
-        &.-end
-            +myg-grid__flex---end
-        &.-end-x
-            +myg-grid__flex---end-x
-        &.-end-y
-            +myg-grid__flex---end-y
-        &.-space-between
-            +myg-grid__flex---space-between
-        &.-space-around
-            +myg-grid__flex---space-around
-        &.-space-evenly
-            +myg-grid__flex---space-evenly
-        &.-baseline
-            +myg-grid__flex---baseline
-        &.-column
-            &.-center-x
-                +myg-grid__flex---center-y
-            &.-center-y
-                +myg-grid__flex---center-x
-            &.-start-x
-                +myg-grid__flex---start-y
-            &.-start-y
-                +myg-grid__flex---start-x
-            &.-end-x
-                +myg-grid__flex---end-y
-            &.-end-y
-                +myg-grid__flex---end-x
+    // Items
+    &.-center
+      +myg-grid__flex---center
+    &.-center-x
+      +myg-grid__flex---center-x
+    &.-center-y
+      +myg-grid__flex---center-y
+    &.-start
+      +myg-grid__flex---start
+    &.-start-x
+      +myg-grid__flex---start-x
+    &.-start-y
+      +myg-grid__flex---start-y
+    &.-end
+      +myg-grid__flex---end
+    &.-end-x
+      +myg-grid__flex---end-x
+    &.-end-y
+      +myg-grid__flex---end-y
+    &.-space-between
+      +myg-grid__flex---space-between
+    &.-space-around
+      +myg-grid__flex---space-around
+    &.-space-evenly
+      +myg-grid__flex---space-evenly
+    &.-baseline
+      +myg-grid__flex---baseline
+    &.-column
+      &.-center-x
+        +myg-grid__flex---center-y
+      &.-center-y
+        +myg-grid__flex---center-x
+      &.-start-x
+        +myg-grid__flex---start-y
+      &.-start-y
+        +myg-grid__flex---start-x
+      &.-end-x
+        +myg-grid__flex---end-y
+      &.-end-y
+        +myg-grid__flex---end-x
 
-        // Self
-        & > .myg-grid__flex--self-center
-            +myg-grid__flex--self-center
-        & > .myg-grid__flex--self-start
-            +myg-grid__flex--self-start
-        & > .myg-grid__flex--self-end
-            +myg-grid__flex--self-end
-
-
-    /* Grid */
-
-    .myg-grid__grid
-        +myg-grid__grid
-
-        // Container
-        &.-container-center
-            +myg-grid__grid---container-center
-        &.-container-center-x
-            +myg-grid__grid---container-center-x
-        &.-container-center-y
-            +myg-grid__grid---container-center-y
-        &.-container-start
-            +myg-grid__grid---container-start
-        &.-container-start-x
-            +myg-grid__grid---container-start-x
-        &.-container-start-y
-            +myg-grid__grid---container-start-y
-        &.-container-end
-            +myg-grid__grid---container-end
-        &.-container-end-x
-            +myg-grid__grid---container-end-x
-        &.-container-end-y
-            +myg-grid__grid---container-end-y
-        &.-container-space-between
-            +myg-grid__grid---container-space-between
-        &.-container-space-between-x
-            +myg-grid__grid---container-space-between-x
-        &.-container-space-between-y
-            +myg-grid__grid---container-space-between-y
-        &.-container-space-around
-            +myg-grid__grid---container-space-around
-        &.-container-space-around-x
-            +myg-grid__grid---container-space-around-x
-        &.-container-space-around-y
-            +myg-grid__grid---container-space-around-y
-        &.-container-space-evenly
-            +myg-grid__grid---container-space-evenly
-        &.-container-space-evenly-x
-            +myg-grid__grid---container-space-evenly-x
-        &.-container-space-evenly-y
-            +myg-grid__grid---container-space-evenly-y
-
-        // Items
-        &.-center
-            +myg-grid__grid---center
-        &.-center-x
-            +myg-grid__grid---center-x
-        &.-center-y
-            +myg-grid__grid---center-y
-        &.-start
-            +myg-grid__grid---start
-        &.-start-x
-            +myg-grid__grid---start-x
-        &.-start-y
-            +myg-grid__grid---start-y
-        &.-end
-            +myg-grid__grid---end
-        &.-end-x
-            +myg-grid__grid---end-x
-        &.-end-y
-            +myg-grid__grid---end-y
-
-        // Self
-        & > .myg-grid__grid--self-center
-            +myg-grid__grid--self-center
-        & > .myg-grid__grid--self-center-x
-            +myg-grid__grid--self-center-x
-        & > .myg-grid__grid--self-center-y
-            +myg-grid__grid--self-center-y
-        & > .myg-grid__grid--self-start
-            +myg-grid__grid--self-start
-        & > .myg-grid__grid--self-start-x
-            +myg-grid__grid--self-start-x
-        & > .myg-grid__grid--self-start-y
-            +myg-grid__grid--self-start-y
-        & > .myg-grid__grid--self-end
-            +myg-grid__grid--self-end
-        & > .myg-grid__grid--self-end-x
-            +myg-grid__grid--self-end-x
-        & > .myg-grid__grid--self-end-y
-            +myg-grid__grid--self-end-y
+    // Self
+    & > .myg-grid__flex--self-center
+      +myg-grid__flex--self-center
+    & > .myg-grid__flex--self-start
+      +myg-grid__flex--self-start
+    & > .myg-grid__flex--self-end
+      +myg-grid__flex--self-end
 
 
-    /* Myg Grid */
+  /* Grid */
 
-    .myg-grid__grid--default
-        +myg-grid__grid--default
+  .myg-grid__grid
+    +myg-grid__grid
+
+    // Container
+    &.-container-center
+      +myg-grid__grid---container-center
+    &.-container-center-x
+      +myg-grid__grid---container-center-x
+    &.-container-center-y
+      +myg-grid__grid---container-center-y
+    &.-container-start
+      +myg-grid__grid---container-start
+    &.-container-start-x
+      +myg-grid__grid---container-start-x
+    &.-container-start-y
+      +myg-grid__grid---container-start-y
+    &.-container-end
+      +myg-grid__grid---container-end
+    &.-container-end-x
+      +myg-grid__grid---container-end-x
+    &.-container-end-y
+      +myg-grid__grid---container-end-y
+    &.-container-space-between
+      +myg-grid__grid---container-space-between
+    &.-container-space-between-x
+      +myg-grid__grid---container-space-between-x
+    &.-container-space-between-y
+      +myg-grid__grid---container-space-between-y
+    &.-container-space-around
+      +myg-grid__grid---container-space-around
+    &.-container-space-around-x
+      +myg-grid__grid---container-space-around-x
+    &.-container-space-around-y
+      +myg-grid__grid---container-space-around-y
+    &.-container-space-evenly
+      +myg-grid__grid---container-space-evenly
+    &.-container-space-evenly-x
+      +myg-grid__grid---container-space-evenly-x
+    &.-container-space-evenly-y
+      +myg-grid__grid---container-space-evenly-y
+
+    // Items
+    &.-center
+      +myg-grid__grid---center
+    &.-center-x
+      +myg-grid__grid---center-x
+    &.-center-y
+      +myg-grid__grid---center-y
+    &.-start
+      +myg-grid__grid---start
+    &.-start-x
+      +myg-grid__grid---start-x
+    &.-start-y
+      +myg-grid__grid---start-y
+    &.-end
+      +myg-grid__grid---end
+    &.-end-x
+      +myg-grid__grid---end-x
+    &.-end-y
+      +myg-grid__grid---end-y
+
+    // Self
+    & > .myg-grid__grid--self-center
+      +myg-grid__grid--self-center
+    & > .myg-grid__grid--self-center-x
+      +myg-grid__grid--self-center-x
+    & > .myg-grid__grid--self-center-y
+      +myg-grid__grid--self-center-y
+    & > .myg-grid__grid--self-start
+      +myg-grid__grid--self-start
+    & > .myg-grid__grid--self-start-x
+      +myg-grid__grid--self-start-x
+    & > .myg-grid__grid--self-start-y
+      +myg-grid__grid--self-start-y
+    & > .myg-grid__grid--self-end
+      +myg-grid__grid--self-end
+    & > .myg-grid__grid--self-end-x
+      +myg-grid__grid--self-end-x
+    & > .myg-grid__grid--self-end-y
+      +myg-grid__grid--self-end-y
+
+
+  /* Myg Grid */
+
+  .myg-grid__grid--default
+    +myg-grid__grid--default

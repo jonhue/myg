@@ -1,18 +1,18 @@
 {
-    "name": "myg-badge",
-    "version": "0.13.4",
-    "description": "Badges can list attributes of objects.",
-    "main": "badge.sass",
-    "bugs": {
-        "url": "https://github.com/jonhue/myg/issues",
-        "email": "me@jonhue.me"
-    },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/badge",
-    "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT",
-    "dependencies": {
-        "myg-base": "^0.13.4",
-        "myg-theme": "^0.13.4",
-        "myg-grid": "^0.13.4"
-    }
+  "name": "myg-badge",
+  "version": "0.13.4",
+  "description": "Badges can list attributes of objects.",
+  "main": "badge.sass",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg/tree/master/packages/badge",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT",
+  "dependencies": {
+    "myg-base": "^0.13.4",
+    "myg-theme": "^0.13.4",
+    "myg-grid": "^0.13.4"
+  }
 }

@@ -17,7 +17,7 @@
 import MygRadio from 'myg-radio';
 
 document.addEventListener( 'ready', () => {
-    const mygRadios = MygRadio.initAll( document.querySelectorAll('.myg-radio'), {} );
+  const mygRadios = MygRadio.initAll( document.querySelectorAll('.myg-radio'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygRadio = myg.MygRadio;
 
 document.addEventListener( 'ready', () => {
-    const mygRadios = MygRadio.initAll( document.querySelectorAll('.myg-radio'), {} );
+  const mygRadios = MygRadio.initAll( document.querySelectorAll('.myg-radio'), {} );
 })
 ```

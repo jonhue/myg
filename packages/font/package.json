@@ -1,13 +1,13 @@
 {
-    "name": "myg-font",
-    "version": "0.13.4",
-    "description": "Myg font component.",
-    "main": "font.sass",
-    "bugs": {
-        "url": "https://github.com/jonhue/myg/issues",
-        "email": "me@jonhue.me"
-    },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/font",
-    "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT"
+  "name": "myg-font",
+  "version": "0.13.4",
+  "description": "Myg font component.",
+  "main": "font.sass",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg/tree/master/packages/font",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT"
 }

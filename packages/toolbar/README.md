@@ -17,7 +17,7 @@
 import MygToolbar from 'myg-toolbar';
 
 document.addEventListener( 'ready', () => {
-    const mygToolbar = new MygToolbar( document.querySelector('.myg-toolbar'), {} );
+  const mygToolbar = new MygToolbar( document.querySelector('.myg-toolbar'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygToolbar = myg.MygToolbar;
 
 document.addEventListener( 'ready', () => {
-    const mygToolbar = new MygToolbar( document.querySelector('.myg-toolbar'), {} );
+  const mygToolbar = new MygToolbar( document.querySelector('.myg-toolbar'), {} );
 })
 ```

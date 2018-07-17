@@ -17,7 +17,7 @@
 import MygDrawer from 'myg-drawer';
 
 document.addEventListener( 'ready', () => {
-    const mygDrawer = new MygDrawer( document.querySelector('.myg-drawer'), {} );
+  const mygDrawer = new MygDrawer( document.querySelector('.myg-drawer'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygDrawer = myg.MygDrawer;
 
 document.addEventListener( 'ready', () => {
-    const mygDrawer = new MygDrawer( document.querySelector('.myg-drawer'), {} );
+  const mygDrawer = new MygDrawer( document.querySelector('.myg-drawer'), {} );
 })
 ```

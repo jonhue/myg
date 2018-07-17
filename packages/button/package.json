@@ -1,22 +1,22 @@
 {
-    "name": "myg-button",
-    "version": "0.13.4",
-    "description": "Myg buttons component.",
-    "main": "index.js",
-    "bugs": {
-        "url": "https://github.com/jonhue/myg/issues",
-        "email": "me@jonhue.me"
-    },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/button",
-    "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT",
-    "dependencies": {
-        "myg-base": "^0.13.4",
-        "myg-theme": "^0.13.4",
-        "myg-font": "^0.13.4",
-        "myg-grid": "^0.13.4",
-        "myg-elevation": "^0.13.4",
-        "myg-animate": "^0.13.4",
-        "myg-spacing": "^0.13.4"
-    }
+  "name": "myg-button",
+  "version": "0.13.4",
+  "description": "Myg buttons component.",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg/tree/master/packages/button",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT",
+  "dependencies": {
+    "myg-base": "^0.13.4",
+    "myg-theme": "^0.13.4",
+    "myg-font": "^0.13.4",
+    "myg-grid": "^0.13.4",
+    "myg-elevation": "^0.13.4",
+    "myg-animate": "^0.13.4",
+    "myg-spacing": "^0.13.4"
+  }
 }

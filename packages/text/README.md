@@ -20,7 +20,7 @@
 import MygText from 'myg-text';
 
 document.addEventListener( 'ready', () => {
-    const mygTexts = MygText.initAll( document.querySelectorAll('.myg-text'), {} );
+  const mygTexts = MygText.initAll( document.querySelectorAll('.myg-text'), {} );
 })
 ```
 
@@ -31,6 +31,6 @@ import * as myg from 'myg/src/myg';
 const MygText = myg.MygText;
 
 document.addEventListener( 'ready', () => {
-    const mygTexts = MygText.initAll( document.querySelectorAll('.myg-text'), {} );
+  const mygTexts = MygText.initAll( document.querySelectorAll('.myg-text'), {} );
 })
 ```

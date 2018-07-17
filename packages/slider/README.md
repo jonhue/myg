@@ -14,7 +14,7 @@
 import MygSlider from 'myg-slider';
 
 document.addEventListener( 'ready', () => {
-    const mygSLiders = MygSLider.initAll( document.querySelectorAll('.myg-slider'), {} );
+  const mygSLiders = MygSLider.initAll( document.querySelectorAll('.myg-slider'), {} );
 })
 ```
 
@@ -25,6 +25,6 @@ import * as myg from 'myg/src/myg';
 const MygSlider = myg.MygSlider;
 
 document.addEventListener( 'ready', () => {
-    const mygSLiders = MygSLider.initAll( document.querySelectorAll('.myg-slider'), {} );
+  const mygSLiders = MygSLider.initAll( document.querySelectorAll('.myg-slider'), {} );
 })
 ```

@@ -1,18 +1,18 @@
 {
-    "name": "myg-dropdown",
-    "version": "0.13.4",
-    "description": "Myg dropdown component",
-    "main": "index.js",
-    "bugs": {
-        "url": "https://github.com/jonhue/myg/issues",
-        "email": "me@jonhue.me"
-    },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/dropdown",
-    "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT",
-    "dependencies": {
-        "popper.js": "^1.14.3",
-        "myg-base": "^0.13.4",
-        "myg-theme": "^0.13.4"
-    }
+  "name": "myg-dropdown",
+  "version": "0.13.4",
+  "description": "Myg dropdown component",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg/tree/master/packages/dropdown",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT",
+  "dependencies": {
+    "popper.js": "^1.14.3",
+    "myg-base": "^0.13.4",
+    "myg-theme": "^0.13.4"
+  }
 }

@@ -14,7 +14,7 @@
 import MygModal from 'myg-modal';
 
 document.addEventListener( 'ready', () => {
-    const mygModals = MygModal.initAll( document.querySelectorAll('.myg-modal'), {} );
+  const mygModals = MygModal.initAll( document.querySelectorAll('.myg-modal'), {} );
 })
 ```
 
@@ -25,6 +25,6 @@ import * as myg from 'myg/src/myg';
 const MygModal = myg.MygModal;
 
 document.addEventListener( 'ready', () => {
-    const mygModals = MygModal.initAll( document.querySelectorAll('.myg-modal'), {} );
+  const mygModals = MygModal.initAll( document.querySelectorAll('.myg-modal'), {} );
 })
 ```

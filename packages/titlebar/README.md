@@ -17,7 +17,7 @@
 import MygTitlebar from 'myg-titlebar';
 
 document.addEventListener( 'ready', () => {
-    const mygTitlebar = new MygTitlebar( document.querySelector('.myg-titlebar'), {} );
+  const mygTitlebar = new MygTitlebar( document.querySelector('.myg-titlebar'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygTitlebar = myg.MygTitlebar;
 
 document.addEventListener( 'ready', () => {
-    const mygTitlebar = new MygTitlebar( document.querySelector('.myg-titlebar'), {} );
+  const mygTitlebar = new MygTitlebar( document.querySelector('.myg-titlebar'), {} );
 })
 ```

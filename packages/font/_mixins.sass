@@ -1,33 +1,33 @@
 =myg-font($name)
-    font-family: map-get($myg-font, $name)
-    @if $name == sans-serif
-        +myg__pwa
-            font-family: map-get($myg-font, default)
+  font-family: map-get($myg-font, $name)
+  @if $name == sans-serif
+    +myg__pwa
+      font-family: map-get($myg-font, default)
 
 
 =myg-font---italic
-    font-style: italic
+  font-style: italic
 
 =myg-font---uppercase
-    text-transform: uppercase
+  text-transform: uppercase
 
 =myg-font---downcase
-    text-transform: downcase
+  text-transform: downcase
 
 =myg-font---black
-    font-weight: 900
+  font-weight: 900
 
 =myg-font---bold
-    font-weight: 700
+  font-weight: 700
 
 =myg-font---semibold
-    font-weight: 600
+  font-weight: 600
 
 =myg-font---medium
-    font-weight: 500
+  font-weight: 500
 
 =myg-font---light
-    font-weight: 300
+  font-weight: 300
 
 =myg-font---thin
-    font-weight: 200
+  font-weight: 200

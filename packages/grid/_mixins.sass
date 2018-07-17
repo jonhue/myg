@@ -1,70 +1,70 @@
 =myg-grid__bigger-than($name)
-    @media ( min-width: #{map-get($myg-grid__breakpoints, $name)} )
-        @content
+  @media ( min-width: #{map-get($myg-grid__breakpoints, $name)} )
+    @content
 =myg-grid__smaller-than($name)
-    @media ( max-width: #{map-get($myg-grid__breakpoints, $name)} )
-        @content
+  @media ( max-width: #{map-get($myg-grid__breakpoints, $name)} )
+    @content
 
 
 /* Flexbox */
 
 =myg-grid__flex
-    display: flex
+  display: flex
 
 // Container
 =myg-grid__flex---container-center
-    align-content: center
+  align-content: center
 =myg-grid__flex---container-start
-    align-content: flex-start
+  align-content: flex-start
 =myg-grid__flex---container-end
-    align-content: flex-end
+  align-content: flex-end
 =myg-grid__flex---container-space-between
-    align-content: space-between
+  align-content: space-between
 =myg-grid__flex---container-space-around
-    align-content: space-around
+  align-content: space-around
 =myg-grid__flex---container-space-evenly
-    align-content: space-evenly
+  align-content: space-evenly
 =myg-grid__flex---wrap
-    flex-wrap: wrap
+  flex-wrap: wrap
 
 // Items
 =myg-grid__flex---center
-    align-items: center
-    justify-content: center
+  align-items: center
+  justify-content: center
 =myg-grid__flex---center-x
-    justify-content: center
+  justify-content: center
 =myg-grid__flex---center-y
-    align-items: center
+  align-items: center
 =myg-grid__flex---start
-    align-items: flex-start
-    justify-content: flex-start
+  align-items: flex-start
+  justify-content: flex-start
 =myg-grid__flex---start-x
-    justify-content: flex-start
+  justify-content: flex-start
 =myg-grid__flex---start-y
-    align-items: flex-start
+  align-items: flex-start
 =myg-grid__flex---end
-    align-items: flex-end
-    justify-content: flex-end
+  align-items: flex-end
+  justify-content: flex-end
 =myg-grid__flex---end-x
-    justify-content: flex-end
+  justify-content: flex-end
 =myg-grid__flex---end-y
-    align-items: flex-end
+  align-items: flex-end
 =myg-grid__flex---space-between
-    justify-content: space-between
+  justify-content: space-between
 =myg-grid__flex---space-around
-    justify-content: space-around
+  justify-content: space-around
 =myg-grid__flex---space-evenly
-    justify-content: space-evenly
+  justify-content: space-evenly
 =myg-grid__flex---baseline
-    align-items: baseline
+  align-items: baseline
 
 // Self
 =myg-grid__flex--self-center
-    align-self: center
+  align-self: center
 =myg-grid__flex--self-start
-    align-self: flex-start
+  align-self: flex-start
 =myg-grid__flex--self-end
-    align-self: flex-end
+  align-self: flex-end
 
 
 
@@ -73,125 +73,125 @@
 /* Grid */
 
 =myg-grid__grid
-    display: grid
+  display: grid
 =myg-grid__grid-columns($value)
-    grid-template-columns: $value
+  grid-template-columns: $value
 =myg-grid__grid-rows($value)
-    grid-template-rows: $value
+  grid-template-rows: $value
 =myg-grid__grid-areas($value)
-    grid-template-areas: $value
+  grid-template-areas: $value
 =myg-grid__grid-template($rows, $columns, $areas: null)
-    +myg-grid__grid
-    +myg-grid__grid-rows($rows)
-    +myg-grid__grid-columns($columns)
-    @if ( $areas != null )
-        +myg-grid__grid-areas($areas)
+  +myg-grid__grid
+  +myg-grid__grid-rows($rows)
+  +myg-grid__grid-columns($columns)
+  @if ( $areas != null )
+    +myg-grid__grid-areas($areas)
 =myg-grid__grid-gap($value, $type: null)
-    @if ( $type == null )
-        grid-gap: $value
-    @else if ( $type == "column" )
-        grid-column-gap: $value
-    @else if ( $type == "row" )
-        grid-row-gap: $value
+  @if ( $type == null )
+    grid-gap: $value
+  @else if ( $type == "column" )
+    grid-column-gap: $value
+  @else if ( $type == "row" )
+    grid-row-gap: $value
 
 // Container
 =myg-grid__grid---container-center
-    align-content: center
-    justify-content: center
+  align-content: center
+  justify-content: center
 =myg-grid__grid---container-center-x
-    justify-content: center
+  justify-content: center
 =myg-grid__grid---container-center-y
-    align-content: center
+  align-content: center
 
 =myg-grid__grid---container-start
-    align-content: start
-    justify-content: start
+  align-content: start
+  justify-content: start
 =myg-grid__grid---container-start-x
-    justify-content: start
+  justify-content: start
 =myg-grid__grid---container-start-y
-    align-content: start
+  align-content: start
 
 =myg-grid__grid---container-end
-    align-content: end
-    justify-content: end
+  align-content: end
+  justify-content: end
 =myg-grid__grid---container-end-x
-    justify-content: end
+  justify-content: end
 =myg-grid__grid---container-end-y
-    align-content: end
+  align-content: end
 
 =myg-grid__grid---container-space-between
-    align-content: space-between
-    justify-content: space-between
+  align-content: space-between
+  justify-content: space-between
 =myg-grid__grid---container-space-between-x
-    justify-content: space-between
+  justify-content: space-between
 =myg-grid__grid---container-space-between-y
-    align-content: space-between
+  align-content: space-between
 
 =myg-grid__grid---container-space-around
-    align-content: space-around
-    justify-content: space-around
+  align-content: space-around
+  justify-content: space-around
 =myg-grid__grid---container-space-around-x
-    justify-content: space-around
+  justify-content: space-around
 =myg-grid__grid---container-space-around-y
-    align-content: space-around
+  align-content: space-around
 
 =myg-grid__grid---container-space-evenly
-    align-content: space-evenly
-    justify-content: space-evenly
+  align-content: space-evenly
+  justify-content: space-evenly
 =myg-grid__grid---container-space-evenly-x
-    justify-content: space-evenly
+  justify-content: space-evenly
 =myg-grid__grid---container-space-evenly-y
-    align-content: space-evenly
+  align-content: space-evenly
 
 // Items
 =myg-grid__grid---center
-    align-items: center
-    justify-items: center
+  align-items: center
+  justify-items: center
 =myg-grid__grid---center-x
-    justify-items: center
+  justify-items: center
 =myg-grid__grid---center-y
-    align-items: center
+  align-items: center
 =myg-grid__grid---start
-    align-items: start
-    justify-items: start
+  align-items: start
+  justify-items: start
 =myg-grid__grid---start-x
-    justify-items: start
+  justify-items: start
 =myg-grid__grid---start-y
-    align-items: start
+  align-items: start
 =myg-grid__grid---end
-    align-items: end
-    justify-items: end
+  align-items: end
+  justify-items: end
 =myg-grid__grid---end-x
-    justify-items: end
+  justify-items: end
 =myg-grid__grid---end-y
-    align-items: end
+  align-items: end
 
 // Self
 =myg-grid__grid-column($start, $end)
-    grid-column: $start / $end
+  grid-column: $start / $end
 =myg-grid__grid-row($start, $end)
-    grid-row: $start / $end
+  grid-row: $start / $end
 =myg-grid__grid--self-center
-    justify-self: center
-    align-self: center
+  justify-self: center
+  align-self: center
 =myg-grid__grid--self-center-x
-    justify-self: center
+  justify-self: center
 =myg-grid__grid--self-center-y
-    align-self: center
+  align-self: center
 =myg-grid__grid--self-start
-    justify-self: start
-    align-self: start
+  justify-self: start
+  align-self: start
 =myg-grid__grid--self-start-x
-    justify-self: start
+  justify-self: start
 =myg-grid__grid--self-start-y
-    align-self: start
+  align-self: start
 =myg-grid__grid--self-end
-    justify-self: end
-    align-self: end
+  justify-self: end
+  align-self: end
 =myg-grid__grid--self-end-x
-    justify-self: end
+  justify-self: end
 =myg-grid__grid--self-end-y
-    align-self: end
+  align-self: end
 
 
 
@@ -201,33 +201,33 @@
 
 // Container
 =myg-grid__grid--default
-    width: 100%
-    +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, phone), 1fr))
-    +myg-grid__grid-gap(myg__px(20))
-    +myg-grid__bigger-than(phone)
-        &:not(.myg-layout__wrap--phone)
-            +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, tablet), 1fr))
-    +myg-grid__bigger-than(tablet)
-        &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet)
-            +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, laptop), 1fr))
-    +myg-grid__bigger-than(laptop)
-        &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet, .myg-layout__wrap--laptop)
-            +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, large), 1fr))
-    +myg-grid__bigger-than(large)
-        &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet, .myg-layout__wrap--laptop, .myg-layout__wrap--large)
-            +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, desktop), 1fr))
+  width: 100%
+  +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, phone), 1fr))
+  +myg-grid__grid-gap(myg__px(20))
+  +myg-grid__bigger-than(phone)
+    &:not(.myg-layout__wrap--phone)
+      +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, tablet), 1fr))
+  +myg-grid__bigger-than(tablet)
+    &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet)
+      +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, laptop), 1fr))
+  +myg-grid__bigger-than(laptop)
+    &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet, .myg-layout__wrap--laptop)
+      +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, large), 1fr))
+  +myg-grid__bigger-than(large)
+    &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet, .myg-layout__wrap--laptop, .myg-layout__wrap--large)
+      +myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, desktop), 1fr))
 
 
 // Items
 =myg-grid__grid-span($value, $type: "column")
-    grid-#{$type}-end: span $value
+  grid-#{$type}-end: span $value
 =myg-grid__grid-span--screen($value)
-    grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, phone) / $value)
-    +myg-grid__bigger-than(phone)
-        grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, tablet) / $value)
-    +myg-grid__bigger-than(tablet)
-        grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, laptop) / $value)
-    +myg-grid__bigger-than(laptop)
-        grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, large) / $value)
-    +myg-grid__bigger-than(large)
-        grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, desktop) / $value)
+  grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, phone) / $value)
+  +myg-grid__bigger-than(phone)
+    grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, tablet) / $value)
+  +myg-grid__bigger-than(tablet)
+    grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, laptop) / $value)
+  +myg-grid__bigger-than(laptop)
+    grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, large) / $value)
+  +myg-grid__bigger-than(large)
+    grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, desktop) / $value)

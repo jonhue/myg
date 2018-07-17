@@ -1,46 +1,46 @@
 =myg-tabs
-    &.mdc-tab-bar
-        margin: 0
-        & > a.mdc-tab
-            +myg-font(sans-serif)
-            text-decoration: none !important
-            text-transform: none
-            letter-spacing: normal
-            padding: myg__px(12) myg__px(22)
-            min-width: auto
-            font-size: myg__px(15)
-            color: myg-theme__color(text, base)
-            +myg-animate__transition(all)
-            &:hover, &.mdc-tab--active
-                color: myg-theme__color(text, darker)
-            &::before, &::after
-                border-radius: 0
-                background: myg-theme__color(text, base) !important
-        & > .mdc-tab-bar__indicator
-            background: myg-theme__color(text, darker)
+  &.mdc-tab-bar
+    margin: 0
+    & > a.mdc-tab
+      +myg-font(sans-serif)
+      text-decoration: none !important
+      text-transform: none
+      letter-spacing: normal
+      padding: myg__px(12) myg__px(22)
+      min-width: auto
+      font-size: myg__px(15)
+      color: myg-theme__color(text, base)
+      +myg-animate__transition(all)
+      &:hover, &.mdc-tab--active
+        color: myg-theme__color(text, darker)
+      &::before, &::after
+        border-radius: 0
+        background: myg-theme__color(text, base) !important
+    & > .mdc-tab-bar__indicator
+      background: myg-theme__color(text, darker)
 =myg-tabs---center
-    margin: 0 auto
+  margin: 0 auto
 
 =myg-tabs---shown
-    +myg-grid__flex
-    +myg-grid__flex---center
-    +myg--visible
+  +myg-grid__flex
+  +myg-grid__flex---center
+  +myg--visible
 
 =myg-tabs__panels
-    display: flex
-    align-items: center
-    justify-content: center
-    width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
 =myg-tabs__panel
-    width: 100%
-    display: none
-    visibility: hidden
-    opacity: 0
-    padding: myg__px(35) 0
-    +myg-animate__transition(opacity, .25s)
+  width: 100%
+  display: none
+  visibility: hidden
+  opacity: 0
+  padding: myg__px(35) 0
+  +myg-animate__transition(opacity, .25s)
 =myg-tabs__loader
-    display: none
-    visibility: hidden
-    opacity: 0
-    padding: myg__px(100) 0
-    +myg-animate__transition(opacity, .25s)
+  display: none
+  visibility: hidden
+  opacity: 0
+  padding: myg__px(100) 0
+  +myg-animate__transition(opacity, .25s)

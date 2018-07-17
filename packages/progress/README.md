@@ -17,7 +17,7 @@
 import MygProgress from 'myg-progress';
 
 document.addEventListener( 'ready', () => {
-    const mygProgresses = MygProgress.initAll( document.querySelectorAll('.myg-progress'), {} );
+  const mygProgresses = MygProgress.initAll( document.querySelectorAll('.myg-progress'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygProgress = myg.MygProgress;
 
 document.addEventListener( 'ready', () => {
-    const mygProgresses = MygProgress.initAll( document.querySelectorAll('.myg-progress'), {} );
+  const mygProgresses = MygProgress.initAll( document.querySelectorAll('.myg-progress'), {} );
 })
 ```

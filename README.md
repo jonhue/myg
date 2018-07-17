@@ -20,16 +20,16 @@ Myg is being used on:
 
 * [Philosophy](#philosophy)
 * [Usage](#usage)
-    * [Stylesheets](#stylesheets)
-    * [Javascript](#javascript)
-    * [Getting started](#getting-started)
+  * [Stylesheets](#stylesheets)
+  * [Javascript](#javascript)
+  * [Getting started](#getting-started)
 * [Components](#components)
 * [To Do](#to-do)
 * [Development](#development)
-    * [CSS methodology](#css-methodology)
+  * [CSS methodology](#css-methodology)
 * [Contributing](#contributing)
-    * [Contributors](#contributors)
-    * [Semantic Versioning](#semantic-versioning)
+  * [Contributors](#contributors)
+  * [Semantic Versioning](#semantic-versioning)
 * [License](#license)
 
 ---

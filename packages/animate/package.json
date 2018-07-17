@@ -1,17 +1,17 @@
 {
-    "name": "myg-animate",
-    "version": "0.13.4",
-    "description": "Myg's animations kit - adding animations & transitions.",
-    "main": "animate.sass",
-    "bugs": {
-        "url": "https://github.com/jonhue/myg/issues",
-        "email": "me@jonhue.me"
-    },
-    "repository": "https://github.com/jonhue/myg/tree/master/packages/animate",
-    "author": "Jonas Hübotter <me@jonhue.me>",
-    "license": "MIT",
-    "dependencies": {
-        "animate.css": "^3.6.1",
-        "myg-base": "^0.13.4"
-    }
+  "name": "myg-animate",
+  "version": "0.13.4",
+  "description": "Myg's animations kit - adding animations & transitions.",
+  "main": "animate.sass",
+  "bugs": {
+    "url": "https://github.com/jonhue/myg/issues",
+    "email": "me@jonhue.me"
+  },
+  "repository": "https://github.com/jonhue/myg/tree/master/packages/animate",
+  "author": "Jonas Hübotter <me@jonhue.me>",
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "myg-base": "^0.13.4"
+  }
 }

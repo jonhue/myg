@@ -1,5 +1,2 @@
-node_modules
-yarn-error.log
-
-dist
-yarn.lock
+/dist
+/node_modules

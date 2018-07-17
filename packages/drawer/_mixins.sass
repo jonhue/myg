@@ -1,67 +1,67 @@
 =myg-drawer
-    &.mdc-drawer--temporary
-        +myg-theme__scrollbar
-        color: myg-theme__color(text, base)
-        &::before
-            background: myg-theme__color(overlay, light)
+  &.mdc-drawer--temporary
+    +myg-theme__scrollbar
+    color: myg-theme__color(text, base)
+    &::before
+      background: myg-theme__color(overlay, light)
 
 =myg-drawer__drawer
-    &.mdc-drawer__drawer
-        max-width: myg__px(350)
-        width: 85%
-        +myg-elevation(4)
-        background: myg-theme__color(background, base)
+  &.mdc-drawer__drawer
+    max-width: myg__px(350)
+    width: 85%
+    +myg-elevation(4)
+    background: myg-theme__color(background, base)
 
 =myg-drawer__header
-    &.mdc-drawer__header
-        &::before
-            content: none
-        border-bottom: myg__px(1) solid myg-theme__color(border)
+  &.mdc-drawer__header
+    &::before
+      content: none
+    border-bottom: myg__px(1) solid myg-theme__color(border)
 =myg-drawer__header-content
-    &.mdc-drawer__header-content
-        position: relative
-        padding: myg-spacing(5)
-        display: flex
-        flex-direction: column
-        align-items: flex-start
-        top: auto
-        bottom: auto
-        left: auto
-        right: auto
-        a:last-child
-            margin-top: myg-spacing(4)
-        h4
-            margin: 0
-            margin-bottom: myg__px(3)
+  &.mdc-drawer__header-content
+    position: relative
+    padding: myg-spacing(5)
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    top: auto
+    bottom: auto
+    left: auto
+    right: auto
+    a:last-child
+      margin-top: myg-spacing(4)
+    h4
+      margin: 0
+      margin-bottom: myg__px(3)
 
 =myg-drawer__content
-    &.mdc-drawer__content
-        padding: myg-spacing(3) 0
-        display: flex
-        flex-direction: column
-        a
-            font-weight: normal
-            padding: myg-spacing(4) myg-spacing(7)
-            font-size: myg__px(16)
-            color: inherit
-            text-decoration: none !important
-            background: myg-theme__color(background, base)
-            +myg-animate__transition
-            &:hover
-                color: myg-theme__color(accent, base)
-                background: myg-theme__color(background, lighter)
+  &.mdc-drawer__content
+    padding: myg-spacing(3) 0
+    display: flex
+    flex-direction: column
+    a
+      font-weight: normal
+      padding: myg-spacing(4) myg-spacing(7)
+      font-size: myg__px(16)
+      color: inherit
+      text-decoration: none !important
+      background: myg-theme__color(background, base)
+      +myg-animate__transition
+      &:hover
+        color: myg-theme__color(accent, base)
+        background: myg-theme__color(background, lighter)
 
 =myg-drawer__footer
-    &.mdc-drawer__footer
-        padding: myg-spacing(3)
-        border-top: myg__px(1) solid myg-theme__color(border)
-        display: flex
-        align-items: center
-        justify-content: space-between
-        box-shadow: none
-        border-top: myg__px(1) solid myg-theme__color(border)
-        a
-            font-weight: normal
-        .link-wrapper
-            position: relative
-            top: myg__px(-2)
+  &.mdc-drawer__footer
+    padding: myg-spacing(3)
+    border-top: myg__px(1) solid myg-theme__color(border)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    box-shadow: none
+    border-top: myg__px(1) solid myg-theme__color(border)
+    a
+      font-weight: normal
+    .link-wrapper
+      position: relative
+      top: myg__px(-2)

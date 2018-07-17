@@ -17,7 +17,7 @@
 import MygFormField from 'myg-form-field';
 
 document.addEventListener( 'ready', () => {
-    const mygFormFields = MygFormField.initAll( document.querySelectorAll('.myg-form-field'), {} );
+  const mygFormFields = MygFormField.initAll( document.querySelectorAll('.myg-form-field'), {} );
 })
 ```
 
@@ -28,6 +28,6 @@ import * as myg from 'myg/src/myg';
 const MygFormField = myg.MygFormField;
 
 document.addEventListener( 'ready', () => {
-    const mygFormFields = MygFormField.initAll( document.querySelectorAll('.myg-form-field'), {} );
+  const mygFormFields = MygFormField.initAll( document.querySelectorAll('.myg-form-field'), {} );
 })
 ```
