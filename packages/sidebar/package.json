@@ -11,6 +11,6 @@
     "author": "Jonas Hübotter <me@jonhue.me>",
     "license": "MIT",
     "dependencies": {
-        "myg-base": "^0.13.4"
+        "myg-base": "$npm_package_version"
     }
 }
