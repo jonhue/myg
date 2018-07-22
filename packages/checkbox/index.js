@@ -1,9 +1,9 @@
 import Myg from 'myg-base';
-import {MDCCheckbox, MDCCheckboxFoundation} from '@material/checkbox';
+import {MDCCheckbox} from '@material/checkbox';
 
 class Checkbox extends Myg {
-  constructor( element, options = {} ) {
-    super( element, options );
+  constructor(element, options = {}) {
+    super(element, options);
     this._mdcCheckbox = new MDCCheckbox(element);
   }
 

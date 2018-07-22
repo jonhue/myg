@@ -1,0 +1,73 @@
+/* Tab bar */
+
+@mixin myg-tabs {
+  &.mdc-tab-bar {
+    margin: 0;
+
+    & > a.mdc-tab {
+      @include myg-animate__transition(all);
+      @include myg-font(sans-serif);
+
+      color: myg-theme__color(text, base);
+      font-size: myg__px(15);
+      letter-spacing: normal;
+      min-width: auto;
+      padding: myg__px(12) myg__px(22);
+      text-decoration: none !important;
+      text-transform: none;
+
+      &:hover,
+      &.mdc-tab--active {
+        color: myg-theme__color(text, darker);
+      }
+
+      &::before,
+      &::after {
+        background: myg-theme__color(text, base) !important;
+        border-radius: 0;
+      }
+    }
+
+    & > .mdc-tab-bar__indicator {
+      background: myg-theme__color(text, darker);
+    }
+  }
+}
+
+@mixin myg-tabs---center {
+  margin: 0 auto;
+}
+
+@mixin myg-tabs---shown {
+  @include myg-grid__flex;
+  @include myg-grid__flex---center;
+  @include myg--visible;
+}
+
+/* Panels */
+
+@mixin myg-tabs__panels {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@mixin myg-tabs__panel {
+  @include myg-animate__transition(opacity, 0.25s);
+
+  display: none;
+  opacity: 0;
+  padding: myg__px(35) 0;
+  visibility: hidden;
+  width: 100%;
+}
+
+@mixin myg-tabs__loader {
+  @include myg-animate__transition(opacity, 0.25s);
+
+  display: none;
+  opacity: 0;
+  padding: myg__px(100) 0;
+  visibility: hidden;
+}

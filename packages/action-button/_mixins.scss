@@ -1,0 +1,10 @@
+@mixin myg-action-button {
+  @include myg-theme__border-radius(round);
+
+  background: myg-theme__color(accent, base);
+  bottom: myg-spacing(3);
+  height: map-get($myg-action-button, diameter);
+  position: fixed;
+  right: myg-spacing(3);
+  width: map-get($myg-action-button, diameter);
+}

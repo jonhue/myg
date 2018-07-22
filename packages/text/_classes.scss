@@ -1,0 +1,65 @@
+@mixin myg__classes--text {
+  .myg-text {
+    @include myg-text;
+  }
+
+  .myg-text__hyperlink {
+    @include myg-text__hyperlink;
+
+    &.-inherit {
+      @include myg-text__hyperlink---inherit;
+    }
+
+    &.-light {
+      @include myg-text__hyperlink---light;
+    }
+  }
+
+  .myg-text__code {
+    @include myg-text__code;
+
+    &.-nested {
+      @include myg-text__code---nested;
+    }
+  }
+
+  .myg-text__pre {
+    @include myg-text__pre;
+  }
+
+  .myg-text__hr {
+    @include myg-text__hr;
+  }
+
+  .myg-text__li {
+    @include myg-text__li;
+  }
+
+  .myg-text__h {
+    @include myg-text__h;
+
+    &.-h1 {
+      @include myg-text__h---h1;
+    }
+
+    &.-h2 {
+      @include myg-text__h---h2;
+    }
+
+    &.-h3 {
+      @include myg-text__h---h3;
+    }
+
+    &.-h4 {
+      @include myg-text__h---h4;
+    }
+
+    &.-h5 {
+      @include myg-text__h---h5;
+    }
+
+    &.-h6 {
+      @include myg-text__h---h6;
+    }
+  }
+}

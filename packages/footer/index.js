@@ -1,8 +1,8 @@
 import Myg from 'myg-base';
 
 class Footer extends Myg {
-  constructor( element, options = {} ) {
-    super( element, options );
+  constructor(element, options = {}) {
+    super(element, options);
     if ( element.classList.contains('-sticky') )
       this.stick();
   }
@@ -20,10 +20,10 @@ class Footer extends Myg {
     this.element.style.bottom = this.element.offsetHeight;
   }
   toggle() {
-    if ( $(this.element).style.bottom.length > 0 )
-        this.show()
+    if (this.element.style.bottom.length > 0)
+      this.show();
     else
-        this.hide();
+      this.hide();
   }
 }
 

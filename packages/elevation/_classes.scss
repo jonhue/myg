@@ -1,0 +1,7 @@
+@mixin myg__classes--elevation {
+  @for $z from 0 through 15 {
+    .myg-elevation--#{$z} {
+      @include myg-elevation($z);
+    }
+  }
+}

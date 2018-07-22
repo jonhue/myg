@@ -1,0 +1,109 @@
+/* Variables */
+
+@mixin myg__var($name, $value) {
+  #{--$name}: $value;
+}
+
+/* Progressive Web Apps */
+
+@mixin myg__pwa {
+  @media all and (display-mode: map-get($myg-base, pwa-display-mode)) {
+    @content;
+  }
+}
+
+/* Cursors */
+
+@mixin myg__cursor($value) {
+  cursor: $value;
+}
+
+/* Scrollbars */
+
+@mixin myg__scroll {
+  overflow: auto;
+}
+
+@mixin myg__scroll--x {
+  overflow-x: auto;
+}
+
+@mixin myg__scroll--y {
+  overflow-y: auto;
+}
+
+@mixin myg__scroll--hidden {
+  overflow: hidden;
+}
+
+@mixin myg__scroll--hidden-x {
+  overflow-x: hidden;
+}
+
+@mixin myg__scroll--hidden-y {
+  overflow-y: hidden;
+}
+
+/* Selecting */
+
+@mixin myg__select {
+  user-select: auto;
+}
+
+@mixin myg__select--auto {
+  &:focus {
+    user-select: all;
+  }
+}
+
+@mixin myg__select--off {
+  user-select: none;
+}
+
+/* Flip */
+
+@mixin myg__flip--x {
+  filter: FlipH;
+  transform: scaleX(-1);
+}
+
+@mixin myg__flip--y {
+  filter: FlipV;
+  transform: scale(1, -1);
+}
+
+/* Visibility */
+
+@mixin myg--display {
+  display: block !important;
+}
+
+@mixin myg--hidden {
+  display: none !important;
+}
+
+@mixin myg--show {
+  display: block;
+}
+
+@mixin myg--hide {
+  display: none;
+}
+
+@mixin myg--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@mixin myg--invisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@mixin myg--intransparent {
+  opacity: 1;
+}
+
+@mixin myg--transparent {
+  opacity: 0;
+}

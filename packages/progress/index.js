@@ -1,9 +1,9 @@
 import Myg from 'myg-base';
-import {MDCLinearProgressFoundation} from '@material/linear-progress';
+import {MDCLinearProgress} from '@material/linear-progress';
 
 class Progress extends Myg {
-  constructor( element, options = {} ) {
-    super( element, options );
+  constructor(element, options = {}) {
+    super(element, options);
     this._mdcLinearProgress = new MDCLinearProgress(element);
   }
 

@@ -1,0 +1,44 @@
+@mixin myg-toast {
+  &.mdc-snackbar {
+    background: myg-theme__color(background, lighter);
+    border-top: myg__px(1) solid myg-theme__color(border);
+    padding: myg__px(10) myg-spacing(3);
+    z-index: 5;
+
+    @include myg-grid__bigger-than(phone) {
+      @include myg-theme__border-radius(1);
+
+      border: myg__px(1) solid myg-theme__color(border);
+      padding: 0 myg-spacing(3);
+    }
+
+    .mdc-snackbar__text {
+      @include myg-font(sans-serif);
+
+      color: myg-theme__color(text, base);
+      font-size: myg__px(14);
+      letter-spacing: normal;
+      line-height: 1.75;
+    }
+
+    &.error {
+      background: myg-theme__color(error);
+      border-color: myg-theme__color(error);
+      color: myg-theme__color(text, dark);
+
+      .mdc-snackbar__text {
+        color: myg-theme__color(background, base);
+      }
+    }
+
+    &.success {
+      background: myg-theme__color(success);
+      border-color: myg-theme__color(success);
+      color: myg-theme__color(text, dark);
+
+      .mdc-snackbar__text {
+        color: myg-theme__color(background, base);
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+/* Form field */
+
+@mixin myg-form-field {
+  & + [class*="myg-form-field"] {
+    margin-top: myg__px(20);
+  }
+
+  label,
+  .myg-label__container {
+    & + input,
+    & + textarea,
+    & + .myg-input__container {
+      margin-top: myg__px(10);
+    }
+  }
+
+  .myg-label__container {
+    label.myg-label--secondary {
+      margin-top: myg__px(5);
+    }
+  }
+}
+
+@mixin myg-form-field---inline-label {
+  @include myg-grid__flex;
+  @include myg-grid__flex---center-y;
+
+  & > label,
+  & > .myg-label__container > label,
+  & > .myg-hint {
+    font-weight: normal;
+    margin-left: myg__px(15);
+  }
+}
+
+@mixin myg-form-field---floating-label {
+  .myg-input__container {
+    position: relative;
+
+    input,
+    textarea {
+      &::placeholder {
+        opacity: 0 !important;
+      }
+
+      & + label {
+        @include myg__cursor(text);
+        @include myg-animate__transition;
+
+        color: myg-theme__color(text, dark);
+        font-size: myg__px(15);
+        font-weight: normal;
+        left: 0;
+        padding: myg__px(14) myg__px(16) myg__px(13);
+        position: absolute;
+        top: 0;
+      }
+
+      &:focus ~ label {
+        color: myg-theme__color(text, base);
+      }
+
+      &:not(:placeholder-shown) {
+        padding: myg__px(20) myg__px(22) myg__px(5) myg__px(10);
+
+        & + label {
+          color: myg-theme__color(text, base);
+          font-size: myg__px(12);
+          padding: myg__px(6) myg__px(22) myg__px(6) myg__px(10);
+        }
+      }
+    }
+  }
+}
+
+@mixin myg-form-field--file {
+  @include myg-grid__flex;
+  @include myg-grid__flex---center-y;
+
+  justify-content: space-between;
+
+  label,
+  .myg-label__container {
+    & ~ input[type="file"] + label:last-child {
+      margin-left: myg__px(15);
+    }
+  }
+
+  input[type="file"] {
+    display: none;
+
+    & + label {
+      @include myg-theme__border-radius(1);
+      @include myg__cursor(pointer);
+
+      border: myg__px(2) dashed myg-theme__color(border);
+      color: myg-theme__color(text, base);
+      min-width: myg__px(175);
+      padding: myg__px(12) myg__px(16) myg__px(13);
+      text-align: center;
+    }
+  }
+}
+
+/* Container */
+
+@mixin myg-form-field__inline-container {
+  @include myg-grid__flex;
+  @include myg-grid__flex---center-y;
+
+  & + [class*="myg-form-field"] {
+    margin-top: myg__px(20);
+  }
+
+  [class*="myg-form-field"] {
+    margin-top: 0;
+
+    &:not(:first-child) {
+      margin-left: myg__px(20);
+    }
+  }
+}

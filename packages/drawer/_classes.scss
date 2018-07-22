@@ -1,0 +1,21 @@
+@mixin myg__classes--drawer {
+  .myg-drawer {
+    @include myg-drawer;
+
+    .myg-drawer__header {
+      @include myg-drawer__header;
+
+      .myg-drawer__header-content {
+        @include myg-drawer__header-content;
+      }
+    }
+
+    .myg-drawer__content {
+      @include myg-drawer__content;
+    }
+
+    .myg-drawer__footer {
+      @include myg-drawer__footer;
+    }
+  }
+}

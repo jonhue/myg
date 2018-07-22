@@ -1,0 +1,25 @@
+@mixin myg__classes--theme {
+  @each $name, $color in $myg-theme {
+    @if type-of($color) == map {
+      @each $subname, $subcolor in $color {
+        .myg-theme__color--#{$name}-#{$subname} {
+          color: myg-theme__color($name, $subname);
+        }
+
+        .myg-theme__background--#{$name}-#{$subname} {
+          background: myg-theme__color($name, $subname);
+        }
+      }
+    }
+
+    @else if type-of($color) == color {
+      .myg-theme__color--#{$name} {
+        color: myg-theme__color($name);
+      }
+
+      .myg-theme__background--#{$name} {
+        background: myg-theme__color($name);
+      }
+    }
+  }
+}

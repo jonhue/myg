@@ -1,0 +1,9 @@
+@mixin myg__classes--tooltip {
+  .myg-tooltip {
+    @include myg-tooltip;
+
+    &.-shown {
+      @include myg-tooltip---shown;
+    }
+  }
+}

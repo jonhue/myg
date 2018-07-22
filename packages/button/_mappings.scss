@@ -1,0 +1,6 @@
+@mixin myg__mappings--button {
+  button,
+  input[type="submit"] {
+    @include myg-button;
+  }
+}

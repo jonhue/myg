@@ -1,5 +1,5 @@
 class Myg {
-  constructor( element, options = {} ) {
+  constructor(element, options = {}) {
     this._element = element;
     this._options = options;
   }
@@ -18,31 +18,31 @@ class Myg {
     this._options = val;
   }
 
-  load( url, callback ) {
-    triggerEvent( document, 'myg:request-start' );
+  load(url, callback) {
+    triggerEvent(document, 'myg:request-start');
     let request = new XMLHttpRequest();
-    request.open( 'GET', url, true );
-    request.onload = function() {
-      triggerEvent( document, 'myg:request-end' );
-      callback( this.status, this.responseText );
+    request.open('GET', url, true);
+    request.onload = () => {
+      triggerEvent(document, 'myg:request-end');
+      callback(this.status, this.responseText);
     };
-    request.onerror = function() {
-      triggerEvent( document, 'myg:request-end' );
-      callback( this.status, this.responseText );
+    request.onerror = () => {
+      triggerEvent(document, 'myg:request-end');
+      callback( this.status, this.responseText);
     };
     request.send();
   }
 
-  static init( element, options = {} ) {
+  static init(element, options = {}) {
     if (element) {
-      return new this( element, options );
+      return new this(element, options);
     }
   }
 
-  static initAll( elements, options = {} ) {
+  static initAll(elements, options = {}) {
     let arr = [];
-    for ( let obj of elements ) {
-      arr.push(new this( obj, options ));
+    for (let obj of elements) {
+      arr.push(new this(obj, options));
     }
     return arr;
   }
@@ -56,7 +56,7 @@ function triggerEvent( element, name, data = {} ) {
   } else {
     let event = document.createEvent('CustomEvent');
     event.initCustomEvent( name, true, true, data );
-  };
+  }
 }
 
 export default Myg;

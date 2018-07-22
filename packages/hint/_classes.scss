@@ -1,0 +1,9 @@
+@mixin myg__classes--hint {
+  .myg-hint {
+    @include myg-hint;
+
+    &.-tiny {
+      @include myg-hint---tiny;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@mixin myg__classes--radio {
+  .myg-radio {
+    @include myg-radio;
+  }
+}

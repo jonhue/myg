@@ -1,9 +1,9 @@
 import Myg from 'myg-base';
-import {MDCSliderFoundation, MDCSlider} from '@material/slider';
+import {MDCSlider} from '@material/slider';
 
 class Slider extends Myg {
-  constructor( element, options = {} ) {
-    super( element, options );
+  constructor(element, options = {}) {
+    super(element, options);
     this._mdcSlider = new MDCSlider(element);
   }
 

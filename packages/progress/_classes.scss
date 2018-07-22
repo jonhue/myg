@@ -1,0 +1,5 @@
+@mixin myg__classes--progress {
+  .myg-progress {
+    @include myg-progress;
+  }
+}

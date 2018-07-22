@@ -1,0 +1,43 @@
+@mixin myg__classes--input {
+  .myg-input__input {
+    @include myg-input__input;
+
+    &.-error {
+      @include myg-input---error;
+    }
+
+    &.-success {
+      @include myg-input---success;
+    }
+
+    &.-disabled,
+    &[disabled] {
+      @include myg-input---disabled;
+    }
+
+    &.-no-outline {
+      @include myg-input---no-outline;
+    }
+  }
+
+  .myg-input__textarea {
+    @include myg-input__textarea;
+
+    &.-error {
+      @include myg-input---error;
+    }
+
+    &.-success {
+      @include myg-input---success;
+    }
+
+    &.-disabled,
+    &[disabled] {
+      @include myg-input---disabled;
+    }
+
+    &.-no-outline {
+      @include myg-input---no-outline;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@mixin myg__mappings--layout {
+  html {
+    @include myg-layout__html;
+  }
+
+  body {
+    @include myg-layout;
+  }
+}

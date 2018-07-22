@@ -1,0 +1,29 @@
+@mixin myg__classes--tabs {
+  .myg-tabs {
+    @include myg-tabs;
+
+    &.-center {
+      @include myg-tabs---center;
+    }
+  }
+
+  .myg-tabs__panels {
+    @include myg-tabs__panels;
+
+    .myg-tabs__panel {
+      @include myg-tabs__panel;
+
+      &.-shown {
+        @include myg-tabs---shown;
+      }
+    }
+
+    .myg-tabs__loader {
+      @include myg-tabs__loader;
+
+      &.-shown {
+        @include myg-tabs---shown;
+      }
+    }
+  }
+}

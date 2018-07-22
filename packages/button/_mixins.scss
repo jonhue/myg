@@ -1,0 +1,216 @@
+/* Primary */
+
+@mixin myg-button {
+  @include myg-grid__flex;
+  @include myg-grid__flex---center;
+  @include myg-theme__border-radius(1);
+  @include myg-font(sans-serif);
+  @include myg-elevation(2);
+
+  background: myg-theme__color(accent, base);
+  border: myg__px(1) solid myg-theme__color(accent, base);
+  cursor: pointer;
+  font-size: myg__px(14);
+  font-weight: 500;
+  line-height: 1.58;
+  padding: myg__px(12) myg__px(20) myg__px(14);
+  text-decoration: none !important;
+
+  &,
+  span {
+    @include myg-animate__transition;
+
+    color: myg-theme__color(accent, contrast);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include myg-elevation(4);
+
+    background: myg-theme__color(accent, dark);
+    border-color: myg-theme__color(accent, dark);
+  }
+}
+
+@mixin myg-button---error {
+  background: myg-theme__color(error);
+  border-color: myg-theme__color(error);
+  color: myg-theme__color(background, base);
+}
+
+@mixin myg-button---success {
+  background: myg-theme__color(success);
+  border-color: myg-theme__color(success);
+  color: myg-theme__color(background, base);
+}
+
+@mixin myg-button---dense {
+  padding: myg__px(8) myg__px(18) myg__px(10);
+}
+
+@mixin myg-button---disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+
+  &:hover {
+    @include myg-animate__animation(shake, map-get(map-get($myg-animate__animation, shake), duration),  map-get(map-get($myg-animate__animation, shake), easing));
+  }
+
+  &:focus,
+  &:active {
+    pointer-events: none;
+  }
+}
+
+/* Secondary */
+
+@mixin myg-button--secondary {
+  background: myg-theme__color(background, light);
+  border-color: myg-theme__color(border);
+
+  &,
+  span {
+    color: myg-theme__color(text, light);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: myg-theme__color(background, light);
+    border-color: myg-theme__color(accent, base);
+
+    &,
+    span {
+      color: myg-theme__color(accent, base);
+    }
+  }
+}
+
+@mixin myg-button--secondary---error {
+  border-color: myg-theme__color(error);
+  color: myg-theme__color(error);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: myg-theme__color(error);
+
+    &,
+    span {
+      color: myg-theme__color(background, base);
+    }
+  }
+}
+
+@mixin myg-button--secondary---success {
+  border-color: myg-theme__color(success);
+  color: myg-theme__color(success);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: myg-theme__color(success);
+
+    &,
+    span {
+      color: myg-theme__color(background, base);
+    }
+  }
+}
+
+/* Light */
+
+@mixin myg-button--light {
+  background: myg-theme__color(background, lighter);
+  border-color: myg-theme__color(accent, base);
+
+  &,
+  span {
+    color: myg-theme__color(accent, base);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: myg-theme__color(accent, base);
+
+    &,
+    span {
+      color: myg-theme__color(accent, contrast);
+    }
+  }
+}
+
+/* Icon */
+
+@mixin myg-button--icon {
+  padding: myg__px(17) myg__px(16) myg__px(13);
+}
+
+@mixin myg-button__icon {
+  @include myg-animate__transition(opacity);
+
+  color: inherit;
+  font-size: myg__px(18);
+  height: myg__px(18);
+  margin-right: myg__px(30);
+  opacity: 0;
+  position: relative;
+  top: myg__px(-2);
+  visibility: hidden;
+  width: myg__px(18);
+}
+
+@mixin myg-button__icon---shown {
+  @include myg--visible;
+}
+
+@mixin myg-button__caption {
+  text-align: center;
+  width: 100%;
+}
+
+/* Loader */
+
+@mixin myg-button--loader {
+  position: relative;
+}
+
+@mixin myg-button--loader---loading {
+  height: myg__px(50);
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+@mixin myg-button__loader {
+  display: none;
+  height: myg__px(24);
+  position: absolute;
+  top: myg__px(12);
+  transition: initial;
+  width: myg__px(24);
+
+  line {
+    stroke: white;
+    stroke-width: 1.5;
+  }
+}
+
+@mixin myg-button__loader---shown {
+  @include myg--visible;
+}
+
+/* Container */
+
+@mixin myg-button__container {
+  @include myg-grid__flex;
+  @include myg-grid__flex---center-y;
+  @include myg-grid__flex---wrap;
+
+  margin: myg-spacing(-2);
+
+  & > * {
+    margin: myg-spacing(2);
+  }
+}

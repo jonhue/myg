@@ -1,0 +1,9 @@
+@mixin myg__classes--badge {
+  .myg-badge {
+    @include myg-badge;
+  }
+
+  .myg-badge__container {
+    @include myg-badge__container;
+  }
+}

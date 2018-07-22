@@ -1,0 +1,49 @@
+/* Families */
+
+@mixin myg-font($name) {
+  font-family: map-get($myg-font, $name);
+
+  @if $name == sans-serif {
+    @include myg__pwa {
+      font-family: map-get($myg-font, default);
+    }
+  }
+}
+
+/* Styles */
+
+@mixin myg-font---italic {
+  font-style: italic;
+}
+
+@mixin myg-font---uppercase {
+  text-transform: uppercase;
+}
+
+@mixin myg-font---downcase {
+  text-transform: downcase;
+}
+
+@mixin myg-font---black {
+  font-weight: 900;
+}
+
+@mixin myg-font---bold {
+  font-weight: 700;
+}
+
+@mixin myg-font---semibold {
+  font-weight: 600;
+}
+
+@mixin myg-font---medium {
+  font-weight: 500;
+}
+
+@mixin myg-font---light {
+  font-weight: 300;
+}
+
+@mixin myg-font---thin {
+  font-weight: 200;
+}

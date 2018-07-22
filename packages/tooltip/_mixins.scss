@@ -1,0 +1,15 @@
+@mixin myg-tooltip {
+  @include myg--hide;
+  @include myg--invisible;
+  @include myg-animate__transition(opacity);
+  @include myg-theme__border-radius(1);
+
+  background: myg-theme__color(overlay, dark);
+  color: myg-theme__color(text, lighter);
+  font-size: myg__px(14);
+  padding: myg__px(4) myg__px(8) myg__px(5);
+}
+
+@mixin myg-tooltip---shown {
+  @include myg--visible;
+}

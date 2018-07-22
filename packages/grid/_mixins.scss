@@ -1,0 +1,391 @@
+@mixin myg-grid__bigger-than($name) {
+  @media (min-width: #{map-get($myg-grid__breakpoints, $name)}) {
+    @content;
+  }
+}
+
+@mixin myg-grid__smaller-than($name) {
+  @media (max-width: #{map-get($myg-grid__breakpoints, $name)}) {
+    @content;
+  }
+}
+
+/* Flexbox */
+
+@mixin myg-grid__flex {
+  display: flex;
+}
+
+// Flexbox container
+
+@mixin myg-grid__flex---container-center {
+  align-content: center;
+}
+
+@mixin myg-grid__flex---container-start {
+  align-content: flex-start;
+}
+
+@mixin myg-grid__flex---container-end {
+  align-content: flex-end;
+}
+
+@mixin myg-grid__flex---container-space-between {
+  align-content: space-between;
+}
+
+@mixin myg-grid__flex---container-space-around {
+  align-content: space-around;
+}
+
+@mixin myg-grid__flex---container-space-evenly {
+  align-content: space-evenly;
+}
+
+@mixin myg-grid__flex---wrap {
+  flex-wrap: wrap;
+}
+
+// Flexbox items
+
+@mixin myg-grid__flex---center {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin myg-grid__flex---center-x {
+  justify-content: center;
+}
+
+@mixin myg-grid__flex---center-y {
+  align-items: center;
+}
+
+@mixin myg-grid__flex---start {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@mixin myg-grid__flex---start-x {
+  justify-content: flex-start;
+}
+
+@mixin myg-grid__flex---start-y {
+  align-items: flex-start;
+}
+
+@mixin myg-grid__flex---end {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@mixin myg-grid__flex---end-x {
+  justify-content: flex-end;
+}
+
+@mixin myg-grid__flex---end-y {
+  align-items: flex-end;
+}
+
+@mixin myg-grid__flex---space-between {
+  justify-content: space-between;
+}
+
+@mixin myg-grid__flex---space-around {
+  justify-content: space-around;
+}
+
+@mixin myg-grid__flex---space-evenly {
+  justify-content: space-evenly;
+}
+
+@mixin myg-grid__flex---baseline {
+  align-items: baseline;
+}
+
+// Flexbox self
+
+@mixin myg-grid__flex--self-center {
+  align-self: center;
+}
+
+@mixin myg-grid__flex--self-start {
+  align-self: flex-start;
+}
+
+@mixin myg-grid__flex--self-end {
+  align-self: flex-end;
+}
+
+/* Grid */
+
+@mixin myg-grid__grid {
+  display: grid;
+}
+
+@mixin myg-grid__grid-columns($value) {
+  grid-template-columns: $value;
+}
+
+@mixin myg-grid__grid-rows($value) {
+  grid-template-rows: $value;
+}
+
+@mixin myg-grid__grid-areas($value) {
+  grid-template-areas: $value;
+}
+
+@mixin myg-grid__grid-template($rows, $columns, $areas: null) {
+  @include myg-grid__grid;
+  @include myg-grid__grid-rows($rows);
+  @include myg-grid__grid-columns($columns);
+
+  @if ($areas != null) {
+    @include myg-grid__grid-areas($areas);
+  }
+}
+
+@mixin myg-grid__grid-gap($value, $type: null) {
+  @if ( $type == null ) {
+    grid-gap: $value;
+  }
+
+  @else if ( $type == "column" ) {
+    grid-column-gap: $value;
+  }
+
+  @else if ( $type == "row" ) {
+    grid-row-gap: $value;
+  }
+}
+
+// Grid container
+
+@mixin myg-grid__grid---container-center {
+  align-content: center;
+  justify-content: center;
+}
+
+@mixin myg-grid__grid---container-center-x {
+  justify-content: center;
+}
+
+@mixin myg-grid__grid---container-center-y {
+  align-content: center;
+}
+
+@mixin myg-grid__grid---container-start {
+  align-content: start;
+  justify-content: start;
+}
+
+@mixin myg-grid__grid---container-start-x {
+  justify-content: start;
+}
+
+@mixin myg-grid__grid---container-start-y {
+  align-content: start;
+}
+
+@mixin myg-grid__grid---container-end {
+  align-content: end;
+  justify-content: end;
+}
+
+@mixin myg-grid__grid---container-end-x {
+  justify-content: end;
+}
+
+@mixin myg-grid__grid---container-end-y {
+  align-content: end;
+}
+
+@mixin myg-grid__grid---container-space-between {
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+@mixin myg-grid__grid---container-space-between-x {
+  justify-content: space-between;
+}
+
+@mixin myg-grid__grid---container-space-between-y {
+  align-content: space-between;
+}
+
+@mixin myg-grid__grid---container-space-around {
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+@mixin myg-grid__grid---container-space-around-x {
+  justify-content: space-around;
+}
+
+@mixin myg-grid__grid---container-space-around-y {
+  align-content: space-around;
+}
+
+@mixin myg-grid__grid---container-space-evenly {
+  align-content: space-evenly;
+  justify-content: space-evenly;
+}
+
+@mixin myg-grid__grid---container-space-evenly-x {
+  justify-content: space-evenly;
+}
+
+@mixin myg-grid__grid---container-space-evenly-y {
+  align-content: space-evenly;
+}
+
+// Grid items
+
+@mixin myg-grid__grid---center {
+  align-items: center;
+  justify-items: center;
+}
+
+@mixin myg-grid__grid---center-x {
+  justify-items: center;
+}
+
+@mixin myg-grid__grid---center-y {
+  align-items: center;
+}
+
+@mixin myg-grid__grid---start {
+  align-items: start;
+  justify-items: start;
+}
+
+@mixin myg-grid__grid---start-x {
+  justify-items: start;
+}
+
+@mixin myg-grid__grid---start-y {
+  align-items: start;
+}
+
+@mixin myg-grid__grid---end {
+  align-items: end;
+  justify-items: end;
+}
+
+@mixin myg-grid__grid---end-x {
+  justify-items: end;
+}
+
+@mixin myg-grid__grid---end-y {
+  align-items: end;
+}
+
+// Grid self
+
+@mixin myg-grid__grid-column($start, $end) {
+  grid-column: $start / $end;
+}
+
+@mixin myg-grid__grid-row($start, $end) {
+  grid-row: $start / $end;
+}
+
+@mixin myg-grid__grid--self-center {
+  align-self: center;
+  justify-self: center;
+}
+
+@mixin myg-grid__grid--self-center-x {
+  justify-self: center;
+}
+
+@mixin myg-grid__grid--self-center-y {
+  align-self: center;
+}
+
+@mixin myg-grid__grid--self-start {
+  align-self: start;
+  justify-self: start;
+}
+
+@mixin myg-grid__grid--self-start-x {
+  justify-self: start;
+}
+
+@mixin myg-grid__grid--self-start-y {
+  align-self: start;
+}
+
+@mixin myg-grid__grid--self-end {
+  align-self: end;
+  justify-self: end;
+}
+
+@mixin myg-grid__grid--self-end-x {
+  justify-self: end;
+}
+
+@mixin myg-grid__grid--self-end-y {
+  align-self: end;
+}
+
+/* Myg grid */
+
+// Myg grid container
+
+@mixin myg-grid__grid--default {
+  width: 100%;
+
+  @include myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, phone), 1fr));
+  @include myg-grid__grid-gap(myg__px(20));
+
+  @include myg-grid__bigger-than(phone) {
+    &:not(.myg-layout__wrap--phone) {
+      @include myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, tablet), 1fr));
+    }
+  }
+
+  @include myg-grid__bigger-than(tablet) {
+    &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet) {
+      @include myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, laptop), 1fr));
+    }
+  }
+
+  @include myg-grid__bigger-than(laptop) {
+    &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet, .myg-layout__wrap--laptop) {
+      @include myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, large), 1fr));
+    }
+  }
+
+  @include myg-grid__bigger-than(large) {
+    &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet, .myg-layout__wrap--laptop, .myg-layout__wrap--large) {
+      @include myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, desktop), 1fr));
+    }
+  }
+}
+
+// Myg grid items
+
+@mixin myg-grid__grid-span($value, $type: "column") {
+  grid-#{$type}-end: span $value;
+}
+
+@mixin myg-grid__grid-span--screen($value) {
+  grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, phone) / $value);
+
+  @include myg-grid__bigger-than(phone) {
+    grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, tablet) / $value);
+  }
+
+  @include myg-grid__bigger-than(tablet) {
+    grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, laptop) / $value);
+  }
+
+  @include myg-grid__bigger-than(laptop) {
+    grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, large) / $value);
+  }
+
+  @include myg-grid__bigger-than(large) {
+    grid-column-end: span decimal-round(map-get($myg-grid__grid--default-columns, desktop) / $value);
+  }
+}

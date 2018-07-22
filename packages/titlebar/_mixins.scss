@@ -1,0 +1,84 @@
+@mixin myg-titlebar {
+  &.welcomer {
+    @include myg-animate__transition(all);
+
+    background: myg-theme__color(background, darker);
+    position: fixed;
+
+    & ~ header,
+    & ~ .myg-sidebar,
+    & ~ .myg-content {
+      @include myg-animate__transition(margin);
+
+      margin-top: 0;
+    }
+
+    &.welcomer--shown {
+      & ~ header,
+      & ~ .myg-sidebar,
+      & ~ .myg-content {
+        margin-top: myg__px(50);
+      }
+    }
+
+    &.error {
+      background: myg-theme__color(error);
+    }
+
+    &.success {
+      background: myg-theme__color(success);
+    }
+
+    p {
+      color: myg-theme__color(text, dark);
+      font-size: myg__px(14);
+      font-weight: 500;
+      letter-spacing: normal;
+      opacity: 1;
+      text-transform: none;
+    }
+
+    a {
+      @include myg-animate__transition(all);
+
+      background: myg-theme__color(accent, base);
+      border-radius: myg__px(13.5);
+      color: myg-theme__color(accent, contrast);
+      font-size: myg__px(10);
+      height: myg__px(27);
+      margin-left: myg__px(20);
+      padding: 0 myg__px(15);
+
+      &:hover {
+        background: myg-theme__color(accent, dark);
+      }
+    }
+
+    .welcomer--close {
+      @include myg-animate__transition(all);
+      @include myg__cursor(pointer);
+
+      bottom: myg__px(15);
+      right: myg__px(20);
+      top: myg__px(15);
+    }
+  }
+
+  @include myg-grid__smaller-than(tablet) {
+    &.welcomer {
+      a {
+        color: myg-theme__color(accent, base);
+        font-size: myg__px(12);
+        height: auto;
+        letter-spacing: normal;
+        padding: 0;
+        text-transform: none;
+      }
+
+      p {
+        font-size: myg__px(12);
+        letter-spacing: normal;
+      }
+    }
+  }
+}

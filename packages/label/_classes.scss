@@ -1,0 +1,10 @@
+@mixin myg__classes--label {
+  .myg-label {
+    @include myg-label;
+  }
+
+  .myg-label--secondary {
+    @include myg-label;
+    @include myg-label--secondary;
+  }
+}

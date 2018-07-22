@@ -1,0 +1,33 @@
+@mixin myg-dropdown {
+  @include myg-theme__border-radius(1);
+  @include myg-elevation(3);
+  @include myg--hide;
+  @include myg--invisible;
+  @include myg-animate__transition(opacity);
+
+  background: myg-theme__color(background, base);
+  border: myg__px(1) solid myg-theme__color(border);
+  margin-top: myg-spacing(2);
+  max-width: myg__px(500);
+  min-width: myg__px(150);
+  padding: myg-spacing(3);
+
+  & > p {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  & > hr {
+    margin: 0;
+  }
+}
+
+@mixin myg-dropdown---shown {
+  @include myg--show;
+  @include myg--visible;
+}

@@ -1,0 +1,65 @@
+@mixin myg-theme__colors($colors) {
+  @each $name, $color in $colors {
+    @if type-of($color) == map {
+      @each $subname, $subcolor in $color {
+        --color-#{$name}-#{$subname}: #{$subcolor};
+      }
+    }
+
+    @else if type-of($color) == color {
+      --color-#{$name}: #{$color};
+    }
+  }
+}
+
+@mixin myg-theme($colors, $name: "default") {
+  @if $name == "default" {
+    &,
+    &.myg-theme--#{$name} {
+      @include myg-theme__colors($colors);
+    }
+  }
+
+  @else {
+    &.myg-theme--#{$name} {
+      @include myg-theme__colors($colors);
+    }
+  }
+}
+
+/* Border radius */
+
+@mixin myg-theme__border-radius($r) {
+  @if $r == round {
+    border-radius: 50%;
+  }
+
+  @else if $r == 1 {
+    border-radius: myg__px(2);
+  }
+
+  @else {
+    border-radius: myg__px($r * $r);
+  }
+}
+
+/* Scrollbar */
+
+@mixin myg-theme__scrollbar {
+  &::-webkit-scrollbar {
+    width: myg-theme__scrollbar(width);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: myg-theme__scrollbar(track-background);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: myg-theme__scrollbar(thumb-background);
+    border-radius: myg-theme__scrollbar(thumb-border-radius);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: myg-theme__scrollbar(thumb-hover-background);
+  }
+}

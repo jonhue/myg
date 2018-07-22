@@ -1,0 +1,170 @@
+/* Sizes */
+
+@mixin myg-text__font-size($element, $size) {
+  font-size: map-get(map-get($myg-text__size, $element), $size);
+}
+
+@mixin myg-text__size($element) {
+  @each $name, $value in map-get($myg-text__size--mobile, $element) {
+    @if $name == base {
+      font-size: $value;
+    }
+
+    @else {
+      &.#{$name} {
+        font-size: $value;
+      }
+    }
+  }
+
+  @include myg-grid__bigger-than(tablet) {
+    @each $name, $value in map-get($myg-text__size, $element) {
+      @if $name == base {
+        font-size: $value;
+      }
+
+      @else {
+        &.#{$name} {
+          font-size: $value;
+        }
+      }
+    }
+  }
+}
+
+/* Styling */
+
+@mixin myg-text__family($element) {
+  @include myg-font(map-get($myg-text__family, $element));
+}
+
+@mixin myg-text__color($element) {
+  color: map-get($myg-text__color, $element);
+}
+
+@mixin myg-text__weight($element) {
+  font-weight: map-get($myg-text__weight, $element);
+}
+
+/* Elements */
+
+@mixin myg-text {
+  @include myg-text__family(p);
+  @include myg-text__size(p);
+  @include myg-text__color(p);
+  @include myg-text__weight(p);
+
+  line-height: 1.75;
+}
+
+@mixin myg-text__hyperlink {
+  color: myg-theme__color(accent, base);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin myg-text__hyperlink---inherit {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@mixin myg-text__hyperlink---light {
+  @include myg-animate__transition(color);
+
+  color: myg-theme__color(text, base);
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: myg-theme__color(accent, base);
+  }
+}
+
+@mixin myg-text__code {
+  @include myg-font(monospace);
+
+  background: myg-theme__color(background, lighter);
+  border-radius: myg__px(3);
+  color: myg-theme__color(text, light);
+  margin: 0 myg__px(5);
+  padding: myg__px(2) myg__px(4);
+}
+
+@mixin myg-text__code---nested {
+  color: inherit;
+}
+
+@mixin myg-text__pre {
+  @include myg-font(monospace);
+
+  background: myg-theme__color(background, lighter);
+  border-radius: myg__px(3);
+  color: myg-theme__color(text, light);
+  overflow-x: auto;
+  padding: myg__px(8) myg__px(13);
+}
+
+@mixin myg-text__hr {
+  background: myg-theme__color(border);
+  border: none;
+  color: myg-theme__color(border);
+  height: myg__px(1);
+  margin: myg-spacing(6) 0;
+}
+
+@mixin myg-text__li {
+  line-height: 1.75;
+}
+
+/* Headings */
+
+@mixin myg-text__h {
+  line-height: 1.58;
+  margin: 0.67em 0;
+}
+
+@mixin myg-text__h---h1 {
+  @include myg-text__family(h1);
+  @include myg-text__size(h1);
+  @include myg-text__color(h1);
+  @include myg-text__weight(h1);
+}
+
+@mixin myg-text__h---h2 {
+  @include myg-text__family(h2);
+  @include myg-text__size(h2);
+  @include myg-text__color(h2);
+  @include myg-text__weight(h2);
+}
+
+@mixin myg-text__h---h3 {
+  @include myg-text__family(h3);
+  @include myg-text__size(h3);
+  @include myg-text__color(h3);
+  @include myg-text__weight(h3);
+}
+
+@mixin myg-text__h---h4 {
+  @include myg-text__family(h4);
+  @include myg-text__size(h4);
+  @include myg-text__color(h4);
+  @include myg-text__weight(h4);
+}
+
+@mixin myg-text__h---h5 {
+  @include myg-text__family(h5);
+  @include myg-text__size(h5);
+  @include myg-text__color(h5);
+  @include myg-text__weight(h5);
+}
+
+@mixin myg-text__h---h6 {
+  @include myg-text__family(h6);
+  @include myg-text__size(h6);
+  @include myg-text__color(h6);
+  @include myg-text__weight(h6);
+}

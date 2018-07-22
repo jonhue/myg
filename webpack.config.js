@@ -10,7 +10,7 @@ module.exports = [{
   }
 }, {
   entry: {
-    'myg.sass': './src/myg.sass'
+    'myg.sass': './src/myg.scss'
   },
   output: {
     filename: 'myg.min.css',
@@ -18,7 +18,7 @@ module.exports = [{
   },
   module: {
     rules: [{
-      test: /\.sass$/,
+      test: /\.scss$/,
       use: [{
         loader: 'style-loader'
       }, {

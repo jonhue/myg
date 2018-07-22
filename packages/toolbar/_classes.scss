@@ -1,0 +1,14 @@
+@mixin myg__classes--toolbar {
+  .myg-toolbar {
+    @include myg-toolbar;
+  }
+
+  .myg-toolbar--flexible {
+    @include myg-toolbar;
+    @include myg-toolbar--flexible;
+
+    &.-bottom {
+      @include myg-toolbar--flexible---bottom;
+    }
+  }
+}

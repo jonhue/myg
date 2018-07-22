@@ -1,0 +1,28 @@
+@mixin myg-badge {
+  @include myg-theme__border-radius(2);
+
+  background: myg-theme__color(background, dark);
+  color: myg-theme__color(text, base);
+  font-size: myg__px(13);
+  margin: myg__px(3);
+  padding: myg__px(1) myg__px(8);
+  word-wrap: normal;
+
+  &.success {
+    background: myg-theme__color(success);
+    color: myg-theme__color(background, lighter);
+  }
+
+  &.error {
+    background: myg-theme__color(error);
+    color: myg-theme__color(background, lighter);
+  }
+}
+
+@mixin myg-badge__container {
+  @include myg-grid__flex;
+  @include myg-grid__flex---center-y;
+  @include myg-grid__flex---wrap;
+
+  margin: myg__px(-3);
+}

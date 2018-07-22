@@ -1,0 +1,22 @@
+@mixin myg__classes--list {
+  .myg-list {
+    @include myg-list;
+
+    .myg-list__item {
+      @include myg-list__item;
+
+      &.-title {
+        @include myg-list__item---title;
+      }
+    }
+  }
+
+  .myg-list--contained {
+    @include myg-list;
+    @include myg-list--contained;
+
+    .myg-list__item {
+      @include myg-list--contained__item;
+    }
+  }
+}

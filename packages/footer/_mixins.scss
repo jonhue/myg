@@ -1,0 +1,17 @@
+@mixin myg-footer {
+  @include myg-animate__transition(bottom, 0.2s);
+
+  border-top: myg__px(1) solid myg-theme__color(border);
+  bottom: 0;
+  left: 0;
+  min-height: map-get($myg-footer, min-height);
+  padding: myg-spacing(6);
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+
+  @include myg-grid__bigger-than(tablet) {
+    padding: myg-spacing(10);
+  }
+}

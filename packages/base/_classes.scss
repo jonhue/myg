@@ -1,0 +1,97 @@
+@mixin myg__classes--base {
+  .myg__pwa {
+    display: none;
+
+    @include myg__pwa {
+      display: block;
+    }
+  }
+
+  .myg__pwa--hidden {
+    @include myg__pwa {
+      display: none;
+    }
+  }
+
+  @each $name, $value in $myg__cursor {
+    .myg__cursor--#{$name} {
+      @include myg__cursor($value);
+    }
+  }
+
+  .myg__scroll {
+    @include myg__scroll;
+  }
+
+  .myg__scroll--x {
+    @include myg__scroll--x;
+  }
+
+  .myg__scroll--y {
+    @include myg__scroll--y;
+  }
+
+  .myg__scroll--hidden {
+    @include myg__scroll--hidden;
+  }
+
+  .myg__scroll--hidden-x {
+    @include myg__scroll--hidden-x;
+  }
+
+  .myg__scroll--hidden-y {
+    @include myg__scroll--hidden-y;
+  }
+
+  .myg__select {
+    @include myg__select;
+  }
+
+  .myg__select--auto {
+    @include myg__select--auto;
+  }
+
+  .myg__select--off {
+    @include myg__select--off;
+  }
+
+  .myg__flip--x {
+    @include myg__flip--x;
+  }
+
+  .myg__flip--y {
+    @include myg__flip--y;
+  }
+
+  .myg--display {
+    @include myg--display;
+  }
+
+  .myg--hidden {
+    @include myg--hidden;
+  }
+
+  .myg--show {
+    @include myg--show;
+  }
+
+  .myg--hide {
+    @include myg--hide;
+  }
+
+  .myg--visible {
+    @include myg--visible;
+  }
+
+  .myg--invisible {
+    @include myg--invisible;
+  }
+
+  .myg--intransparent {
+    @include myg--intransparent;
+  }
+
+  .myg--transparent {
+    @include myg--transparent;
+  }
+}

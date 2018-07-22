@@ -2,9 +2,9 @@ import Myg from 'myg-base';
 import Flickity from 'flickity';
 
 class Slide extends Myg {
-  constructor( element, options = {} ) {
-    super( element, options );
-    this._flickity = new Flickity( element, options );
+  constructor(element, options = {}) {
+    super(element, options);
+    this._flickity = new Flickity(element, options);
   }
 
   get flickity() {

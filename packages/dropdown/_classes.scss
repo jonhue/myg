@@ -1,0 +1,9 @@
+@mixin myg__classes--dropdown {
+  .myg-dropdown {
+    @include myg-dropdown;
+
+    &.-shown {
+      @include myg-dropdown---shown;
+    }
+  }
+}

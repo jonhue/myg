@@ -1,0 +1,5 @@
+@mixin myg__classes--action-button {
+  .myg-action-button {
+    @include myg-action-button;
+  }
+}

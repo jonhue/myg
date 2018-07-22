@@ -1,0 +1,93 @@
+@mixin myg__classes--button {
+  .myg-button {
+    @include myg-button;
+
+    &.-error {
+      @include myg-button---error;
+    }
+
+    &.-success {
+      @include myg-button---success;
+    }
+
+    &.-dense {
+      @include myg-button---dense;
+    }
+
+    &.-disabled {
+      @include myg-button---disabled;
+    }
+  }
+
+  .myg-button--secondary {
+    @include myg-button;
+    @include myg-button--secondary;
+
+    &.-error {
+      @include myg-button--secondary---error;
+    }
+
+    &.-success {
+      @include myg-button--secondary---success;
+    }
+
+    &.-dense {
+      @include myg-button---dense;
+    }
+
+    &.-disabled {
+      @include myg-button---disabled;
+    }
+  }
+
+  .myg-button--light {
+    @include myg-button;
+    @include myg-button--light;
+
+    &.-dense {
+      @include myg-button---dense;
+    }
+
+    &.-disabled {
+      @include myg-button---disabled;
+    }
+  }
+
+  .myg-button--icon {
+    @include myg-button;
+    @include myg-button--icon;
+
+    .myg-button__icon {
+      @include myg-button__icon;
+
+      &.-shown {
+        @include myg-button__icon---shown;
+      }
+    }
+
+    .myg-button__caption {
+      @include myg-button__caption;
+    }
+  }
+
+  .myg-button--loader {
+    @include myg-button;
+    @include myg-button--loader;
+
+    &.-loading {
+      @include myg-button--loader---loading;
+    }
+
+    .myg-button__loader {
+      @include myg-button__loader;
+
+      &.-shown {
+        @include myg-button__loader---shown;
+      }
+    }
+  }
+
+  .myg-button__container {
+    @include myg-button__container;
+  }
+}

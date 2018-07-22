@@ -1,0 +1,18 @@
+@mixin myg__classes--card {
+  .myg-card {
+    @include myg-card;
+
+    &.-highlighted {
+      @include myg-card---highlighted;
+    }
+  }
+
+  .myg-card--seamless {
+    @include myg-card;
+    @include myg-card--seamless;
+
+    &.-highlighted {
+      @include myg-card---highlighted;
+    }
+  }
+}

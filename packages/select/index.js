@@ -1,9 +1,9 @@
 import Myg from 'myg-base';
-import {MDCSelectFoundation} from '@material/select';
+import {MDCSelect} from '@material/select';
 
 class Selector extends Myg {
-  constructor( element, options = {} ) {
-    super( element, options );
+  constructor(element, options = {}) {
+    super(element, options);
     this._mdcSelect = new MDCSelect(element);
   }
 

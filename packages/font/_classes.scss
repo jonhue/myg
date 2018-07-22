@@ -1,0 +1,45 @@
+@mixin myg__classes--font {
+  @each $name, $value in $myg-font {
+    .myg-font--#{$name} {
+      @include myg-font($name);
+    }
+  }
+
+  .myg-font {
+    &.-italic {
+      @include myg-font---italic;
+    }
+
+    &.-uppercase {
+      @include myg-font---uppercase;
+    }
+
+    &.-downcase {
+      @include myg-font---downcase;
+    }
+
+    &.-black {
+      @include myg-font---black;
+    }
+
+    &.-bold {
+      @include myg-font---bold;
+    }
+
+    &.-semibold {
+      @include myg-font---semibold;
+    }
+
+    &.-medium {
+      @include myg-font---medium;
+    }
+
+    &.-light {
+      @include myg-font---light;
+    }
+
+    &.-thin {
+      @include myg-font---thin;
+    }
+  }
+}

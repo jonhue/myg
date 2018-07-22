@@ -1,0 +1,14 @@
+@mixin myg-label {
+  @include myg-font(sans-serif);
+
+  color: myg-theme__color(text, darker);
+  display: block;
+  font-size: myg__px(14);
+  font-weight: 500;
+  line-height: 1.58;
+}
+
+@mixin myg-label--secondary {
+  color: myg-theme__color(text, base);
+  font-weight: normal;
+}

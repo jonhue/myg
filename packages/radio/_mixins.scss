@@ -1,0 +1,26 @@
+@mixin myg-radio {
+  &.mdc-radio {
+    @include myg__var(color-border, myg-theme__color(border, null, true));
+    @include myg__var(mdc-theme-secondary, myg-theme__color(accent, base));
+
+    &::before,
+    &::after {
+      background: transparent;
+    }
+
+    &.mdc-ripple-upgraded--foreground-activation {
+      &::before,
+      &::after {
+        background: rgba(myg-theme__color(accent, base, true), 0.35);
+      }
+    }
+
+    .mdc-radio__native-control:enabled:not(:checked) + .mdc-radio__background .mdc-radio__outer-circle {
+      border-color: myg-theme__color(border);
+    }
+
+    & + label {
+      margin: 0;
+    }
+  }
+}

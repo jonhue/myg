@@ -1,0 +1,84 @@
+@mixin myg-layout__html {
+  @include myg-font(sans-serif);
+
+  background: myg-theme__color(background, base);
+  color: myg-theme__color(text, base);
+  font-size: myg__px(map-get($myg-base, font-size));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  word-wrap: break-word;
+
+  & > body {
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+@mixin myg-layout {
+  @include myg-grid__grid-template(1fr, 100%);
+  @include myg-grid__grid-areas("content");
+
+  min-height: 100vh;
+  width: 100%;
+}
+
+@mixin myg-layout--toolbar {
+  @include myg-grid__grid-rows(map-get($myg-layout, toolbar-height) 1fr);
+  @include myg-grid__grid-areas("toolbar" "content");
+}
+
+@mixin myg-layout--toolbar---bottom {
+  @include myg-grid__grid-rows(1fr map-get($myg-layout, toolbar-height));
+  @include myg-grid__grid-areas("content" "toolbar");
+}
+
+@mixin myg-layout--sidebar {
+  @include myg-grid__grid-columns(map-get($myg-layout, sidebar-width) 1fr);
+  @include myg-grid__grid-areas("sidebar content");
+}
+
+@mixin myg-layout--sidebar---right {
+  @include myg-grid__grid-columns(1fr map-get($myg-layout, sidebar-width));
+  @include myg-grid__grid-areas("content sidebar");
+}
+
+@mixin myg-layout--sidebar-toolbar {
+  @include myg-grid__grid-areas("toolbar toolbar" "sidebar content");
+}
+
+@mixin myg-layout--sidebar-toolbar---right {
+  @include myg-grid__grid-areas("toolbar toolbar" "content sidebar");
+}
+
+@mixin myg-layout--sidebar-toolbar---primary {
+  @include myg-grid__grid-areas("sidebar toolbar" "sidebar content");
+}
+
+@mixin myg-layout--sidebar-toolbar---primary-right {
+  @include myg-grid__grid-areas("toolbar sidebar" "content sidebar");
+}
+
+@mixin myg-layout--footer {
+  @include myg-grid__grid-rows(1fr auto);
+  @include myg-grid__grid-areas("content" "footer");
+}
+
+@mixin myg-layout__wrap($name) {
+  margin: 0 auto;
+  max-width: map-get($myg-grid--breakpoints, $name);
+}

@@ -1,0 +1,5 @@
+@mixin myg__classes--footer {
+  .myg-footer {
+    @include myg-footer;
+  }
+}

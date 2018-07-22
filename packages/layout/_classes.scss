@@ -1,0 +1,67 @@
+@mixin myg__classes--layout {
+  .myg-layout__html {
+    @include myg-layout__html;
+  }
+
+  .myg-layout {
+    @include myg-layout;
+
+    .myg-toolbar {
+      grid-area: toolbar;
+    }
+
+    .myg-sidebar {
+      grid-area: sidebar;
+    }
+
+    .myg-footer--sticky {
+      grid-area: footer;
+    }
+
+    .myg-content {
+      grid-area: content;
+    }
+  }
+
+  .myg-layout--toolbar {
+    @include myg-layout--toolbar;
+
+    &.-bottom {
+      @include myg-layout--toolbar---bottom;
+    }
+  }
+
+  .myg-layout--sidebar {
+    @include myg-layout--sidebar;
+
+    &.-right {
+      @include myg-layout--sidebar---right;
+    }
+  }
+
+  .myg-layout--sidebar-toolbar {
+    @include myg-layout--sidebar-toolbar;
+
+    &.-right {
+      @include myg-layout--sidebar-toolbar---right;
+    }
+
+    &.-primary {
+      @include myg-layout--sidebar-toolbar---primary;
+    }
+
+    &.-right.-primary {
+      @include myg-layout--sidebar-toolbar---primary-right;
+    }
+  }
+
+  .myg-layout--footer {
+    @include myg-layout--footer;
+  }
+
+  @each $name, $value in $myg-grid__breakpoints {
+    .myg-layout__wrap--#{$name} {
+      @include myg-layout__wrap($name);
+    }
+  }
+}

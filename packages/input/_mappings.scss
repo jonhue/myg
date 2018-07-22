@@ -1,0 +1,9 @@
+@mixin myg__mappings--input {
+  input:not([type="submit"]):not([type="file"]) {
+    @include myg-input__input;
+  }
+
+  textarea {
+    @include myg-input__textarea;
+  }
+}

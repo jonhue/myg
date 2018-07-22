@@ -1,0 +1,11 @@
+@mixin myg-progress {
+  &.mdc-linear-progress {
+    .mdc-linear-progress__buffer {
+      background: myg-theme__color(border);
+    }
+
+    .mdc-linear-progress__bar-inner {
+      background: myg-theme__color(accent, base);
+    }
+  }
+}

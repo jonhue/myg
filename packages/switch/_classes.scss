@@ -1,0 +1,5 @@
+@mixin myg__classes--switch {
+  .myg-switch {
+    @include myg-switch;
+  }
+}

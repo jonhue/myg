@@ -1,0 +1,91 @@
+@mixin modalist--transition {
+  @include myg-animate__transition(all, 0.25s);
+
+  animation-duration: 0.25s !important;
+  animation-timing-function: ease-out;
+}
+
+#modalist--overlay {
+  @include modalist--transition;
+
+  background: myg-theme__color(overlay, light);
+
+  .modalist--loader {
+    @include modalist--transition;
+
+    svg {
+      @include myg-theme__border-radius(1);
+      @include myg-elevation(3);
+
+      background: myg-theme__color(background, base);
+    }
+  }
+}
+
+.modalist {
+  @include myg-elevation(6);
+  @include modalist--transition;
+
+  background: myg-theme__color(background, base);
+  border: myg__px(1) solid myg-theme__color(border);
+  border-radius: myg__px(3) !important;
+
+  &.modalist--full-screen {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  & > .modalist--content {
+    &,
+    & > * {
+      @include modalist--transition;
+    }
+
+    & > .modalist--content-header {
+      background: myg-theme__color(background, lighter);
+      border-bottom: myg__px(1) solid myg-theme__color(border);
+      padding: myg-spacing(3);
+
+      h4,
+      p {
+        margin: 0;
+      }
+
+      h4 {
+        @include myg-font(sans-serif);
+
+        color: myg-theme__color(text, darker);
+        font-size: myg__px(17);
+        font-weight: 600;
+        line-height: 1.58;
+      }
+
+      p {
+        @include myg-font(sans-serif);
+
+        color: myg-theme__color(text, dark);
+        font-size: myg__px(14);
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 1.75;
+      }
+
+      .modalist--closer {
+        @include modalist--transition;
+
+        opacity: 0.85;
+
+        &:hover,
+        &:focus {
+          opacity: 1;
+        }
+      }
+    }
+
+    & > .modalist--content-body {
+      background: myg-theme__color(background, base);
+      padding: myg-spacing(3);
+    }
+  }
+}

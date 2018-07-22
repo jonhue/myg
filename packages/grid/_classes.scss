@@ -1,0 +1,303 @@
+@mixin myg__classes--grid {
+  /* Flexbox */
+
+  .myg-grid__flex {
+    @include myg-grid__flex;
+
+    &.-reverse {
+      flex-direction: row-reverse;
+    }
+
+    // Flexbox container
+
+    &.-container-center {
+      @include myg-grid__flex---container-center;
+    }
+
+    &.-container-start {
+      @include myg-grid__flex---container-start;
+    }
+
+    &.-container-end {
+      @include myg-grid__flex---container-end;
+    }
+
+    &.-container-space-between {
+      @include myg-grid__flex---container-space-between;
+    }
+
+    &.-container-space-around {
+      @include myg-grid__flex---container-space-around;
+    }
+
+    &.-container-space-evenly {
+      @include myg-grid__flex---container-space-evenly;
+    }
+
+    &.-wrap {
+      @include myg-grid__flex---wrap;
+    }
+
+    // Flexbox items
+
+    &.-center {
+      @include myg-grid__flex---center;
+    }
+
+    &.-center-x {
+      @include myg-grid__flex---center-x;
+    }
+
+    &.-center-y {
+      @include myg-grid__flex---center-y;
+    }
+
+    &.-start {
+      @include myg-grid__flex---start;
+    }
+
+    &.-start-x {
+      @include myg-grid__flex---start-x;
+    }
+
+    &.-start-y {
+      @include myg-grid__flex---start-y;
+    }
+
+    &.-end {
+      @include myg-grid__flex---end;
+    }
+
+    &.-end-x {
+      @include myg-grid__flex---end-x;
+    }
+
+    &.-end-y {
+      @include myg-grid__flex---end-y;
+    }
+
+    &.-space-between {
+      @include myg-grid__flex---space-between;
+    }
+
+    &.-space-around {
+      @include myg-grid__flex---space-around;
+    }
+
+    &.-space-evenly {
+      @include myg-grid__flex---space-evenly;
+    }
+
+    &.-baseline {
+      @include myg-grid__flex---baseline;
+    }
+
+    &.-column {
+      flex-direction: column;
+
+      &.-reverse {
+        flex-direction: column-reverse;
+      }
+
+      &.-center-x {
+        @include myg-grid__flex---center-y;
+      }
+
+      &.-center-y {
+        @include myg-grid__flex---center-x;
+      }
+
+      &.-start-x {
+        @include myg-grid__flex---start-y;
+      }
+
+      &.-start-y {
+        @include myg-grid__flex---start-x;
+      }
+
+      &.-end-x {
+        @include myg-grid__flex---end-y;
+      }
+
+      &.-end-y {
+        @include myg-grid__flex---end-x;
+      }
+    }
+
+    // Flexbox self
+
+    & > .myg-grid__flex--self-center {
+      @include myg-grid__flex--self-center;
+    }
+
+    & > .myg-grid__flex--self-start {
+      @include myg-grid__flex--self-start;
+    }
+
+    & > .myg-grid__flex--self-end {
+      @include myg-grid__flex--self-end;
+    }
+  }
+
+  /* Grid */
+
+  .myg-grid__grid {
+    @include myg-grid__grid;
+
+    // Grid container
+
+    &.-container-center {
+      @include myg-grid__grid---container-center;
+    }
+
+    &.-container-center-x {
+      @include myg-grid__grid---container-center-x;
+    }
+
+    &.-container-center-y {
+      @include myg-grid__grid---container-center-y;
+    }
+
+    &.-container-start {
+      @include myg-grid__grid---container-start;
+    }
+
+    &.-container-start-x {
+      @include myg-grid__grid---container-start-x;
+    }
+
+    &.-container-start-y {
+      @include myg-grid__grid---container-start-y;
+    }
+
+    &.-container-end {
+      @include myg-grid__grid---container-end;
+    }
+
+    &.-container-end-x {
+      @include myg-grid__grid---container-end-x;
+    }
+
+    &.-container-end-y {
+      @include myg-grid__grid---container-end-y;
+    }
+
+    &.-container-space-between {
+      @include myg-grid__grid---container-space-between;
+    }
+
+    &.-container-space-between-x {
+      @include myg-grid__grid---container-space-between-x;
+    }
+
+    &.-container-space-between-y {
+      @include myg-grid__grid---container-space-between-y;
+    }
+
+    &.-container-space-around {
+      @include myg-grid__grid---container-space-around;
+    }
+
+    &.-container-space-around-x {
+      @include myg-grid__grid---container-space-around-x;
+    }
+
+    &.-container-space-around-y {
+      @include myg-grid__grid---container-space-around-y;
+    }
+
+    &.-container-space-evenly {
+      @include myg-grid__grid---container-space-evenly;
+    }
+
+    &.-container-space-evenly-x {
+      @include myg-grid__grid---container-space-evenly-x;
+    }
+
+    &.-container-space-evenly-y {
+      @include myg-grid__grid---container-space-evenly-y;
+    }
+
+    // Grid items
+
+    &.-center {
+      @include myg-grid__grid---center;
+    }
+
+    &.-center-x {
+      @include myg-grid__grid---center-x;
+    }
+
+    &.-center-y {
+      @include myg-grid__grid---center-y;
+    }
+
+    &.-start {
+      @include myg-grid__grid---start;
+    }
+
+    &.-start-x {
+      @include myg-grid__grid---start-x;
+    }
+
+    &.-start-y {
+      @include myg-grid__grid---start-y;
+    }
+
+    &.-end {
+      @include myg-grid__grid---end;
+    }
+
+    &.-end-x {
+      @include myg-grid__grid---end-x;
+    }
+
+    &.-end-y {
+      @include myg-grid__grid---end-y;
+    }
+
+    // Grid self
+
+    & > .myg-grid__grid--self-center {
+      @include myg-grid__grid--self-center;
+    }
+
+    & > .myg-grid__grid--self-center-x {
+      @include myg-grid__grid--self-center-x;
+    }
+
+    & > .myg-grid__grid--self-center-y {
+      @include myg-grid__grid--self-center-y;
+    }
+
+    & > .myg-grid__grid--self-start {
+      @include myg-grid__grid--self-start;
+    }
+
+    & > .myg-grid__grid--self-start-x {
+      @include myg-grid__grid--self-start-x;
+    }
+
+    & > .myg-grid__grid--self-start-y {
+      @include myg-grid__grid--self-start-y;
+    }
+
+    & > .myg-grid__grid--self-end {
+      @include myg-grid__grid--self-end;
+    }
+
+    & > .myg-grid__grid--self-end-x {
+      @include myg-grid__grid--self-end-x;
+    }
+
+    & > .myg-grid__grid--self-end-y {
+      @include myg-grid__grid--self-end-y;
+    }
+  }
+
+  /* Myg Grid */
+
+  .myg-grid__grid--default {
+    @include myg-grid__grid--default;
+  }
+}

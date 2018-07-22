@@ -1,0 +1,5 @@
+@mixin myg__classes--toast {
+  .myg-toast {
+    @include myg-toast;
+  }
+}

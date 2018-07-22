@@ -1,3 +1,5 @@
+yarn run build
+
 cd packages/action-button
 sed -i "3s/.*/    \"version\": \"$1\",/" package.json
 npm publish

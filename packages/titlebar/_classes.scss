@@ -1,0 +1,5 @@
+@mixin myg__classes--titlebar {
+  .myg-titlebar {
+    @include myg-titlebar;
+  }
+}

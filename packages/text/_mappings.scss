@@ -1,0 +1,70 @@
+@mixin myg__mappings--text {
+  p {
+    @include myg-text;
+  }
+
+  a {
+    @include myg-text__hyperlink;
+  }
+
+  code {
+    @include myg-text__code;
+  }
+
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    code {
+      @include myg-text__code---nested;
+    }
+  }
+
+  pre {
+    @include myg-text__pre;
+  }
+
+  hr {
+    @include myg-text__hr;
+  }
+
+  li {
+    @include myg-text__li;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include myg-text__h;
+  }
+
+  h1 {
+    @include myg-text__h---h1;
+  }
+
+  h2 {
+    @include myg-text__h---h2;
+  }
+
+  h3 {
+    @include myg-text__h---h3;
+  }
+
+  h4 {
+    @include myg-text__h---h4;
+  }
+
+  h5 {
+    @include myg-text__h---h5;
+  }
+
+  h6 {
+    @include myg-text__h---h6;
+  }
+}

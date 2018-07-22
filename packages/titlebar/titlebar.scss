@@ -1,0 +1,13 @@
+/* Customization */
+$welcomer--mobile: map-get($myg-grid--breakpoints, tablet);
+
+/* Dependencies */
+@import "myg-base/base";
+@import "myg-theme/theme";
+@import "myg-animate/animate";
+@import "myg-grid/grid";
+@import "welcomer/src/welcomer";
+
+/* Components */
+@import "_mixins";
+@import "_classes";

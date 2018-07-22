@@ -1,9 +1,9 @@
 import Myg from 'myg-base';
-import {MDCTemporaryDrawer, MDCTemporaryDrawerFoundation, util} from '@material/drawer';
+import {MDCTemporaryDrawer} from '@material/drawer';
 
 class Drawer extends Myg {
-  constructor( element, options = {} ) {
-    super( element, options );
+  constructor(element, options = {}) {
+    super(element, options);
     this._mdcDrawer = new MDCTemporaryDrawer(element);
   }
 

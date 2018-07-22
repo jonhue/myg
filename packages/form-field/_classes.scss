@@ -1,0 +1,22 @@
+@mixin myg__classes--form-field {
+  .myg-form-field {
+    @include myg-form-field;
+
+    &.-inline-label {
+      @include myg-form-field---inline-label;
+    }
+
+    &.-floating-label {
+      @include myg-form-field---floating-label;
+    }
+  }
+
+  .myg-form-field--file {
+    @include myg-form-field;
+    @include myg-form-field--file;
+  }
+
+  .myg-form-field__inline-container {
+    @include myg-form-field__inline-container;
+  }
+}
