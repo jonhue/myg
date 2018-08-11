@@ -8,3 +8,4 @@
 /PULL_REQUEST_TEMPLATE.md
 /release.sh
 /webpack.config.js
+/yarn.lock
