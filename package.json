@@ -1,6 +1,6 @@
 {
   "name": "myg",
-  "version": "0.13.4",
+  "version": "0.13.5",
   "description": "An opinionated & adaptive state-of-the-web framework",
   "main": "src/myg.js",
   "homepage": "https://jonhue.me/repos/myg",
@@ -14,7 +14,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "stylelint": "stylelint */**/*.css */**/*.scss",
-    "eslint": "eslint src/myg.js packages/**/*.js",
+    "eslint": "eslint src/index.js packages/**/*.js",
     "test": "yarn run build && yarn run stylelint && yarn run eslint"
   },
   "dependencies": {

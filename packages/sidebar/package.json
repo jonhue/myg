@@ -1,6 +1,6 @@
 {
   "name": "myg-sidebar",
-  "version": "0.13.4",
+    "version": "0.13.5",
   "description": "A sidebar is a navigational element.",
   "main": "index.js",
   "bugs": {

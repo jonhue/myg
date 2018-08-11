@@ -25,4 +25,4 @@ import 'myg-toast';
 import 'myg-toolbar';
 import 'myg-tooltip';
 
-import styles from './main.scss';
+import './main.scss';

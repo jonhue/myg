@@ -1,6 +1,6 @@
 {
   "name": "myg-drawer",
-  "version": "0.13.4",
+    "version": "0.13.5",
   "description": "Drawers are a navigation element.",
   "main": "index.js",
   "bugs": {
