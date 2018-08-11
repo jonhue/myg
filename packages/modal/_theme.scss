@@ -1,9 +1,4 @@
-@mixin modalist--transition {
-  @include myg-animate__transition(all, 0.25s);
-
-  animation-duration: 0.25s !important;
-  animation-timing-function: ease-out;
-}
+@import "modalist/src/mixins";
 
 #modalist--overlay {
   @include modalist--transition;
@@ -37,9 +32,13 @@
   }
 
   & > .modalist--content {
-    &,
+    @include modalist--transition;
+
+    animation-duration: 0.35s !important;
+    animation-timing-function: ease-out !important;
+
     & > * {
-      @include modalist--transition;
+      animation-duration: 0.35s !important;
     }
 
     & > .modalist--content-header {
@@ -59,6 +58,10 @@
         font-size: myg__px(17);
         font-weight: 600;
         line-height: 1.58;
+
+        @media (min-width: 800px) {
+          font-size: myg__px(18);
+        }
       }
 
       p {
@@ -67,8 +70,12 @@
         color: myg-theme__color(text, dark);
         font-size: myg__px(14);
         font-weight: normal;
-        letter-spacing: normal;
+        letter-spacing: -0.003em;
         line-height: 1.75;
+
+        @media (min-width: 800px) {
+          font-size: 1rem;
+        }
       }
 
       .modalist--closer {

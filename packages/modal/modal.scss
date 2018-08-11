@@ -2,9 +2,9 @@
 @import "myg-base/base";
 @import "myg-theme/theme";
 @import "myg-spacing/spacing";
-@import "animate.css";
-@import "modalist/src/modalist";
-@import "modalist/src/modalist-theme";
+@import "~animate.css";
+@import "modalist/src/modalist.scss";
+@import "modalist/src/themes/default";
 
 /* Components */
-@import "_modalist-theme";
+@import "_theme";

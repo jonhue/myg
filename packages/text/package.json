@@ -11,9 +11,9 @@
   "author": "Jonas Hübotter <me@jonhue.me>",
   "license": "MIT",
   "dependencies": {
-    "myg-base": "^0.13.4",
-    "myg-theme": "^0.13.4",
-    "myg-font": "^0.13.4",
-    "myg-grid": "^0.13.4"
+    "myg-base": "*",
+    "myg-theme": "*",
+    "myg-font": "*",
+    "myg-grid": "*"
   }
 }

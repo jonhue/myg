@@ -24,3 +24,5 @@ import 'myg-titlebar';
 import 'myg-toast';
 import 'myg-toolbar';
 import 'myg-tooltip';
+
+import styles from './main.scss';

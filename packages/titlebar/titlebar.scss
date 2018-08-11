@@ -6,7 +6,7 @@ $welcomer--mobile: map-get($myg-grid--breakpoints, tablet);
 @import "myg-theme/theme";
 @import "myg-animate/animate";
 @import "myg-grid/grid";
-@import "welcomer/src/welcomer";
+@import "welcomer/src/welcomer.sass";
 
 /* Components */
 @import "_mixins";

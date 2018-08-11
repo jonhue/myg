@@ -1,34 +1,41 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = [{
-  entry: {
-    'myg.js': './src/myg.js'
-  },
-  output: {
-    filename: 'myg.js',
-    path: path.resolve(__dirname, 'dist')
-  }
-}, {
-  entry: {
-    'myg.sass': './src/myg.scss'
-  },
-  output: {
-    filename: 'myg.min.css',
-    path: path.resolve(__dirname, 'dist')
-  },
+module.exports = {
   module: {
-    rules: [{
-      test: /\.scss$/,
-      use: [{
-        loader: 'style-loader'
-      }, {
-        loader: 'css-loader'
-      }, {
-        loader: 'sass-loader',
-        options: {
-          includePaths: [path.resolve(__dirname, 'node_modules')]
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
         }
-      }]
-    }]
-  }
-}];
+      }, {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              sourceMap: true,
+              importLoader: 2
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: [path.resolve(__dirname, 'node_modules')]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css'
+    })
+  ]
+};
