@@ -11,7 +11,7 @@
 }
 
 @function myg__rem($px, $font-size: map-get($myg-base, font-size)) {
-  @return px($px, $font-size);
+  @return myg__px($px, $font-size);
 }
 
 @function myg__em($px, $font-size: map-get($myg-base, font-size)) {
