@@ -30,11 +30,7 @@
 }
 
 @mixin myg-layout {
-  @include myg-grid__grid-template(1fr, 100%);
-  @include myg-grid__grid-areas("content");
-
-  min-height: 100vh;
-  width: 100%;
+  @include myg-grid__grid-template(1fr, 1fr, "content");
 }
 
 @mixin myg-layout--toolbar {
