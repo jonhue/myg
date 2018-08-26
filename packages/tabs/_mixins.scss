@@ -39,17 +39,15 @@
 }
 
 @mixin myg-tabs---shown {
-  @include myg-grid__flex;
-  @include myg-grid__flex---center;
+  display: block;
   @include myg--visible;
 }
 
 /* Panels */
 
 @mixin myg-tabs__panels {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  @include myg-grid__flex;
+  @include myg-grid__flex---center;
   width: 100%;
 }
 
