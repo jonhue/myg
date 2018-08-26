@@ -22,13 +22,13 @@ class Myg {
     triggerEvent(document, 'myg:request-start');
     let request = new XMLHttpRequest();
     request.open('GET', url, true);
-    request.onload = () => {
+    request.onload = function() {
       triggerEvent(document, 'myg:request-end');
       callback(this.status, this.responseText);
     };
-    request.onerror = () => {
+    request.onerror = function() {
       triggerEvent(document, 'myg:request-end');
-      callback( this.status, this.responseText);
+      callback(this.status, this.responseText);
     };
     request.send();
   }
