@@ -1,6 +1,6 @@
 {
   "name": "myg-select",
-    "version": "0.13.5",
+    "version": "0.13.6",
   "description": "Myg select input component.",
   "main": "index.js",
   "bugs": {

@@ -1,6 +1,6 @@
 {
   "name": "myg-spacing",
-    "version": "0.13.5",
+    "version": "0.13.6",
   "description": "Myg spacing system.",
   "main": "spacing.sass",
   "bugs": {

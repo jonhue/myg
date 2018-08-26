@@ -1,6 +1,6 @@
 {
   "name": "myg-input",
-    "version": "0.13.5",
+    "version": "0.13.6",
   "description": "Myg input (and textarea) component.",
   "main": "input.sass",
   "bugs": {

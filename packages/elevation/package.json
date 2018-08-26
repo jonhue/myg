@@ -1,6 +1,6 @@
 {
   "name": "myg-elevation",
-    "version": "0.13.5",
+    "version": "0.13.6",
   "description": "Myg elevation system.",
   "main": "elevation.sass",
   "bugs": {

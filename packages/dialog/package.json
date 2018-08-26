@@ -1,6 +1,6 @@
 {
   "name": "myg-dialog",
-    "version": "0.13.5",
+    "version": "0.13.6",
   "description": "Dialogs can inform a user and receive inputs.",
   "main": "index.js",
   "bugs": {

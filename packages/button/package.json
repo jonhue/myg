@@ -1,6 +1,6 @@
 {
   "name": "myg-button",
-    "version": "0.13.5",
+    "version": "0.13.6",
   "description": "Myg buttons component.",
   "main": "index.js",
   "bugs": {

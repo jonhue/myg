@@ -1,6 +1,6 @@
 {
   "name": "myg-card",
-    "version": "0.13.5",
+    "version": "0.13.6",
   "description": "Cards can list objects.",
   "main": "index.js",
   "bugs": {
