@@ -346,19 +346,19 @@
   }
 
   @include myg-grid__bigger-than(tablet) {
-    &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet) {
+    &:not(.myg-layout__wrap--phone):not(.myg-layout__wrap--tablet) {
       @include myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, laptop), 1fr));
     }
   }
 
   @include myg-grid__bigger-than(laptop) {
-    &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet, .myg-layout__wrap--laptop) {
+    &:not(.myg-layout__wrap--phone):not(.myg-layout__wrap--tablet):not(.myg-layout__wrap--laptop) {
       @include myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, large), 1fr));
     }
   }
 
   @include myg-grid__bigger-than(large) {
-    &:not(.myg-layout__wrap--phone, .myg-layout__wrap--tablet, .myg-layout__wrap--laptop, .myg-layout__wrap--large) {
+    &:not(.myg-layout__wrap--phone):not(.myg-layout__wrap--tablet):not(.myg-layout__wrap--laptop):not(.myg-layout__wrap--large) {
       @include myg-grid__grid-columns(repeat(map-get($myg-grid__grid--default-columns, desktop), 1fr));
     }
   }
