@@ -1,6 +1,6 @@
 {
   "name": "myg-text",
-    "version": "0.13.7",
+    "version": "0.13.8",
   "description": "Myg text component.",
   "main": "index.js",
   "bugs": {

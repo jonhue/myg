@@ -1,6 +1,6 @@
 {
   "name": "myg-checkbox",
-    "version": "0.13.7",
+    "version": "0.13.8",
   "description": "Myg checkbox component.",
   "main": "index.js",
   "bugs": {

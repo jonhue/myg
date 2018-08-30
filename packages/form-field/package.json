@@ -1,6 +1,6 @@
 {
   "name": "myg-form-field",
-    "version": "0.13.7",
+    "version": "0.13.8",
   "description": "Form fields wrap elements in a form.",
   "main": "index.js",
   "bugs": {

@@ -1,6 +1,6 @@
 {
   "name": "myg-toast",
-    "version": "0.13.7",
+    "version": "0.13.8",
   "description": "Toasts can notify users.",
   "main": "index.js",
   "bugs": {

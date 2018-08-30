@@ -1,6 +1,6 @@
 {
   "name": "myg-grid",
-    "version": "0.13.7",
+    "version": "0.13.8",
   "description": "Grids arrange elements in the page.",
   "main": "grid.sass",
   "bugs": {

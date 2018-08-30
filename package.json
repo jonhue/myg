@@ -1,6 +1,6 @@
 {
   "name": "myg",
-    "version": "0.13.7",
+    "version": "0.13.8",
   "description": "An opinionated & adaptive state-of-the-web framework",
   "main": "src/myg.js",
   "homepage": "https://jonhue.me/repos/myg",

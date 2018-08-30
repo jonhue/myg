@@ -1,6 +1,6 @@
 {
   "name": "myg-base",
-    "version": "0.13.7",
+    "version": "0.13.8",
   "description": "The foundation of Myg.",
   "main": "index.js",
   "bugs": {

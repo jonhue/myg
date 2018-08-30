@@ -1,6 +1,6 @@
 {
   "name": "myg-layout",
-    "version": "0.13.7",
+    "version": "0.13.8",
   "description": "Adding a default layout to arrange Myg's navigation components.",
   "main": "layout.sass",
   "bugs": {

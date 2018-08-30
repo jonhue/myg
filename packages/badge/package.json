@@ -1,6 +1,6 @@
 {
   "name": "myg-badge",
-    "version": "0.13.7",
+    "version": "0.13.8",
   "description": "Badges can list attributes of objects.",
   "main": "badge.sass",
   "bugs": {

@@ -1,6 +1,6 @@
 {
   "name": "myg-toolbar",
-    "version": "0.13.7",
+    "version": "0.13.8",
   "description": "A toolbar is a navigational element.",
   "main": "index.js",
   "bugs": {
