@@ -1,6 +1,6 @@
 {
   "name": "myg-footer",
-    "version": "0.13.6",
+    "version": "0.13.7",
   "description": "Footers can confront the users with possible actions or contextual information.",
   "main": "index.js",
   "bugs": {
