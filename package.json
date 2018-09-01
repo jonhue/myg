@@ -1,6 +1,6 @@
 {
   "name": "myg",
-    "version": "0.13.8",
+  "version": "0.13.8",
   "description": "An opinionated & adaptive state-of-the-web framework",
   "main": "src/myg.js",
   "homepage": "https://jonhue.me/repos/myg",
@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
+    "babel-loader": "^8.0.0",
     "css-loader": "^1.0.0",
     "eslint": "^5.2.0",
     "mini-css-extract-plugin": "^0.4.1",
